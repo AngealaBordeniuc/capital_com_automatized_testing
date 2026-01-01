@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "playwright": "^1.57.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.1",
+    "allure-playwright": "^3.4.3"
+  },
+  "scripts": {
+    "allure": "allure generate allure-results --clean"
+  }
+}
