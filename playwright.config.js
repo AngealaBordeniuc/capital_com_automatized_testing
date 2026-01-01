@@ -31,7 +31,7 @@ export default defineConfig({
     baseURL: "https://capital.com",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    headless: false,
+    headless: process.env.CI ? true : false,
     trace: "on-first-retry",
     video: "on-first-retry",
     screenshot: "only-on-failure",
