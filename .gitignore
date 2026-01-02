@@ -11,4 +11,4 @@ node_modules/
 # Allure
 allure-results/
 allure-reports/
-allure-report/
+allure-report/ 

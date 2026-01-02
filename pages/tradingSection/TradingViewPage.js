@@ -25,13 +25,16 @@ export class TradingViewPage {
       'a[href*="snapcraft.io/tradingview"]'
     );
 
+    if(await downloadLink.isVisible()){
     const [newPage] = await Promise.all([
       this.page.waitForEvent("popup"),
       downloadLink.click(),
     ]);
-    await newPage.waitForURL("https://snapcraft.io/tradingview", {
-      timeout: 15000,
-    });
+    await newPage.waitForURL("https://snapcraft.io/tradingview",
+       {timeout: 30000, waitUntil: "load"});
+  } else{
+    throw new Error ("Linux download link is not visible")
+  }
   }
   async verifyLaunchBrowser() {
     const deskHeading = this.page.getByRole("heading", { name: "Browser" });
@@ -41,10 +44,10 @@ export class TradingViewPage {
       this.page.waitForEvent("popup"),
       downloadLink.click(),
     ]);
-    await newPage.waitForURL("https://www.tradingview.com/chart/", {
-      timeout: 15000,
-    });
-  }
+    await newPage.waitForURL("https://www.tradingview.com/chart/", 
+      {timeout: 30000})      
+  } 
+
 
   async clickTradingViewLink() {
     await this.page
@@ -75,7 +78,7 @@ export class TradingViewPage {
 
   async clickSignUpButtonWhyChoose() {
     const signUpButtonWhyChoose = this.page.getByRole("button", { name: "Sign up" }).nth(2)
-    signUpButtonWhyChoose.scrollIntoViewIfNeeded()
+    await signUpButtonWhyChoose.scrollIntoViewIfNeeded()
     signUpButtonWhyChoose.click()   
     await handleModalWindowSignUp(this.page);
   }
