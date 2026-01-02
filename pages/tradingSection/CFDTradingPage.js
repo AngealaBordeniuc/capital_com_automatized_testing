@@ -30,12 +30,10 @@
    }
    
    async clickCreateYourAccountButtonFromReady() {
-     await this.page
-       .getByText("Ready to join a leading broker?")
-       .scrollIntoViewIfNeeded();
-     await this.page.waitForTimeout(1000);
-     await handleCookiesPopUp(this.page);
-     await handleStayOnSitePopUp(this.page);
-     await this.page.locator('[data-type="banner_with_steps"]').click();
-   }
+    const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
+    await bannerBtnReady.scrollIntoViewIfNeeded();
+    await handleCookiesPopUp(this.page);
+    await handleStayOnSitePopUp(this.page);
+    await bannerBtnReady.click({force: true});
+     }
  }

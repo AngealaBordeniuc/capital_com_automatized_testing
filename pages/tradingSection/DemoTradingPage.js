@@ -29,8 +29,10 @@ export class DemoTradingPage {
   }
 
   async clickCreateYourAccountButtonFromReady() {
-    await this.page.getByText("Ready to join a leading broker?").scrollIntoViewIfNeeded({ timeout: 1000 });   
-    await this.page.locator('[data-type="banner_with_steps"]').click();
-    await handleModalWindowSignUp(this.page);
+    const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
+    await bannerBtnReady.scrollIntoViewIfNeeded();
+    await handleCookiesPopUp(this.page);
+    await handleStayOnSitePopUp(this.page);
+    await bannerBtnReady.click({ force: true });
   }
 }

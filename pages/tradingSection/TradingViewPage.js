@@ -79,7 +79,7 @@ export class TradingViewPage {
   async clickSignUpButtonWhyChoose() {
     const signUpButtonWhyChoose = this.page.getByRole("button", { name: "Sign up" }).nth(2)
     await signUpButtonWhyChoose.scrollIntoViewIfNeeded()
-    signUpButtonWhyChoose.click()   
+    await signUpButtonWhyChoose.click()   
     await handleModalWindowSignUp(this.page);
   }
 }

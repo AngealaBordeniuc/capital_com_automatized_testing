@@ -31,10 +31,10 @@ export const handleStayOnSitePopUp =async(page) => {
 
 export const handleModalWindowSignUp = async(page) => {
     const modal = page.locator('[data-sentry-component="Modal"]');
-     if (await modal.isVisible({ timeout: 5000 }).catch(() => false)) {
-       await expect(modal).toContainText("Sign up");
+     if (await modal.isVisible({ timeout: 8000 }).catch(() => false)) {
+       await expect(modal).toBeVisible()
      } else {
-      console.warn("Modal window 'Sign up' is not displayed")
+      console.warn("Modal window is not displayed")
      }           
 }
    

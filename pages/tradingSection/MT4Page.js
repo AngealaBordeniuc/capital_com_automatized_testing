@@ -82,11 +82,13 @@ export class MT4Page {
   }
 
   async verifyMt4OpenWebTerminal() {
-    const webTerminalHeading = this.page.getByRole("heading", {name: "Web Terminal"});
+    const webTerminalHeading = this.page.getByRole("heading", {
+      name: "Web Terminal",
+    });
     await webTerminalHeading.scrollIntoViewIfNeeded();
     const webTerminalLink = this.page.locator('a[href*="capital.com/mt4"]');
     await webTerminalLink.click();
-    await this.page.waitForURL("/mt4", {timeout: 6000});
+    await this.page.waitForURL("/mt4", { timeout: 6000 });
   }
 
   async clickSignUpButtonWhyChooseCapital() {
@@ -102,10 +104,11 @@ export class MT4Page {
   }
 
   async clickCreateYourAccountButtonFromReady() {
-    await this.page
-      .getByText("Ready to join a leading broker?")
-      .scrollIntoViewIfNeeded({timeout: 1000});    
-    await this.page.locator('[data-type="banner_with_steps"]').click();
+    const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
+    await bannerBtnReady.scrollIntoViewIfNeeded();
+    await handleCookiesPopUp(this.page);
+    await handleStayOnSitePopUp(this.page);
+    await bannerBtnReady.click({ force: true });
   }
 }
 

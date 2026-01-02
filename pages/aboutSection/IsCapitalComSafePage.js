@@ -4,7 +4,7 @@ export class IsCapitalComSafePage{
     }
 
     async clickOpenAnAccountButton(){
-       const openAccountBtn = page.getByRole("button", { name: "Open an account" });
+       const openAccountBtn = this.page.getByRole("button", { name: "Open an account" });
        await openAccountBtn.waitFor({ state: "visible", timeout: 10000 });
          await openAccountBtn.click();
     }

@@ -1,4 +1,5 @@
 import { handleCookiesPopUp, handleStayOnSitePopUp } from "../../helpers/pop_ups";
+
 export class AboutSectionMenu {
   constructor(page) {
     this.page = page;

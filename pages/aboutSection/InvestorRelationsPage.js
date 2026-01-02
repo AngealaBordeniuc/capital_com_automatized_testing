@@ -1,9 +1,18 @@
+import {
+  handleCookiesPopUp,
+  handleStayOnSitePopUp,
+  handleModalWindowSignUp,
+} from "../../helpers/pop_ups";
+
 export class InvestorRelationsPage {
   constructor(page) {
     this.page = page;
   }
   async clickCreateYourAccountButtonFromReady() {
-    await this.page.getByText("Ready to join a leading broker?").scrollIntoViewIfNeeded();
-    await this.page.locator('[data-type="banner_with_steps"]').click();
+    const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
+    await bannerBtnReady.scrollIntoViewIfNeeded();
+    await handleCookiesPopUp(this.page);
+    await handleStayOnSitePopUp(this.page);
+    await bannerBtnReady.click({ force: true });
   }
 }
