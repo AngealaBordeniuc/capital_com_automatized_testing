@@ -63,15 +63,13 @@ export class MainPage {
   async clickSignUpButtonForLearnerTraders() {
     await handleCookiesPopUp(this.page);
     await handleStayOnSitePopUp(this.page);
-    await this.page
-      .getByRole("button", { name: "Sign up" })
-      .nth(3)
-      .scrollIntoViewIfNeeded();
-    await this.page.waitForTimeout(1000);
+
+    const signUpBtnLearner = this.page.getByRole("button", { name: "Sign up" }).nth(3);
+    await signUpBtnLearner.waitFor({ state: "visible", timeout: 10000 });
+    await signUpBtnLearner.scrollIntoViewIfNeeded();    
     await handleCookiesPopUp(this.page);
-    await handleStayOnSitePopUp(this.page);
-    await this.page.waitForTimeout(1000);
-    await this.page.getByRole("button", { name: "Sign up" }).nth(3).click();
+    await handleStayOnSitePopUp(this.page);    
+    await signUpBtnLearner.click()
   }
 
   async clickCreateYourAccountButtonFromReady() {         
