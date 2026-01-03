@@ -6,11 +6,7 @@ on:
   pull_request:
     branches: [ main, master ]
 
-env:
-  DATE: ${{ github.event.head_commit.timestamp.split('T')[0] }} 
-
 jobs:
-
   about:
     name: Run About Page Tests
     runs-on: ubuntu-latest
@@ -26,6 +22,10 @@ jobs:
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+
+      # Set DATE variable with real date
+      - name: Set DATE variable
+        run: echo "DATE=$(date +%F)" >> $GITHUB_ENV
 
       - name: Run About tests
         run: |
@@ -55,6 +55,10 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      # Reuse the same DATE variable
+      - name: Set DATE variable
+        run: echo "DATE=$(date +%F)" >> $GITHUB_ENV
+
       - name: Run Main tests
         run: |
           mkdir -p allure-results/${DATE}/main
@@ -82,6 +86,10 @@ jobs:
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+
+      # Reuse the same DATE variable
+      - name: Set DATE variable
+        run: echo "DATE=$(date +%F)" >> $GITHUB_ENV
 
       - name: Run Trading tests
         run: |
