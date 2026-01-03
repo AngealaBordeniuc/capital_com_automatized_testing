@@ -8,6 +8,11 @@
     "allure-playwright": "^3.4.3"
   },
   "scripts": {
-    "allure": "allure generate allure-results --clean"
+    "allure": "allure generate allure-results --clean",
+    "test": "playwright test",
+    "test:main": "playwright test tests/main_page",
+    "test:about": "playwright test tests/about_page",
+    "test:trading": "playwright test tests/trading_page"
+  
   }
 }
