@@ -7,9 +7,10 @@ on:
     branches: [ main, master ]
 
 jobs:
-  about:
-    name: Run About Page Tests
+  playwright:
+    name: Run Playwright Tests
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -23,84 +24,16 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      # Set DATE variable with real date
-      - name: Set DATE variable
-        run: echo "DATE=$(date +%F)" >> $GITHUB_ENV
-
-      - name: Run About tests
+      - name: Run all tests with Allure
         run: |
-          mkdir -p allure-results/${DATE}/about
-          npx playwright test tests/about_page --reporter=list,allure-playwright --output allure-results/${DATE}/about
+          npx playwright test --reporter=list,allure-playwright
 
-      - name: Upload Allure About Report
+      - name: Upload Allure results
         uses: actions/upload-artifact@v4
         with:
-          name: allure-about-${{ env.DATE }}
-          path: allure-results/${{ env.DATE }}/about
+          name: allure-results
+          path: allure-results
           retention-days: 30
 
-  main:
-    name: Run Main Page Tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-
-      # Reuse the same DATE variable
-      - name: Set DATE variable
-        run: echo "DATE=$(date +%F)" >> $GITHUB_ENV
-
-      - name: Run Main tests
-        run: |
-          mkdir -p allure-results/${DATE}/main
-          npx playwright test tests/main_page --reporter=list,allure-playwright --output allure-results/${DATE}/main
-
-      - name: Upload Allure Main Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-main-${{ env.DATE }}
-          path: allure-results/${{ env.DATE }}/main
-          retention-days: 30
-
-  trading:
-    name: Run Trading Page Tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-
-      # Reuse the same DATE variable
-      - name: Set DATE variable
-        run: echo "DATE=$(date +%F)" >> $GITHUB_ENV
-
-      - name: Run Trading tests
-        run: |
-          mkdir -p allure-results/${DATE}/trading
-          npx playwright test tests/trading_page --reporter=list,allure-playwright --output allure-results/${DATE}/trading
-
-      - name: Upload Allure Trading Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-trading-${{ env.DATE }}
-          path: allure-results/${{ env.DATE }}/trading
-          retention-days: 30
 
 
