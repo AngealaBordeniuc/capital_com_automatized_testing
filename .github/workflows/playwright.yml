@@ -2,70 +2,97 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
+
+env:
+  DATE: ${{ github.event.head_commit.timestamp.split('T')[0] }} 
 
 jobs:
-  about-tests:
-    name: About Page Tests
+
+  about:
+    name: Run About Page Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: lts/*
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
+      - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
       - name: Run About tests
-        run: npm run test:about
+        run: |
+          mkdir -p allure-results/${DATE}/about
+          npx playwright test tests/about_page --reporter=list,allure-playwright --output allure-results/${DATE}/about
 
+      - name: Upload Allure About Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-about-${{ env.DATE }}
+          path: allure-results/${{ env.DATE }}/about
+          retention-days: 30
 
-  main-tests:
-    name: Main Page Tests
+  main:
+    name: Run Main Page Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: lts/*
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
+      - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
       - name: Run Main tests
-        run: npm run test:main
+        run: |
+          mkdir -p allure-results/${DATE}/main
+          npx playwright test tests/main_page --reporter=list,allure-playwright --output allure-results/${DATE}/main
 
+      - name: Upload Allure Main Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-main-${{ env.DATE }}
+          path: allure-results/${{ env.DATE }}/main
+          retention-days: 30
 
-  trading-tests:
-    name: Trading Page Tests
+  trading:
+    name: Run Trading Page Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: lts/*
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
+      - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
       - name: Run Trading tests
-        run: npm run test:trading
+        run: |
+          mkdir -p allure-results/${DATE}/trading
+          npx playwright test tests/trading_page --reporter=list,allure-playwright --output allure-results/${DATE}/trading
+
+      - name: Upload Allure Trading Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-trading-${{ env.DATE }}
+          path: allure-results/${{ env.DATE }}/trading
+          retention-days: 30
+
 
