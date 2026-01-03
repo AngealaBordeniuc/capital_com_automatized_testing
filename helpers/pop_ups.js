@@ -5,6 +5,7 @@ export const handleCookiesPopUp = async (page) => {
     try {
         if (await closeBtn.isVisible({timeout: 5000})){
             await closeBtn.click({timeout: 5000})
+            await closeBtn.waitFor({state: 'detached', timeout: 5000})
         }
     } catch (e){
         console.warn('No cookies pop-up displayed!')
@@ -21,6 +22,7 @@ export const handleStayOnSitePopUp =async(page) => {
   });
   if (await stayOnSiteBtn.isVisible({ timeout: 5000 })) {
     await stayOnSiteBtn.click();
+    await stayOnSiteBtn.waitFor({ state: "detached", timeout: 5000 });
   }
  } catch(e){
     console.warn('No "Stay on this site" pop-up displayed!')

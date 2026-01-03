@@ -6,12 +6,16 @@ export class AboutSectionMenu {
   }
 
   async openWhyCapitalComPage() {
-    await this.page.waitForTimeout(1000)
+    // Wait for the header to be visible before proceeding
     await handleStayOnSitePopUp(this.page);
-    await handleCookiesPopUp(this.page);    
+    await handleCookiesPopUp(this.page);
+    await this.page.waitForSelector("#header", {state: "visible", timeout: 10000});    
+
     const header = this.page.locator("#header");
-    const aboutMenu = header.getByRole("link", { name: "About" }).first();      
-    await aboutMenu.hover();           
+    const aboutMenu = header.getByRole("link", { name: "About" }).first();
+
+    await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
+    await aboutMenu.hover();
     await this.page.click('a:has-text("Why Capital.com?")');
   }
 
