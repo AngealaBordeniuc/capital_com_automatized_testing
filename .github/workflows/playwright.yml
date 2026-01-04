@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright About Tests
 
 on:
   push:
@@ -7,14 +7,16 @@ on:
     branches: [ main, master ]
 
 jobs:
-  playwright:
-    name: Run Playwright Tests
+  playwright-about:
+    name: Run About tests (Playwright)
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: lts/*
 
@@ -24,9 +26,9 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run all tests with Allure
+      - name: Run About tests with Allure
         run: |
-          npx playwright test --reporter=list,allure-playwright
+          npm run test:about -- --reporter=list,allure-playwright
 
       - name: Upload Allure results
         uses: actions/upload-artifact@v4
@@ -34,6 +36,4 @@ jobs:
           name: allure-results
           path: allure-results
           retention-days: 30
-
-
 

@@ -1,3 +1,4 @@
+import { expect } from "allure-playwright";
 import { handleCookiesPopUp, handleStayOnSitePopUp } from "../../helpers/pop_ups";
 
 export class AboutSectionMenu {
@@ -5,92 +6,147 @@ export class AboutSectionMenu {
     this.page = page;
   }
 
-  async openWhyCapitalComPage() {
-    // Wait for the header to be visible before proceeding
+  async openWhyCapitalComPage() {    
+    // // Wait for the header to be visible before proceeding
+    await this.page.waitForTimeout(2000);
     await handleStayOnSitePopUp(this.page);
     await handleCookiesPopUp(this.page);
-    await this.page.waitForSelector("#header", {state: "visible", timeout: 10000});    
+    await this.page.waitForSelector("#header", {
+      state: "visible",
+      timeout: 10000,
+    });
 
     const header = this.page.locator("#header");
     const aboutMenu = header.getByRole("link", { name: "About" }).first();
 
     await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
-    await aboutMenu.hover();
-    await this.page.click('a:has-text("Why Capital.com?")');
+    await aboutMenu.hover({force: true, timeout: 5000});
+
+    // Wait for the Why Capital.com submenu link to appear before clicking
+    const whyLink = header.getByRole("link", { name: "Why Capital.com?" });   
+    await expect(whyLink).toBeVisible({ timeout: 10000 });
+    await whyLink.click();    
   }
 
   async openOurOfficesPage() {
+    await this.page.waitForTimeout(2000);
      await handleStayOnSitePopUp(this.page);
-     await handleCookiesPopUp(this.page)
-     await this.page.waitForTimeout(5000)
+     await handleCookiesPopUp(this.page)   
+     await this.page.waitForSelector("#header", {
+        state: "visible",
+        timeout: 10000,
+      });
     const header = this.page.locator("#header");
-    const aboutMenu = header.getByRole("link", { name: "About" }).first();        
     await handleStayOnSitePopUp(this.page);
-        await aboutMenu.hover();      
+    const aboutMenu = header.getByRole("link", { name: "About" }).first();           
 
-    await this.page.click('a:has-text("Our offices")');
+    await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
+    await aboutMenu.hover({force: true, timeout: 5000});    
+
+    const ourOfficesLink = header.getByRole("link", { name: "Our offices" })    
+    await expect(ourOfficesLink).toBeVisible({ timeout: 10000 });    
+    await ourOfficesLink.click();   
   }
 
-  async openIsCapitalComSafePage() {
-     await this.page.waitForTimeout(5000);    
+  async openIsCapitalComSafePage() {      
+    await this.page.waitForTimeout(2000);
     await handleStayOnSitePopUp(this.page);
     await handleCookiesPopUp(this.page);   
+
+    await this.page.waitForSelector("#header", {state: "visible", timeout: 10000,});    
+
     const header = this.page.locator("#header");
     const aboutMenu = header.getByRole("link", { name: "About" }).first();
-    await aboutMenu.hover();   
-    await this.page.click('a:has-text("Is capital.com safe?")');
+    await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
+    await aboutMenu.hover({force: true, timeout: 5000});   
+
+    const isCapitalComSafeLink = header.getByRole("link", { name: "Is capital.com safe?" });
+    await expect(isCapitalComSafeLink).toBeVisible({ timeout: 10000 });
+    await isCapitalComSafeLink.click();
+   
   }
 
   async openInvestorRelationsPage() {
-    await this.page.waitForTimeout(5000);
+    await this.page.waitForTimeout(2000);
+   
     await handleStayOnSitePopUp(this.page);
     await handleCookiesPopUp(this.page); 
+
+    await this.page.waitForSelector("#header", {state: "visible", timeout: 10000,});
     const header = this.page.locator("#header");
+
     const aboutMenu = header.getByRole("link", { name: "About" }).first();
-    await aboutMenu.hover();    
-    await this.page.click('a:has-text("Investor Relations")');
+    await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
+    await aboutMenu.hover();        
+
+    const investorRelationsLink = header.getByRole("link", { name: "Investor Relations" });
+    await expect(investorRelationsLink).toBeVisible({ timeout: 10000 });    
+    await investorRelationsLink.click();
   }
+
   async openHelpPage() {
-    // await handleCookiesPopUp(this.page);
-    // await handleStayOnSitePopUp(this.page);
-    await this.page.waitForTimeout(5000);
+     await this.page.waitForTimeout(2000);
+    await handleCookiesPopUp(this.page);
+    await handleStayOnSitePopUp(this.page);
+
+    await this.page.waitForSelector("#header", { state: "visible", timeout: 10000, });
+   
     const header = this.page.locator("#header");
     const aboutMenu = header.getByRole("link", { name: "About" }).first()        
-    await handleStayOnSitePopUp(this.page);
-    
+    await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
+
+    await handleStayOnSitePopUp(this.page);    
     await aboutMenu.hover();
-    await this.page.click('a:has-text("Help")');
+
+    const helpLink = header.getByRole("link", { name: "Help" });
+    await expect(helpLink).toBeVisible({ timeout: 10000 });
+    await helpLink.click();
   }
+    
 
   async openContactUsPage() {
-    //  await handleCookiesPopUp(this.page);
-    //  await handleStayOnSitePopUp(this.page);
-     await this.page.waitForTimeout(5000);
+     await this.page.waitForTimeout(2000);
+     await handleCookiesPopUp(this.page);
+     await handleStayOnSitePopUp(this.page);
+     await this.page.waitForSelector("#header", { state: "visible", timeout: 10000,});
     const header = this.page.locator("#header");
     const aboutMenu = header.getByRole("link", { name: "About" }).first();
     await handleStayOnSitePopUp(this.page);
-
+    await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
     await aboutMenu.hover();   
-    await this.page.click('a:has-text("Contact us")');
+
+    const contactUsLink = header.getByRole("link", { name: "Contact us" });
+    await expect(contactUsLink).toBeVisible({ timeout: 10000 });
+    await contactUsLink.click();   
   }
 
-  async openComplaintsPage() {
-    await this.page.waitForTimeout(5000);
+  async openComplaintsPage() {    
+    await this.page.waitForTimeout(2000);
     await handleStayOnSitePopUp(this.page);
     await handleCookiesPopUp(this.page); 
+    await this.page.waitForSelector("#header", {state: "visible", timeout: 10000,});
     const header = this.page.locator("#header");
     const aboutMenu = header.getByRole("link", { name: "About" }).first();
+    await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
     await aboutMenu.hover();    
-    await this.page.click('a:has-text("Complaints")');
-  }
 
-  async openClientVulnerabilityPage() {
-    await this.page.waitForTimeout(5000);
+    const complaintsLink = header.getByRole("link", { name: "Complaints" });
+    await expect(complaintsLink).toBeVisible({ timeout: 10000 });    
+    await complaintsLink.click();
+  }  
+
+  async openClientVulnerabilityPage() {   
+      await this.page.waitForTimeout(2000);
     await handleStayOnSitePopUp(this.page);
     await handleCookiesPopUp(this.page); 
+    await this.page.waitForSelector("#header", {state: "visible", timeout: 10000,});
     const header = this.page.locator("#header");
     const aboutMenu = header.getByRole("link", { name: "About" }).first();
+    await aboutMenu.waitFor({ state: "visible", timeout: 10000 });
     await aboutMenu.hover();   
-    await this.page.click('a:has-text("Client vulnerability")');
+
+    const clientVulnerabilityMenu = header.getByRole("link", { name: "Client vulnerability" });
+    await expect(clientVulnerabilityMenu).toBeVisible({ timeout: 10000 });    
+    await clientVulnerabilityMenu.click();   
   }
 }

@@ -15,5 +15,6 @@ export class ComplaintsPage {
     await handleCookiesPopUp(this.page);
     await handleStayOnSitePopUp(this.page);
     await bannerBtnReady.click({ force: true });
+    await handleModalWindowSignUp(this.page)
   }
 }

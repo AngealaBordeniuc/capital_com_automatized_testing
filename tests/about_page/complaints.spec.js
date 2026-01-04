@@ -12,12 +12,12 @@ test.describe('Is Capital.com safe?, FCA license', () => {
         await handleStayOnSitePopUp(page)
         aboutSectionMenu = new AboutSectionMenu(page)
         complaintsPage = new ComplaintsPage(page)
+        await aboutSectionMenu.openComplaintsPage();    
     })
 
-    test('Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user', async ({page}) => {
-     await aboutSectionMenu.openComplaintsPage()    
+    test('Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user', async ({page}) => {     
       await expect(page).toHaveURL('https://capital.com/en-gb/help/complaints');                
-      await complaintsPage.clickCreateYourAccountButtonFromReady()  
-      await handleModalWindowSignUp(page)  
+      await complaintsPage.clickCreateYourAccountButtonFromReady()       
     })
-    })
+
+})

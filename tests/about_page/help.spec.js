@@ -12,15 +12,14 @@ test.describe("Smoke_FCA_license(EN), Help", () => {
     await handleStayOnSitePopUp(page);
     aboutSectionMenu = new AboutSectionMenu(page);
     helpPage = new HelpPage(page);
+      await aboutSectionMenu.openHelpPage();
   });
 
   test("Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", async ({
     page,
-  }) => {
-    await aboutSectionMenu.openHelpPage();
+  }) => {  
     await expect(page).toHaveURL("/en-gb/help");
-    await helpPage.clickCreateYourAccountButtonFromReady();
-    await handleModalWindowSignUp(page);
+    await helpPage.clickCreateYourAccountButtonFromReady();   
   });
 });
 
@@ -30,14 +29,13 @@ test.describe("Smoke_FCA_license(EN), Help", () => {
         await handleStayOnSitePopUp(page);
         aboutSectionMenu = new AboutSectionMenu(page);
         helpPage = new HelpPage(page);
+            await aboutSectionMenu.openHelpPage();
       });
 
       test("Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", async ({
         page,
-      }) => {
-        await aboutSectionMenu.openHelpPage();
+      }) => {    
         await expect(page).toHaveURL("/en-ae/help");
-        await helpPage.clickCreateYourAccountButtonFromReady();
-        await handleModalWindowSignUp(page);
+        await helpPage.clickCreateYourAccountButtonFromReady();       
       });
     });

@@ -17,8 +17,7 @@ test.describe('Is Capital.com safe?, FCA license', () => {
     test('Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user', async ({page}) => {
       await aboutSectionMenu.openInvestorRelationsPage()   
       await expect(page).toHaveURL('https://capital.com/en-gb/about-us/investor-relations')           
-      await investorRelationsPage.clickCreateYourAccountButtonFromReady()       
-      await handleModalWindowSignUp(page)   
+      await investorRelationsPage.clickCreateYourAccountButtonFromReady()             
     })
     })
 

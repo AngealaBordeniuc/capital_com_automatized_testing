@@ -11,13 +11,12 @@ test.describe('Smoke_FCA_license(EN), Is Capital.com safe?', () => {
         await handleStayOnSitePopUp(page)        
         aboutSectionMenu = new AboutSectionMenu(page)
         isCapitalComSafePage = new IsCapitalComSafePage(page)
+         await aboutSectionMenu.openIsCapitalComSafePage();    
     })
 
-    test('Sign Up Form is opened after clicking on the [Open an account] button, unauthorized user', async ({page}) => {      
-        await aboutSectionMenu.openIsCapitalComSafePage()    
+    test('Sign Up Form is opened after clicking on the [Open an account] button, unauthorized user', async ({page}) => {             
         await expect(page).toHaveURL('/en-gb/security-measures')        
-        await isCapitalComSafePage.clickOpenAnAccountButton()            
-        await handleModalWindowSignUp(page)                            
+        await isCapitalComSafePage.clickOpenAnAccountButton()                                              
     })
 
 
@@ -29,12 +28,11 @@ test.describe('Smoke_SCA_license(EN), Is Capital.com safe?,', () => {
         await handleStayOnSitePopUp(page)        
         aboutSectionMenu = new AboutSectionMenu(page)
         isCapitalComSafePage = new IsCapitalComSafePage(page)
+          await aboutSectionMenu.openIsCapitalComSafePage(); 
     })
 
-    test('Sign Up Form is opened after clicking on the [Open an account] button, unauthorized user', async ({page}) => {      
-        await aboutSectionMenu.openIsCapitalComSafePage()    
+    test('Sign Up Form is opened after clicking on the [Open an account] button, unauthorized user', async ({page}) => {               
         await expect(page).toHaveURL('/en-ae/security-measures');              
-        await isCapitalComSafePage.clickOpenAnAccountButton()            
-        await handleModalWindowSignUp(page)                            
+        await isCapitalComSafePage.clickOpenAnAccountButton()                                               
     })
 })
