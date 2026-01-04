@@ -1,4 +1,4 @@
-name: Playwright About Tests
+name: Playwright UI Tests
 
 on:
   push:
@@ -30,10 +30,41 @@ jobs:
         run: |
           npm run test:about -- --reporter=list,allure-playwright
 
-      - name: Upload Allure results
+      - name: Upload Allure results (About)
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results
+          name: allure-results-about
+          path: allure-results
+          retention-days: 30
+
+
+  playwright-main:
+    name: Run Main page tests (Playwright)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Main tests with Allure
+        run: |
+          npm run test:main -- --reporter=list,allure-playwright
+
+      - name: Upload Allure results (Main)
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-main
           path: allure-results
           retention-days: 30
 

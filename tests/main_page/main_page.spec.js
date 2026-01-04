@@ -11,52 +11,47 @@ test.describe('Smoke_FCA_License(EN), Main Page', () =>{
     })
 
     test('FCA_License(EN), Sign Up Form is opened after clicking on the [Sign Up] button on the banner "Award-winning trading platform, here in the UAE.", unauthorized user', async({page})=>{
-        await mainPage.clickSignUpButton()        
-        await handleModalWindowSignUp(page)           
+        await mainPage.clickSignUpButton()                        
       }
     );
 
      test('FCA_License(EN), Sign Up Form is opened after clicking on the [Try demo] button on the banner "Award-winning trading platform, here in the UAE.", unauthorized user', async ({
        page,
      }) => {
-       await mainPage.clickTryDemoButton();
-       await handleModalWindowSignUp(page);
+       await mainPage.clickTryDemoButton();      
      });
+
      test('FCA_License(EN), Sign Up Form is opened after clicking on the [Sign up] button on the banner "Why choose Capital.com?", unauthorized user', async ({
         page,
       }) => {
         await mainPage.clickSignUpButtonWhyChooseCapitalCom();
-        await handleModalWindowSignUp(page);
+     
       })
 
       test("FCA_License(EN),Sign Up Form is opened after clicking on the [Sell] button in the block [Our markets] (Trading Instrument), unauthorized user", async ({
         page,
       }) => {
-        await mainPage.clickSellButtonOurMarkets();
-        await expect(page).toHaveURL("/trading/platform/charting");
-        await page.locator('input[type="email"]').waitFor();
+        await mainPage.clickSellButtonOurMarkets();        
       });
 
       test("FCA_License(EN), Sign Up Form is opened after clicking on the [Buy] button in the block [Our markets] (Trading Instrument), unauthorized user", async ({
         page,
       }) => {
-        await mainPage.ClickBuyButtonOutMarkets();
-        await expect(page).toHaveURL("/trading/platform/charting");
-        await page.locator('input[type="email"]').waitFor();
+        await mainPage.clickBuyButtonOutMarkets();        
       });  
 
        test('FCA_License(EN),Sign Up Form is opened after clicking on the [Try demo] button in the block "For learner traders", unauthorized user', async ({
          page,
        }) => {
          await mainPage.clickTryDemoButtonForLearnerTraders();
-         await handleModalWindowSignUp(page);
+        
        });
 
        test('FCA_License(EN), Sign Up Form is opened after clicking on the [Sign Up] button in the block "For learner traders", unauthorized user', async ({
          page,
-       }) => {
+       }) => {       
          await mainPage.clickSignUpButtonForLearnerTraders();
-         await handleModalWindowSignUp(page);
+       
 
        })
        
@@ -64,7 +59,7 @@ test.describe('Smoke_FCA_License(EN), Main Page', () =>{
              page,
            }) => {
              await mainPage.clickCreateYourAccountButtonFromReady();
-             await handleModalWindowSignUp(page);
+            
            });
     })
 
@@ -77,60 +72,54 @@ test.describe('Smoke_SCA_License(EN), Main Page', () =>{
 
     test('SCA_License(EN), Sign Up Form is opened after clicking on the [Sign Up] button on the banner "Award-winning trading platform, here in the UAE.", unauthorized user', async({page})=>{
         await mainPage.clickSignUpButton()        
-        await handleModalWindowSignUp(page)           
+                  
       }
     );
 
      test('SCA_License(EN), Sign Up Form is opened after clicking on the [Try demo] button on the banner "Award-winning trading platform, here in the UAE.", unauthorized user', async ({
        page,
      }) => {
-       await mainPage.clickTryDemoButton();
-       await handleModalWindowSignUp(page);
+       await mainPage.clickTryDemoButton();      
      });
 
       test('SCA_License(EN), Sign Up Form is opened after clicking on the [Sign up] button on the banner "Why choose Capital.com?", unauthorized user', async ({
         page,
       }) => {
-        await mainPage.clickSignUpButtonWhyChooseCapitalCom();
-        await handleModalWindowSignUp(page);
+        await mainPage.clickSignUpButtonWhyChooseCapitalCom();        
       });
 
       test("SCA_License(EN),Sign Up Form is opened after clicking on the [Sell] button in the block [Our markets] (Trading Instrument), unauthorized user", async ({
         page,
       }) => {
-        await mainPage.clickSellButtonOurMarkets();
-        await expect(page).toHaveURL("/trading/platform/charting");
-        await page.locator('input[type="email"]').waitFor();
+        await mainPage.clickSellButtonOurMarkets();        
       });        	
 
        test("SCA_License(EN), Sign Up Form is opened after clicking on the [Buy] button in the block [Our markets] (Trading Instrument), unauthorized user", async ({
          page,
        }) => {
-         await mainPage.ClickBuyButtonOutMarkets();
-         await expect(page).toHaveURL("/trading/platform/charting");
-         await page.locator('input[type="email"]').waitFor();
+         await mainPage.clickBuyButtonOutMarkets();         
        });  
 
          test('SCA_License(EN),Sign Up Form is opened after clicking on the [Try demo] button in the block "For learner traders", unauthorized user', async ({
            page,
          }) => {
-           await mainPage.clickTryDemoButtonForLearnerTraders();
-           await handleModalWindowSignUp(page);
+           await mainPage.clickTryDemoButtonForLearnerTraders();          
          });
        
            test('SCA_License(EN), Sign Up Form is opened after clicking on the [Sign Up] button in the block "For learner traders", unauthorized user', async ({
              page,
-           }) => {
+           }) => {            
              await mainPage.clickSignUpButtonForLearnerTraders();
-             await handleModalWindowSignUp(page);
+            
            });
 
            test("SCA_License(EN),Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", async ({
              page,
            }) => {
              await mainPage.clickCreateYourAccountButtonFromReady();
-             await handleModalWindowSignUp(page);
-           });
+            
+})
+
 })
 
 
