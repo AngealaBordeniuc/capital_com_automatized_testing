@@ -1,4 +1,5 @@
 import { expect } from "allure-playwright";
+import {handleModalWindowSignUp} from "../../helpers/pop_ups";
 
 export class WebPlatformPage {
   constructor(page) {
@@ -7,7 +8,10 @@ export class WebPlatformPage {
   }
 
   async clickCreateAccountButton() {   
-    await this.page.getByRole("button", { name: "Create account" }).click();
+    const createAccountBtn = this.page.getByRole("button", { name: "Create account" });
+    await expect(createAccountBtn).toBeVisible({ timeout: 10000 });
+    await createAccountBtn.click();
+    await handleModalWindowSignUp(this.page);   
   }
 
   async getQrUrl() {

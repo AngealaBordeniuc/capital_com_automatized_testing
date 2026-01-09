@@ -5,17 +5,13 @@ export class MainPage {
   constructor(page) {
     this.page = page;
   }
-  async clickCTA(locator){
-      await this.page.waitForTimeout(1000);
-
-      await handleCookiesPopUp(this.page);
-      await handleStayOnSitePopUp(this.page);
-
-      await locator.scrollIntoViewIfNeeded();
-      await expect(locator).toBeVisible({ timeout: 10000 });
-
-      await locator.click();
-
+  async clickCTA(locator){    
+    await this.page.waitForTimeout(1000);
+    await handleCookiesPopUp(this.page);
+    await handleStayOnSitePopUp(this.page);
+    await locator.scrollIntoViewIfNeeded();
+    await expect(locator).toBeVisible({ timeout: 10000 });
+    await locator.click();
   }
 
 

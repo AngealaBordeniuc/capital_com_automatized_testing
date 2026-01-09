@@ -4,29 +4,35 @@ export class CFDCalculator {
     this.page = page;
   }
 
+   /**
+      * Generic stable CTA click handler (popups + visibility + enabled)
+      */
+  async clickCTA(locator) {
+    await locator.scrollIntoViewIfNeeded();
+    await locator.click();
+  }  
+
   async clickSignUpButton() {
-    await this.page
-      .getByRole("button", { name: "Sign up", exact: true })
-      .click();
+    const signUpButton = this.page.getByRole("button", {name: "Sign up", exact: true});
+    await this.clickCTA(signUpButton);    
     await handleModalWindowSignUp(this.page);
   }
 
   async clickTryDemoButton() {
-    await this.page.getByRole("button", { name: "Try demo" }).click();
+    const tryDemoButton = this.page.getByRole("button", { name: "Try demo" });
+    await this.clickCTA(tryDemoButton);
     await handleModalWindowSignUp(this.page);
   }
 
   async clickTradeNowButton() {
     const tradeNowButton = this.page.getByRole("button", { name: "Trade now" });
-    await tradeNowButton.scrollIntoViewIfNeeded();
-    await tradeNowButton.click();
+    await this.clickCTA(tradeNowButton);   
     await handleModalWindowSignUp(this.page);
   }
 
   async clickSignUpButtonHowToStart() {
-    const signUpButtonHow = this.page.getByRole("link", { name: "Sign up" })
-    await signUpButtonHow.scrollIntoViewIfNeeded()
-    await signUpButtonHow.click();     
+    const signUpButtonHow = this.page.getByRole("link", { name: "Sign up" });
+    await this.clickCTA(signUpButtonHow);   
     await handleModalWindowSignUp(this.page);
   }
 }

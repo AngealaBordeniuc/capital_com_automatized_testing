@@ -1,4 +1,6 @@
-import { handleCookiesPopUp, handleStayOnSitePopUp } from "../../helpers/pop_ups";
+import { handleCookiesPopUp, 
+  handleStayOnSitePopUp,
+handleModalWindowSignUp } from "../../helpers/pop_ups";
 
 export class MT4Page {
   constructor(page) {
@@ -11,6 +13,7 @@ export class MT4Page {
       .getByRole("button", { name: "Create account" })
       .first()
       .click();
+    await handleModalWindowSignUp(this.page);
   }
 
   async clickOpenAccountButton() {
@@ -20,6 +23,7 @@ export class MT4Page {
       .getByRole("button", { name: "Open account" })
       .scrollIntoViewIfNeeded();
     await this.page.getByRole("button", { name: "Open account" }).click();
+    await handleModalWindowSignUp(this.page);
   }
 
   async clickCreateAccountButton2() {
@@ -31,6 +35,7 @@ export class MT4Page {
       .getByRole("button", { name: "Create account" })
       .nth(1)
       .click();
+      await handleModalWindowSignUp(this.page);
   }
 
   async verifyMt4DownloadForMac() {
@@ -101,6 +106,7 @@ export class MT4Page {
     await this.page
       .getByRole("button", { name: "Sign up", exact: true })
       .click();
+    await handleModalWindowSignUp(this.page);
   }
 
   async clickCreateYourAccountButtonFromReady() {
@@ -109,6 +115,7 @@ export class MT4Page {
     await handleCookiesPopUp(this.page);
     await handleStayOnSitePopUp(this.page);
     await bannerBtnReady.click({ force: true });
+    await handleModalWindowSignUp(this.page);
   }
 }
 

@@ -13,18 +13,17 @@ test.describe('CySec_License(EN), Mobile apps Page', () => {
         await handleCookiesPopUp(page)
         tradingSectionMenu = new TradingSectionMenu(page)
         mobileAppsPage = new MobileAppsPage(page)
+        await tradingSectionMenu.openMobileAppsPage();
     })
 
      test('Smoke_CySEC_License(EN), Verify QR Code from "CFD trading app" block', 
-      async ({page}) => {
-       await tradingSectionMenu.openMobileAppsPage();       
+      async ({page}) => {              
        await expect(page).toHaveURL("/en-eu/trading-platforms/mobile-apps");    
        await mobileAppsPage.verifyQrRedirect_1()
      });
 
      test('Smoke_CySEC_License(EN), Verify QR Code from "Investmate" block', 
-      async ({page}) => {       
-       await tradingSectionMenu.openMobileAppsPage();
+      async ({page}) => {              
        await expect(page).toHaveURL("/en-eu/trading-platforms/mobile-apps");
        await mobileAppsPage.verifyQrRedirect_2();
      });

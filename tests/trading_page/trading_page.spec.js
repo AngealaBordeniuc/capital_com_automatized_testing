@@ -10,25 +10,21 @@ test.describe('Trading Page', () => {
         await handleStayOnSitePopUp(page)
         await handleCookiesPopUp(page)
         tradingPage = new TradingPage(page);
+         await tradingPage.openTradingPage();
     })
 
 
 
-test('Smoke_CySEC_License(EN), Sign Up Form is opened after clicking on the [Create account] button on the banner "Ways to trade", unauthorized user', async({page}) =>{
-    
-    await tradingPage.openTradingPage()
+test('Smoke_CySEC_License(EN), Sign Up Form is opened after clicking on the [Create account] button on the banner "Ways to trade", unauthorized user', 
+    async({page}) =>{   
     await expect(page).toHaveURL('/en-eu/ways-to-trade', {timeout: 6000})
-    await tradingPage.clickCreateAccountButton()
-    await handleModalWindowSignUp(page)
+    await tradingPage.clickCreateAccountButton()    
 })
 
-test('Smoke_CySEC_License(EN), Sign Up Form is opened after clicking on the [Try demo account] button on the banner "Ways to trade", unauthorized user', async({page}) =>{
-    
-    await tradingPage.openTradingPage()
+test('Smoke_CySEC_License(EN), Sign Up Form is opened after clicking on the [Try demo account] button on the banner "Ways to trade", unauthorized user', 
+    async({page}) =>{   
     await expect(page).toHaveURL('/en-eu/ways-to-trade')
     await tradingPage.clickTryDemoAccountButton()
-    await handleModalWindowSignUp(page)
-
 })
 
 })

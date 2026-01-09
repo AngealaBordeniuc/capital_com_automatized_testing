@@ -20,8 +20,7 @@ test.describe('CySec_License(EN), Web Platform Page', () => {
     }) => {        
       await tradingSectionMenu.openWebPlatformPage();
       await expect(page).toHaveURL("/en-eu/trading-platforms/web-platform");
-      await webPlatformPage.clickCreateAccountButton();
-      await handleModalWindowSignUp(page);
+      await webPlatformPage.clickCreateAccountButton();      
     });
 
     test('Smoke_CySEC_License(EN), Verify QR Code', async ({

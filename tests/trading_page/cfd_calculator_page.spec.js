@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import {
   handleCookiesPopUp,
   handleStayOnSitePopUp,
+  acceptAllCookies
 } from "../../helpers/pop_ups";
 import { TradingSectionMenu } from "../../pages/tradingSection/TradingSectionMenu";
 import { CFDCalculator } from "../../pages/tradingSection/CFDCalculatorPage";
@@ -14,7 +15,7 @@ test.describe("CySec_License(EN), CFD Calculator Page", () => {
     tradingSectionMenu = new TradingSectionMenu(page);
     cfdCalculator = new CFDCalculator(page);
     await page.goto("/en-eu");
-    await handleStayOnSitePopUp(page);
+    await handleStayOnSitePopUp(page);   
     await handleCookiesPopUp(page);
     await tradingSectionMenu.openCFDCalculatorPage();
   })

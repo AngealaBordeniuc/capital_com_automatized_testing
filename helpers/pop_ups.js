@@ -39,4 +39,13 @@ export const handleModalWindowSignUp = async(page) => {
       console.warn("Modal window is not displayed")
      }           
 }
+
+export const acceptAllCookies = async(page) =>{
+    const acceptAllBtn = page.getByRole('button', {name: 'Accept All Cookies'})
+    if (await acceptAllBtn.isVisible({timeout: 5000}).catch(()=> false)){
+      await acceptAllBtn.click()
+    } else {
+      console.warn('No Accept All Cookies button is displayed')
+    }
+}
    

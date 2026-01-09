@@ -19,22 +19,19 @@ test.describe('CySec_License(EN), MT4 Page', () => {
  test('CySEC_license(EN), Sign Up Form is opened on "MT4" page after clicking "Create account" button, unauthorized user', 
   async ({page}) => {      
        await expect(page).toHaveURL("/en-eu/trading-platforms/mt4");
-       await mT4Page.clickCreateAccountButton();
-       await handleModalWindowSignUp(page);
+       await mT4Page.clickCreateAccountButton();     
      });       
  
  test('CySEC_license(EN), Sign Up Form is opened after clicking "Open account" button from the "Connect your account to MT4 in three steps" block, unauthorized user', 
   async ({page}) => {      
        await expect(page).toHaveURL("/en-eu/trading-platforms/mt4");
-       await mT4Page.clickOpenAccountButton();
-       await handleModalWindowSignUp(page);
+       await mT4Page.clickOpenAccountButton();      
      })
 
   test('CySEC_license(EN), Sign Up Form is opened after clicking "Create account" button from the "Connect your account to MT4 in three steps" block, unauthorized user', 
     async ({page}) => {       
        await expect(page).toHaveURL("/en-eu/trading-platforms/mt4");
-       await mT4Page.clickCreateAccountButton2();
-       await handleModalWindowSignUp(page);
+       await mT4Page.clickCreateAccountButton2();      
      });
 
  test('CySEC_license(EN), Verify Mt4 Download For Mac from the "Download MT4" block, unauthorized user', 
@@ -71,15 +68,13 @@ test.describe('CySec_License(EN), MT4 Page', () => {
   test('CySEC_license(EN), Sign Up form is opened after clicking on [Sign Up], unauthorized user', 
     async ({page}) => {    
     await expect(page).toHaveURL("/en-eu/trading-platforms/mt4");    
-    await mT4Page.clickSignUpButtonWhyChooseCapital();
-    await handleModalWindowSignUp(page)
+    await mT4Page.clickSignUpButtonWhyChooseCapital();   
   }); 
 
    test("CySEC_License(EN),Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", 
      async ({page}) => {   
     await expect(page).toHaveURL("/en-eu/trading-platforms/mt4");        
-     await mT4Page.clickCreateYourAccountButtonFromReady();                       
-     await handleModalWindowSignUp(page);
+     await mT4Page.clickCreateYourAccountButtonFromReady();                          
  });
 
 });  
