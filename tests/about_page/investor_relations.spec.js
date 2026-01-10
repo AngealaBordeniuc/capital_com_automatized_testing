@@ -1,4 +1,5 @@
 import {test, expect} from '@playwright/test'
+import { handleCookiesPopUp, handleStayOnSitePopUp } from '../../helpers/pop_ups';
 import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
 import { InvestorRelationsPage } from '../../pages/aboutSection/InvestorRelationsPage';
 
@@ -8,6 +9,9 @@ let investorRelationsPage;
 test.describe('Is Capital.com safe?, FCA license', () => {
     test.beforeEach(async ({page}) =>{
         await page.goto("https://capital.com/en-gb");                
+        await page.waitForLoadState('domcontentloaded');
+        await handleStayOnSitePopUp(page);
+        await handleCookiesPopUp(page);
         aboutSectionMenu = new AboutSectionMenu(page)
         investorRelationsPage = new InvestorRelationsPage(page)
     })

@@ -1,15 +1,11 @@
 import { expect } from "allure-playwright";
-import { handleCookiesPopUp, handleStayOnSitePopUp } from "../../helpers/pop_ups";
 
 export class AboutSectionMenu {
   constructor(page) {
     this.page = page;
   }
 
-  async openAboutSubMenu(linkName) {   
-    await this.page.waitForTimeout(2000);
-    await handleStayOnSitePopUp(this.page);
-    await handleCookiesPopUp(this.page);    
+  async openAboutSubMenu(linkName) {      
     await this.page.waitForSelector("#header", {
       state: "visible",
       timeout: 10000,

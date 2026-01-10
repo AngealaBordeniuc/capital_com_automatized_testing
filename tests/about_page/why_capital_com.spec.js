@@ -11,11 +11,11 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
     test.beforeEach(async({page})=> {
          await page.goto("/en-gb");                       
          await page.waitForLoadState('domcontentloaded');
+          await handleStayOnSitePopUp(page);
+          await handleCookiesPopUp(page);
           aboutSectionMenu = new AboutSectionMenu(page);
           whyCapitalComPage = new WhyCapitalComPage(page);
-
            await aboutSectionMenu.openWhyCapitalComPage();  
-
     })
 
     test('FCA_license,Sign Up Form is opened on "Why Capital.com" page after clicking "Create account" button, unauthorized user', async({page}) => {      
@@ -45,7 +45,9 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
 test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
     test.beforeEach(async({page})=> {
          await page.goto("/en-ae");
+          await page.waitForLoadState('domcontentloaded');
          await handleStayOnSitePopUp(page)                  
+          await handleCookiesPopUp(page)
           aboutSectionMenu = new AboutSectionMenu(page);
           whyCapitalComPage = new WhyCapitalComPage(page);
 

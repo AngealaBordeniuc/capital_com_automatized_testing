@@ -1,4 +1,5 @@
 import {test, expect} from '@playwright/test'
+import { handleCookiesPopUp, handleStayOnSitePopUp } from '../../helpers/pop_ups';
 import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
 import { ContactUsPage } from '../../pages/aboutSection/ContactUsPage';
 
@@ -8,6 +9,9 @@ let contactUsPage;
 test.describe("Smoke_FCA_license(EN), Contact Us", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/en-gb"); 
+    await page.waitForLoadState('domcontentloaded');
+    await handleStayOnSitePopUp(page);
+    await handleCookiesPopUp(page);
     aboutSectionMenu = new AboutSectionMenu(page);
     contactUsPage = new ContactUsPage(page);
     await aboutSectionMenu.openContactUsPage();
@@ -24,6 +28,9 @@ test.describe("Smoke_FCA_license(EN), Contact Us", () => {
     test.describe("Smoke_SCA_license(EN), Contact Us", () => {
       test.beforeEach(async ({ page }) => {
         await page.goto("/en-ae");      
+        await page.waitForLoadState('domcontentloaded');
+        await handleStayOnSitePopUp(page);
+        await handleCookiesPopUp(page);
         aboutSectionMenu = new AboutSectionMenu(page);
         contactUsPage = new ContactUsPage(page);
          await aboutSectionMenu.openContactUsPage();
