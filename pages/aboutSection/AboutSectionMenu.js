@@ -5,7 +5,7 @@ export class AboutSectionMenu {
     this.page = page;
   }
 
-  async openAboutSubMenu(linkName) {      
+  async openAboutSubMenu(linkName) {
     await this.page.waitForSelector("#header", {
       state: "visible",
       timeout: 10000,
@@ -17,12 +17,9 @@ export class AboutSectionMenu {
     await aboutMenu.hover({ force: true, timeout: 5000 });
 
     const subLink = header.getByRole("link", { name: linkName });
-    await expect(subLink).toBeVisible({ timeout: 10000 });
-
-      await Promise.all([
-        this.page.waitForNavigation({ waitUntil: "domcontentloaded" }),
-        subLink.click(),
-      ]);
+    await expect(subLink).toBeVisible({ timeout: 10000 });    
+    await subLink.click();    
+    await this.page.waitForLoadState("domcontentloaded");
   }
 
   async openWhyCapitalComPage() {
