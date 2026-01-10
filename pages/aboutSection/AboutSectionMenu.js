@@ -6,10 +6,10 @@ export class AboutSectionMenu {
     this.page = page;
   }
 
-  async openAboutSubMenu(linkName) {    
+  async openAboutSubMenu(linkName) {   
     await this.page.waitForTimeout(2000);
-    await handleCookiesPopUp(this.page);
     await handleStayOnSitePopUp(this.page);
+    await handleCookiesPopUp(this.page);    
     await this.page.waitForSelector("#header", {
       state: "visible",
       timeout: 10000,

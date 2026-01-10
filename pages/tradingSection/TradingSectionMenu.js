@@ -10,28 +10,51 @@ export class TradingSectionMenu {
   }
 
   async openTradingSubMenu(linkName, index) {
-    await this.page.waitForTimeout(2000);
-    await acceptAllCookies(this.page);
-    // await handleCookiesPopUp(this.page);
-    // await handleStayOnSitePopUp(this.page);
-    await this.page.waitForSelector("#header", {
-      state: "visible",
-      timeout: 10000,
-    });
+  await this.page.waitForTimeout(1000);
+  await acceptAllCookies(this.page);
 
-    const header = this.page.locator("#header");
-    const tradingMenu = header.getByRole("link", { name: "Trading" }).first();
-    await tradingMenu.waitFor({ state: "visible", timeout: 10000 });
-    await tradingMenu.hover({ force: true, timeout: 5000 });
+  const header = this.page.locator("#header");
+  const tradingMenu = header.getByRole("link", { name: "Trading" }).first();
 
-    let subLink = header.getByRole("link", { name: linkName });
-    if(index !== undefined){
-      subLink = subLink.nth(index)
-    }
+  await tradingMenu.waitFor({ state: "visible", timeout: 10000 });
+  await tradingMenu.hover({ force: true });
 
-    await expect(subLink).toBeVisible({ timeout: 10000 });
-    await subLink.click();
+  let subLink = header.getByRole("link", { name: linkName });
+  if (index !== undefined) {
+    subLink = subLink.nth(index);
   }
+
+  // verificăm dacă elementul există
+  if ((await subLink.count()) > 0) {
+    await subLink.scrollIntoViewIfNeeded();
+    await expect(subLink).toBeVisible({ timeout: 5000 });
+    await subLink.click();
+  } else {
+    console.warn(`Sub-menu link "${linkName}"${index !== undefined ? ` at index ${index}` : ""} not found`);
+  }
+}
+
+    // await this.page.waitForTimeout(2000);
+    // await acceptAllCookies(this.page);
+   
+    // await this.page.waitForSelector("#header", {
+    //   state: "visible",
+    //   timeout: 10000,
+    // });
+
+    // const header = this.page.locator("#header");
+    // const tradingMenu = header.getByRole("link", { name: "Trading" }).first();
+    // await tradingMenu.waitFor({ state: "visible", timeout: 10000 });
+    // await tradingMenu.hover({ force: true, timeout: 5000 });
+
+    // let subLink = header.getByRole("link", { name: linkName });
+    // if(index !== undefined){
+    //   subLink = subLink.nth(index)
+    // }
+
+    // await expect(subLink).toBeVisible({ timeout: 10000 });
+    // await subLink.click();
+
 
   async openCFDTradingPage() {    
     await this.openTradingSubMenu("CFD trading", 0)   

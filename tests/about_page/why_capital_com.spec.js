@@ -9,9 +9,7 @@ let whyCapitalComPage;
 
 test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
     test.beforeEach(async({page})=> {
-         await page.goto("/en-gb");
-         await handleStayOnSitePopUp(page) 
-         await handleCookiesPopUp(page)                 
+         await page.goto("/en-gb");                       
           aboutSectionMenu = new AboutSectionMenu(page);
           whyCapitalComPage = new WhyCapitalComPage(page);
 
