@@ -10,6 +10,7 @@ let whyCapitalComPage;
 test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
     test.beforeEach(async({page})=> {
          await page.goto("/en-gb");                       
+         await page.waitForLoadState('domcontentloaded');
           aboutSectionMenu = new AboutSectionMenu(page);
           whyCapitalComPage = new WhyCapitalComPage(page);
 

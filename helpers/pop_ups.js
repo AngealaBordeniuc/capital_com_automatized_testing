@@ -1,6 +1,7 @@
 import { expect } from '@playwright/test'
 
 export const handleCookiesPopUp = async (page) => {
+  if (page.isClosed()) return;
   const closeBtn = page.locator('button[aria-label="Close"]');
 
   // verificăm dacă există butonul fără expect
@@ -19,16 +20,14 @@ export const handleCookiesPopUp = async (page) => {
   }
 };
 
-
+// helpers/pop_ups.js
 export const handleStayOnSitePopUp = async (page) => {
+  if (page.isClosed()) return;
   const stayOnSiteBtn = page.getByText("Stay on this site");
-
-  // verificăm dacă există butonul, fără expect
   if ((await stayOnSiteBtn.count()) > 0) {
     try {
       if (await stayOnSiteBtn.isVisible({ timeout: 3000 })) {
         await stayOnSiteBtn.click();
-        // așteptăm să dispară
         await stayOnSiteBtn.waitFor({ state: "detached", timeout: 3000 });
         console.log('"Stay on this site" pop-up clicked');
       }
@@ -38,13 +37,35 @@ export const handleStayOnSitePopUp = async (page) => {
   } else {
     console.log('No "Stay on this site" pop-up displayed!');
   }
-
-  // tratăm orice dialog nativ (alert / confirm) care poate apărea
   page.once("dialog", async (dialog) => {
-    console.log(`Dialog detected: ${dialog.message()}`);
     await dialog.accept();
   });
 };
+// export const handleStayOnSitePopUp = async (page) => {
+//   const stayOnSiteBtn = page.getByText("Stay on this site");
+
+//   // verificăm dacă există butonul, fără expect
+//   if ((await stayOnSiteBtn.count()) > 0) {
+//     try {
+//       if (await stayOnSiteBtn.isVisible({ timeout: 3000 })) {
+//         await stayOnSiteBtn.click();
+//         // așteptăm să dispară
+//         await stayOnSiteBtn.waitFor({ state: "detached", timeout: 3000 });
+//         console.log('"Stay on this site" pop-up clicked');
+//       }
+//     } catch {
+//       console.warn('"Stay on this site" pop-up found but not visible');
+//     }
+//   } else {
+//     console.log('No "Stay on this site" pop-up displayed!');
+//   }
+
+//   // tratăm orice dialog nativ (alert / confirm) care poate apărea
+//   page.once("dialog", async (dialog) => {
+//     console.log(`Dialog detected: ${dialog.message()}`);
+//     await dialog.accept();
+//   });
+// };
 
 
 
