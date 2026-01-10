@@ -1,5 +1,5 @@
 import{test, expect} from '@playwright/test'
-import { handleModalWindowSignUp, handleStayOnSitePopUp, handleCookiesPopUp } from '../../helpers/pop_ups';
+import { handleStayOnSitePopUp, handleCookiesPopUp } from '../../helpers/pop_ups';
 import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
 import { WhyCapitalComPage } from '../../pages/aboutSection/WhyCapitalComPage';
 
@@ -21,15 +21,13 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
     test('FCA_license,Sign Up Form is opened on "Why Capital.com" page after clicking "Create account" button, unauthorized user', async({page}) => {      
                   
       await expect(page).toHaveURL("/en-gb/why-capital");
-      await whyCapitalComPage.clickCreateAccountButton();
-      await handleModalWindowSignUp(page);
+      await whyCapitalComPage.clickCreateAccountButton();      
     })
 
     test('FCA_License, Sign Up Form is opened on "Why Capital.com" page after clicking "Try demo account" button, unauthorized user', async ({page}) => {
               
          await expect(page).toHaveURL("/en-gb/why-capital");
-         await whyCapitalComPage.clickTryDemoAccountButton()        
-         await handleModalWindowSignUp(page)
+         await whyCapitalComPage.clickTryDemoAccountButton()                
     })
 
      test('FCA_License, Sign Up Form is opened on "Why Capital.com" page after clicking "Create your account" button, unauthorized user', async ({
@@ -37,8 +35,7 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
      }) => {
       
        await expect(page).toHaveURL("/en-gb/why-capital");       
-       await whyCapitalComPage.clickCreateYourAccountButtonFromReady()      
-       await handleModalWindowSignUp(page)         
+       await whyCapitalComPage.clickCreateYourAccountButtonFromReady()                   
      });
 })
 
@@ -50,7 +47,6 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
           await handleCookiesPopUp(page)
           aboutSectionMenu = new AboutSectionMenu(page);
           whyCapitalComPage = new WhyCapitalComPage(page);
-
             await aboutSectionMenu.openWhyCapitalComPage();
     })
 
@@ -59,8 +55,7 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
      }) => {
       
        await expect(page).toHaveURL("/en-ae/why-capital");
-       await whyCapitalComPage.clickCreateAccountButton();
-       await handleModalWindowSignUp(page);
+       await whyCapitalComPage.clickCreateAccountButton();    
      });
 
      
@@ -70,7 +65,6 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
       
       await expect(page).toHaveURL("/en-ae/why-capital");
       await whyCapitalComPage.clickTryDemoAccountButton();
-      await handleModalWindowSignUp(page);
     });
 
     test('SCA_License(EN), Sign Up Form is opened on "Why Capital.com" page after clicking "Create your account" button, unauthorized user', async ({
@@ -78,8 +72,7 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
     }) => {
     
       await expect(page).toHaveURL("/en-ae/why-capital");
-      await whyCapitalComPage.clickCreateYourAccountButtonFromReady();
-      await handleModalWindowSignUp(page);
+      await whyCapitalComPage.clickCreateYourAccountButtonFromReady();     
     });
 
   })

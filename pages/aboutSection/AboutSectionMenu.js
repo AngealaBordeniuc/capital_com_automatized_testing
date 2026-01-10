@@ -18,7 +18,11 @@ export class AboutSectionMenu {
 
     const subLink = header.getByRole("link", { name: linkName });
     await expect(subLink).toBeVisible({ timeout: 10000 });
-    await subLink.click();
+
+      await Promise.all([
+        this.page.waitForNavigation({ waitUntil: "domcontentloaded" }),
+        subLink.click(),
+      ]);
   }
 
   async openWhyCapitalComPage() {

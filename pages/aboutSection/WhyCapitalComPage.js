@@ -11,6 +11,7 @@ export class WhyCapitalComPage {
 
   async clickCreateAccountButton() {
     await this.page.getByRole("button", { name: "Create account" }).click();
+    await handleModalWindowSignUp(this.page);
   }
 
   async clickTryDemoAccountButton() {
@@ -19,6 +20,7 @@ export class WhyCapitalComPage {
     });
     await tryDemoAccountBtn.waitFor({ state: "visible", timeout: 10000 });
     await tryDemoAccountBtn.click();
+    await handleModalWindowSignUp(this.page);
   }
 
   async clickCreateYourAccountButtonFromReady() {
@@ -27,5 +29,6 @@ export class WhyCapitalComPage {
     await handleCookiesPopUp(this.page);
     await handleStayOnSitePopUp(this.page);
     await bannerBtnReady.click({ force: true });
+    await handleModalWindowSignUp(this.page);
   }
 }
