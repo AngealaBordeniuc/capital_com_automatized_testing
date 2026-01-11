@@ -1,5 +1,4 @@
 import {test, expect} from '@playwright/test'
-import { handleCookiesPopUp, handleStayOnSitePopUp } from '../../helpers/pop_ups';
 import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
 import { OurOfficesPage } from '../../pages/aboutSection/OurOfficesPage';
 
@@ -8,9 +7,7 @@ let ourOfficesPage;
 
 test.describe("Smoke_FCA_license(EN),Is Capital.com safe?", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("/en-gb", {waitUntil: "domcontentloaded"});      
-    await handleStayOnSitePopUp(page);
-    await handleCookiesPopUp(page);
+    await page.goto("/en-gb", {waitUntil: "domcontentloaded"});          
     aboutSectionMenu = new AboutSectionMenu(page);
     ourOfficesPage = new OurOfficesPage(page);
     await aboutSectionMenu.openOurOfficesPage();
@@ -29,9 +26,7 @@ test.describe("Smoke_FCA_license(EN),Is Capital.com safe?", () => {
 
 test.describe("Smoke_SCA_license(EN),Is Capital.com safe?", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("/en-ae", {waitUntil: "domcontentloaded"});    
-    await handleStayOnSitePopUp(page);
-    await handleCookiesPopUp(page);
+    await page.goto("/en-ae", {waitUntil: "domcontentloaded"});       
     aboutSectionMenu = new AboutSectionMenu(page);
     ourOfficesPage = new OurOfficesPage(page);
      await aboutSectionMenu.openOurOfficesPage();

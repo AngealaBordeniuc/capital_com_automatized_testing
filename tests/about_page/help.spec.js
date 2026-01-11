@@ -1,5 +1,4 @@
 import {test, expect} from '@playwright/test'
-import { handleCookiesPopUp, handleStayOnSitePopUp } from '../../helpers/pop_ups';
 import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
 import { HelpPage } from '../../pages/aboutSection/HelpPage';
 
@@ -9,9 +8,7 @@ let helpPage;
 test.describe("Smoke_FCA_license(EN), Help", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/en-gb");
-    await page.waitForLoadState('domcontentloaded');
-    await handleStayOnSitePopUp(page);
-    await handleCookiesPopUp(page);
+    await page.waitForLoadState('domcontentloaded');  
     aboutSectionMenu = new AboutSectionMenu(page);
     helpPage = new HelpPage(page);
       await aboutSectionMenu.openHelpPage();
@@ -27,12 +24,10 @@ test.describe("Smoke_FCA_license(EN), Help", () => {
 
     test.describe("Smoke_SCA_License(EN), Help", () => {
       test.beforeEach(async ({ page }) => {
-        await page.goto("/en-ae", {waitUntil: "domcontentloaded"});               
-        await handleStayOnSitePopUp(page);
-        await handleCookiesPopUp(page);
+        await page.goto("/en-ae", {waitUntil: "domcontentloaded"});                     
         aboutSectionMenu = new AboutSectionMenu(page);
         helpPage = new HelpPage(page);
-            await aboutSectionMenu.openHelpPage();
+        await aboutSectionMenu.openHelpPage();
       });
 
       test("Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", async ({
