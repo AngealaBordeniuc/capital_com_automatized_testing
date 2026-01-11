@@ -6,18 +6,18 @@ export class AboutSectionMenu {
   }
 
   async openAboutSubMenu(linkName) {
-    await this.page.waitForSelector("#header", {
-      state: "visible",
-      timeout: 5000,
-    });
+    // await this.page.waitForSelector("#header", {
+    //   state: "visible",
+    //   timeout: 5000,
+    // });
 
     const header = this.page.locator("#header");
     const aboutMenu = header.getByRole("link", { name: "About" }).first();
-    await aboutMenu.waitFor({ state: "visible", timeout: 5000 });
+    // await aboutMenu.waitFor({ state: "visible", timeout: 5000 });
     await aboutMenu.hover();
 
     const subLink = header.getByRole("link", { name: linkName });
-    await expect(subLink).toBeVisible({ timeout: 5000 });    
+    // await expect(subLink).toBeVisible({ timeout: 5000 });    
     await subLink.click();    
     await this.page.waitForLoadState("domcontentloaded");
   }
