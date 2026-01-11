@@ -27,8 +27,7 @@ test.describe("Smoke_FCA_license(EN), Contact Us", () => {
 
     test.describe("Smoke_SCA_license(EN), Contact Us", () => {
       test.beforeEach(async ({ page }) => {
-        await page.goto("/en-ae");      
-        await page.waitForLoadState('domcontentloaded');
+        await page.goto("/en-ae", {waitUntil: "domcontentloaded"});             
         await handleStayOnSitePopUp(page);
         await handleCookiesPopUp(page);
         aboutSectionMenu = new AboutSectionMenu(page);

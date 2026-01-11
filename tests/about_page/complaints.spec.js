@@ -8,8 +8,7 @@ let complaintsPage;
 
 test.describe('Is Capital.com safe?, FCA license', () => {
     test.beforeEach(async ({page}) =>{
-        await page.goto("https://capital.com/en-gb");   
-        await page.waitForLoadState('domcontentloaded');
+        await page.goto("https://capital.com/en-gb", {waitUntil: "domcontentloaded"});           
         await handleStayOnSitePopUp(page);
         await handleCookiesPopUp(page);
 
