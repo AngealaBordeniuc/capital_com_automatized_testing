@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 20.18.0   # schimbat de la lts/* la versiunea ta locală
 
       - name: Install dependencies
         run: npm ci
@@ -38,64 +38,33 @@ jobs:
           retention-days: 30
 
 
-  # playwright-main:
+  # playground-main:
   #   name: Run Main page tests (Playwright)
   #   runs-on: ubuntu-latest
-
+  #
   #   steps:
   #     - name: Checkout repository
   #       uses: actions/checkout@v4
-
+  #
   #     - name: Setup Node.js
   #       uses: actions/setup-node@v4
   #       with:
-  #         node-version: lts/*
-
+  #         node-version: 20.18.0
+  #
   #     - name: Install dependencies
   #       run: npm ci
-
+  #
   #     - name: Install Playwright Browsers
   #       run: npx playwright install --with-deps
-
+  #
   #     - name: Run Main tests with Allure
   #       run: |
   #         npm run test:main -- --reporter=list,allure-playwright
-
+  #
   #     - name: Upload Allure results (Main)
   #       uses: actions/upload-artifact@v4
   #       with:
   #         name: allure-results-main
-  #         path: allure-results
-  #         retention-days: 30
-
-
-  # playwright-trading:
-  #   name: Run Trading tests (Playwright)
-  #   runs-on: ubuntu-latest
-
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v4
-
-  #     - name: Setup Node.js
-  #       uses: actions/setup-node@v4
-  #       with:
-  #         node-version: lts/*
-
-  #     - name: Install dependencies
-  #       run: npm ci
-
-  #     - name: Install Playwright Browsers
-  #       run: npx playwright install --with-deps
-
-  #     - name: Run Trading tests with Allure
-  #       run: |
-  #         npm run test:trading -- --reporter=list,allure-playwright
-
-  #     - name: Upload Allure results (Trading)
-  #       uses: actions/upload-artifact@v4
-  #       with:
-  #         name: allure-results-trading
   #         path: allure-results
   #         retention-days: 30
 
