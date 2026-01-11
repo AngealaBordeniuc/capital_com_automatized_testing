@@ -12,7 +12,7 @@ export const handleCookiesPopUp = async (page) => {
     });
 
     await closeBtn.click();
-    await closeBtn.waitFor({ state: "detached", timeout: 3000 });
+    await closeBtn.waitFor({ state: "detached", timeout: 1000 });
   } catch {
     // no cookies popup → OK
   }
