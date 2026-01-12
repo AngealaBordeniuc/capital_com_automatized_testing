@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.18.0   # schimbat de la lts/* la versiunea ta locală
+          node-version: 20.18.0
 
       - name: Install dependencies
         run: npm ci
@@ -27,6 +27,8 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run About tests with Allure
+        env:
+          CI: true
         run: |
           npm run test:about -- --reporter=list,allure-playwright
 
@@ -36,6 +38,7 @@ jobs:
           name: allure-results-about
           path: allure-results
           retention-days: 30
+
 
 
   # playground-main:
