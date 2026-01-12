@@ -3,7 +3,7 @@
     "playwright": "^1.57.0"
   },
   "devDependencies": {
-    "@playwright/test": "1.42.1",
+    "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.1",
     "allure-playwright": "^3.4.3"
   },
@@ -13,6 +13,5 @@
     "test:main": "playwright test tests/main_page",
     "test:about": "playwright test tests/about_page",
     "test:trading": "playwright test tests/trading_page"
-  
   }
 }
