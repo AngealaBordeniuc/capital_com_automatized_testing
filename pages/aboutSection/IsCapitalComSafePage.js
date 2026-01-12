@@ -1,4 +1,4 @@
-import { handleModalWindowSignUp } from "../../helpers/pop_ups";
+import { handleModalWindowSignUp, handleOptionalPopups } from "../../helpers/pop_ups";
 
 export class IsCapitalComSafePage{
     constructor(page){
@@ -6,6 +6,7 @@ export class IsCapitalComSafePage{
     }
 
     async clickOpenAnAccountButton(){
+        await handleOptionalPopups(this.page)
        const openAccountBtn = this.page.getByRole("button", { name: "Open an account" });
        await openAccountBtn.waitFor({ state: "visible", timeout: 10000 });
          await openAccountBtn.click();

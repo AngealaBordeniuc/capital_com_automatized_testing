@@ -1,5 +1,25 @@
 import { expect } from '@playwright/test'
 
+export const  handleOptionalPopups = async(page) => {
+  try {
+    await handleCookiesPopUp(page);
+  } catch (e) {
+    // dacă nu există popup, ignorăm
+  }
+
+  try {
+    await handleStayOnSitePopUp(page);
+  } catch (e) {
+    // dacă nu există popup, ignorăm
+  }
+  try {
+    await acceptAllCookies(page); // popup cookies
+  } catch (e) {
+    // dacă nu există, ignorăm
+  }
+
+}
+
 export const handleCookiesPopUp = async (page) => {
   if (page.isClosed()) return;
 
@@ -38,6 +58,7 @@ export const handleModalWindowSignUp = async (page) => {
   if ((await modal.count()) === 0) return;  
   await expect(modal).toBeVisible();
 };
+
 
 
 

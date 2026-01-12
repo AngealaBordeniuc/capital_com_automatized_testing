@@ -1,4 +1,4 @@
-import {
+import {handleOptionalPopups,
   handleModalWindowSignUp,
 } from "../../helpers/pop_ups";
 
@@ -8,11 +8,13 @@ export class WhyCapitalComPage {
   }
 
   async clickCreateAccountButton() {
+    await handleOptionalPopups(this.page)
     await this.page.getByRole("button", { name: "Create account" }).click();
     await handleModalWindowSignUp(this.page);
   }
 
   async clickTryDemoAccountButton() {
+    await handleOptionalPopups(this.page)
     const tryDemoAccountBtn = this.page.getByRole("button", {
       name: "Try demo account",
     });
@@ -22,6 +24,7 @@ export class WhyCapitalComPage {
   }
 
   async clickCreateYourAccountButtonFromReady() {
+    await handleOptionalPopups(this.page)
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
     await bannerBtnReady.scrollIntoViewIfNeeded();
     await bannerBtnReady.click({ force: true });

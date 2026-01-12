@@ -1,5 +1,5 @@
 import { expect } from "allure-playwright";
-import { handleCookiesPopUp, handleStayOnSitePopUp } from "../../helpers/pop_ups";
+import {handleOptionalPopups, handleCookiesPopUp, handleStayOnSitePopUp } from "../../helpers/pop_ups";
 
 export class AboutSectionMenu {
   constructor(page) {
@@ -7,6 +7,7 @@ export class AboutSectionMenu {
   }
 
   async openAboutSubMenu(linkName) {
+    // await handleOptionalPopups(this.page)
     // Hover pe About ca să deschidem submeniul
     const aboutMenu = this.page.getByRole("link", { name: "About" }).first();
     await aboutMenu.hover();
