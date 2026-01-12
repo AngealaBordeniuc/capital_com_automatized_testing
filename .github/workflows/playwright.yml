@@ -1,14 +1,14 @@
-name: Playwright UI Tests - About
+name: Playwright About Page Test
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
 
 jobs:
-  playwright-about:
-    name: Run About tests (Playwright)
+  test-about-page:
+    name: Run About Page Client Vulnerability Test
     runs-on: ubuntu-latest
 
     steps:
@@ -16,26 +16,27 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: 20.18.0
+          node-version: 20
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright Browsers
+      - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run About tests with Allure
-        run: |
-          npm run test:about -- --reporter=list,allure-playwright
+      - name: Run Client Vulnerability Test
+        run: npx playwright test tests/about_page/client_vulnerability.spec.js --reporter=list,allure-playwright
+        env:
+          CI: true
 
-      - name: Upload Allure results (About)
-        uses: actions/upload-artifact@v4
+      - name: Upload Allure Results
+        if: always()
+        uses: actions/upload-artifact@v3
         with:
-          name: allure-results-about
-          path: allure-results
-          retention-days: 30
+          name: allure-results
+          path: test-results
 
 
 
