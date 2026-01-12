@@ -7,7 +7,7 @@ export class InvestorRelationsPage {
     this.page = page;
   }
   async clickCreateYourAccountButtonFromReady() {
-       await handleOptionalPopups(this.page);
+      //  await handleOptionalPopups(this.page);
      const bannerBtnReady = this.page.locator(
        '[data-type="banner_with_steps"]'
      );
