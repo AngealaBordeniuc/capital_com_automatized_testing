@@ -1,4 +1,4 @@
-import{test, expect} from '@playwright/test'
+import{test, expect} from "@playwright/test"
 import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
 import { WhyCapitalComPage } from '../../pages/aboutSection/WhyCapitalComPage';
 

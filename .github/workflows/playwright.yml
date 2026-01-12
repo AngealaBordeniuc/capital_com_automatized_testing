@@ -1,4 +1,4 @@
-name: Playwright UI Tests
+name: Playwright Client Vulnerability Test
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
     branches: [ main, master ]
 
 jobs:
-  playwright-about:
-    name: Run About tests (Playwright)
+  client-vulnerability-test:
+    name: Run Client Vulnerability test (Playwright)
     runs-on: ubuntu-latest
 
     steps:
@@ -26,18 +26,17 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run About tests with Allure
-        env:
-          CI: true
+      - name: Run Client Vulnerability test with Allure
         run: |
-          npm run test:about -- --reporter=list,allure-playwright
+          npx playwright test tests/about_page/client_vulnerability.spec.js --reporter=list,allure-playwright
 
-      - name: Upload Allure results (About)
+      - name: Upload Allure results (Client Vulnerability)
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-about
+          name: allure-results-client-vulnerability
           path: allure-results
           retention-days: 30
+
 
 
 

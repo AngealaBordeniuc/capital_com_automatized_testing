@@ -57,29 +57,38 @@ export class AboutSectionMenu {
   
   
   async openClientVulnerabilityPage() {
-      await this.openAboutSubMenu("Client vulnerability");
+    // await this.openAboutSubMenu("Client vulnerability");
 
-    // const header = this.page.locator("#header");
-    // const aboutMenu = this.page.getByRole("link", { name: "About" }).first();
-    // await this.page.waitForTimeout(1000);
-    // await handleCookiesPopUp(this.page);
-    // await handleStayOnSitePopUp(this.page);
+    //  const link = this.page
+    //    .locator('a[href="/en-gb/help/client-vulnerability"]')
+    //    .first();
 
-    // await expect(aboutMenu).toBeVisible({ timeout: 5000 });
+    //  await link.waitFor({ state: "attached", timeout: 10000 });
 
-    // await aboutMenu.hover();
+    //  // click JS-level (stabil în CI)
+    //  await this.page.evaluate((el) => el.click(), await link.elementHandle());
 
-    // const subLink = header.getByRole("link", { name: "Client vulnerability" });
+    //  await this.page.waitForLoadState("domcontentloaded");
 
-    // // 4️⃣ Așteptăm să fie vizibil efectiv
-    // await expect(subLink).toBeVisible({ timeout: 5000 });
+    // caută link după text, nu după href fix
 
-    // await expect(subLink).toBeEnabled();
-    // await subLink.waitFor({ state: "attached" });
+    
+    const link = this.page
+      .getByRole("link", { name: "Client vulnerability" })
+      .first();
 
-    // // 5️⃣ Click pe linkul vizibil
-    // await subLink.click({ force: true });
+    // așteaptă să fie în DOM
+    await link.waitFor({ state: "attached", timeout: 10000 });
 
-    // await this.page.waitForLoadState("domcontentloaded");
+    // click JS-level (stabil în CI, headless)
+    const handle = await link.elementHandle();
+    if (handle) {
+      await this.page.evaluate((el) => el.click(), handle);
+    } else {
+      throw new Error("Linkul Client vulnerability nu a fost găsit!");
+    }
+
+    // așteaptă să se încarce pagina
+    await this.page.waitForLoadState("domcontentloaded");
   }
 }
