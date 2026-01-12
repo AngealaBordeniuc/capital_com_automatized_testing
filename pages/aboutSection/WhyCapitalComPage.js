@@ -24,7 +24,7 @@ export class WhyCapitalComPage {
   }
 
   async clickCreateYourAccountButtonFromReady() {
-        await handleOptionalPopups(this.page);    
+    //  await handleOptionalPopups(this.page);    
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
     await bannerBtnReady.waitFor({ state: "attached", timeout: 40000 });
     await bannerBtnReady.scrollIntoViewIfNeeded();

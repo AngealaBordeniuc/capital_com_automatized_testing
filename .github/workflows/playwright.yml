@@ -1,4 +1,4 @@
-name: Playwright – About Our Offices
+name: Playwright – About Why Capital Com
 on:
   push:
     branches: [ main ]
@@ -26,7 +26,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Help tests
-        run: npx playwright test tests/about_page/our_offices.spec.js  --retries=2
+        run: npx playwright test tests/about_page/why_capital_com.spec.js  --retries=2
 
 
 
