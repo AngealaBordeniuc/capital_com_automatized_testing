@@ -39,6 +39,7 @@ test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
 
 test.describe('Smoke_FCA_license(EN), Why Capital.com?', ( ) => {
     test.beforeEach(async({page})=> {
+      await page.pause()
          await page.goto("/en-ae", {waitUntil: "domcontentloaded"});                  
 
           aboutSectionMenu = new AboutSectionMenu(page);

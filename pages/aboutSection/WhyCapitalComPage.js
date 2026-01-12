@@ -8,13 +8,13 @@ export class WhyCapitalComPage {
   }
 
   async clickCreateAccountButton() {
-    await handleOptionalPopups(this.page)
+    // await handleOptionalPopups(this.page)
     await this.page.getByRole("button", { name: "Create account" }).click();
     await handleModalWindowSignUp(this.page);
   }
 
   async clickTryDemoAccountButton() {
-    await handleOptionalPopups(this.page)
+    // await handleOptionalPopups(this.page)
     const tryDemoAccountBtn = this.page.getByRole("button", {
       name: "Try demo account",
     });
