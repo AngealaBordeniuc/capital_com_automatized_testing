@@ -14,7 +14,7 @@ export class AboutSectionMenu {
       await aboutMenu.hover({ force: true, timeout: 1000 });
 
       // așteaptă eventualele popups
-      await handleOptionalPopups(this.page);
+      // await handleOptionalPopups(this.page);
 
       const subLink = header.getByRole("link", { name: linkName }).first();
 

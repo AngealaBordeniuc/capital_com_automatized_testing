@@ -18,16 +18,17 @@ export class WhyCapitalComPage {
     const tryDemoAccountBtn = this.page.getByRole("button", {
       name: "Try demo account",
     });
-    await tryDemoAccountBtn.waitFor({ state: "visible", timeout: 10000 });
+    await tryDemoAccountBtn.waitFor({ state: "visible", timeout: 40000 });
     await tryDemoAccountBtn.click();
     await handleModalWindowSignUp(this.page);
   }
 
   async clickCreateYourAccountButtonFromReady() {
-    
+        await handleOptionalPopups(this.page);    
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
+    await bannerBtnReady.waitFor({ state: "attached", timeout: 40000 });
     await bannerBtnReady.scrollIntoViewIfNeeded();
-    await handleOptionalPopups(this.page);
+    await bannerBtnReady.waitFor({ state: "visible", timeout: 40000 });
     await bannerBtnReady.click({ force: true });
     await handleModalWindowSignUp(this.page);
   }

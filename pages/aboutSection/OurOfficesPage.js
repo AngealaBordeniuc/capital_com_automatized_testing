@@ -7,10 +7,14 @@ export class OurOfficesPage {
     this.page = page;
   }
   async clickCreateYourAccountButtonFromReady() {
-    const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
-    await bannerBtnReady.scrollIntoViewIfNeeded(); 
-    await handleOptionalPopups(this.page)
-    await bannerBtnReady.click({ force: true });
-    await handleModalWindowSignUp(this.page)
+     await handleOptionalPopups(this.page);
+     const bannerBtnReady = this.page.locator(
+       '[data-type="banner_with_steps"]'
+     );
+     await bannerBtnReady.waitFor({ state: "attached", timeout: 40000 });
+     await bannerBtnReady.scrollIntoViewIfNeeded();
+     await bannerBtnReady.waitFor({ state: "visible", timeout: 40000 });
+     await bannerBtnReady.click({ force: true });
+     await handleModalWindowSignUp(this.page);
   }
 }
