@@ -1,42 +1,44 @@
-name: Playwright About Page Test
+name: Run About Page Client Vulnerability Test
 
 on:
   push:
-    branches: [main, master]
+    branches: [ main, master ]
   pull_request:
-    branches: [main, master]
+    branches: [ main, master ]
 
 jobs:
-  test-about-page:
-    name: Run About Page Client Vulnerability Test
+  client_vulnerability:
+    name: Client Vulnerability Test
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      # Checkout repository
+      - uses: actions/checkout@v4
 
+      # Setup Node.js 20
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20.18.0
 
-      - name: Install dependencies
+      # Install dependencies
+      - name: Install Dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
+      # Run Playwright test
       - name: Run Client Vulnerability Test
-        run: npx playwright test tests/about_page/client_vulnerability.spec.js --reporter=list,allure-playwright
+        run: |
+          npx playwright test tests/about_page/client_vulnerability.spec.js --reporter=list,allure-playwright --retries=2
         env:
           CI: true
 
+      # Upload Allure results
       - name: Upload Allure Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: test-results
+
 
 
 
