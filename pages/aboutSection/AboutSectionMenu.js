@@ -7,24 +7,30 @@ export class AboutSectionMenu {
   }
 
   async openAboutSubMenu(linkName) {
-    // await handleOptionalPopups(this.page)
-    // Hover pe About ca să deschidem submeniul
-    const aboutMenu = this.page.getByRole("link", { name: "About" }).first();
-    await aboutMenu.hover();
+      const header = this.page.locator("#header");
+      const aboutMenu = this.page.getByRole("link", { name: "About" }).first();
 
-    // Selectăm subLink-ul dorit
-    const subLink = this.page.getByRole("link", { name: linkName }).first();
+      // Hover pe About pentru a deschide submeniul
+      await aboutMenu.hover({ force: true, timeout: 1000 });
 
-    // Click JS-level pentru stabilitate în CI/headless
-    const handle = await subLink.elementHandle();
-    if (handle) {
-      await this.page.evaluate((el) => el.click(), handle);
-    } else {
-      throw new Error(`Linkul "${linkName}" nu a fost găsit!`);
-    }
+      // așteaptă eventualele popups
+      await handleOptionalPopups(this.page);
 
-    // Așteptăm pagina să se încarce
-    await this.page.waitForLoadState("domcontentloaded");
+      const subLink = header.getByRole("link", { name: linkName }).first();
+
+      // așteaptă să fie în DOM
+      await subLink.waitFor({ state: "attached", timeout: 10000 });
+
+      // click JS-level (stabil în CI/headless)
+      const handle = await subLink.elementHandle();
+      if (handle) {
+        await this.page.evaluate((el) => el.click(), handle);
+      } else {
+        throw new Error(`Linkul ${linkName} nu a fost găsit!`);
+      }
+
+      // așteaptă să se încarce pagina complet
+      await this.page.waitForLoadState("domcontentloaded");
 
     // const header = this.page.locator("#header");
     // const aboutMenu = this.page.getByRole("link", { name: "About" }).first();
