@@ -96,7 +96,7 @@ jobs:
 #         with:
 #           github_token: ${{ secrets.GH_PAT }}
 #           publish_dir: ${{ env.ALLURE_DIR }}
-          publish_branch: gh-pages
+          # publish_branch: gh-pages
 
 
 # name: Playwright About Tests with Allure
