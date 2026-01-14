@@ -1,4 +1,4 @@
-name: Help Test
+name: Investor Relations Test
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Client Vulnerability test only
-        run: npx playwright test tests/about_page/help.spec.js
+        run: npx playwright test tests/about_page/investor_relations.spec.js
 
 
 
