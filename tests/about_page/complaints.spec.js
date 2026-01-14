@@ -1,21 +1,57 @@
-import {test, expect} from "@playwright/test"
-import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
-import { ComplaintsPage } from '../../pages/aboutSection/ComplaintsPage';
+// import {test, expect} from "@playwright/test"
+// import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
+// import { ComplaintsPage } from '../../pages/aboutSection/ComplaintsPage';
 
-let aboutSectionMenu;
-let complaintsPage;
+// let aboutSectionMenu;
+// let complaintsPage;
 
-test.describe('Is Capital.com safe?, FCA license', () => {
-    test.beforeEach(async ({page}) =>{
-        await page.goto("https://capital.com/en-gb", {waitUntil: "domcontentloaded"});                
-        aboutSectionMenu = new AboutSectionMenu(page)
-        complaintsPage = new ComplaintsPage(page)
-        await aboutSectionMenu.openComplaintsPage();    
-    })
+// test.describe('Is Capital.com safe?, FCA license', () => {
+//     test.beforeEach(async ({page}) =>{
+//         await page.goto("https://capital.com/en-gb", {waitUntil: "domcontentloaded"});                
+//         aboutSectionMenu = new AboutSectionMenu(page)
+//         complaintsPage = new ComplaintsPage(page)
+//         await aboutSectionMenu.openComplaintsPage();    
+//     })
 
-    test('Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user', async ({page}) => {     
-      await expect(page).toHaveURL('https://capital.com/en-gb/help/complaints');                
-      await complaintsPage.clickCreateYourAccountButtonFromReady()       
-    })
+//     test('Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user', async ({page}) => {     
+//       await expect(page).toHaveURL('https://capital.com/en-gb/help/complaints');                
+//       await complaintsPage.clickCreateYourAccountButtonFromReady()       
+//     })
 
-})
+// })
+
+import { test, expect } from "@playwright/test";
+import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
+import { ComplaintsPage } from "../../pages/aboutSection/ComplaintsPage";
+import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { licenses } from "../../test-data/licenses";
+
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU"];
+
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
+     if (!license.aboutSubmenus.includes("COMPLAINTS")) return;
+
+    test(`${license.name} ${lang} – Complaints`, async ({ page }) => {
+      const path = license.paths[lang];
+
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+
+      const aboutMenu = new AboutSectionMenu(page);
+      const complaintsPage = new ComplaintsPage(page)
+
+      await aboutMenu.openComplaintsPage(
+        aboutMenuTexts.ABOUT[lang],
+        aboutMenuTexts.COMPLAINTS[lang]
+      );
+
+      const expectedPath = `${path}/help/complaints`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await complaintsPage.clickCreateYourAccountButtonFromReady()
+    });
+  });
+});
