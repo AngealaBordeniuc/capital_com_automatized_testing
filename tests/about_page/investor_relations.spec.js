@@ -1,21 +1,37 @@
-import {test, expect} from "@playwright/test"
-import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
-import { InvestorRelationsPage } from '../../pages/aboutSection/InvestorRelationsPage';
+import { test, expect } from "@playwright/test";
+import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
+import { InvestorRelationsPage} from "../../pages/aboutSection/InvestorRelationsPage";
+import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { licenses } from "../../test-data/licenses";
 
-let aboutSectionMenu;
-let investorRelationsPage;
+const languages = ["EN"];
 
-test.describe('Is Capital.com safe?, FCA license', () => {
-    test.beforeEach(async ({page}) =>{
-        await page.goto("https://capital.com/en-gb", {waitUntil: "domcontentloaded"});                              
-        aboutSectionMenu = new AboutSectionMenu(page)
-        investorRelationsPage = new InvestorRelationsPage(page)
-    })
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    // if (!license.paths[lang]) return;
+    // if (!license.aboutSubmenus.includes("INVESTOR_RELATIONS")) return;
 
-    test('Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user', async ({page}) => {
-      await aboutSectionMenu.openInvestorRelationsPage()   
-      await expect(page).toHaveURL('https://capital.com/en-gb/about-us/investor-relations')           
-      await investorRelationsPage.clickCreateYourAccountButtonFromReady()             
-    })
-    })
+    test(`${license.name} ${lang} – Help`, async ({ page }) => {
+      const path = license.paths[lang];
+
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+
+      const aboutMenu = new AboutSectionMenu(page);
+      const investorRelationsPage = new InvestorRelationsPage(page);
+
+      await aboutMenu.openInvestorRelationsPage(
+        aboutMenuTexts.ABOUT[lang],
+        aboutMenuTexts.INVESTOR_RELATIONS[lang]
+      );
+
+      const expectedPath = `${path}/about-us/investor-relations`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await investorRelationsPage.clickCreateYourAccountButtonFromReady();
+    });
+  });
+});
+
 

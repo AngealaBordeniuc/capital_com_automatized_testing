@@ -1,33 +1,37 @@
-import {test, expect} from "@playwright/test"
-import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
-import { IsCapitalComSafePage } from '../../pages/aboutSection/IsCapitalComSafePage';
+import { test, expect } from "@playwright/test";
+import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
+import { IsCapitalComSafePage} from "../../pages/aboutSection/IsCapitalComSafePage";
+import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { licenses } from "../../test-data/licenses";
 
-let aboutSectionMenu;
-let isCapitalComSafePage;
-test.describe('Smoke_FCA_license(EN), Is Capital.com safe?', () => {
-    test.beforeEach(async ({page}) =>{
-        await page.goto("/en-gb", {waitUntil: "domcontentloaded"});                              
-        aboutSectionMenu = new AboutSectionMenu(page)
-        isCapitalComSafePage = new IsCapitalComSafePage(page)
-         await aboutSectionMenu.openIsCapitalComSafePage();    
-    })
+const languages = ["EN", "FR", "DE", "AR", "RU"];
 
-    test('Sign Up Form is opened after clicking on the [Open an account] button, unauthorized user', async ({page}) => {             
-        await expect(page).toHaveURL('/en-gb/security-measures')        
-        await isCapitalComSafePage.clickOpenAnAccountButton()                                              
-    })
-})
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
+    // if (!license.aboutSubmenus.includes("INVESTOR_RELATIONS")) return;
 
-test.describe('Smoke_SCA_license(EN), Is Capital.com safe?,', () => {
-    test.beforeEach(async ({page}) =>{
-        await page.goto("/en-ae", {waitUntil: "domcontentloaded"});                             
-        aboutSectionMenu = new AboutSectionMenu(page)
-        isCapitalComSafePage = new IsCapitalComSafePage(page)
-          await aboutSectionMenu.openIsCapitalComSafePage(); 
-    })
+    test(`${license.name} ${lang} – Is Capital Com Safe?`, async ({ page }) => {
+      const path = license.paths[lang];
 
-    test('Sign Up Form is opened after clicking on the [Open an account] button, unauthorized user', async ({page}) => {               
-        await expect(page).toHaveURL('/en-ae/security-measures');              
-        await isCapitalComSafePage.clickOpenAnAccountButton()                                               
-    })
-})
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+
+      const aboutMenu = new AboutSectionMenu(page);
+      const isCapitalComSafePage = new IsCapitalComSafePage(page)
+
+      await aboutMenu.openIsCapitalComSafePage(
+        aboutMenuTexts.ABOUT[lang],
+        aboutMenuTexts.IS_CAPITAL_COM_SAFE[lang]
+      );
+
+      const expectedPath = `${path}/security-measures`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await isCapitalComSafePage.clickOpenAnAccountButton();
+    });
+  });
+});
+
+

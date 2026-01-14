@@ -1,39 +1,35 @@
-import {test, expect} from "@playwright/test"
-import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
-import { ContactUsPage } from '../../pages/aboutSection/ContactUsPage';
+import { test, expect } from "@playwright/test";
+import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
+import { ContactUsPage } from "../../pages/aboutSection/ContactUsPage";
+import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { licenses } from "../../test-data/licenses";
 
-let aboutSectionMenu;
-let contactUsPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU"];
 
-test.describe("Smoke_FCA_license(EN), Contact Us", () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("/en-gb"); 
-    await page.waitForLoadState('domcontentloaded');  
-    aboutSectionMenu = new AboutSectionMenu(page);
-    contactUsPage = new ContactUsPage(page);
-    await aboutSectionMenu.openContactUsPage();
-  });
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
+    // if (!license.aboutSubmenus.includes("CONTACT_US")) return;
 
-  test("FCA_License, Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", async ({
-    page,
-  }) => {    
-    await expect(page).toHaveURL("/en-gb/contact-us");
-    await contactUsPage.clickCreateYourAccountButtonFromReady();    
+    test(`${license.name} ${lang} – Contact us`, async ({ page }) => {
+      const path = license.paths[lang];
+
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+
+      const aboutMenu = new AboutSectionMenu(page);
+      const contactUsPage = new ContactUsPage(page)
+
+      await aboutMenu.openContactUsPage(
+        aboutMenuTexts.ABOUT[lang],
+        aboutMenuTexts.CONTACT_US[lang]
+      );
+
+      const expectedPath = `${path}/contact-us`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await contactUsPage.clickCreateYourAccountButtonFromReady();
+    });
   });
 });
-
-    test.describe("Smoke_SCA_license(EN), Contact Us", () => {
-      test.beforeEach(async ({ page }) => {
-        await page.goto("/en-ae", {waitUntil: "domcontentloaded"});                    
-        aboutSectionMenu = new AboutSectionMenu(page);
-        contactUsPage = new ContactUsPage(page);
-         await aboutSectionMenu.openContactUsPage();
-      });
-
-      test("Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", async ({
-        page,
-      }) => {       
-        await expect(page).toHaveURL("/en-ae/contact-us");
-        await contactUsPage.clickCreateYourAccountButtonFromReady();      
-      });
-    });

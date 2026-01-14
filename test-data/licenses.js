@@ -4,7 +4,14 @@ export const licenses = [
     paths: {
       EN: "/en-gb",
     },
-    aboutSubmenus: ["CLIENT_VULNERABILITY", "COMPLAINTS"],
+    aboutSubmenus: [
+      "CLIENT_VULNERABILITY",
+      "COMPLAINTS",
+      "CONTACT_US",
+      "HELP",
+      "INVESTOR_RELATIONS",
+      "IS_CAPITAL_COM_SAFE",
+    ],
   },
   {
     name: "SCA",
@@ -12,7 +19,14 @@ export const licenses = [
       EN: "/en-ae",
       AR: "/ar-ae",
     },
-    aboutSubmenus: ["CLIENT_VULNERABILITY", "COMPLAINTS"],
+    aboutSubmenus: [
+      "CLIENT_VULNERABILITY",
+      "COMPLAINTS",
+      "CONTACT_US",
+      "HELP",
+      "INVESTOR_RELATIONS",
+      "IS_CAPITAL_COM_SAFE",
+    ],
   },
   {
     name: "CySEC",
@@ -22,14 +36,27 @@ export const licenses = [
       DE: "/de-de",
       RO: "/ro-ro",
     },
-    aboutSubmenus: ["CLIENT_VULNERABILITY"],
+    aboutSubmenus: [
+      "CLIENT_VULNERABILITY",
+      "CONTACT_US",
+      "HELP",
+      "INVESTOR_RELATIONS",
+      "IS_CAPITAL_COM_SAFE",
+    ],
   },
   {
     name: "ASIC",
     paths: {
       EN: "/en-au",
     },
-    aboutSubmenus: ["CLIENT_VULNERABILITY", "COMPLAINTS"],
+    aboutSubmenus: [
+      "CLIENT_VULNERABILITY",
+      "COMPLAINTS",
+      "CONTACT_US",
+      "HELP",
+      "INVESTOR_RELATIONS",
+      "IS_CAPITAL_COM_SAFE",
+    ],
   },
   {
     name: "SCB",
@@ -40,6 +67,13 @@ export const licenses = [
       RU: "/ru-int",
       AR: "/ar-int",
     },
-    aboutSubmenus: ["CLIENT_VULNERABILITY", "COMPLAINTS"],
+    aboutSubmenus: [
+      "CLIENT_VULNERABILITY",
+      "COMPLAINTS",
+      "CONTACT_US",
+      "HELP",
+      "INVESTOR_RELATIONS",
+      "IS_CAPITAL_COM_SAFE",
+    ],
   },
 ];

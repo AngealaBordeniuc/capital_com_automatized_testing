@@ -17,11 +17,19 @@ export const aboutMenuTexts = {
     RU: "Уязвимость клиента",
   },
   COMPLAINTS: {
-    EN: "Complaints",    
+    EN: "Complaints",
     FR: "Réclamations",
     DE: "Beschwerden",
     AR: "الشكاوى",
     RU: "Жалобы",
+  },
+  CONTACT_US: {
+    EN: "Contact us",
+    RO: "Contactați-ne",
+    FR: "Contactez-nous",
+    DE: "Unsere Kontakte",
+    AR: "تواصل معنا",
+    RU: "Свяжитесь с нами",
   },
 
   HELP: {
@@ -29,7 +37,17 @@ export const aboutMenuTexts = {
     RO: "Ajutor",
     FR: "Aide",
     DE: "Hilfe",
-    AR: "مساعدة",
+    AR: "المساعدة",
     RU: "Помощь",
+  },
+  INVESTOR_RELATIONS: {
+    EN: "Investor Relations",
+  },
+  IS_CAPITAL_COM_SAFE: {
+    EN: "Is Capital.com safe?",
+    FR: "Capital.com est-il sûr ?",
+    DE: "Ist Capital.com sicher?",
+    AR: "هل يُعتبرCapital.com آمن؟",
+    RU: "Безопасна ли платформа Capital.com?",
   },
 };
