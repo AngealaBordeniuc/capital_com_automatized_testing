@@ -1,56 +1,62 @@
-name: Playwright About Tests
+name: Playwright About Tests with Allure
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
-  workflow_dispatch:
+    branches: [ main ]
 
 jobs:
   about-tests:
-    name: Run About Page Tests
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout repository
+      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Setup Node.js
+      # 2️⃣ Setup Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: 20.18.0
 
-      # 3. Install dependencies
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # 4. Install Playwright browsers
+      # 4️⃣ Install Playwright browsers
       - name: Install Playwright browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install
 
-      # 5. Run About tests using package.json script
-      - name: Run About tests
-        run: npm run test:about
+      # 5️⃣ Install Allure CLI globally
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline
 
-      # 6. Generate Allure report (About) - istorie păstrată
-      - name: Generate Allure report (About)
-        if: always()
+      # 6️⃣ Run Playwright About tests
+      - name: Run Playwright About tests
         run: |
-          DATE=$(date +%Y-%m-%d)
-          # Folder nou pentru raportul de azi
-          npx allure generate allure-results \
-            -o allure-report/About/$DATE
+          npx playwright test tests/about_page \
+            --reporter=list,allure-playwright \
+            --retries=2
 
-      # 7. Upload Allure report (About)
-      - name: Upload Allure report (About)
-        if: always()
-        uses: actions/upload-artifact@v4
+      # 7️⃣ Generate Allure report in daily folder (keeping history)
+      - name: Generate Allure Report
+        run: |
+          DATE=$(date +'%Y-%m-%d')
+          mkdir -p allure-report/About/$DATE
+          npx allure generate allure-results -o allure-report/About/$DATE
+          echo "✅ Allure report generated for $DATE"
+          ls -la allure-report/About/$DATE
+
+      # 8️⃣ Deploy Allure report to GitHub Pages (keeps old reports)
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          name: allure-report-about
-          path: allure-report/About
+          github_token: ${{ secrets.GH_PAT }}   # Personal Access Token cu Read & Write
+          publish_dir: ./allure-report
+          publish_branch: gh-pages
+
 
 
 
