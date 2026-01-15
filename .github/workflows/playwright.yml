@@ -13,37 +13,45 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20.18.0
 
+      # 3. Install dependencies
       - name: Install dependencies
         run: npm ci
 
+      # 4. Install Playwright browsers
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      # 5. Run About tests using package.json script
       - name: Run About tests
-        run: npx playwright test tests/about_page
+        run: npm run test:about
 
-      - name: Generate Allure report (About) with history
+      # 6. Generate Allure report (About) - istorie păstrată
+      - name: Generate Allure report (About)
         if: always()
         run: |
           DATE=$(date +%Y-%m-%d)
-          # Generare raport Allure, fără ștergere, istoria păstrată
+          # Folder nou pentru raportul de azi
           npx allure generate allure-results \
             -o allure-report/About/$DATE
 
+      # 7. Upload Allure report (About)
       - name: Upload Allure report (About)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report-about
           path: allure-report/About
+
 
 
 
