@@ -64,7 +64,7 @@
 #           publish_branch: gh-pages
 
 
-name: Our Offices Test
+name: Why Capital Com? Test
 
 on:
   push:
@@ -93,7 +93,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Client Vulnerability test only
-        run: npx playwright test tests/about_page/our_offices.spec.js
+        run: npx playwright test tests/about_page/why_capital_com.spec.js
 
 
 

@@ -12,6 +12,7 @@ export const licenses = [
       "INVESTOR_RELATIONS",
       "IS_CAPITAL_COM_SAFE",
       "OUR_OFFICES",
+      "WHY_CAPITAL_COM",
     ],
   },
   {
@@ -28,6 +29,7 @@ export const licenses = [
       "INVESTOR_RELATIONS",
       "IS_CAPITAL_COM_SAFE",
       "OUR_OFFICES",
+      "WHY_CAPITAL_COM",
     ],
   },
   {
@@ -45,6 +47,7 @@ export const licenses = [
       "INVESTOR_RELATIONS",
       "IS_CAPITAL_COM_SAFE",
       "OUR_OFFICES",
+      "WHY_CAPITAL_COM",
     ],
   },
   {
@@ -60,6 +63,7 @@ export const licenses = [
       "INVESTOR_RELATIONS",
       "IS_CAPITAL_COM_SAFE",
       "OUR_OFFICES",
+      "WHY_CAPITAL_COM",
     ],
   },
   {
@@ -79,6 +83,7 @@ export const licenses = [
       "INVESTOR_RELATIONS",
       "IS_CAPITAL_COM_SAFE",
       "OUR_OFFICES",
+      "WHY_CAPITAL_COM",
     ],
   },
 ];

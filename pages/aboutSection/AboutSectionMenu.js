@@ -25,8 +25,8 @@ export class AboutSectionMenu {
     await this.page.waitForLoadState("domcontentloaded");
   }
 
-  async openWhyCapitalComPage() {
-    await this.openAboutSubMenu("Why Capital.com?");
+  async openWhyCapitalComPage(aboutText, subMenuText) {
+    await this.openAboutSubMenu({ aboutText, subMenuText });
   }
 
   async openOurOfficesPage(aboutText, subMenuText) {

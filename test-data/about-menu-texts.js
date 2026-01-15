@@ -58,4 +58,12 @@ export const aboutMenuTexts = {
     AR: "مكاتبنا",
     RU: "Наши офисы",
   },
+  WHY_CAPITAL_COM: {
+    EN: "Why Capital.com?",
+    RO: "De ce Capital.com?",
+    FR: "Pourquoi choisir Capital.com ?",
+    DE: "Warum Capital.com?", 
+    AR: "لماذا Capital.com؟",
+    RU: "Почему Capital.com?",
+  },
 };
