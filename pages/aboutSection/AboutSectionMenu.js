@@ -23,16 +23,14 @@ export class AboutSectionMenu {
     }
 
     await this.page.waitForLoadState("domcontentloaded");
-  }  
-
- 
+  }
 
   async openWhyCapitalComPage() {
     await this.openAboutSubMenu("Why Capital.com?");
   }
 
-  async openOurOfficesPage() {
-    await this.openAboutSubMenu("Our offices");
+  async openOurOfficesPage(aboutText, subMenuText) {
+    await this.openAboutSubMenu({ aboutText, subMenuText });
   }
 
   async openIsCapitalComSafePage(aboutText, subMenuText) {
@@ -46,7 +44,7 @@ export class AboutSectionMenu {
   async openHelpPage(aboutText, subMenuText) {
     await this.openAboutSubMenu({ aboutText, subMenuText });
   }
-  
+
   async openContactUsPage(aboutText, subMenuText) {
     await this.openAboutSubMenu({ aboutText, subMenuText });
   }

@@ -11,7 +11,7 @@ licenses.forEach((license) => {
     if (!license.paths[lang]) return;
     // if (!license.aboutSubmenus.includes("INVESTOR_RELATIONS")) return;
 
-    test(`${license.name} ${lang} – Is Capital Com Safe?`, async ({ page }) => {
+    test(`${license.name} ${lang} – Is Capital Com Safe? - un`, async ({ page }) => {
       const path = license.paths[lang];
 
       await page.goto(`https://capital.com${path}`, {

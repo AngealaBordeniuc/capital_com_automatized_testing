@@ -11,7 +11,7 @@ licenses.forEach((license) => {
     if (!license.paths[lang]) return;
      if (!license.aboutSubmenus.includes("COMPLAINTS")) return;
 
-    test(`${license.name} ${lang} – Complaints`, async ({ page }) => {
+    test(`${license.name} ${lang} – Complaints - un`, async ({ page }) => {
       const path = license.paths[lang];
 
       await page.goto(`https://capital.com${path}`, {

@@ -1,44 +1,41 @@
-import {test, expect} from "@playwright/test"
-import { AboutSectionMenu } from '../../pages/aboutSection/AboutSectionMenu';
-import { OurOfficesPage } from '../../pages/aboutSection/OurOfficesPage';
+import { test, expect } from "@playwright/test";
+import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
+import { OurOfficesPage } from "../../pages/aboutSection/OurOfficesPage";
+import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { licenses } from "../../test-data/licenses";
 
-let aboutSectionMenu;
-let ourOfficesPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU"];
 
-test.describe("Smoke_FCA_license(EN),Is Capital.com safe?", () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("/en-gb", {waitUntil: "domcontentloaded"});          
-    aboutSectionMenu = new AboutSectionMenu(page);
-    ourOfficesPage = new OurOfficesPage(page);
-    await aboutSectionMenu.openOurOfficesPage();
-  });
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
+    // if (!license.aboutSubmenus.includes("CONTACT_US")) return;
 
-  test("FCA_License(EN), Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", async ({
-    page,
-  }) => {  
-    
-      await expect(page).toHaveURL(
-        "/en-gb/about-us/our-offices"
-      )
-    await ourOfficesPage.clickCreateYourAccountButtonFromReady();    
-  });
-});
+    test(`${license.name} ${lang} – Our Offices - un`, async ({ page }) => {
+      const path = license.paths[lang];
 
-test.describe("Smoke_SCA_license(EN),Is Capital.com safe?", () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("/en-ae", {waitUntil: "domcontentloaded"});       
-    aboutSectionMenu = new AboutSectionMenu(page);
-    ourOfficesPage = new OurOfficesPage(page);
-     await aboutSectionMenu.openOurOfficesPage();
-  });
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
 
-  test("SCA_License(EN), Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", async ({
-    page,
-  }) => {   
-    await expect(page).toHaveURL("/en-ae/about-us/our-offices");
-    await ourOfficesPage.clickCreateYourAccountButtonFromReady();   
+      const aboutMenu = new AboutSectionMenu(page);
+      const ourOfficesPage = new OurOfficesPage(page)
+
+      await aboutMenu.openContactUsPage(
+        aboutMenuTexts.ABOUT[lang],
+        aboutMenuTexts.OUR_OFFICES[lang]
+      );
+
+      const expectedPath = `${path}/about-us/our-offices`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await ourOfficesPage.clickCreateYourAccountButtonFromReady();
+    });
   });
 });
+
+
+
 
 
 

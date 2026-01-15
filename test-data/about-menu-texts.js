@@ -50,4 +50,12 @@ export const aboutMenuTexts = {
     AR: "هل يُعتبرCapital.com آمن؟",
     RU: "Безопасна ли платформа Capital.com?",
   },
+  OUR_OFFICES: {
+    EN: "Our offices",
+    RO: "Birourile noastre",
+    FR: "Nos bureaux",
+    DE: "Unsere Büros",
+    AR: "مكاتبنا",
+    RU: "Наши офисы",
+  },
 };
