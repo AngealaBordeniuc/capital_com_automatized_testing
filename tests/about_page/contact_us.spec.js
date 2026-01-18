@@ -8,8 +8,7 @@ const languages = ["EN", "RO", "FR", "DE", "AR", "RU"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
-    if (!license.paths[lang]) return;
-    // if (!license.aboutSubmenus.includes("CONTACT_US")) return;
+    if (!license.paths[lang]) return;   
 
     test(`${license.name} ${lang} – Contact us - un`, async ({ page }) => {
       const path = license.paths[lang];

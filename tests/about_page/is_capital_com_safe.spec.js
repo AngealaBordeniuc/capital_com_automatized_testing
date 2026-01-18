@@ -8,8 +8,7 @@ const languages = ["EN", "FR", "DE", "AR", "RU"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
-    if (!license.paths[lang]) return;
-    // if (!license.aboutSubmenus.includes("INVESTOR_RELATIONS")) return;
+    if (!license.paths[lang]) return;   
 
     test(`${license.name} ${lang} – Is Capital Com Safe? - un`, async ({ page }) => {
       const path = license.paths[lang];

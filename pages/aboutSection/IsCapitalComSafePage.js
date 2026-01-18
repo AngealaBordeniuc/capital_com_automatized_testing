@@ -1,4 +1,4 @@
-import { handleModalWindowSignUp, handleOptionalPopups } from "../../helpers/pop_ups";
+import { handleModalWindowSignUp} from "../../helpers/pop_ups";
 
 export class IsCapitalComSafePage{
     constructor(page){
