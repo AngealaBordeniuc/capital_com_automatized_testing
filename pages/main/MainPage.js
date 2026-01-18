@@ -1,14 +1,17 @@
 import { expect } from "allure-playwright";
-import { handleModalWindowSignUp } from "../../helpers/pop_ups";
+import { handleModalWindowSignUp, handleOptionalPopups } from "../../helpers/pop_ups";
 
 export class MainPage {
   constructor(page) {
     this.page = page;
   }
-  async clickCTA(locator){       
+  async clickCTA(locator){        
+
     await locator.scrollIntoViewIfNeeded();
+   
     await expect(locator).toBeVisible({ timeout: 10000 });
     await locator.click();
+  
   }
 
 

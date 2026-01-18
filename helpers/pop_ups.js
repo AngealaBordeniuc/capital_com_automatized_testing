@@ -1,9 +1,10 @@
 import { expect } from '@playwright/test'
 
 export const handleOptionalPopups = async (page) => { 
+   await acceptAllCookies(page);
   await handleCookiesPopUp(page);
   await handleStayOnSitePopUp(page);
-  await acceptAllCookies(page);
+ 
 };
 
 export const handleCookiesPopUp = async (page) => {
@@ -20,9 +21,8 @@ export const handleCookiesPopUp = async (page) => {
 };
 
 export const handleStayOnSitePopUp = async (page) => {
-  if (page.isClosed()) return;
-
-  const stayBtn = page.getByText("Stay on this site");
+  if (page.isClosed()) return;  
+  const stayBtn = page.locator(`button[data-type="wrong_location_cancel"]`);
 
   try {
     await stayBtn.waitFor({ state: "visible", timeout: 3000 });
@@ -33,11 +33,9 @@ export const handleStayOnSitePopUp = async (page) => {
 };
 
 export const acceptAllCookies = async (page) => {
-  if (page.isClosed()) return;
+  if (page.isClosed()) return; 
 
-  const acceptAllBtn = page.getByRole("button", {
-    name: /accept all cookies/i,
-  });
+  const acceptAllBtn = page.locator(`button[data-type="cb_accept_btn"]`);
 
   try {
     await acceptAllBtn.waitFor({ state: "visible", timeout: 3000 });
