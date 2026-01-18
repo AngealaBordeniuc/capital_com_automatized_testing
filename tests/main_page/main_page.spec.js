@@ -61,7 +61,7 @@ licenses.forEach((license) => {
         await mainPage.clickSellButtonOurMarkets()
       });
 
-      test.only(`${license.name} ${lang} – Main Page, "Buy link" - un`, async ({
+      test(`${license.name} ${lang} – Main Page, "Buy link" - un`, async ({
         page,
       }) => {
         const path = license.paths[lang];       
