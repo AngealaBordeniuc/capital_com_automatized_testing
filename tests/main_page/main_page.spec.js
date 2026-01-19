@@ -10,11 +10,13 @@ licenses.forEach((license) => {
     if (!license.paths[lang]) return;
 
     test(`${license.name} ${lang} – Main Page, "Sign up" - un`, async ({ page }) => {
-      const path = license.paths[lang];
+      const path = license.paths[lang];     
 
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",
       });
+
+      await handleOptionalPopups(page)
 
       const mainPage = new MainPage(page)
       await mainPage.clickSignUpButton()
@@ -23,11 +25,13 @@ licenses.forEach((license) => {
     test(`${license.name} ${lang} – Main Page, "Try demo" - un`, async ({
       page,
     }) => {
-      const path = license.paths[lang];     
+      const path = license.paths[lang];        
 
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",
       });
+
+      await handleOptionalPopups(page)
 
       const mainPage = new MainPage(page);
       await mainPage.clickTryDemoButton()
@@ -36,12 +40,12 @@ licenses.forEach((license) => {
      test(`${license.name} ${lang} – Main Page, "Sign up- Why Capital" - un`, async ({
        page,
      }) => {
-       const path = license.paths[lang];
-      //  await page.pause()
+       const path = license.paths[lang];    
 
        await page.goto(`https://capital.com${path}`, {
          waitUntil: "domcontentloaded",
-       });
+       });       
+       await handleOptionalPopups(page)
 
        const mainPage = new MainPage(page);
        await mainPage.clickSignUpButtonWhyChooseCapitalCom()
@@ -79,12 +83,13 @@ licenses.forEach((license) => {
       test(`${license.name} ${lang} – Main Page, "Try demo - For Learner" - un`, async ({
         page,
       }) => {
-        const path = license.paths[lang];
-        //  await page.pause()
+        const path = license.paths[lang];      
 
         await page.goto(`https://capital.com${path}`, {
           waitUntil: "domcontentloaded",
         });      
+
+        await handleOptionalPopups(page)
 
         const mainPage = new MainPage(page);
         await mainPage.clickTryDemoButtonForLearnerTraders()
@@ -93,11 +98,13 @@ licenses.forEach((license) => {
       test(`${license.name} ${lang} – Main Page, "Sign up - For Learner" - un`, async ({
         page,
       }) => {
-        const path = license.paths[lang];      
+        const path = license.paths[lang];            
 
         await page.goto(`https://capital.com${path}`, {
           waitUntil: "domcontentloaded",
         });
+
+        await handleOptionalPopups(page)
 
         const mainPage = new MainPage(page);
         await mainPage.clickSignUpButtonForLearnerTraders()
@@ -107,12 +114,12 @@ licenses.forEach((license) => {
       test(`${license.name} ${lang} – Main Page, "Create your account - Ready" - un`, async ({
         page,
       }) => {
-        const path = license.paths[lang];
-        //  await page.pause()
+        const path = license.paths[lang];        
 
         await page.goto(`https://capital.com${path}`, {
           waitUntil: "domcontentloaded",
         });
+        await handleOptionalPopups(page)
 
         const mainPage = new MainPage(page);
         await mainPage.clickCreateYourAccountButtonFromReady()

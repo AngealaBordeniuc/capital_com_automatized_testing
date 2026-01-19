@@ -15,24 +15,35 @@ export class MainPage {
   }
 
 
-  async clickSignUpButton() {      
-  //  const signUpBtn = this.page.getByRole("button", { name: "Sign up" }).nth(1);
-  const signUpBtn = this.page.locator(`button[data-type*="btn1_signup"]`).first()
+  async clickSignUpButton() {         
+  const signUpBtn = this.page.locator("button.l_btn_signup").first();    
    await this.clickCTA(signUpBtn)  
    await handleModalWindowSignUp(this.page);
   }
 
-  async clickTryDemoButton() {   
-    // const tryDemoBtn = this.page.locator("#bannerHomePage").getByRole("button", { name: "Try demo" });
-    const tryDemoBtn = this.page.locator(`button[data-type*="btn2_demo"]`);
+  async clickTryDemoButton() {    
+    const tryDemoBtn = this.page.locator('button[data-type*="homepage"]').last()  
     await this.clickCTA(tryDemoBtn)   
     await handleModalWindowSignUp(this.page);
   }
 
   async clickSignUpButtonWhyChooseCapitalCom() {        
-    const signUpBtnWhyChoose = this.page.locator(`button[data-type*="btn2_signup"]`)
-    await this.clickCTA(signUpBtnWhyChoose)   
-    await handleModalWindowSignUp(this.page);
+    const signUpBtnWhyChoose = this.page.locator('button.l_btn_signup[data-type*="tiles"]').last()   
+
+     const isVisible = await signUpBtnWhyChoose.isVisible();
+
+     if (isVisible) {       
+       await expect(signUpBtnWhyChoose).toHaveAttribute("data-type", /tiles/);
+       await this.clickCTA(signUpBtnWhyChoose);
+       await handleModalWindowSignUp(this.page);
+     } else {       
+       console.log(
+         "⚠️ Button: Sign Up does not exist for this license."
+       );       
+       await expect(isVisible).toBeTruthy({
+         message: "Sign Up button missing!",
+       });
+     }    
   }
 
   async clickSellButtonOurMarkets() {
@@ -50,13 +61,13 @@ export class MainPage {
   }
 
   async clickTryDemoButtonForLearnerTraders() {    
-    const tryDemoBtnLearner = this.page.locator(`button[data-type="learn_traders_block_btn_demo"]`);
+    const tryDemoBtnLearner = this.page.locator(`button[data-type*="learn_traders"]`).first();
     await this.clickCTA(tryDemoBtnLearner)   
     await handleModalWindowSignUp(this.page);
   }
 
   async clickSignUpButtonForLearnerTraders() {           
-    const signUpBtnLearner = this.page.locator(`button[data-type="learn_traders_block_btn1_signup"]`);
+    const signUpBtnLearner = this.page.locator(`button[data-type="learn_traders_block_btn1_signup"]`)
     await this.clickCTA(signUpBtnLearner)   
     await handleModalWindowSignUp(this.page);
   }
