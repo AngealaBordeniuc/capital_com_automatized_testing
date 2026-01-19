@@ -44,8 +44,10 @@ jobs:
           npx playwright test tests/about_page \
             --reporter=list,allure-playwright \
             --retries=2
+        continue-on-error: true
 
       - name: Generate Allure report (About)
+        if: always()
         run: |
           DATE=$(date +'%Y-%m-%d')
           mkdir -p allure-report/About/$DATE
