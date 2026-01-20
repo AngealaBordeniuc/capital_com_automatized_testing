@@ -3,7 +3,7 @@ import { MainPage } from "../../pages/main/MainPage"
 import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-const languages = ["EN", "RO", "FR", "DE", "AR", "RU"];
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {

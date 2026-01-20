@@ -39,6 +39,9 @@ export const licenses = [
       FR: "/fr-fr",
       DE: "/de-de",
       RO: "/ro-ro",
+      IT: "/it-it",
+      NL: "/nl-nl",
+      PL: "/pl-pl",
     },
     aboutSubmenus: [
       "CLIENT_VULNERABILITY",
