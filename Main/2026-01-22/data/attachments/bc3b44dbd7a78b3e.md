@@ -1,0 +1,826 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "CFD\\'s zijn complexe instrumenten en houden vanwege de hefboomwerking een hoog risico in op grote verliezen. 69% van de particuliere beleggers verliest geld bij de handel in CFD\\'s met deze aanbieder.U moet nagaan of u wel degelijk begrijpt hoe CFD\\'s werken en of u zich het hoge risico op geldverlies kunt veroorloven. Raadpleeg onze risicoverklaring" [ref=e3]:
+      - generic [ref=e6]:
+        - text: CFD\'s zijn complexe instrumenten en houden vanwege de hefboomwerking een hoog risico in op grote verliezen.
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - strong [ref=e9]: 69% van de particuliere beleggers verliest geld bij de handel in CFD\'s met deze aanbieder
+            - text: .
+          - text: U moet nagaan of u wel degelijk begrijpt hoe CFD\'s werken en of u zich het hoge risico op geldverlies kunt veroorloven. Raadpleeg onze
+          - link "risicoverklaring" [ref=e10] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - link "PERSOONLIJK" [ref=e16] [cursor=pointer]:
+          - /url: /nl-nl
+        - link "PROFESSIONEEL" [ref=e17] [cursor=pointer]:
+          - /url: /nl-nl/professional-clients
+      - generic [ref=e18]:
+        - link "STEUN" [ref=e19] [cursor=pointer]:
+          - /url: /nl-nl/help
+        - button "nl" [ref=e21] [cursor=pointer]:
+          - strong [ref=e23]: nl
+    - generic [ref=e24]:
+      - link [ref=e25] [cursor=pointer]:
+        - /url: /nl-nl
+        - img [ref=e26]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - link "Handelen" [ref=e40] [cursor=pointer]:
+            - /url: /nl-nl/ways-to-trade
+          - generic:
+            - generic:
+              - generic:
+                - link "Handelen":
+                  - /url: /nl-nl/ways-to-trade
+                  - generic:
+                    - generic: Handelen
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Manieren om te handelen
+                - generic:
+                  - generic:
+                    - strong: Handelsplatformen
+                - generic:
+                  - generic:
+                    - strong: Handelsinfo
+                - generic:
+                  - generic:
+                    - strong: Handelsinstrumenten
+        - generic [ref=e41]:
+          - link "Markten" [ref=e44] [cursor=pointer]:
+            - /url: /nl-nl/markets
+          - generic:
+            - generic:
+              - generic:
+                - link "Markten":
+                  - /url: /nl-nl/markets
+                  - generic:
+                    - generic: Markten
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Onze markten
+                - generic:
+                  - generic:
+                    - strong: Beursberichten
+        - generic [ref=e45]:
+          - link "Tarieven" [ref=e48] [cursor=pointer]:
+            - /url: /nl-nl/ways-to-trade/fees-and-charges
+          - generic:
+            - generic:
+              - generic:
+                - link "Tarieven":
+                  - /url: /nl-nl/ways-to-trade/fees-and-charges
+                  - generic:
+                    - generic: Tarieven
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Tarieven
+        - generic [ref=e49]:
+          - link "Leer" [ref=e52] [cursor=pointer]:
+            - /url: /nl-nl/learn
+          - generic:
+            - generic:
+              - generic:
+                - link "Leer":
+                  - /url: /nl-nl/learn
+                  - generic:
+                    - generic: Leer
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Voor beginners
+                - generic:
+                  - generic:
+                    - strong: Voor ervaren handelaars
+        - generic [ref=e53]:
+          - link "Over" [ref=e56] [cursor=pointer]:
+            - /url: /nl-nl/about-us
+          - generic:
+            - generic:
+              - generic:
+                - link "Over":
+                  - /url: /nl-nl/about-us
+                  - generic:
+                    - generic: Over
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Informatie
+                - generic:
+                  - generic:
+                    - strong: Hulp nodig?
+                - generic:
+                  - link "Juridische informatie":
+                    - /url: /nl-nl/terms-and-policies
+                    - strong: Juridische informatie
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - button "Aanmelden" [ref=e59] [cursor=pointer]
+          - button "Registreren" [ref=e60] [cursor=pointer]
+        - link "Platform openen user":
+          - /url: /trading/platform/
+          - text: Platform openen
+          - img "user"
+  - generic [ref=e62]:
+    - generic [ref=e64]:
+      - generic [ref=e68]:
+        - heading "Kies voor een betrouwbare broker" [level=1] [ref=e69]
+        - paragraph [ref=e71]: Beste handelaren, wij beseffen dat veiligheid van het grootste belang is. Sluit u aan bij een broker met een verhandeld volume van meer dan $1 biljoen. Uw geld wordt veilig afgeschermd bij de allerbeste banken.
+        - generic [ref=e72]:
+          - button "Registreren" [ref=e73] [cursor=pointer]
+          - button "Demo proberen" [ref=e74] [cursor=pointer]
+      - paragraph [ref=e75]: Erkend en onder toezicht van de Cyprus Securities and Exchange Commission (CySEC)
+    - generic [ref=e77]:
+      - link "4.8" [ref=e78] [cursor=pointer]:
+        - /url: https://www.tradingview.com/broker/Capitalcom/
+        - strong [ref=e81]: "4.8"
+      - link "Beoordelingen en recensies 4.7" [ref=e84] [cursor=pointer]:
+        - /url: https://app.appsflyer.com/id1230088754?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - strong [ref=e86]: Beoordelingen en recensies
+        - strong [ref=e88]: "4.7"
+      - link "Beoordelingen en recensies 4.6" [ref=e91] [cursor=pointer]:
+        - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - strong [ref=e93]: Beoordelingen en recensies
+        - strong [ref=e95]: "4.6"
+      - link "4.6" [ref=e98] [cursor=pointer]:
+        - /url: https://www.trustpilot.com/review/capital.com
+        - strong [ref=e101]: "4.6"
+    - generic [ref=e105]:
+      - heading "Waarom zou u kiezen voor Capital.com?" [level=2] [ref=e107]
+      - generic [ref=e108]:
+        - generic [ref=e111]:
+          - heading "Gebruiksvriendelijk platform" [level=3] [ref=e112]
+          - generic [ref=e113]: Verhandel meer dan 5,000 markten op een overzichtelijk platform en app - speciaal ontwikkeld voor de weergave van alle belangrijkste informatie, zonder overbodige extra's.
+          - link "Ontdek onze platformen" [ref=e114] [cursor=pointer]:
+            - /url: /nl-nl/trading-platforms
+            - generic [ref=e115]: Ontdek onze platformen
+        - generic [ref=e118]:
+          - heading "Een betrouwbare internationale broker" [level=3] [ref=e119]
+          - generic [ref=e121]:
+            - text: Sluit u aan bij de meer dan 798,000+ handelaren van over de hele wereld. Het vertrouwen bij onze klanten is zo groot dat ze reeds meer dan $1 biljoen bij ons verhandeld hebben.
+            - superscript [ref=e122]: "1"
+          - link "Meer informatie over Capital.com" [ref=e123] [cursor=pointer]:
+            - /url: /nl-nl/about-us
+            - generic [ref=e124]: Meer informatie over Capital.com
+        - generic [ref=e127]:
+          - heading "Transparante en aantrekkelijke tarieven" [level=3] [ref=e128]
+          - generic [ref=e129]: 0% commissie, altijd. 0% overnight financiering op aandelen zonder hefboomwerking en crypto-CFD's. Bekijk de andere kosten die in rekening worden gebracht in onze overzichtelijke tariefstructuur.
+          - link "Bekijk de tarieven" [ref=e130] [cursor=pointer]:
+            - /url: /nl-nl/ways-to-trade/fees-and-charges
+            - generic [ref=e131]: Bekijk de tarieven
+        - generic [ref=e134]:
+          - heading "Alles wat u nodig hebt om uw handelsavontuur te beginnen" [level=3] [ref=e135]
+          - generic [ref=e136]: Vergelijk verschillende markten op razendsnelle grafieken. Zoek verhandelbare patronen met meer dan 100 indicatoren. Handel onmiddellijk op basis van het nieuws op het platform. Naadloze integratie met TradingView en MT4. Er is nog veel meer, maar we hebben niet genoeg tekstruimte!
+          - link "Andere manieren waarop wij u bijstaan in uw handelsavontuur" [ref=e137] [cursor=pointer]:
+            - /url: /nl-nl/learn/trading-strategies
+            - generic [ref=e138]: Andere manieren waarop wij u bijstaan in uw handelsavontuur
+        - generic [ref=e141]:
+          - heading "Uw markten, uw leverage" [level=3] [ref=e142]
+          - generic [ref=e143]: Handel in CFD's op de Frankrijk 40, EUR/USD, goud, aandelen en duizenden andere effecten, en kies de gewenste hefboomwerking.
+          - link "Ontdek de verhandelbare activa" [ref=e144] [cursor=pointer]:
+            - /url: /nl-nl/markets
+            - generic [ref=e145]: Ontdek de verhandelbare activa
+        - generic [ref=e148]:
+          - heading "Word een betere handelaar" [level=3] [ref=e149]
+          - generic [ref=e150]: Ontdek ons uitgebreide aanbod aan gratis educatief materiaal waarmee u uw handelskennis kunt verruimen - marktgidsen, handelsstrategieën en nog veel meer.
+          - link "Meer info" [ref=e151] [cursor=pointer]:
+            - /url: /nl-nl/learn
+            - generic [ref=e152]: Meer info
+    - generic [ref=e153]:
+      - generic [ref=e155]:
+        - heading "Lees onze beoordelingen om meer te weten te komen" [level=2] [ref=e156]
+        - generic [ref=e157]:
+          - text: Lees de feedback van onze klanten
+          - superscript [ref=e158]: "1"
+          - text: ", ongeacht hun ervaringsniveau."
+      - generic [ref=e159]:
+        - region [ref=e160]:
+          - generic [ref=e162]:
+            - group [ref=e163]:
+              - link [ref=e164] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e167]: 2025-01-14
+                - strong [ref=e168]: B******** F***** S****
+                - paragraph [ref=e170]: Werkt gemakkelijk en hoop mogelijk heden
+            - group [ref=e172]:
+              - link [ref=e173] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e176]: 2025-05-23
+                - strong [ref=e177]: M****
+                - paragraph [ref=e179]: Ik gebruik al jaren capital,vooral het onbeperkt gebruik van een demo account vind ik erg nuttig om strategieën te testen daarnaast kan men op een live account met kleine posities handelen om zo ervaring op te doen met live traden, ook de vele instellingen o.a. voor wat betreft de hefboom is handig ,tevens is het laten uitbetalen van je winsten erg rap, gebeurt meestal binnen 4 uur, dan staat het al op je eigen externe wallet ,
+            - group [ref=e181]:
+              - link [ref=e182] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e185]: 2024-10-04
+                - strong [ref=e186]: J***** L******
+                - paragraph [ref=e188]: Overzichtelijk, snel en duidelijk en de ondersteuning is top.
+            - group [ref=e190]:
+              - link [ref=e191] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e194]: 2024-09-20
+                - strong [ref=e195]: K* K*****
+                - paragraph [ref=e197]: Overzichtelijk app, duidelijke informaties en goede en snelle service.
+            - group [ref=e199]:
+              - link [ref=e200] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e203]: 2024-07-18
+                - strong [ref=e204]: k****
+                - paragraph [ref=e206]: Het is leuk en eenvoudig, ik ben een beginnende, maar het is goed duidelijk en veel informatie.
+            - group [ref=e208]:
+              - link [ref=e209] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e212]: 2024-09-18
+                - strong [ref=e213]: J****G****
+                - paragraph [ref=e215]: Heb zelf alleen nog een demo account maar wel een fijne app om te oefenen
+            - group [ref=e217]:
+              - link [ref=e218] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e221]: 2025-03-31
+                - strong [ref=e222]: G***** K****
+                - paragraph [ref=e224]: Ik ben zeer goed en snel geholpen.
+            - group [ref=e226]:
+              - link [ref=e227] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e230]: 2025-04-12
+                - strong [ref=e231]: M******* F*****
+                - paragraph [ref=e233]: Super blij mee, werkt fantastisch samen met tradingview
+            - group [ref=e235]:
+              - link [ref=e236] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e239]: 2024-07-17
+                - strong [ref=e240]: S****
+                - paragraph [ref=e242]: Dat het vertrouwd is. Tot nu toe is het allemaal perfekt verlopen
+            - group [ref=e244]:
+              - link [ref=e245] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e248]: 2024-11-29
+                - strong [ref=e249]: j***** D* J***
+                - paragraph [ref=e251]: Het lukte me niet om geld naar me eigen rekening over te boeken, maar ik ben fantastisch geholpen door de helpdesk! Dezelfde dag was het geld overgemaakt. Echt fantastische klantenservice heel netjes en behulpzaam.
+            - group "1 of 10" [ref=e253]:
+              - link "2025-01-14 B******** F***** S**** Werkt gemakkelijk en hoop mogelijk heden" [ref=e254] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e257]: 2025-01-14
+                - strong [ref=e258]: B******** F***** S****
+                - paragraph [ref=e260]: Werkt gemakkelijk en hoop mogelijk heden
+            - group "2 of 10" [ref=e262]:
+              - link "2025-05-23 M**** Ik gebruik al jaren capital,vooral het onbeperkt gebruik van een demo account vind ik erg nuttig om strategieën te testen daarnaast kan men op een live account met kleine posities handelen om zo ervaring op te doen met live traden, ook de vele instellingen o.a. voor wat betreft de hefboom is handig ,tevens is het laten uitbetalen van je winsten erg rap, gebeurt meestal binnen 4 uur, dan staat het al op je eigen externe wallet ," [ref=e263] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e266]: 2025-05-23
+                - strong [ref=e267]: M****
+                - paragraph [ref=e269]: Ik gebruik al jaren capital,vooral het onbeperkt gebruik van een demo account vind ik erg nuttig om strategieën te testen daarnaast kan men op een live account met kleine posities handelen om zo ervaring op te doen met live traden, ook de vele instellingen o.a. voor wat betreft de hefboom is handig ,tevens is het laten uitbetalen van je winsten erg rap, gebeurt meestal binnen 4 uur, dan staat het al op je eigen externe wallet ,
+            - group "3 of 10" [ref=e271]:
+              - link "2024-10-04 J***** L****** Overzichtelijk, snel en duidelijk en de ondersteuning is top." [ref=e272] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e275]: 2024-10-04
+                - strong [ref=e276]: J***** L******
+                - paragraph [ref=e278]: Overzichtelijk, snel en duidelijk en de ondersteuning is top.
+            - group [ref=e280]:
+              - link [ref=e281] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e284]: 2024-09-20
+                - strong [ref=e285]: K* K*****
+                - paragraph [ref=e287]: Overzichtelijk app, duidelijke informaties en goede en snelle service.
+            - group [ref=e289]:
+              - link [ref=e290] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e293]: 2024-07-18
+                - strong [ref=e294]: k****
+                - paragraph [ref=e296]: Het is leuk en eenvoudig, ik ben een beginnende, maar het is goed duidelijk en veel informatie.
+            - group [ref=e298]:
+              - link [ref=e299] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e302]: 2024-09-18
+                - strong [ref=e303]: J****G****
+                - paragraph [ref=e305]: Heb zelf alleen nog een demo account maar wel een fijne app om te oefenen
+            - group [ref=e307]:
+              - link [ref=e308] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e311]: 2025-03-31
+                - strong [ref=e312]: G***** K****
+                - paragraph [ref=e314]: Ik ben zeer goed en snel geholpen.
+            - group [ref=e316]:
+              - link [ref=e317] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e320]: 2025-04-12
+                - strong [ref=e321]: M******* F*****
+                - paragraph [ref=e323]: Super blij mee, werkt fantastisch samen met tradingview
+            - group [ref=e325]:
+              - link [ref=e326] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e329]: 2024-07-17
+                - strong [ref=e330]: S****
+                - paragraph [ref=e332]: Dat het vertrouwd is. Tot nu toe is het allemaal perfekt verlopen
+            - group [ref=e334]:
+              - link [ref=e335] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e338]: 2024-11-29
+                - strong [ref=e339]: j***** D* J***
+                - paragraph [ref=e341]: Het lukte me niet om geld naar me eigen rekening over te boeken, maar ik ben fantastisch geholpen door de helpdesk! Dezelfde dag was het geld overgemaakt. Echt fantastische klantenservice heel netjes en behulpzaam.
+            - group [ref=e343]:
+              - link [ref=e344] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e347]: 2025-01-14
+                - strong [ref=e348]: B******** F***** S****
+                - paragraph [ref=e350]: Werkt gemakkelijk en hoop mogelijk heden
+            - group [ref=e352]:
+              - link [ref=e353] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e356]: 2025-05-23
+                - strong [ref=e357]: M****
+                - paragraph [ref=e359]: Ik gebruik al jaren capital,vooral het onbeperkt gebruik van een demo account vind ik erg nuttig om strategieën te testen daarnaast kan men op een live account met kleine posities handelen om zo ervaring op te doen met live traden, ook de vele instellingen o.a. voor wat betreft de hefboom is handig ,tevens is het laten uitbetalen van je winsten erg rap, gebeurt meestal binnen 4 uur, dan staat het al op je eigen externe wallet ,
+            - group [ref=e361]:
+              - link [ref=e362] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e365]: 2024-10-04
+                - strong [ref=e366]: J***** L******
+                - paragraph [ref=e368]: Overzichtelijk, snel en duidelijk en de ondersteuning is top.
+            - group [ref=e370]:
+              - link [ref=e371] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e374]: 2024-09-20
+                - strong [ref=e375]: K* K*****
+                - paragraph [ref=e377]: Overzichtelijk app, duidelijke informaties en goede en snelle service.
+            - group [ref=e379]:
+              - link [ref=e380] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e383]: 2024-07-18
+                - strong [ref=e384]: k****
+                - paragraph [ref=e386]: Het is leuk en eenvoudig, ik ben een beginnende, maar het is goed duidelijk en veel informatie.
+            - group [ref=e388]:
+              - link [ref=e389] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e392]: 2024-09-18
+                - strong [ref=e393]: J****G****
+                - paragraph [ref=e395]: Heb zelf alleen nog een demo account maar wel een fijne app om te oefenen
+            - group [ref=e397]:
+              - link [ref=e398] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e401]: 2025-03-31
+                - strong [ref=e402]: G***** K****
+                - paragraph [ref=e404]: Ik ben zeer goed en snel geholpen.
+            - group [ref=e406]:
+              - link [ref=e407] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e410]: 2025-04-12
+                - strong [ref=e411]: M******* F*****
+                - paragraph [ref=e413]: Super blij mee, werkt fantastisch samen met tradingview
+            - group [ref=e415]:
+              - link [ref=e416] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e419]: 2024-07-17
+                - strong [ref=e420]: S****
+                - paragraph [ref=e422]: Dat het vertrouwd is. Tot nu toe is het allemaal perfekt verlopen
+            - group [ref=e424]:
+              - link [ref=e425] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e428]: 2024-11-29
+                - strong [ref=e429]: j***** D* J***
+                - paragraph [ref=e431]: Het lukte me niet om geld naar me eigen rekening over te boeken, maar ik ben fantastisch geholpen door de helpdesk! Dezelfde dag was het geld overgemaakt. Echt fantastische klantenservice heel netjes en behulpzaam.
+          - generic:
+            - button "Go to last slide" [ref=e433] [cursor=pointer]
+            - button "Next slide" [ref=e434] [cursor=pointer]
+        - paragraph [ref=e435]: Dit zijn onze 4- & 5-sterrenbeoordelingen. Om te voldoen aan de GDPR-vereisten en de privacy van de gebruikers te waarborgen, zijn hun specifieke gegevens bewust anoniem gemaakt.
+      - generic [ref=e437]:
+        - link "4.8" [ref=e438] [cursor=pointer]:
+          - /url: https://www.tradingview.com/broker/Capitalcom/
+          - strong [ref=e441]: "4.8"
+        - link "Beoordelingen en recensies 4.7" [ref=e444] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+          - strong [ref=e446]: Beoordelingen en recensies
+          - strong [ref=e448]: "4.7"
+        - link "Beoordelingen en recensies 4.6" [ref=e451] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+          - strong [ref=e453]: Beoordelingen en recensies
+          - strong [ref=e455]: "4.6"
+        - link "4.6" [ref=e458] [cursor=pointer]:
+          - /url: https://www.trustpilot.com/review/capital.com
+          - strong [ref=e461]: "4.6"
+    - generic [ref=e465]:
+      - generic [ref=e466]:
+        - heading "Voor ervaren handelaars" [level=2] [ref=e467]
+        - paragraph [ref=e469]: De ideale service, instrumenten en hulpbronnen om uw kennis te verruimen.
+      - generic [ref=e470]:
+        - generic [ref=e472]:
+          - heading "Grafiekfuncties en indicatoren" [level=3] [ref=e473]
+          - paragraph [ref=e475]: Verfijn uw analyse met een reeks intuïtieve grafieken, tekenfuncties en 75 indicatoren.
+        - generic [ref=e477]:
+          - heading "Geniet van flexibele hefboomwerking" [level=3] [ref=e478]
+          - paragraph [ref=e480]: Beheer grotere posities met lage marges op de geselecteerde markten. De hefboomwerking kan zowel uw winsten als verliezen vergroten. Er kunnen beperkingen gelden.
+        - generic [ref=e482]:
+          - heading "24/7 ondersteuning" [level=3] [ref=e483]
+          - paragraph [ref=e485]: Ons deskundige team is 24 uur per dag beschikbaar.
+        - generic [ref=e487]:
+          - heading "Instelbare prijsalarmen" [level=3] [ref=e488]
+          - paragraph [ref=e490]: Bekijk de koersen van uw favoriete activa en bepaal uw strategie.
+      - generic [ref=e491]:
+        - img "platform" [ref=e493]
+        - generic [ref=e494]:
+          - heading "Snelle geldopnames" [level=2] [ref=e495]
+          - paragraph [ref=e497]: Op basis van onze interne servergegevens van 2024 wordt 99% van de opnames binnen de 24 uur verwerkt.
+    - generic [ref=e499]:
+      - generic [ref=e500]:
+        - heading "Onze markten" [level=2] [ref=e501]
+        - generic [ref=e502]: Blijf up-to-date met de belangrijkste gegevens voor meer dan 3.000 markten. Bekijk het laatste nieuws, het beleggerssentiment, spreads, prijsactie en nog veel meer.
+      - generic [ref=e503]:
+        - generic [ref=e506]:
+          - button "Allemaal Allemaal Grondstoffen Forex Indexen Aandelen Cryptovaluta's" [ref=e507]:
+            - button "Allemaal" [ref=e508] [cursor=pointer]:
+              - textbox [ref=e510]: Allemaal
+            - generic:
+              - button "Allemaal"
+              - button "Grondstoffen"
+              - button "Forex"
+              - button "Indexen"
+              - button "Aandelen"
+              - button "Cryptovaluta's"
+          - button "Meest verhandeld Sorteren Grootste dalers Meest verhandeld Grootste stijgers Meest fluctuerend" [ref=e511]:
+            - button "Meest verhandeld Sorteren" [ref=e512] [cursor=pointer]:
+              - generic [ref=e513]:
+                - textbox "Sorteren" [ref=e514]:
+                  - /placeholder: " "
+                  - text: Meest verhandeld
+                - generic: Sorteren
+            - generic:
+              - button "Grootste dalers"
+              - button "Meest verhandeld"
+              - button "Grootste stijgers"
+              - button "Meest fluctuerend"
+        - region [ref=e515]:
+          - generic [ref=e516]:
+            - group "1 of 8" [ref=e517]:
+              - button "US 500 6912.5 +0.5%" [ref=e518]:
+                - generic [ref=e519]:
+                  - generic [ref=e520]: US 500
+                  - generic [ref=e521]:
+                    - generic [ref=e522]: "6912.5"
+                    - generic [ref=e523]: +0.5%
+            - group "2 of 8" [ref=e524]:
+              - button "Bitcoin/USD 89469.45 -0.76%" [ref=e525] [cursor=pointer]:
+                - generic [ref=e526]:
+                  - generic [ref=e527]: Bitcoin/USD
+                  - generic [ref=e528]:
+                    - generic [ref=e529]: "89469.45"
+                    - generic [ref=e530]: "-0.76%"
+            - group "3 of 8" [ref=e531]:
+              - button "EUR/USD 1.17552 +0.860%" [ref=e532] [cursor=pointer]:
+                - generic [ref=e533]:
+                  - generic [ref=e534]: EUR/USD
+                  - generic [ref=e535]:
+                    - generic [ref=e536]: "1.17552"
+                    - generic [ref=e537]: +0.860%
+            - group "4 of 8" [ref=e538]:
+              - button "U/USD 0.0024586 0.000%" [ref=e539] [cursor=pointer]:
+                - generic [ref=e540]:
+                  - generic [ref=e541]: U/USD
+                  - generic [ref=e542]:
+                    - generic [ref=e543]: "0.0024586"
+                    - generic [ref=e544]: 0.000%
+            - group [ref=e545]:
+              - button [ref=e546] [cursor=pointer]:
+                - generic [ref=e547]:
+                  - generic [ref=e548]: Crude Oil
+                  - generic [ref=e549]:
+                    - generic [ref=e550]: "59.469"
+                    - generic [ref=e551]: "-1.910%"
+            - group [ref=e552]:
+              - button [ref=e553] [cursor=pointer]:
+                - generic [ref=e554]:
+                  - generic [ref=e555]: US Wall Street 30
+                  - generic [ref=e556]:
+                    - generic [ref=e557]: "49364.4"
+                    - generic [ref=e558]: +0.6%
+            - group [ref=e559]:
+              - button [ref=e560] [cursor=pointer]:
+                - generic [ref=e561]:
+                  - generic [ref=e562]: US Tech 100
+                  - generic [ref=e563]:
+                    - generic [ref=e564]: "25516.1"
+                    - generic [ref=e565]: +0.6%
+            - group [ref=e566]:
+              - link [ref=e567] [cursor=pointer]:
+                - /url: /nl-nl/markets
+                - generic [ref=e568]: Alle markten verkennen
+          - button "Next slide" [ref=e569] [cursor=pointer]
+        - generic [ref=e571]:
+          - generic [ref=e572]:
+            - generic [ref=e573]:
+              - link "US 500" [ref=e574] [cursor=pointer]:
+                - /url: /nl-nl/markets/indices/us-500-index-1
+                - heading "US 500" [level=3] [ref=e575]
+              - generic [ref=e576]:
+                - generic [ref=e577]:
+                  - link "Verkopen 6912.0" [ref=e578] [cursor=pointer]:
+                    - /url: /instrument?id=21680337780298948
+                    - text: Verkopen
+                    - paragraph [ref=e579]: "6912.0"
+                  - link "Kopen 6912.5" [ref=e580] [cursor=pointer]:
+                    - /url: /instrument?id=21680337780298948
+                    - text: Kopen
+                    - paragraph [ref=e581]: "6912.5"
+                  - generic [ref=e582]: "0.5"
+                - generic [ref=e583]:
+                  - generic [ref=e584]: "Laag: 6786.5"
+                  - generic [ref=e585]: "Hoog: 6932.9"
+                - table [ref=e587]
+                - generic [ref=e588]:
+                  - generic [ref=e589]:
+                    - generic [ref=e590]: Verkopers
+                    - generic [ref=e591]: 21.58%
+                  - generic [ref=e592]:
+                    - generic [ref=e593]: Kopers
+                    - generic [ref=e594]: 78.42%
+            - link "Alle markten verkennen" [ref=e596] [cursor=pointer]:
+              - /url: /nl-nl/markets
+              - generic [ref=e597]: Alle markten verkennen
+          - generic [ref=e598]:
+            - generic [ref=e599]:
+              - generic [ref=e600]:
+                - button "1D" [ref=e601]
+                - button "1 uur" [ref=e602] [cursor=pointer]
+                - button "4 uur" [ref=e603] [cursor=pointer]
+                - button "1 m" [ref=e604] [cursor=pointer]
+                - button "5 m" [ref=e605] [cursor=pointer]
+                - button "15 m" [ref=e606] [cursor=pointer]
+                - button "30 m" [ref=e607] [cursor=pointer]
+                - button "1w" [ref=e608] [cursor=pointer]
+              - generic [ref=e609]: US 500
+              - img [ref=e611]
+            - strong [ref=e613]: In het verleden behaalde resultaten zijn geen garantie voor toekomstige resultaten
+    - generic [ref=e616]:
+      - generic [ref=e617]:
+        - heading "Voor beginnende handelaren" [level=2] [ref=e618]
+        - paragraph [ref=e620]: Begin uw handelsavontuur bij Capital.com.
+      - generic [ref=e621]:
+        - generic [ref=e622]:
+          - generic [ref=e623]:
+            - heading "Gebruiksvriendelijke demo" [level=3] [ref=e624]
+            - paragraph [ref=e626]: Verruim uw handelskennis zonder risico.
+            - button "Demo proberen" [ref=e628] [cursor=pointer]:
+              - generic [ref=e629]: Demo proberen
+          - img "phone" [ref=e631]
+        - generic [ref=e632]:
+          - generic [ref=e633]:
+            - heading "Uitgebreide cursussen" [level=3] [ref=e634]
+            - paragraph [ref=e636]: Ontdek de basisprincipes van de effectenhandel in onze toegankelijke cursussen, webinars, quizzen en video's.
+            - link "Meer info" [ref=e638] [cursor=pointer]:
+              - /url: /nl-nl/learn
+              - generic [ref=e639]: Meer info
+          - img "phone" [ref=e641]
+        - generic [ref=e643]:
+          - heading "Deskundige ondersteuning, 24/7" [level=3] [ref=e644]
+          - paragraph [ref=e646]: Geniet de klok rond van deskundige en persoonlijke ondersteuning.
+        - generic [ref=e648]:
+          - heading "Flexibele positiegroottes" [level=3] [ref=e649]
+          - paragraph [ref=e651]: Houd uw blootstelling onder controle en handel met flexibele positiegroottes.
+        - generic [ref=e653]:
+          - heading "Tools voor risicobeheer" [level=3] [ref=e654]
+          - paragraph [ref=e656]:
+            - text: Gebruik stop-losses
+            - superscript [ref=e657]: "2"
+            - text: om uw verlies te beperken, mocht de markt zich tegen u keren.
+      - button "Registreren" [ref=e659] [cursor=pointer]
+    - generic [ref=e662]:
+      - generic [ref=e663]:
+        - heading "Klaar om bij een toonaangevende makelaar te werken?" [level=2] [ref=e664]
+        - generic [ref=e665]: Word lid van onze gemeenschap van handelaars wereldwijd
+      - generic [ref=e666]:
+        - button [ref=e668] [cursor=pointer]
+        - generic [ref=e671]: 1. Maak een account aan
+        - generic [ref=e672]: 2. Maak uw eerste storting
+        - generic [ref=e673]: 3. Ga aan de slag
+    - generic [ref=e675]:
+      - paragraph [ref=e676]:
+        - superscript [ref=e677]: "1"
+        - text: De vermelde informatie heeft betrekking op Capital Com Group.
+      - paragraph [ref=e678]:
+        - superscript [ref=e679]: "2"
+        - text: Stop-losses zijn mogelijk niet gegarandeerd.
+  - contentinfo [ref=e681]:
+    - generic [ref=e682]:
+      - link [ref=e683] [cursor=pointer]:
+        - /url: /nl-nl
+        - img [ref=e684]
+      - generic [ref=e692]:
+        - link [ref=e693] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e694] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Capitaltrading/videos
+      - generic [ref=e695]:
+        - link [ref=e696] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e697] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e698] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=006631d0-60e0-4edb-8806-b6b349f61f7f&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e699]:
+      - generic [ref=e700]:
+        - generic [ref=e701]:
+          - generic [ref=e702]:
+            - generic [ref=e703]: "Land / Regio:"
+            - button "Netherlands" [ref=e704] [cursor=pointer]: Netherlands
+          - generic [ref=e706]: •
+          - generic [ref=e707]:
+            - generic [ref=e708]: "Taal:"
+            - button "Dutch" [ref=e709] [cursor=pointer]
+        - generic [ref=e710]:
+          - generic [ref=e711]: "Ook kunt u contact met ons opnemen:"
+          - link "+31 97010282820" [ref=e714] [cursor=pointer]:
+            - /url: tel:+31 97010282820
+          - generic [ref=e715]: •
+          - link "support@capital.com" [ref=e717] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+      - generic [ref=e718]:
+        - generic [ref=e719]:
+          - link "Handelen" [ref=e721] [cursor=pointer]:
+            - /url: /nl-nl/ways-to-trade
+            - strong [ref=e722]: Handelen
+          - generic [ref=e723]:
+            - generic [ref=e724]:
+              - generic [ref=e725]: Manieren om te handelen
+              - link "CFDs verhandelen" [ref=e728] [cursor=pointer]:
+                - /url: /nl-nl/ways-to-trade/cfd-trading
+            - generic [ref=e729]:
+              - generic [ref=e730]: Handelsplatformen
+              - generic [ref=e731]:
+                - link "Handelsplatforms" [ref=e733] [cursor=pointer]:
+                  - /url: /nl-nl/trading-platforms
+                - link "Webplatform" [ref=e735] [cursor=pointer]:
+                  - /url: /nl-nl/trading-platforms/web-platform
+                - link "TradingView" [ref=e737] [cursor=pointer]:
+                  - /url: /nl-nl/trading-platforms/trading-view
+                - link "Mobiele apps" [ref=e739] [cursor=pointer]:
+                  - /url: /nl-nl/trading-platforms/mobile-apps
+                - link "MT4" [ref=e741] [cursor=pointer]:
+                  - /url: /nl-nl/trading-platforms/mt4
+                - link "MT5" [ref=e743] [cursor=pointer]:
+                  - /url: /nl-nl/trading-platforms/mt5
+            - generic [ref=e744]:
+              - generic [ref=e745]: Handelsinfo
+              - generic [ref=e746]:
+                - link "Margin calls" [ref=e748] [cursor=pointer]:
+                  - /url: /nl-nl/ways-to-trade/margin-calls
+                - link "Hoe neemt u geld op?" [ref=e750] [cursor=pointer]:
+                  - /url: /nl-nl/ways-to-trade/how-withdrawals-work
+                - link "Fraudepreventie" [ref=e752] [cursor=pointer]:
+                  - /url: /nl-nl/ways-to-trade/fraud-awareness
+            - generic [ref=e753]:
+              - generic [ref=e754]: Handelsinstrumenten
+              - generic [ref=e755]:
+                - link "Demohandel" [ref=e757] [cursor=pointer]:
+                  - /url: /nl-nl/trading-platforms/demo-account
+                - link "CFD-handelscalculator" [ref=e759] [cursor=pointer]:
+                  - /url: /nl-nl/ways-to-trade/cfd-trading/cfd-calculator
+        - generic [ref=e760]:
+          - link "Markten" [ref=e762] [cursor=pointer]:
+            - /url: /nl-nl/markets
+            - strong [ref=e763]: Markten
+          - generic [ref=e764]:
+            - generic [ref=e765]:
+              - generic [ref=e766]: Onze markten
+              - generic [ref=e767]:
+                - link "Forex" [ref=e769] [cursor=pointer]:
+                  - /url: /nl-nl/markets/forex
+                - link "Aandelen" [ref=e771] [cursor=pointer]:
+                  - /url: /nl-nl/markets/shares
+                - link "Indexen" [ref=e773] [cursor=pointer]:
+                  - /url: /nl-nl/markets/indices
+                - link "Grondstoffen" [ref=e775] [cursor=pointer]:
+                  - /url: /nl-nl/markets/commodities
+                - link "Cryptovaluta" [ref=e777] [cursor=pointer]:
+                  - /url: /nl-nl/markets/cryptocurrencies
+            - generic [ref=e778]:
+              - generic [ref=e779]: Beursberichten
+              - link "Marktanalyse" [ref=e782] [cursor=pointer]:
+                - /url: /nl-nl/analysis
+            - link "Alle markten en instrumenten" [ref=e784] [cursor=pointer]:
+              - /url: /nl-nl/markets-and-instruments-sitemap
+        - generic [ref=e785]:
+          - link "Tarieven" [ref=e787] [cursor=pointer]:
+            - /url: /nl-nl/ways-to-trade/fees-and-charges
+            - strong [ref=e788]: Tarieven
+          - generic [ref=e790]:
+            - generic [ref=e791]: Tarieven
+            - generic [ref=e792]:
+              - link "Kosten en tarieven" [ref=e794] [cursor=pointer]:
+                - /url: /nl-nl/ways-to-trade/fees-and-charges
+              - link "Ons bedrijfsmodel" [ref=e796] [cursor=pointer]:
+                - /url: /nl-nl/about-us/how-capital-makes-money
+              - link "De CFD-kosten van Capital.com verklaard" [ref=e798] [cursor=pointer]:
+                - /url: /nl-nl/ways-to-trade/pricing
+              - link "Markten prijsstelling" [ref=e800] [cursor=pointer]:
+                - /url: /nl-nl/about-us/how-our-markets-are-priced
+        - generic [ref=e801]:
+          - link "Leer" [ref=e803] [cursor=pointer]:
+            - /url: /nl-nl/learn
+            - strong [ref=e804]: Leer
+          - generic [ref=e805]:
+            - generic [ref=e806]:
+              - generic [ref=e807]: Voor beginners
+              - generic [ref=e808]:
+                - link "Basisprincipes van trading" [ref=e810] [cursor=pointer]:
+                  - /url: /nl-nl/learn/essentials
+                - link "Risicobeheer" [ref=e812] [cursor=pointer]:
+                  - /url: /nl-nl/learn/risk-management
+                - link "Marktgidsen" [ref=e814] [cursor=pointer]:
+                  - /url: /nl-nl/learn/market-guides
+                - link "Demohandel" [ref=e816] [cursor=pointer]:
+                  - /url: /nl-nl/trading-platforms/demo-account
+                - link "Financieel Woordenboek" [ref=e818] [cursor=pointer]:
+                  - /url: /nl-nl/learn/glossary
+                - link "Investmate" [ref=e820] [cursor=pointer]:
+                  - /url: /nl-nl/learn/investmate-trading-app
+            - generic [ref=e821]:
+              - generic [ref=e822]: Voor ervaren handelaars
+              - generic [ref=e823]:
+                - link "Handelsstrategieën" [ref=e825] [cursor=pointer]:
+                  - /url: /nl-nl/learn/trading-strategies
+                - link "Technische analyse" [ref=e827] [cursor=pointer]:
+                  - /url: /nl-nl/learn/technical-analysis
+                - link "Handelspsychologie" [ref=e829] [cursor=pointer]:
+                  - /url: /nl-nl/learn/trading-psychology
+                - link "Marktanalyse" [ref=e831] [cursor=pointer]:
+                  - /url: /nl-nl/analysis
+                - link "Handelen in beursintroducties" [ref=e833] [cursor=pointer]:
+                  - /url: /nl-nl/learn/ipo
+        - generic [ref=e834]:
+          - link "Over" [ref=e836] [cursor=pointer]:
+            - /url: /nl-nl/about-us
+            - strong [ref=e837]: Over
+          - generic [ref=e838]:
+            - generic [ref=e839]:
+              - generic [ref=e840]: Informatie
+              - generic [ref=e841]:
+                - link "Leidinggevend team" [ref=e843] [cursor=pointer]:
+                  - /url: /nl-nl/about-us/our-leadership
+                - link "Waarom Capital.com?" [ref=e845] [cursor=pointer]:
+                  - /url: /nl-nl/why-capital
+                - link "Onze geschiedenis" [ref=e847] [cursor=pointer]:
+                  - /url: /nl-nl/about-us/our-history
+                - link "Onze kantoren" [ref=e849] [cursor=pointer]:
+                  - /url: /nl-nl/about-us/our-offices
+                - link "Klantenfondsen" [ref=e851] [cursor=pointer]:
+                  - /url: /nl-nl/about-us/what-capital-does-with-your-money
+                - link "Neem contact op" [ref=e853] [cursor=pointer]:
+                  - /url: /nl-nl/contact-us
+                - link "Is Capital.com veilig?" [ref=e855] [cursor=pointer]:
+                  - /url: /nl-nl/security-measures
+                - link "Viktor Prokopenya" [ref=e857] [cursor=pointer]:
+                  - /url: /nl-nl/about-us/viktor-prokopenya
+            - generic [ref=e858]:
+              - generic [ref=e859]: Hulp nodig?
+              - generic [ref=e860]:
+                - link "Hulp" [ref=e862] [cursor=pointer]:
+                  - /url: /nl-nl/help
+                - link "Kwetsbaarheid van de klant" [ref=e864] [cursor=pointer]:
+                  - /url: /nl-nl/help/client-vulnerability
+            - generic [ref=e865]:
+              - link "Juridische informatie" [ref=e866] [cursor=pointer]:
+                - /url: /nl-nl/terms-and-policies
+              - generic [ref=e867]:
+                - link "Voorwaarden en beleid" [ref=e869] [cursor=pointer]:
+                  - /url: /nl-nl/terms-and-policies
+                - link "Klachtenprocedure (CCSV)" [ref=e871] [cursor=pointer]:
+                  - /url: /nl-nl/terms-and-policies/complaints-procedure
+    - generic [ref=e873]:
+      - paragraph [ref=e874]:
+        - text: CFD\'s zijn complexe instrumenten en houden vanwege de hefboomwerking een hoog risico in op grote verliezen.
+        - generic [ref=e875]:
+          - generic [ref=e876]:
+            - strong [ref=e877]: 69% van de particuliere beleggers verliest geld bij de handel in CFD\'s met deze aanbieder
+            - text: .
+          - text: U moet nagaan of u wel degelijk begrijpt hoe CFD\'s werken en of u zich het hoge risico op geldverlies kunt veroorloven. Raadpleeg onze
+          - link "risicoverklaring" [ref=e878] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e879]:
+        - text: "Waarschuwing: De waarde van aandelen en ETF\\'s die u via een effectenrekening koopt, kan zowel dalen als stijgen. Dit betekent dat u mogelijk minder terugkrijgt dan u oorspronkelijk hebt ingelegd. Prestaties uit het verleden bieden geen garantie voor de toekomst."
+        - text: Transacties in niet-leverbare over-the-counter-instrumenten, zoals knock-outopties en CFD\'s, zijn complexe financiële producten met een hoog risico op verlies van het volledige geïnvesteerde kapitaal. Aangezien deze producten zowel winsten als aanzienlijke verliezen kunnen opleveren, zijn ze niet geschikt voor elke belegger. U moet nagaan of u wel degelijk begrijpt hoe CFD\'s werken en of u zich het hoge risico op verlies kunt veroorloven.
+        - text: Professionele klanten lopen het risico om meer te verliezen dan hun oorspronkelijke inleg. De informatie op deze website is van algemene aard en is niet afgestemd op uw financiële situatie, doelstellingen of behoeften. Raadpleeg onze juridische documenten en zorg ervoor dat u de risico\'s volledig begrijpt voordat u besluit om te handelen. Wij raden u aan om onze trainingen te volgen om een beter inzicht te krijgen in de risico\'s.
+      - paragraph
+      - paragraph [ref=e880]: "Capital Com SV Investments Limited is een in Cyprus gevestigde onderneming met ondernemingsnummer HE 354252. Het bedrijf is erkend en staat onder toezicht van de Cyprus Securities and Exchange Commission (licentienummer 319/17). De maatschappelijke zetel bevindt zich op: Vasileiou Makedonos: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cyprus."
+      - paragraph [ref=e881]: De informatie op deze site is niet bestemd voor inwoners van de Verenigde Staten, Canada en België of enig ander land buiten de EER, en is niet bedoeld voor distributie aan of gebruik door personen in enig land of rechtsgebied waar deze distributie of dit gebruik in strijd zou zijn met de plaatselijke wet- of regelgeving.
+    - generic [ref=e882]:
+      - paragraph [ref=e883]: © 2026 Capital Com SV Investments Limited
+      - generic [ref=e884]:
+        - link "Sitemap" [ref=e885] [cursor=pointer]:
+          - /url: /nl-nl/sitemap
+        - link "Cookie-instellingen" [ref=e886] [cursor=pointer]:
+          - /url: ""
+        - link "Regelgeving" [ref=e887] [cursor=pointer]:
+          - /url: /nl-nl/terms-and-policies/regulations
+        - link "Voorwaarden en beleid" [ref=e888] [cursor=pointer]:
+          - /url: /nl-nl/terms-and-policies
+        - link "Klachtenprocedure" [ref=e889] [cursor=pointer]:
+          - /url: /nl-nl/terms-and-policies/complaints-procedure
+  - generic:
+    - generic: Cookie settings
+  - button [ref=e890] [cursor=pointer]
+  - alert [ref=e891]
+```
