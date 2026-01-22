@@ -1,0 +1,600 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Kontrakty CFD to złożone instrumenty, które wiążą się z dużym ryzykiem gwałtownej straty środków na skutek zastosowania dźwigni finansowej. 69% inwestorów detalicznych odnotowuje straty w handlu kontraktami CFD z tym dostawcą. Powinieneś rozważyć, czy rozumiesz, jak działają kontrakty CFD i czy możesz sobie pozwolić na podjęcie wysokiego ryzyka utraty pieniędzy. Prosimy o zapoznanie się z naszym Oświadczeniem o ryzyku" [ref=e3]:
+      - generic [ref=e6]:
+        - text: Kontrakty CFD to złożone instrumenty, które wiążą się z dużym ryzykiem gwałtownej straty środków na skutek zastosowania dźwigni finansowej.
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - strong [ref=e9]: 69% inwestorów detalicznych odnotowuje straty w handlu kontraktami CFD z tym dostawcą
+            - text: .
+          - text: Powinieneś rozważyć, czy rozumiesz, jak działają kontrakty CFD i czy możesz sobie pozwolić na podjęcie wysokiego ryzyka utraty pieniędzy. Prosimy o zapoznanie się z naszym
+          - link "Oświadczeniem o ryzyku" [ref=e10] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - link "OSOBISTE" [ref=e16] [cursor=pointer]:
+          - /url: /pl-pl
+        - link "PROFESJONALNE" [ref=e17] [cursor=pointer]:
+          - /url: /pl-pl/professional-clients
+      - generic [ref=e18]:
+        - link "WSPARCIE" [ref=e19] [cursor=pointer]:
+          - /url: /pl-pl/help
+        - button "pl" [ref=e21] [cursor=pointer]:
+          - strong [ref=e23]: pl
+    - generic [ref=e24]:
+      - link [ref=e25] [cursor=pointer]:
+        - /url: /pl-pl
+        - img [ref=e26]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - link "Handel" [ref=e40] [cursor=pointer]:
+            - /url: /pl-pl/ways-to-trade
+          - generic:
+            - generic:
+              - generic:
+                - link "Handel":
+                  - /url: /pl-pl/ways-to-trade
+                  - generic:
+                    - generic: Handel
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Sposoby handlu
+                - generic:
+                  - generic:
+                    - strong: Platforma handlowa
+                - generic:
+                  - generic:
+                    - strong: Informacje handlowe
+                - generic:
+                  - generic:
+                    - strong: Narzędzia do handlu
+        - generic [ref=e41]:
+          - link "Rynki" [ref=e44] [cursor=pointer]:
+            - /url: /pl-pl/markets
+          - generic:
+            - generic:
+              - generic:
+                - link "Rynki":
+                  - /url: /pl-pl/markets
+                  - generic:
+                    - generic: Rynki
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Nasze rynki
+                - generic:
+                  - generic:
+                    - strong: Bieżące informacje o rynkach
+        - generic [ref=e45]:
+          - link "Cennik" [ref=e48] [cursor=pointer]:
+            - /url: /pl-pl/ways-to-trade/fees-and-charges
+          - generic:
+            - generic:
+              - generic:
+                - link "Cennik":
+                  - /url: /pl-pl/ways-to-trade/fees-and-charges
+                  - generic:
+                    - generic: Cennik
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Cennik
+        - generic [ref=e49]:
+          - link "Ucz się" [ref=e52] [cursor=pointer]:
+            - /url: /pl-pl/learn
+          - generic:
+            - generic:
+              - generic:
+                - link "Ucz się":
+                  - /url: /pl-pl/learn
+                  - generic:
+                    - generic: Ucz się
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Dla początkujących w handlu
+                - generic:
+                  - generic:
+                    - strong: Dla doświadczonych handlowców
+        - generic [ref=e53]:
+          - link "O Capital" [ref=e56] [cursor=pointer]:
+            - /url: /pl-pl/about-us
+          - generic:
+            - generic:
+              - generic:
+                - link "O Capital":
+                  - /url: /pl-pl/about-us
+                  - generic:
+                    - generic: O Capital
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: O nas
+                - generic:
+                  - generic:
+                    - strong: Uzyskaj pomoc
+                - generic:
+                  - link "Dokumentacja prawna":
+                    - /url: /pl-pl/terms-and-policies
+                    - strong: Dokumentacja prawna
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - button "Zaloguj się" [ref=e59] [cursor=pointer]
+          - button "Załóż konto" [ref=e60] [cursor=pointer]
+        - link "Otwórz platformę user":
+          - /url: /trading/platform/
+          - text: Otwórz platformę
+          - img "user"
+  - generic [ref=e62]:
+    - generic [ref=e64]:
+      - generic [ref=e68]:
+        - heading "Wybierz brokera o solidnych fundamentach" [level=1] [ref=e69]
+        - paragraph [ref=e71]: Wiemy, że bezpieczeństwo jest niezwykle ważne. Dołącz do brokera z wolumenem obrotu ponad 1 tln USD i śpij spokojnie, wiedząc, że Twoje pieniądze są zabezpieczone w czołowych bankach.
+        - generic [ref=e72]:
+          - button "Handluj teraz" [ref=e73] [cursor=pointer]
+          - button "Wypróbuj wersję demo" [ref=e74] [cursor=pointer]
+      - paragraph [ref=e75]: Podmiotem udzielającym uprawnień i sprawującym nadzór regulacyjny jest Cyprus Securities and Exchange Commission (CySEC)
+    - generic [ref=e77]:
+      - link "4.8" [ref=e78] [cursor=pointer]:
+        - /url: https://www.tradingview.com/broker/Capitalcom/
+        - strong [ref=e81]: "4.8"
+      - link "Oceny i recenzje 4.7" [ref=e84] [cursor=pointer]:
+        - /url: https://app.appsflyer.com/id1230088754?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+        - strong [ref=e86]: Oceny i recenzje
+        - strong [ref=e88]: "4.7"
+      - link "Oceny i recenzje 4.6" [ref=e91] [cursor=pointer]:
+        - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+        - strong [ref=e93]: Oceny i recenzje
+        - strong [ref=e95]: "4.6"
+      - link "4.6" [ref=e98] [cursor=pointer]:
+        - /url: https://www.trustpilot.com/review/capital.com
+        - strong [ref=e101]: "4.6"
+    - generic [ref=e105]:
+      - heading "Dlaczego platforma Capital.com?" [level=2] [ref=e107]
+      - generic [ref=e108]:
+        - generic [ref=e111]:
+          - heading "Przystępna platforma" [level=3] [ref=e112]
+          - generic [ref=e113]: Handluj na ponad 5,000 rynków na przejrzystej platformie i w aplikacji, w których znajdziesz wszystkie potrzebne informacje i żadnych zbędnych.
+          - link "Odkryj nasze platformy" [ref=e114] [cursor=pointer]:
+            - /url: /pl-pl/trading-platforms
+            - generic [ref=e115]: Odkryj nasze platformy
+        - generic [ref=e118]:
+          - heading "Zaufany broker o światowym zasięgu" [level=3] [ref=e119]
+          - generic [ref=e121]:
+            - text: Dołącz do społeczności ponad 798,000+ inwestorów z całego świata. Nasi klienci doceniają nas tak bardzo, że wykonali transakcje na kwotę ponad 1 tln USD na naszej platformie.
+            - superscript [ref=e122]: "1"
+          - link "Dowiedz się więcej o nas" [ref=e123] [cursor=pointer]:
+            - /url: /pl-pl/about-us
+            - generic [ref=e124]: Dowiedz się więcej o nas
+        - generic [ref=e127]:
+          - heading "Przejrzyste, konkurencyjne opłaty" [level=3] [ref=e128]
+          - generic [ref=e129]: 0% prowizji bez wyjątków. 0% opłaty overnight za kontrakty CFD na akcje i kryptowaluty. Sprawdź inne obowiązujące opłaty w naszej przejrzystej strukturze.
+          - link "Sprawdź opłaty" [ref=e130] [cursor=pointer]:
+            - /url: /pl-pl/ways-to-trade/fees-and-charges
+            - generic [ref=e131]: Sprawdź opłaty
+        - generic [ref=e134]:
+          - heading "Wszystko, co potrzebne do handlu" [level=3] [ref=e135]
+          - generic [ref=e136]: Porównuj rynki na szybkich wykresach. Znajduj formacje i schematy z pomocą ponad 100 wskaźników. Handluj na bazie aktualności bezpośrednio na platformie. Płynna integracja z TradingView i MT4. I wiele innych zalet, na które zabrakło nam tu miejsca!
+          - link "Pomoc w handlu na wiele sposobów" [ref=e137] [cursor=pointer]:
+            - /url: /pl-pl/learn/trading-strategies
+            - generic [ref=e138]: Pomoc w handlu na wiele sposobów
+        - generic [ref=e141]:
+          - heading "Twoje rynki, twoja dźwignia finansowa" [level=3] [ref=e142]
+          - generic [ref=e143]: Handluj CFD na France 40, EUR/USD, złoto, akcje i tysiące innych rynków, wybierając komfortowy poziom dźwigni.
+          - link "Sprawdź, na czym handlować" [ref=e144] [cursor=pointer]:
+            - /url: /pl-pl/markets
+            - generic [ref=e145]: Sprawdź, na czym handlować
+        - generic [ref=e148]:
+          - heading "Zostań lepszym inwestorem" [level=3] [ref=e149]
+          - generic [ref=e150]: "Odkryj szeroki zbiór materiałów edukacyjnych do szlifowania Twoich umiejętności: przewodniki po rynkach, strategie handlu i inne."
+          - link "Więcej informacji" [ref=e151] [cursor=pointer]:
+            - /url: /pl-pl/learn
+            - generic [ref=e152]: Więcej informacji
+      - button "Handluj teraz" [ref=e154] [cursor=pointer]
+    - generic [ref=e155]:
+      - generic [ref=e157]:
+        - heading "Przeczytaj recenzje, aby dowiedzieć się o nas więcej" [level=2] [ref=e158]
+        - generic [ref=e159]:
+          - text: Przeczytaj opinie naszych klientów
+          - superscript [ref=e160]: "1"
+          - text: ", niezależnie od ich poziomu doświadczenia."
+      - generic [ref=e161]:
+        - generic [ref=e164]:
+          - link "2024-06-07 M***** S******** Działa ok prawie żadnych zastrzeżeń szybkie wypłaty i wpłaty porostu ok" [ref=e165] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+            - generic [ref=e168]: 2024-06-07
+            - strong [ref=e169]: M***** S********
+            - paragraph [ref=e171]: Działa ok prawie żadnych zastrzeżeń szybkie wypłaty i wpłaty porostu ok
+          - link "2024-03-18 A*** R***** Dopiero się uczę ale widzę że ta aplikacja jest prosta i łatwa w obsłudze już na wersji demo zarobiłem kilkanaście zł polecam bardzo" [ref=e173] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+            - generic [ref=e176]: 2024-03-18
+            - strong [ref=e177]: A*** R*****
+            - paragraph [ref=e179]: Dopiero się uczę ale widzę że ta aplikacja jest prosta i łatwa w obsłudze już na wersji demo zarobiłem kilkanaście zł polecam bardzo
+          - link "2025-02-15 M****** G Jak na start z inwestowaniem w giełdę, to jest dobry wybór" [ref=e181] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+            - generic [ref=e184]: 2025-02-15
+            - strong [ref=e185]: M****** G
+            - paragraph [ref=e187]: Jak na start z inwestowaniem w giełdę, to jest dobry wybór
+          - link "2025-03-03 T***** W************ Daje możliwość poznania jak działa rynek" [ref=e189] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+            - generic [ref=e192]: 2025-03-03
+            - strong [ref=e193]: T***** W************
+            - paragraph [ref=e195]: Daje możliwość poznania jak działa rynek
+          - link "2024-04-16 P********* M**** Działa i to się liczy. Obsługa pomaga zawsze na czas." [ref=e197] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+            - generic [ref=e200]: 2024-04-16
+            - strong [ref=e201]: P********* M****
+            - paragraph [ref=e203]: Działa i to się liczy. Obsługa pomaga zawsze na czas.
+          - link "2024-12-27 E******* B******-S***** Świetna platforma do tredingu polecam" [ref=e205] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e208]: 2024-12-27
+            - strong [ref=e209]: E******* B******-S*****
+            - paragraph [ref=e211]: Świetna platforma do tredingu polecam
+          - link "2025-07-06 P**** M***** łatwa w obsłudze aplikacja dla inwestorów" [ref=e213] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+            - generic [ref=e216]: 2025-07-06
+            - strong [ref=e217]: P**** M*****
+            - paragraph [ref=e219]: łatwa w obsłudze aplikacja dla inwestorów
+          - link "2025-06-02 M***** Naprawdę polecam capitala nawet przy tylu innych apek. Warto spróbować." [ref=e221] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e224]: 2025-06-02
+            - strong [ref=e225]: M*****
+            - paragraph [ref=e227]: Naprawdę polecam capitala nawet przy tylu innych apek. Warto spróbować.
+          - link "2025-02-05 A****** C********** Przejrzyste wykresy, łatwe intuicyjne menu" [ref=e229] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+            - generic [ref=e232]: 2025-02-05
+            - strong [ref=e233]: A****** C**********
+            - paragraph [ref=e235]: Przejrzyste wykresy, łatwe intuicyjne menu
+          - link "2025-02-11 R**** Bardzo polecam tą platformę. Bardzo profesjonalne podejscie pracowników szczególnie Pani Iwony. Zawsze mogę na nią liczyć w każdej problematycznej dla mnie sprawie." [ref=e237] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e240]: 2025-02-11
+            - strong [ref=e241]: R****
+            - paragraph [ref=e243]: Bardzo polecam tą platformę. Bardzo profesjonalne podejscie pracowników szczególnie Pani Iwony. Zawsze mogę na nią liczyć w każdej problematycznej dla mnie sprawie.
+        - paragraph [ref=e245]: Wyświetlanie naszych 4 i 5-gwiazdkowych recenzji. Konkretne dane użytkownika pozostały celowo anonimowe, aby chronić jego prywatność zgodnie z wymogami RODO.
+      - generic [ref=e247]:
+        - link "4.8" [ref=e248] [cursor=pointer]:
+          - /url: https://www.tradingview.com/broker/Capitalcom/
+          - strong [ref=e251]: "4.8"
+        - link "Oceny i recenzje 4.7" [ref=e254] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+          - strong [ref=e256]: Oceny i recenzje
+          - strong [ref=e258]: "4.7"
+        - link "Oceny i recenzje 4.6" [ref=e261] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+          - strong [ref=e263]: Oceny i recenzje
+          - strong [ref=e265]: "4.6"
+        - link "4.6" [ref=e268] [cursor=pointer]:
+          - /url: https://www.trustpilot.com/review/capital.com
+          - strong [ref=e271]: "4.6"
+    - generic [ref=e275]:
+      - generic [ref=e276]:
+        - heading "Dla doświadczonych handlowców" [level=2] [ref=e277]
+        - paragraph [ref=e279]: Doskonała obsługa, narzędzia i zasoby do dalszego rozwoju umiejętności.
+      - generic [ref=e280]:
+        - generic [ref=e282]:
+          - heading "Narzędzia do tworzenia wykresów i wskaźniki" [level=3] [ref=e283]
+          - paragraph [ref=e285]: Rozszerz swoją analizę dzięki zestawowi intuicyjnych wykresów, narzędzi do edycji i 75 wskaźników.
+        - generic [ref=e287]:
+          - heading "Korzystaj z elastycznej dźwigni" [level=3] [ref=e288]
+          - paragraph [ref=e290]: Kontroluj większe pozycje dzięki niskim depozytom na wybranych rynkach. Dźwignia finansowa potęguje zarówno zyski, jak i straty. Mogą obowiązywać ograniczenia poziomu dźwigni.
+        - generic [ref=e292]:
+          - heading "Całodobowa obsługa" [level=3] [ref=e293]
+          - paragraph [ref=e295]: Nasz profesjonalny zespół obsługi jest do dyspozycji przez całą dobę.
+        - generic [ref=e297]:
+          - heading "Indywidualne alerty cenowe" [level=3] [ref=e298]
+          - paragraph [ref=e300]: Monitoruj ruchy cenowe ulubionych aktywów i skutecznie realizuj swoją strategię.
+      - generic [ref=e301]:
+        - img "platform" [ref=e303]
+        - generic [ref=e304]:
+          - heading "Szybkie wypłaty" [level=2] [ref=e305]
+          - paragraph [ref=e307]: 99% wypłat realizowanych w ciągu 24 godzin według danych wewnętrznych z serwerów za 2024 rok.
+    - generic [ref=e309]:
+      - generic [ref=e310]:
+        - heading "Nasze rynki" [level=2] [ref=e311]
+        - generic [ref=e312]: Bądź na bieżąco z najważniejszymi danymi z ponad 5,000 rynków. Przeglądaj najnowsze doniesienia, raporty nastrojów inwestorów, spready, ruchy cenowe i inne informacje.
+      - generic [ref=e313]:
+        - generic [ref=e316]:
+          - button "Wszystko Wszystko Surowce Forex Indeksy Akcje Kryptowaluty" [ref=e317]:
+            - button "Wszystko" [ref=e318] [cursor=pointer]:
+              - textbox [ref=e320]: Wszystko
+            - generic:
+              - button "Wszystko"
+              - button "Surowce"
+              - button "Forex"
+              - button "Indeksy"
+              - button "Akcje"
+              - button "Kryptowaluty"
+          - button "Najczęściej handlowane Sortuj Największe spadki Najczęściej handlowane Największe wzrosty Najbardziej zmienne" [ref=e321]:
+            - button "Najczęściej handlowane Sortuj" [ref=e322] [cursor=pointer]:
+              - generic [ref=e323]:
+                - textbox "Sortuj" [ref=e324]:
+                  - /placeholder: " "
+                  - text: Najczęściej handlowane
+                - generic: Sortuj
+            - generic:
+              - button "Największe spadki"
+              - button "Najczęściej handlowane"
+              - button "Największe wzrosty"
+              - button "Najbardziej zmienne"
+        - generic [ref=e382]:
+          - link "Przeglądaj wszystkie rynki" [ref=e403] [cursor=pointer]:
+            - /url: /pl-pl/markets
+            - generic [ref=e404]: Przeglądaj wszystkie rynki
+          - strong [ref=e408]: Wyniki historyczne nie są niezawodnym wskaźnikiem przyszłych rezultatów.
+    - generic [ref=e411]:
+      - generic [ref=e412]:
+        - heading "Dla uczących się inwestorów" [level=2] [ref=e413]
+        - paragraph [ref=e415]: Zacznij przygodę z handlem w Capital.com.
+      - generic [ref=e416]:
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - heading "Przystępne konto demonstracyjne" [level=3] [ref=e419]
+            - paragraph [ref=e421]: Zdobywaj doświadczenie w handlu łatwo i bez ryzyka.
+            - button "Wypróbuj wersję demonstracyjną" [ref=e423] [cursor=pointer]:
+              - generic [ref=e424]: Wypróbuj wersję demonstracyjną
+          - img "phone" [ref=e426]
+        - generic [ref=e427]:
+          - generic [ref=e428]:
+            - heading "Kompleksowa edukacja" [level=3] [ref=e429]
+            - paragraph [ref=e431]: Poznaj kluczowe zagadnienia w formie przystępnych kursów, webinarów, quizów i filmów.
+            - link "Więcej informacji" [ref=e433] [cursor=pointer]:
+              - /url: /pl-pl/learn
+              - generic [ref=e434]: Więcej informacji
+          - img "phone" [ref=e436]
+        - generic [ref=e438]:
+          - heading "Dedykowane wsparcie przez całą dobę" [level=3] [ref=e439]
+          - paragraph [ref=e441]: Korzystaj z profesjonalnej, przyjaznej obsługi przez całą dobę.
+        - generic [ref=e443]:
+          - heading "Elastyczny rozmiar transakcji" [level=3] [ref=e444]
+          - paragraph [ref=e446]: Dostosuj swoją ekspozycję i handluj, wyznaczając elastycznie rozmiar transakcji.
+        - generic [ref=e448]:
+          - heading "Narzędzia zarządzania ryzykiem" [level=3] [ref=e449]
+          - paragraph [ref=e451]:
+            - text: Stosuj zlecenia stop loss
+            - superscript [ref=e452]: "2"
+            - text: ", aby ograniczać straty w przypadku niekorzystnego zwrotu rynku."
+      - button "Handluj teraz" [ref=e454] [cursor=pointer]
+    - generic [ref=e457]:
+      - generic [ref=e458]:
+        - heading "Chcesz dołączyć do wiodącego brokera?" [level=2] [ref=e459]
+        - generic [ref=e460]: Dołącz do naszej społeczności inwestorów na całym świecie
+      - generic [ref=e461]:
+        - button [ref=e463] [cursor=pointer]
+        - generic [ref=e466]: 1. Utwórz swoje konto
+        - generic [ref=e467]: 2. Dokonaj swojej pierwszej wpłaty
+        - generic [ref=e468]: 3. Rozpocznij handlowanie
+    - generic [ref=e470]:
+      - paragraph [ref=e471]:
+        - superscript [ref=e472]: "1"
+        - text: Przedstawione informacje dotyczą Capital Com Group.
+      - paragraph [ref=e473]:
+        - superscript [ref=e474]: "2"
+        - text: Zlecenia stop loss mogą nie być gwarantowane.
+  - contentinfo [ref=e476]:
+    - generic [ref=e477]:
+      - link [ref=e478] [cursor=pointer]:
+        - /url: /pl-pl
+        - img [ref=e479]
+      - generic [ref=e487]:
+        - link [ref=e488] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e489] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Capitaltrading/videos
+      - generic [ref=e490]:
+        - link [ref=e491] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+        - link [ref=e492] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+        - link [ref=e493] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=ce5ffd3c-d4b7-475f-b6ff-5eff1d64eff6
+    - generic [ref=e494]:
+      - generic [ref=e495]:
+        - generic [ref=e496]:
+          - generic [ref=e497]:
+            - generic [ref=e498]: "Kraj / Region:"
+            - button "Poland" [ref=e499] [cursor=pointer]: Poland
+          - generic [ref=e501]: •
+          - generic [ref=e502]:
+            - generic [ref=e503]: "Język:"
+            - button "Polish" [ref=e504] [cursor=pointer]
+        - generic [ref=e505]:
+          - generic [ref=e506]: "Możesz również skontaktować się z nami:"
+          - link "+48 222304455" [ref=e509] [cursor=pointer]:
+            - /url: tel:+48 222304455
+          - generic [ref=e510]: •
+          - link "support@capital.com" [ref=e512] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+      - generic [ref=e513]:
+        - generic [ref=e514]:
+          - link "Handel" [ref=e516] [cursor=pointer]:
+            - /url: /pl-pl/ways-to-trade
+            - strong [ref=e517]: Handel
+          - generic [ref=e518]:
+            - generic [ref=e519]:
+              - generic [ref=e520]: Sposoby handlu
+              - generic [ref=e521]:
+                - link "Handel CFD" [ref=e523] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/cfd-trading
+                - link "Doświadczony trader detaliczny" [ref=e525] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/experienced-retail-trader
+            - generic [ref=e526]:
+              - generic [ref=e527]: Platforma handlowa
+              - generic [ref=e528]:
+                - link "Platformy handlowe" [ref=e530] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms
+                - link "Platforma internetowa" [ref=e532] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/web-platform
+                - link "TradingView" [ref=e534] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/trading-view
+                - link "Aplikacje mobilne" [ref=e536] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/mobile-apps
+                - link "MT4" [ref=e538] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/mt4
+                - link "MT5" [ref=e540] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/mt5
+            - generic [ref=e541]:
+              - generic [ref=e542]: Informacje handlowe
+              - generic [ref=e543]:
+                - link "Wezwania do uzupełnienia depozytu" [ref=e545] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/margin-calls
+                - link "Zapobieganie oszustwom" [ref=e547] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/fraud-awareness
+                - link "Jak działają wypłaty" [ref=e549] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/how-withdrawals-work
+            - generic [ref=e550]:
+              - generic [ref=e551]: Narzędzia do handlu
+              - generic [ref=e552]:
+                - link "Kalkulator handlu CFD" [ref=e554] [cursor=pointer]:
+                  - /url: /pl-pl/ways-to-trade/cfd-trading/cfd-calculator
+                - link "Handel w trybie demo" [ref=e556] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/demo-account
+        - generic [ref=e557]:
+          - link "Rynki" [ref=e559] [cursor=pointer]:
+            - /url: /pl-pl/markets
+            - strong [ref=e560]: Rynki
+          - generic [ref=e561]:
+            - generic [ref=e562]:
+              - generic [ref=e563]: Nasze rynki
+              - generic [ref=e564]:
+                - link "Forex" [ref=e566] [cursor=pointer]:
+                  - /url: /pl-pl/markets/forex
+                - link "Akcje" [ref=e568] [cursor=pointer]:
+                  - /url: /pl-pl/markets/shares
+                - link "Indeksy" [ref=e570] [cursor=pointer]:
+                  - /url: /pl-pl/markets/indices
+                - link "Towary" [ref=e572] [cursor=pointer]:
+                  - /url: /pl-pl/markets/commodities
+                - link "Kryptowaluty" [ref=e574] [cursor=pointer]:
+                  - /url: /pl-pl/markets/cryptocurrencies
+            - generic [ref=e575]:
+              - generic [ref=e576]: Bieżące informacje o rynkach
+              - link "Analiza Rynku" [ref=e579] [cursor=pointer]:
+                - /url: /pl-pl/analysis
+            - link "Wszystkie rynki i instrumenty" [ref=e581] [cursor=pointer]:
+              - /url: /pl-pl/markets-and-instruments-sitemap
+        - generic [ref=e582]:
+          - link "Cennik" [ref=e584] [cursor=pointer]:
+            - /url: /pl-pl/ways-to-trade/fees-and-charges
+            - strong [ref=e585]: Cennik
+          - generic [ref=e587]:
+            - generic [ref=e588]: Cennik
+            - generic [ref=e589]:
+              - link "Prowizje i opłaty" [ref=e591] [cursor=pointer]:
+                - /url: /pl-pl/ways-to-trade/fees-and-charges
+              - link "Nasz model biznesowy" [ref=e593] [cursor=pointer]:
+                - /url: /pl-pl/about-us/how-capital-makes-money
+              - link "Wyjaśnienie kosztów kontraktów CFD w Capital.com" [ref=e595] [cursor=pointer]:
+                - /url: /pl-pl/ways-to-trade/pricing
+              - link "Ceny rynkowe" [ref=e597] [cursor=pointer]:
+                - /url: /pl-pl/about-us/how-our-markets-are-priced
+        - generic [ref=e598]:
+          - link "Ucz się" [ref=e600] [cursor=pointer]:
+            - /url: /pl-pl/learn
+            - strong [ref=e601]: Ucz się
+          - generic [ref=e602]:
+            - generic [ref=e603]:
+              - generic [ref=e604]: Dla początkujących w handlu
+              - generic [ref=e605]:
+                - link "Niezbędnik handlu" [ref=e607] [cursor=pointer]:
+                  - /url: /pl-pl/learn/essentials
+                - link "Zarządzanie ryzykiem" [ref=e609] [cursor=pointer]:
+                  - /url: /pl-pl/learn/risk-management
+                - link "Przewodniki po rynkach" [ref=e611] [cursor=pointer]:
+                  - /url: /pl-pl/learn/market-guides
+                - link "Handel w trybie demo" [ref=e613] [cursor=pointer]:
+                  - /url: /pl-pl/trading-platforms/demo-account
+                - link "Słownik finansowy" [ref=e615] [cursor=pointer]:
+                  - /url: /pl-pl/learn/glossary
+                - link "Aplikacja Investmate" [ref=e617] [cursor=pointer]:
+                  - /url: /pl-pl/learn/investmate-trading-app
+            - generic [ref=e618]:
+              - generic [ref=e619]: Dla doświadczonych handlowców
+              - generic [ref=e620]:
+                - link "Strategie handlu" [ref=e622] [cursor=pointer]:
+                  - /url: /pl-pl/learn/trading-strategies
+                - link "Analiza techniczna" [ref=e624] [cursor=pointer]:
+                  - /url: /pl-pl/learn/technical-analysis
+                - link "Psychologia handlu" [ref=e626] [cursor=pointer]:
+                  - /url: /pl-pl/learn/trading-psychology
+                - link "Handel na IPO" [ref=e628] [cursor=pointer]:
+                  - /url: /pl-pl/learn/ipo
+                - link "Analiza Rynku" [ref=e630] [cursor=pointer]:
+                  - /url: /pl-pl/analysis
+        - generic [ref=e631]:
+          - link "O Capital" [ref=e633] [cursor=pointer]:
+            - /url: /pl-pl/about-us
+            - strong [ref=e634]: O Capital
+          - generic [ref=e635]:
+            - generic [ref=e636]:
+              - generic [ref=e637]: O nas
+              - generic [ref=e638]:
+                - link "Zespół kierowniczy" [ref=e640] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/our-leadership
+                - link "Dlaczego Capital.com?" [ref=e642] [cursor=pointer]:
+                  - /url: /pl-pl/why-capital
+                - link "Nasza historia" [ref=e644] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/our-history
+                - link "Nasze biura" [ref=e646] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/our-offices
+                - link "Fundusze klientów" [ref=e648] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/what-capital-does-with-your-money
+                - link "Skontaktuj się z nami" [ref=e650] [cursor=pointer]:
+                  - /url: /pl-pl/contact-us
+                - link "Czy Capital.com jest bezpieczny?" [ref=e652] [cursor=pointer]:
+                  - /url: /pl-pl/security-measures
+                - link "Kariera w Capital.com" [ref=e654] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/careers
+                - link "Viktor Prokopenya" [ref=e656] [cursor=pointer]:
+                  - /url: /pl-pl/about-us/viktor-prokopenya
+            - generic [ref=e657]:
+              - generic [ref=e658]: Uzyskaj pomoc
+              - generic [ref=e659]:
+                - link "Pomoc" [ref=e661] [cursor=pointer]:
+                  - /url: /pl-pl/help
+                - link "Słabe punkty klienta" [ref=e663] [cursor=pointer]:
+                  - /url: /pl-pl/help/client-vulnerability
+            - generic [ref=e664]:
+              - link "Dokumentacja prawna" [ref=e665] [cursor=pointer]:
+                - /url: /pl-pl/terms-and-policies
+              - generic [ref=e666]:
+                - link "Regulamin i zasady" [ref=e668] [cursor=pointer]:
+                  - /url: /pl-pl/terms-and-policies
+                - link "Procedura rozpatrywania skarg (CCSV)" [ref=e670] [cursor=pointer]:
+                  - /url: /pl-pl/terms-and-policies/complaints-procedure
+    - generic [ref=e672]:
+      - paragraph [ref=e673]:
+        - text: Kontrakty CFD to złożone instrumenty, które wiążą się z dużym ryzykiem gwałtownej straty środków na skutek zastosowania dźwigni finansowej.
+        - generic [ref=e674]:
+          - generic [ref=e675]:
+            - strong [ref=e676]: 69% inwestorów detalicznych odnotowuje straty w handlu kontraktami CFD z tym dostawcą
+            - text: .
+          - text: Powinieneś rozważyć, czy rozumiesz, jak działają kontrakty CFD i czy możesz sobie pozwolić na podjęcie wysokiego ryzyka utraty pieniędzy. Prosimy o zapoznanie się z naszym
+          - link "Oświadczeniem o ryzyku" [ref=e677] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e678]:
+        - text: "Ostrzeżenie o ryzyku: wartość akcji i funduszy ETF nabytych za pośrednictwem rachunku transakcyjnego może rosnąć lub spadać, co może oznaczać, że zwrot z inwestycji będzie niższy od jej pierwotnej kwoty. Wyniki historyczne nie są gwarancją przyszłych rezultatów."
+        - text: Transakcje na pozagiełdowych instrumentach niepodlegających dostawie, takich jak opcje knock-out i kontrakty CFD, są złożonymi produktami finansowymi, które wiążą się z wysokim ryzykiem utraty całego zainwestowanego kapitału. Tego typu produkty nie są odpowiednie dla wszystkich inwestorów, ponieważ mogą przynosić zarówno zyski, jak i znaczne straty. Przed rozpoczęciem tego rodzaju handlu powinieneś dokładnie rozważyć, czy rozumiesz sposób działania tych instrumentów i czy możesz zaakceptować wysokie ryzyko straty pieniędzy.
+        - text: W przypadku klientów profesjonalnych istnieje ryzyko poniesienia straty przekraczającej początkowy depozyt. Informacje zawarte w tej witrynie mają charakter ogólny i nie uwzględniają sytuacji finansowej, celów ani potrzeb indywidualnego klienta. Przed podjęciem jakichkolwiek decyzji handlowych prosimy o zapoznanie się z naszymi dokumentami prawnymi i upewnienie się, że w pełni rozumiesz związane z nimi ryzyko. Zachęcamy do skorzystania z usług szkoleniowych naszej firmy, aby lepiej zrozumieć ryzyko przed przystąpieniem do operacji handlowych.
+      - paragraph
+      - paragraph [ref=e679]: "Capital Com SV Investments Limited jest spółką zarejestrowaną w Republice Cypru pod numerem wpisu HE 354252. Spółka posiada upoważnienie i podlega nadzorowi regulacyjnemu cypryjskiej Securities and Exchange Commission (numer licencji 319/17). Adres siedziby: Vasileiou Makedonos 8, Kinnis Business Center, 2nd floor, 3040, Limassol, Cypr."
+      - paragraph [ref=e680]: Informacje zawarte na tej stronie nie są kierowane do mieszkańców Stanów Zjednoczonych, Kanady, Belgii, ani żadnego innego kraju spoza EOG i nie są przeznaczone do rozpowszechniania ani wykorzystywania przez osoby w dowolnym kraju lub jurysdykcji, w których takie rozpowszechnianie lub wykorzystywanie byłoby sprzeczne z lokalnymi przepisami lub regulacjami.
+    - generic [ref=e681]:
+      - paragraph [ref=e682]: © 2026 Capital Com SV Investments Limited
+      - generic [ref=e683]:
+        - link "Mapa witryny" [ref=e684] [cursor=pointer]:
+          - /url: /pl-pl/sitemap
+        - link "Ustawienia plików cookie" [ref=e685] [cursor=pointer]:
+          - /url: ""
+        - link "Przepisy prawne" [ref=e686] [cursor=pointer]:
+          - /url: /pl-pl/terms-and-policies/regulations
+        - link "Regulamin i zasady" [ref=e687] [cursor=pointer]:
+          - /url: /pl-pl/terms-and-policies
+        - link "Procedura rozpatrywania skarg (CySEC)" [ref=e688] [cursor=pointer]:
+          - /url: /pl-pl/terms-and-policies/complaints-procedure
+  - button [ref=e689] [cursor=pointer]
+  - alert [ref=e690]
+```
