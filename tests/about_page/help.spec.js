@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
 import { HelpPage } from "../../pages/aboutSection/HelpPage";
-import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 import { licenses } from "../../test-data/licenses";
 
-const languages = ["EN", "RO", "FR", "DE", "AR", "RU"];
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
@@ -13,18 +13,19 @@ licenses.forEach((license) => {
     test(`${license.name} ${lang} – Help - un`, async ({ page }) => {
       const path = license.paths[lang];
 
+      await page.pause()
+
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",
       });
 
+      await handleOptionalPopups(page);
+
       const aboutMenu = new AboutSectionMenu(page);
       const helpPage = new HelpPage(page)
 
-      await aboutMenu.openContactUsPage(
-        aboutMenuTexts.ABOUT[lang],
-        aboutMenuTexts.HELP[lang]
-      );
-
+      await aboutMenu.openHelpPage()
+     
       const expectedPath = `${path}/help`;
 
       await expect(page).toHaveURL(expectedPath);

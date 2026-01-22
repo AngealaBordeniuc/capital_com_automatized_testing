@@ -5,12 +5,8 @@ import { handleStayOnSitePopUp, handleCookiesPopUp, handleModalWindowSignUp } fr
      this.page = page;
    }
 
-   /**
-    * Generic stable CTA click handler (popups + visibility + enabled)
-    */
-   async clickCTA(locator) {   
-     await handleCookiesPopUp(this.page);
-     await handleStayOnSitePopUp(this.page);
+   
+   async clickCTA(locator) {      
      await expect(locator).toBeAttached({ timeout: 10000 });
      await locator.scrollIntoViewIfNeeded();
      await expect(locator).toBeVisible({ timeout: 10000 });
@@ -19,26 +15,22 @@ import { handleStayOnSitePopUp, handleCookiesPopUp, handleModalWindowSignUp } fr
    }
 
    async clickCreateAccountButton() {
-     const createAccountButton = this.page.getByRole("button", {
-       name: "Create account",
-     });
+     const createAccountButton = this.page.locator('button[data-type="fullscreen_banner_block_btn1_signup"]');
      await this.clickCTA(createAccountButton);
      await handleModalWindowSignUp(this.page);
    }
 
    async clickTryDemoAccountButton() {
-     const tryDemoAccountButton = this.page.getByRole("button", {
-       name: "Try demo account",
-     });
+     const tryDemoAccountButton = this.page.locator(
+       'button[data-type="fullscreen_banner_block_btn2demo"]');
      await this.clickCTA(tryDemoAccountButton);
      await handleModalWindowSignUp(this.page);
    }
 
    async clickSignUpButtonWhyChooseCapital() {
-     const signUpButtonWhyChoose = this.page.getByRole("button", {
-       name: "Sign up",
-       exact: true,
-     });
+     const signUpButtonWhyChoose = this.page.locator(
+       'button[data-type="numbers_block_btn"]',
+     );
      await this.clickCTA(signUpButtonWhyChoose);
      await handleModalWindowSignUp(this.page);
    }

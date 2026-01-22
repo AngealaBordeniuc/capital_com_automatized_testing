@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
 import { OurOfficesPage } from "../../pages/aboutSection/OurOfficesPage";
-import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 import { licenses } from "../../test-data/licenses";
 
-const languages = ["EN", "RO", "FR", "DE", "AR", "RU"];
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
@@ -17,13 +17,12 @@ licenses.forEach((license) => {
         waitUntil: "domcontentloaded",
       });
 
+      await handleOptionalPopups(page);
+
       const aboutMenu = new AboutSectionMenu(page);
       const ourOfficesPage = new OurOfficesPage(page)
 
-      await aboutMenu.openContactUsPage(
-        aboutMenuTexts.ABOUT[lang],
-        aboutMenuTexts.OUR_OFFICES[lang]
-      );
+      await aboutMenu.openOurOfficesPage();
 
       const expectedPath = `${path}/about-us/our-offices`;
 

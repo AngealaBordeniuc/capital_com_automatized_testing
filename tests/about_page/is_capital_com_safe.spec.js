@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
 import { IsCapitalComSafePage} from "../../pages/aboutSection/IsCapitalComSafePage";
-import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 import { licenses } from "../../test-data/licenses";
 
-const languages = ["EN", "FR", "DE", "AR", "RU"];
+const languages = ["EN", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
@@ -17,13 +17,12 @@ licenses.forEach((license) => {
         waitUntil: "domcontentloaded",
       });
 
+      await handleOptionalPopups(page);
+
       const aboutMenu = new AboutSectionMenu(page);
       const isCapitalComSafePage = new IsCapitalComSafePage(page)
 
-      await aboutMenu.openIsCapitalComSafePage(
-        aboutMenuTexts.ABOUT[lang],
-        aboutMenuTexts.IS_CAPITAL_COM_SAFE[lang]
-      );
+      await aboutMenu.openIsCapitalComSafePage();
 
       const expectedPath = `${path}/security-measures`;
 

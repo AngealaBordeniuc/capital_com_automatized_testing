@@ -1,62 +1,87 @@
 import { expect } from "allure-playwright";
-import {handleOptionalPopups, handleCookiesPopUp, handleStayOnSitePopUp } from "../../helpers/pop_ups";
+import {
+  handleOptionalPopups,
+  handleCookiesPopUp,
+  handleStayOnSitePopUp,
+} from "../../helpers/pop_ups";
+import { ABOUT_MENU } from "../../test-data/about-menu";
 
 export class AboutSectionMenu {
   constructor(page) {
     this.page = page;
   }
 
-  async openAboutSubMenu({ aboutText, subMenuText }) {
+  //   async openAboutSubMenu({ subMenuText }) {
+  //   const header = this.page.locator("#header");
+
+  //   const aboutMenu = header.locator(
+  //     'a[href$="/about-us"]'
+  //   );
+
+  //   await aboutMenu.hover({ force: true });
+
+  //   const subLink = header.getByRole("link", { name: subMenuText });
+
+  //   await subLink.waitFor({ state: "visible", timeout: 10000 });
+  //   await subLink.click();
+
+  //   await this.page.waitForLoadState("domcontentloaded");
+  // }
+
+  // async openAboutSubMenu({ subMenuText }) {
+  //   const header = this.page.locator("#header");
+
+  //   const aboutMenu = this.page.locator('a[href$="/about-us"]').first();
+
+  //   await aboutMenu.hover({ force: true });
+
+  //   const subLink = header.getByRole("link", { name: subMenuText });
+
+  //   await subLink.waitFor({ state: "visible", timeout: 10000 });
+  //   await subLink.click();
+
+  //   await this.page.waitForLoadState("domcontentloaded");
+  // }
+
+  async openAboutSubMenu(menuKey) {
     const header = this.page.locator("#header");
-    const aboutMenu = header.getByRole("link", { name: aboutText }).first();
 
+    const aboutMenu = header.locator('a[href$="/about-us"]').first();
     await aboutMenu.hover({ force: true });
-    const subLink = header.getByRole("link", { name: subMenuText }).first();
 
-    await subLink.waitFor({ state: "attached", timeout: 10000 });
-    // click JS-level (stabil în CI/headless)
-    const handle = await subLink.elementHandle();
-    if (handle) {
-      await this.page.evaluate((el) => el.click(), handle);
-    } else {
-      throw new Error(`Linkul ${subMenuText} nu a fost găsit!`);
-    }
+    const subLink = header.locator(`a[href*="${ABOUT_MENU[menuKey]}"]`).first();
+
+    await subLink.waitFor({ state: "visible", timeout: 10000 });
+    await subLink.click();
 
     await this.page.waitForLoadState("domcontentloaded");
   }
 
-  async openWhyCapitalComPage(aboutText, subMenuText) {
-    await this.openAboutSubMenu({ aboutText, subMenuText });
+  async openClientVulnerability() {
+    await this.openAboutSubMenu("CLIENT_VULNERABILITY");
+  }
+  async openComplaintsPage() {
+    await this.openAboutSubMenu("COMPLAINTS");
   }
 
-  async openOurOfficesPage(aboutText, subMenuText) {
-    await this.openAboutSubMenu({ aboutText, subMenuText });
+  async openContactUsPage() {
+    await this.openAboutSubMenu("CONTACT_US");
+  }
+  async openHelpPage() {
+    await this.openAboutSubMenu("HELP");
+  }
+  async openInvestorRelationsPage() {
+    await this.openAboutSubMenu("INVESTOR_RELATIONS");
   }
 
-  async openIsCapitalComSafePage(aboutText, subMenuText) {
-    await this.openAboutSubMenu({ aboutText, subMenuText });
+  async openIsCapitalComSafePage() {
+    await this.openAboutSubMenu("IS_CAPITAL_COM_SAFE");
+  }
+  async openOurOfficesPage() {
+    await this.openAboutSubMenu("OUR_OFFICES");
   }
 
-  async openInvestorRelationsPage(aboutText, subMenuText) {
-    await this.openAboutSubMenu({ aboutText, subMenuText });
-  }
-
-  async openHelpPage(aboutText, subMenuText) {
-    await this.openAboutSubMenu({ aboutText, subMenuText });
-  }
-
-  async openContactUsPage(aboutText, subMenuText) {
-    await this.openAboutSubMenu({ aboutText, subMenuText });
-  }
-
-  async openComplaintsPage(aboutText, subMenuText) {
-    await this.openAboutSubMenu({ aboutText, subMenuText });
-  }
-
-  async openClientVulnerability(aboutText, subMenuText) {
-    await this.openAboutSubMenu({
-      aboutText,
-      subMenuText,
-    });
+  async openWhyCapitalComPage() {
+    await this.openAboutSubMenu("WHY_CAPITAL_COM");
   }
 }

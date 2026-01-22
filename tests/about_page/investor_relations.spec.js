@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
 import { InvestorRelationsPage} from "../../pages/aboutSection/InvestorRelationsPage";
-import { aboutMenuTexts } from "../../test-data/about-menu-texts";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 import { licenses } from "../../test-data/licenses";
 
 const languages = ["EN"];
@@ -16,13 +16,12 @@ licenses.forEach((license) => {
         waitUntil: "domcontentloaded",
       });
 
+      await handleOptionalPopups(page);
+
       const aboutMenu = new AboutSectionMenu(page);
       const investorRelationsPage = new InvestorRelationsPage(page);
 
-      await aboutMenu.openInvestorRelationsPage(
-        aboutMenuTexts.ABOUT[lang],
-        aboutMenuTexts.INVESTOR_RELATIONS[lang]
-      );
+      await aboutMenu.openInvestorRelationsPage();
 
       const expectedPath = `${path}/about-us/investor-relations`;
 

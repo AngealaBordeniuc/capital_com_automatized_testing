@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 import { AboutSectionMenu } from "../../pages/aboutSection/AboutSectionMenu";
 import { WhyCapitalComPage } from "../../pages/aboutSection/WhyCapitalComPage";
-import { aboutMenuTexts } from "../../test-data/about-menu-texts";
 import { licenses } from "../../test-data/licenses";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-const languages = ["EN", "RO", "FR", "DE", "AR", "RU"];
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
@@ -17,13 +17,12 @@ licenses.forEach((license) => {
         waitUntil: "domcontentloaded",
       });
 
+      await handleOptionalPopups(page);
+
       const aboutMenu = new AboutSectionMenu(page);
       const whyCapitalComPage = new WhyCapitalComPage(page)
 
-      await aboutMenu.openWhyCapitalComPage(
-        aboutMenuTexts.ABOUT[lang],
-        aboutMenuTexts.WHY_CAPITAL_COM[lang]
-      );
+      await aboutMenu.openWhyCapitalComPage();
 
       const expectedPath = `${path}/why-capital`;
 

@@ -1,4 +1,5 @@
 import { expect } from 'allure-playwright';
+import {TRADING_MENU, tradingSubmenus} from '../../test-data/trading-menu';
 import { handleCookiesPopUp,
    handleStayOnSitePopUp, 
    acceptAllCookies,
@@ -7,91 +8,61 @@ import { handleCookiesPopUp,
 export class TradingSectionMenu {
   constructor(page) {
     this.page = page;
-  }
+  }  
 
-  async openTradingSubMenu(linkName, index) {
-  await this.page.waitForTimeout(1000);
-  await acceptAllCookies(this.page);
+  async openTradingSubMenu(menuKey) {
+    const header = this.page.locator("#header");
 
-  const header = this.page.locator("#header");
-  const tradingMenu = header.getByRole("link", { name: "Trading" }).first();
+    // hover pe meniul Trading
+    const tradingMenu = header.locator('a[href$="/ways-to-trade"]').first();
+    await tradingMenu.hover({ force: true });
 
-  await tradingMenu.waitFor({ state: "visible", timeout: 10000 });
-  await tradingMenu.hover({ force: true });
+    // sublink EXACT
+    const subLink = header.locator(`a[href$="${TRADING_MENU[menuKey]}"]:visible`).first();
+    
 
-  let subLink = header.getByRole("link", { name: linkName });
-  if (index !== undefined) {
-    subLink = subLink.nth(index);
-  }
-
-  // verificăm dacă elementul există
-  if ((await subLink.count()) > 0) {
-    await subLink.scrollIntoViewIfNeeded();
-    await expect(subLink).toBeVisible({ timeout: 5000 });
+    await subLink.waitFor({ state: "visible", timeout: 10000 });
     await subLink.click();
-  } else {
-    console.warn(`Sub-menu link "${linkName}"${index !== undefined ? ` at index ${index}` : ""} not found`);
   }
-}
 
-    // await this.page.waitForTimeout(2000);
-    // await acceptAllCookies(this.page);
-   
-    // await this.page.waitForSelector("#header", {
-    //   state: "visible",
-    //   timeout: 10000,
-    // });
-
-    // const header = this.page.locator("#header");
-    // const tradingMenu = header.getByRole("link", { name: "Trading" }).first();
-    // await tradingMenu.waitFor({ state: "visible", timeout: 10000 });
-    // await tradingMenu.hover({ force: true, timeout: 5000 });
-
-    // let subLink = header.getByRole("link", { name: linkName });
-    // if(index !== undefined){
-    //   subLink = subLink.nth(index)
-    // }
-
-    // await expect(subLink).toBeVisible({ timeout: 10000 });
-    // await subLink.click();
-
-
-  async openCFDTradingPage() {    
-    await this.openTradingSubMenu("CFD trading", 0)   
-  }
+  
 
   async openAllPlatformsPage() {
-    await this.openTradingSubMenu("All platforms");    
+    await this.openTradingSubMenu("ALL_PLATFORMS");
+  }
+  async openCFDCalculatorPage() {
+    await this.openTradingSubMenu("CFD_CALCULATOR");
+  }
+
+  async openCFDTradingPage() {
+    await this.openTradingSubMenu("CFD_TRADING");
   }
 
   async openWebPlatformPage() {
-    await this.openTradingSubMenu("Web platform", 0);   
+    await this.openTradingSubMenu("Web platform", 0);
   }
   async openMobileAppsPage() {
-    await this.openTradingSubMenu("Mobile apps", 0);   
+    await this.openTradingSubMenu("Mobile apps", 0);
   }
 
   async openMT4Page() {
-    await this.openTradingSubMenu("MT4", 0);   
+    await this.openTradingSubMenu("MT4", 0);
   }
 
   async openTradingViewPage() {
-    await this.openTradingSubMenu("TradingView", 0);   
+    await this.openTradingSubMenu("TradingView", 0);
   }
 
   async openMarginCallsPage() {
-    await this.openTradingSubMenu("Margin calls", 0);   
+    await this.openTradingSubMenu("Margin calls", 0);
   }
 
   async openFraudPreventionPage() {
-    await this.openTradingSubMenu("Fraud prevention", 0);   
+    await this.openTradingSubMenu("Fraud prevention", 0);
   }
 
   async openDemoTradingPage() {
-    await this.openTradingSubMenu("Demo trading", 0);   
+    await this.openTradingSubMenu("Demo trading", 0);
   }
 
-  async openCFDCalculatorPage() {   
-    await this.openTradingSubMenu("CFD calculator");
-  }
 }

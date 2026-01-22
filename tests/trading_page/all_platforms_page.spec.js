@@ -1,38 +1,80 @@
-import{test, expect} from '@playwright/test'
-import { handleCookiesPopUp, handleStayOnSitePopUp, handleModalWindowSignUp} from "../../helpers/pop_ups";
-import { TradingSectionMenu } from '../../pages/tradingSection/TradingSectionMenu'
-import { AllPlatformsPage } from '../../pages/tradingSection/AllPlatformsPage';
+import { test, expect } from "@playwright/test";
+import { TradingSectionMenu } from "../../pages/tradingSection/TradingSectionMenu";
+import { AllPlatformsPage } from "../../pages/tradingSection/AllPlatformsPage";
+import { licenses } from "../../test-data/licenses";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-let tradingSectionMenu;
-let allPlatformsPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
 
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
 
-test.describe('CySEC_License(EN), CFD Trading Page', () => {
-    test.beforeEach(async({page}) => {          
-         await page.goto('/en-eu')       
-         await handleStayOnSitePopUp(page)
-         await handleCookiesPopUp(page)
-         tradingSectionMenu = new TradingSectionMenu(page)
-         allPlatformsPage = new AllPlatformsPage(page)
-         await tradingSectionMenu.openAllPlatformsPage(); 
-    })
-
-    test('CySEC_license(EN), Sign Up Form is opened on "All platforms" page after clicking "Create account" button, unauthorized user', 
-            async({page}) => {                                              
-              await expect(page).toHaveURL("/en-eu/trading-platforms");
-            await allPlatformsPage.clickCreateAccountButton()             
-            })
-    
-     test('CySEC_License, Sign Up Form is opened on "All platforms" page after clicking "Try demo account" button, unauthorized user', 
-                async ({page}) => {                                   
-                     await expect(page).toHaveURL("/en-eu/trading-platforms");
-                     await allPlatformsPage.clickTryDemoAccountButton()                   
-                })
-    test('CySEC_License(EN), Sign Up Form is opened after clicking on the [Sign Up] button in the block "Why choose Capital.com? Our numbers speak for themselves", unauthorized user', async ({
+    test(`${license.name} ${lang} – All Platforms: Create Account - un`, async ({
       page,
-    }) => {              
-         await expect(page).toHaveURL("/en-eu/trading-platforms");
-         await allPlatformsPage.clickSignUpButtonWhyChooseCapital();        
+    }) => {
+      const path = license.paths[lang];
+
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+
+      await handleOptionalPopups(page);
+
+      const tradingMenu = new TradingSectionMenu(page);
+      const allPlatformsPage = new AllPlatformsPage(page);
+
+      await tradingMenu.openAllPlatformsPage();
+    
+      const expectedPath = `${path}/trading-platforms`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await allPlatformsPage.clickCreateAccountButton()
     });
 
-})
+    test(`${license.name} ${lang} – All Platforms: Try demo account - un`, async ({
+      page,
+    }) => {
+      const path = license.paths[lang];   
+
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+
+      await handleOptionalPopups(page);
+
+      const tradingMenu = new TradingSectionMenu(page);
+      const allPlatformsPage = new AllPlatformsPage(page);
+
+      await tradingMenu.openAllPlatformsPage();
+
+      const expectedPath = `${path}/trading-platforms`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await allPlatformsPage.clickTryDemoAccountButton()
+    });
+
+    test(`${license.name} ${lang} – All Platforms: Sign up - un`, async ({
+      page,
+    }) => {
+      const path = license.paths[lang];
+
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+
+      await handleOptionalPopups(page);
+
+      const tradingMenu = new TradingSectionMenu(page);
+      const allPlatformsPage = new AllPlatformsPage(page);
+
+      await tradingMenu.openAllPlatformsPage();
+
+      const expectedPath = `${path}/trading-platforms`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await allPlatformsPage.clickSignUpButtonWhyChooseCapital()
+    });
+  });
+});
+
