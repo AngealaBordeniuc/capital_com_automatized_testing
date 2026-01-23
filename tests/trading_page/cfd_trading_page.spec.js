@@ -1,50 +1,125 @@
-import{test, expect} from '@playwright/test'
-import { handleCookiesPopUp, handleStayOnSitePopUp, handleModalWindowSignUp} from "../../helpers/pop_ups";
-import { TradingSectionMenu } from '../../pages/tradingSection/TradingSectionMenu'
-import { CFDTradingPage } from '../../pages/tradingSection/CFDTradingPage';
+import { test, expect } from "@playwright/test";
+import { TradingSectionMenu } from "../../pages/tradingSection/TradingSectionMenu";
+import {CFDTradingPage} from"../../pages/tradingSection/CFDTradingPage";
+import { licenses } from "../../test-data/licenses";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-let tradingSectionMenu;
-let cfdTradingPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
+// const languages = ["IT"]
 
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
 
-test.describe('CySEC_License(EN), CFD Trading Page', () => {
-    test.beforeEach(async({page}) => {          
-         await page.goto('/en-eu')       
-         await handleStayOnSitePopUp(page)
-         await handleCookiesPopUp(page)
-         tradingSectionMenu = new TradingSectionMenu(page)
-         cfdTradingPage = new CFDTradingPage(page);
-         await tradingSectionMenu.openCFDTradingPage();  
-    })
+    test(`${license.name} ${lang} – CFD Trading: Create Account - un`, async ({
+      page,
+    }) => {
+      const path = license.paths[lang];     
 
-    test('CySEC_license(EN), Sign Up Form is opened on "CFD trading" page after clicking "Create account" button, unauthorized user', 
-        async({page}) => {                           
-          await expect(page).toHaveURL("/en-eu/ways-to-trade/cfd-trading");
-        await cfdTradingPage.clickCreateAccountButton()
-         
-        })
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
 
-        test('CySEC_License, Sign Up Form is opened on "CFD trading" page after clicking "Try demo account" button, unauthorized user', 
-            async ({page}) => {            
-                 await expect(page).toHaveURL("/en-eu/ways-to-trade/cfd-trading");
-                 await cfdTradingPage.clickTryDemoAccountButton()                
-            })
+      await handleOptionalPopups(page);
 
-    test("CySEC_License(EN),Sign Up Form is opened after clicking on the [Sell] button in the block [Our CFD markets] (Trading Instrument), unauthorized user", 
-        async ({page}) => {
-           await cfdTradingPage.clickSellButtonOurCFDMarkets()            
-          });        	
+      const tradingMenu = new TradingSectionMenu(page);
+      const cfdTradingPage = new CFDTradingPage(page);
+
+      await tradingMenu.openCFDTradingPage()
     
-           test("CySEC_License(EN), Sign Up Form is opened after clicking on the [Buy] button in the block [Our CFD markets] (Trading Instrument), unauthorized user", 
-            async ({page}) => {
-             await cfdTradingPage.ClickBuyButtonOurCFDMarkets();                        
-           });  
+      const expectedPath = `${path}/ways-to-trade/cfd-trading`;
 
-            test("CySEC_License(EN),Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", 
-                async ({page}) => {
-                await cfdTradingPage.clickCreateYourAccountButtonFromReady();
-              });
-            
+      await expect(page).toHaveURL(expectedPath);
+      await cfdTradingPage.clickCreateAccountButton()
+    });
 
+     test(`${license.name} ${lang} – CFD Trading: Try demo - un`, async ({
+       page,
+     }) => {
+       const path = license.paths[lang];
+       await page.goto(`https://capital.com${path}`, {
+         waitUntil: "domcontentloaded",
+       });
 
+       await handleOptionalPopups(page);
+
+       const tradingMenu = new TradingSectionMenu(page);
+       const cfdTradingPage = new CFDTradingPage(page);
+
+       await tradingMenu.openCFDTradingPage();
+
+       const expectedPath = `${path}/ways-to-trade/cfd-trading`;
+
+       await expect(page).toHaveURL(expectedPath);
+       await cfdTradingPage.clickTryDemoAccountButton();
+     });
+
+     
+     test(`${license.name} ${lang} – CFD Trading: Sell - un`, async ({
+       page,
+     }) => {
+       const path = license.paths[lang];  
+
+       await page.goto(`https://capital.com${path}`, {
+         waitUntil: "domcontentloaded",
+       });
+
+       await handleOptionalPopups(page);
+
+       const tradingMenu = new TradingSectionMenu(page);
+       const cfdTradingPage = new CFDTradingPage(page);
+
+       await tradingMenu.openCFDTradingPage();
+
+       const expectedPath = `${path}/ways-to-trade/cfd-trading`;
+
+       await expect(page).toHaveURL(expectedPath);
+       await cfdTradingPage.clickSellButtonOurCFDMarkets()
+     });
+
+      test(`${license.name} ${lang} – CFD Trading: Buy - un`, async ({
+        page,
+      }) => {
+        const path = license.paths[lang];
+
+        await page.goto(`https://capital.com${path}`, {
+          waitUntil: "domcontentloaded",
+        });
+
+        await handleOptionalPopups(page);
+
+        const tradingMenu = new TradingSectionMenu(page);
+        const cfdTradingPage = new CFDTradingPage(page);
+
+        await tradingMenu.openCFDTradingPage();
+
+        const expectedPath = `${path}/ways-to-trade/cfd-trading`;
+
+        await expect(page).toHaveURL(expectedPath);
+        await cfdTradingPage.clickBuyButtonOurCFDMarkets();
+      });
+
+       test(`${license.name} ${lang} – CFD Trading: Create your account - un`, async ({
+         page,
+       }) => {
+         const path = license.paths[lang];       
+
+         await page.goto(`https://capital.com${path}`, {
+           waitUntil: "domcontentloaded",
+         });
+
+         await handleOptionalPopups(page);
+
+         const tradingMenu = new TradingSectionMenu(page);
+         const cfdTradingPage = new CFDTradingPage(page);
+
+         await tradingMenu.openCFDTradingPage();
+
+         const expectedPath = `${path}/ways-to-trade/cfd-trading`;
+
+         await expect(page).toHaveURL(expectedPath);
+         await cfdTradingPage.clickCreateYourAccountButtonFromReady()
+       });
+
+  })
 })

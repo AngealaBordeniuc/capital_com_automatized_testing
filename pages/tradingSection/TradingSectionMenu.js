@@ -8,24 +8,21 @@ import { handleCookiesPopUp,
 export class TradingSectionMenu {
   constructor(page) {
     this.page = page;
-  }  
+  }
 
   async openTradingSubMenu(menuKey) {
     const header = this.page.locator("#header");
-
-    // hover pe meniul Trading
+   
     const tradingMenu = header.locator('a[href$="/ways-to-trade"]').first();
     await tradingMenu.hover({ force: true });
 
-    // sublink EXACT
-    const subLink = header.locator(`a[href$="${TRADING_MENU[menuKey]}"]:visible`).first();
-    
+    const subLink = header
+      .locator(`a[href$="${TRADING_MENU[menuKey]}"]:visible`)
+      .first();
 
     await subLink.waitFor({ state: "visible", timeout: 10000 });
     await subLink.click();
   }
-
-  
 
   async openAllPlatformsPage() {
     await this.openTradingSubMenu("ALL_PLATFORMS");
@@ -36,6 +33,10 @@ export class TradingSectionMenu {
 
   async openCFDTradingPage() {
     await this.openTradingSubMenu("CFD_TRADING");
+  }
+
+  async openDemoTradingPage() {
+    await this.openTradingSubMenu("DEMO_TRADING");
   }
 
   async openWebPlatformPage() {
@@ -60,9 +61,4 @@ export class TradingSectionMenu {
   async openFraudPreventionPage() {
     await this.openTradingSubMenu("Fraud prevention", 0);
   }
-
-  async openDemoTradingPage() {
-    await this.openTradingSubMenu("Demo trading", 0);
-  }
-
 }

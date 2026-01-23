@@ -5,13 +5,7 @@ import { handleStayOnSitePopUp, handleCookiesPopUp, handleModalWindowSignUp } fr
      this.page = page;
    }
 
-   async clickCTA(locator) {
-     // gestionează pop-up-urile global
-     await this.page.waitForTimeout(2000);
-     await handleCookiesPopUp(this.page);
-     await handleStayOnSitePopUp(this.page);
-
-     // asigură că elementul există și e vizibil
+   async clickCTA(locator) {    
      await expect(locator).toBeAttached({ timeout: 10000 });
      await locator.scrollIntoViewIfNeeded();
      await expect(locator).toBeVisible({ timeout: 10000 });
@@ -20,19 +14,19 @@ import { handleStayOnSitePopUp, handleCookiesPopUp, handleModalWindowSignUp } fr
    }
 
    async clickCreateAccountButton() {
-     const createAccountBtn = this.page.getByRole("button", {name: "Create account"});   
+     const createAccountBtn = this.page.locator('button[data-type="background_banner_block_btn1_signup"]');
      await this.clickCTA(createAccountBtn);
      await handleModalWindowSignUp(this.page);
    }
 
    async clickTryDemoAccountButton() {
-     const tryDemoAccountBtn = this.page.getByRole("button", {name: "Try demo account"});
-    await this.clickCTA(tryDemoAccountBtn);   
+     const tryDemoAccountBtn = this.page.locator('button[data-type="background_banner_block_btn2_demo"]');
+     await this.clickCTA(tryDemoAccountBtn);   
      await handleModalWindowSignUp(this.page);
    }
 
    async clickSellButtonOurCFDMarkets() {
-     const sellBtnOurCFDMarkets = this.page.getByRole("link", { name: "Sell" });
+     const sellBtnOurCFDMarkets = this.page.locator('a[data-type="wdg_markets_sell_btn"]');     
      await this.clickCTA(sellBtnOurCFDMarkets);
 
        await expect(this.page).toHaveURL("/trading/platform/charting", {
@@ -41,8 +35,8 @@ import { handleStayOnSitePopUp, handleCookiesPopUp, handleModalWindowSignUp } fr
        await this.page.locator('input[type="email"]').waitFor();    
    }
 
-   async ClickBuyButtonOurCFDMarkets() {
-     const buyBtnOurCFDMarkets = this.page.getByRole("link", { name: "Buy" });
+   async clickBuyButtonOurCFDMarkets() {
+     const buyBtnOurCFDMarkets = this.page.locator('a[data-type="wdg_markets_buy_btn"]');    
       await this.clickCTA(buyBtnOurCFDMarkets);
        await expect(this.page).toHaveURL("/trading/platform/charting", {
          timeout: 10000,

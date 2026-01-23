@@ -5,34 +5,48 @@ export class DemoTradingPage {
     this.page = page;
   }
 
-  async clickTryDemoButton() {
-    await handleCookiesPopUp(this.page);
-    await handleStayOnSitePopUp(this.page);
-    await this.page.getByRole("button", { name: "Try demo" }).first().click();
-    await handleModalWindowSignUp(this.page);
+  async clickCTA(locator) {
+    await expect(locator).toBeAttached({ timeout: 10000 });
+    await locator.scrollIntoViewIfNeeded();
+    await expect(locator).toBeVisible({ timeout: 10000 });
+    await expect(locator).toBeEnabled();
+    await locator.click();
   }
 
-  async getQrUrl() {
-    const qrImage = this.page.getByRole("img", { name: "QR code" });
-    await qrImage.scrollIntoViewIfNeeded();
-    await qrImage.waitFor({ state: "visible" });
-    const src = await qrImage.getAttribute("src");
+  async clickTryDemoButton() {
+    const tryDemoBtn = this.page.locator(
+      'button[data-type="background_banner_block_btn1_demo"]',
+    );
+    await this.clickCTA(tryDemoBtn);
+    await handleModalWindowSignUp(this.page);
+  } 
+
+  async getQrUrlOrFail() {
+    const qrImage = this.page.locator('img[alt="QR code"]');
+    const qrArea = this.page.locator("div[class='Kzxh lgUb gWo8 grey']").nth(1);
+
+    await qrArea.scrollIntoViewIfNeeded();
+
+    if ((await qrImage.count()) === 0) {     
+        await this.page.screenshot();
+      throw new Error("❌QR code for this licence is missing.");
+    }   
+    const src = await qrImage.first().getAttribute("src");
     return decodeURIComponent(
-      new URLSearchParams(src.split("?")[1]).get("text")
+      new URLSearchParams(src.split("?")[1]).get("text"),
     );
   }
 
+
   async verifyQrRedirect() {
-    const qrUrl = await this.getQrUrl();
+    const qrUrl = await this.getQrUrlOrFail();
     await this.page.goto(qrUrl);
     await expect(this.page).toHaveURL(/apps\.apple\.com/);
   }
 
   async clickCreateYourAccountButtonFromReady() {
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
-    await bannerBtnReady.scrollIntoViewIfNeeded();
-    await handleCookiesPopUp(this.page);
-    await handleStayOnSitePopUp(this.page);
-    await bannerBtnReady.click({ force: true });
+    await this.clickCTA(bannerBtnReady);
+    await handleModalWindowSignUp(this.page);
   }
 }
