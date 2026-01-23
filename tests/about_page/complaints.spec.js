@@ -10,7 +10,7 @@ const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT"];
 licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
-     if (!license.aboutSubmenus.includes("COMPLAINTS")) return;
+    if (!license.aboutSubmenus.includes("COMPLAINTS")) return;
 
     test(`${license.name} ${lang} – Complaints - un`, async ({ page }) => {
       const path = license.paths[lang];

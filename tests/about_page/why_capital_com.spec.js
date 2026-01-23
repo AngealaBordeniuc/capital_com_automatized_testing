@@ -33,19 +33,18 @@ licenses.forEach((license) => {
      test(`${license.name} ${lang} – Why Capital Com?, "Create account" - un`, async ({
        page,
      }) => {
-       const path = license.paths[lang];
+       const path = license.paths[lang];    
 
        await page.goto(`https://capital.com${path}`, {
          waitUntil: "domcontentloaded",
        });
 
-       const aboutMenu = new AboutSectionMenu(page);
-       const whyCapitalComPage = new WhyCapitalComPage(page);
+       await handleOptionalPopups(page);
 
-       await aboutMenu.openWhyCapitalComPage(
-         aboutMenuTexts.ABOUT[lang],
-         aboutMenuTexts.WHY_CAPITAL_COM[lang]
-       );
+       const aboutMenu = new AboutSectionMenu(page);
+       const whyCapitalComPage = new WhyCapitalComPage(page); 
+
+       await aboutMenu.openWhyCapitalComPage();
 
        const expectedPath = `${path}/why-capital`;
 
@@ -62,13 +61,12 @@ licenses.forEach((license) => {
             waitUntil: "domcontentloaded",
           });
 
+          await handleOptionalPopups(page);
+
           const aboutMenu = new AboutSectionMenu(page);
           const whyCapitalComPage = new WhyCapitalComPage(page);
 
-          await aboutMenu.openWhyCapitalComPage(
-            aboutMenuTexts.ABOUT[lang],
-            aboutMenuTexts.WHY_CAPITAL_COM[lang]
-          );
+          await aboutMenu.openWhyCapitalComPage();
 
           const expectedPath = `${path}/why-capital`;
 
