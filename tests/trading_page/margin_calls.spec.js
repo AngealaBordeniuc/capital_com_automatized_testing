@@ -11,7 +11,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test.only(`${license.name} ${lang} – Margin Calls: Create your account - un`, async ({
+    test(`${license.name} ${lang} – Margin Calls: Create your account - un`, async ({
       page,
     }) => {
       const path = license.paths[lang];     
