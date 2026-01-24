@@ -1,25 +1,39 @@
-import {test, expect} from '@playwright/test'
-import { handleCookiesPopUp, handleStayOnSitePopUp, handleModalWindowSignUp} from "../../helpers/pop_ups";
-import { TradingSectionMenu } from '../../pages/tradingSection/TradingSectionMenu';
-import { MarginCallsPage } from '../../pages/tradingSection/MarginCallsPage';
+import { test, expect } from "@playwright/test";
+import { TradingSectionMenu } from "../../pages/tradingSection/TradingSectionMenu";
+import {MarginCallsPage} from"../../pages/tradingSection/MarginCallsPage";
+import { licenses } from "../../test-data/licenses";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-let tradingSectionMenu;
-let marginCallsPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
+// const languages = ["RO"]
 
-test.describe('CySec_License(EN), Margin Calls Page', () =>{
-    test.beforeEach(async({page}) => {
-        tradingSectionMenu = new TradingSectionMenu(page);
-        marginCallsPage = new MarginCallsPage(page);
-        await page.goto('/en-eu')
-        await handleStayOnSitePopUp(page)
-        await handleCookiesPopUp(page)        
-        await tradingSectionMenu.openMarginCallsPage();
-    })
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
 
-     test("CySEC_License(EN),Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", 
-        async ({page}) => {
-            await expect(page).toHaveURL("/en-eu/ways-to-trade/margin-calls");
-            await marginCallsPage.clickCreateYourAccountButtonFromReady();           
-     });
+    test.only(`${license.name} ${lang} – Margin Calls: Create your account - un`, async ({
+      page,
+    }) => {
+      const path = license.paths[lang];     
 
+    //   await page.pause()
+
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+
+      await handleOptionalPopups(page);
+
+      const tradingMenu = new TradingSectionMenu(page);
+      const marginCallsPage = new MarginCallsPage(page);
+
+      await tradingMenu.openMarginCallsPage()
+    
+      const expectedPath = `${path}/ways-to-trade/margin-calls`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await marginCallsPage.clickCreateYourAccountButtonFromReady()
+    });
+
+  })
 })

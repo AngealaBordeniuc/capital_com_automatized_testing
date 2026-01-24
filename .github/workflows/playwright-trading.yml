@@ -107,6 +107,8 @@ jobs:
             tests/trading_page/cfd_calculator_page.spec.js \
             tests/trading_page/cfd_trading_page.spec.js \
             tests/trading_page/demo_trading_page.spec.js \
+            tests/trading_page/fraud_prevention_page.spec.js \
+            tests/trading_page/margin_calls.spec.js \
             --reporter=list,allure-playwright \
             --retries=2
         continue-on-error: true

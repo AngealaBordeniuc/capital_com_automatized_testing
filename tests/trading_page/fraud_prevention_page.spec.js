@@ -1,31 +1,37 @@
 import { test, expect } from "@playwright/test";
-import {
-  handleCookiesPopUp,
-  handleStayOnSitePopUp,
-  handleModalWindowSignUp,
-} from "../../helpers/pop_ups";
 import { TradingSectionMenu } from "../../pages/tradingSection/TradingSectionMenu";
 import { FraudPreventionPage } from "../../pages/tradingSection/FraudPreventionPage";
+import { licenses } from "../../test-data/licenses";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-let tradingSectionMenu;
-let fraudPreventionPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
+// const languages = ["RO"]
 
-test.describe("CySec_License(EN), Fraud Prevention Page", () => {
-  test.beforeEach(async ({ page }) => {
-    tradingSectionMenu = new TradingSectionMenu(page);
-    fraudPreventionPage = new FraudPreventionPage(page);
-    await page.goto("/en-eu");
-    await handleStayOnSitePopUp(page);
-    await handleCookiesPopUp(page);
-    await tradingSectionMenu.openFraudPreventionPage();
-  });
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
 
-    test("CySEC_License(EN),Sign Up Form is opened after clicking on the [Create your account] button, unauthorized user", 
-          async ({page}) => {
-              await expect(page).toHaveURL("/en-eu/ways-to-trade/fraud-awareness");
-              await fraudPreventionPage.clickCreateYourAccountButtonFromReady();           
-       });
-  
+    test(`${license.name} ${lang} – Fraud Prevention: Create your account - un`, async ({
+      page,
+    }) => {
+      const path = license.paths[lang];       
 
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
 
+      await handleOptionalPopups(page);
+
+      const tradingMenu = new TradingSectionMenu(page);
+      const fraudPreventionPage = new FraudPreventionPage(page);
+
+      await tradingMenu.openFraudPreventionPage()
+    
+      const expectedPath = `${path}/ways-to-trade/fraud-awareness`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await fraudPreventionPage.clickCreateYourAccountButtonFromReady()
+    });
+
+  })
 })
