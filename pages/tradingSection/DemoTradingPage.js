@@ -29,7 +29,7 @@ export class DemoTradingPage {
 
     if ((await qrImage.count()) === 0) {     
         await this.page.screenshot();
-      throw new Error("❌QR code for this licence is missing.");
+      throw new Error("❌QR code for this license is missing.");
     }   
     const src = await qrImage.first().getAttribute("src");
     return decodeURIComponent(

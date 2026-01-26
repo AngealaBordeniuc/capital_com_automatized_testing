@@ -4,6 +4,7 @@ import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
 const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "IT", "NL", "PL"];
+// const languages = ["RO", "DE", "IT", "NL"]
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
@@ -41,6 +42,8 @@ licenses.forEach((license) => {
        page,
      }) => {
        const path = license.paths[lang];    
+
+      //  await page.pause()
 
        await page.goto(`https://capital.com${path}`, {
          waitUntil: "domcontentloaded",

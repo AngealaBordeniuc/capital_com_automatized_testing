@@ -1,32 +1,57 @@
-import {test, expect} from '@playwright/test'
-import { handleCookiesPopUp, handleStayOnSitePopUp, handleModalWindowSignUp } from '../../helpers/pop_ups'
-import { TradingSectionMenu } from '../../pages/tradingSection/TradingSectionMenu'
-import { MobileAppsPage } from '../../pages/tradingSection/MobileAppsPage'
+import { test, expect } from "@playwright/test";
+import { TradingSectionMenu } from "../../pages/tradingSection/TradingSectionMenu";
+import { MobileAppsPage } from "../../pages/tradingSection/MobileAppsPage";
+import { licenses } from "../../test-data/licenses";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-let tradingSectionMenu;
-let mobileAppsPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
+// const languages = ["RO"]
 
-test.describe('CySec_License(EN), Mobile apps Page', () => {
-    test.beforeEach(async({page}) => {
-        await page.goto('/en-eu')
-        await handleStayOnSitePopUp(page)
-        await handleCookiesPopUp(page)
-        tradingSectionMenu = new TradingSectionMenu(page)
-        mobileAppsPage = new MobileAppsPage(page)
-        await tradingSectionMenu.openMobileAppsPage();
-    })
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
 
-     test('Smoke_CySEC_License(EN), Verify QR Code from "CFD trading app" block', 
-      async ({page}) => {              
-       await expect(page).toHaveURL("/en-eu/trading-platforms/mobile-apps");    
-       await mobileAppsPage.verifyQrRedirect_1()
-     });
+    test(`${license.name} ${lang} – Mobile Apps, QR Code: CFD trading app - un`, async ({
+      page,
+    }) => {
+      const path = license.paths[lang]; 
 
-     test('Smoke_CySEC_License(EN), Verify QR Code from "Investmate" block', 
-      async ({page}) => {              
-       await expect(page).toHaveURL("/en-eu/trading-platforms/mobile-apps");
-       await mobileAppsPage.verifyQrRedirect_2();
-     });
+      await page.goto(path, { waitUntil: "domcontentloaded" });
 
+      await handleOptionalPopups(page);
 
+      const tradingMenu = new TradingSectionMenu(page);
+      const mobileAppsPage = new MobileAppsPage(page);
+
+      await tradingMenu.openMobileAppsPage();
+
+      const expectedPath = `${path}/trading-platforms/mobile-apps`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await mobileAppsPage.verifyQrRedirect_1();
+    });
+
+    test(`${license.name} ${lang} – Mobile Apps, QR Code: Investmate - un`, async ({
+      page,
+    }) => {
+      const path = license.paths[lang];
+
+      // await page.pause()      
+
+      await page.goto(path, { waitUntil: "domcontentloaded" });
+      
+      await handleOptionalPopups(page);
+
+      const tradingMenu = new TradingSectionMenu(page);
+      const mobileAppsPage = new MobileAppsPage(page);
+
+      await tradingMenu.openMobileAppsPage();
+
+      const expectedPath = `${path}/trading-platforms/mobile-apps`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await mobileAppsPage.verifyQrRedirect_2();
+    });
+
+  })
 })

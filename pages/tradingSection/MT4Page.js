@@ -7,35 +7,30 @@ export class MT4Page {
     this.page = page;
   }
 
-  async clickCreateAccountButton() {
-    await handleCookiesPopUp(this.page);
-    await this.page
-      .getByRole("button", { name: "Create account" })
-      .first()
-      .click();
+  async clickCreateAccountButton() {    
+    const createAccountBtn = this.page.locator('button[data-type*="block_btn1_signup"]');
+
+    //  await expect(
+    //    createAccountBtn,
+    //    "Create Account CTA should be visible on MT4 page",
+    //  ).toBeVisible();
+
+    await createAccountBtn.click()
     await handleModalWindowSignUp(this.page);
   }
 
-  async clickOpenAccountButton() {
-    // await handleCookiesPopUp(this.page);
-    // await handleStayOnSitePopUp(this.page);
-    await this.page
-      .getByRole("button", { name: "Open account" })
-      .scrollIntoViewIfNeeded();
-    await this.page.getByRole("button", { name: "Open account" }).click();
+  async clickOpenAccountButton() {  
+    const openAccountBtn = this.page.locator('button[data-type="tiles_w_img_link1_signup"]');
+    await openAccountBtn.scrollIntoViewIfNeeded()     
+    await openAccountBtn.click();
     await handleModalWindowSignUp(this.page);
   }
 
-  async clickCreateAccountButton2() {
-    await this.page
-      .getByRole("button", { name: "Create account" })
-      .nth(1)
-      .scrollIntoViewIfNeeded();
-    await this.page
-      .getByRole("button", { name: "Create account" })
-      .nth(1)
-      .click();
-      await handleModalWindowSignUp(this.page);
+  async clickCreateAccountButtonThreeSteps() {
+    const createAccountBtnThSt = this.page.locator('button[data-type="tiles_w_img_btn1_signup"]').first();
+    await createAccountBtnThSt.scrollIntoViewIfNeeded()
+    await createAccountBtnThSt.click();         
+    await handleModalWindowSignUp(this.page);
   }
 
   async verifyMt4DownloadForMac() {

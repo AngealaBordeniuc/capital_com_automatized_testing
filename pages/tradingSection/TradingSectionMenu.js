@@ -55,15 +55,16 @@ export class TradingSectionMenu {
     await this.openTradingSubMenu("MARGIN_CALLS");
   }
 
-  async openWebPlatformPage() {
-    await this.openTradingSubMenu("Web platform", 0);
-  }
   async openMobileAppsPage() {
-    await this.openTradingSubMenu("Mobile apps", 0);
+    await this.openTradingSubMenu("MOBILE_APPS");
   }
 
   async openMT4Page() {
-    await this.openTradingSubMenu("MT4", 0);
+    await this.openTradingSubMenu("MT4");
+  }
+
+  async openWebPlatformPage() {
+    await this.openTradingSubMenu("Web platform", 0);
   }
 
   async openTradingViewPage() {

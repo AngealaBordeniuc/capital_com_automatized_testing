@@ -10,7 +10,7 @@ const languages = ["EN", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"]
 licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
-    if (!license.tradingSubmenus.includes("DEMO_TRADING")) return;
+    if (!license.tradingSubmenus.DEMO_TRADING) return;
 
     test(`${license.name} ${lang} – Demo Trading: Try demo - un`, async ({
       page,
