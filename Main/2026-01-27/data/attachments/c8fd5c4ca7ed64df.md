@@ -1,0 +1,80 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - img [ref=e10] [cursor=pointer]
+      - generic [ref=e16]:
+        - button [ref=e17] [cursor=pointer]:
+          - img [ref=e19]
+        - button [ref=e21] [cursor=pointer]:
+          - img [ref=e23]
+      - generic [ref=e25]:
+        - button [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: تسجيل الدخول
+        - button [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: إنشاء حساب
+    - generic [ref=e30]:
+      - generic [ref=e34]:
+        - generic [ref=e41]:
+          - img [ref=e44] [cursor=pointer]
+          - img [ref=e50] [cursor=pointer]
+        - generic [ref=e52]:
+          - img [ref=e55]
+          - generic [ref=e80]: إضافة أسواق إلى المخططات البيانية
+          - generic [ref=e81]: اختر أصولك المفضلة لتنطلق في تحليل فني أكثر عمقًا
+          - button [ref=e83] [cursor=pointer]:
+            - generic [ref=e84]: البحث في الأسواق
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - generic [ref=e88] [cursor=pointer]:
+            - img [ref=e90]
+            - generic [ref=e92]: تداول
+          - generic [ref=e93] [cursor=pointer]:
+            - img [ref=e95]
+            - generic [ref=e97]: اكتشف
+          - generic [ref=e98] [cursor=pointer]:
+            - img [ref=e100]
+            - generic [ref=e102]: الرسومات البيانية
+          - generic [ref=e103] [cursor=pointer]:
+            - img [ref=e105]
+            - generic [ref=e107]: المحفظة
+        - generic [ref=e108]:
+          - generic [ref=e110] [cursor=pointer]:
+            - img [ref=e112]
+            - generic [ref=e114]: الدردشة الحية
+          - generic [ref=e115] [cursor=pointer]:
+            - img [ref=e117]
+            - generic [ref=e119]: الإعدادات
+  - dialog [ref=e123]:
+    - generic [ref=e125]:
+      - generic [ref=e129]: تسجيل الدخول
+      - generic [ref=e130]:
+        - generic [ref=e131]: ليس لديك حساب؟ تسجيل الاشتراك
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - textbox [active] [ref=e135]
+            - generic [ref=e137]: عنوان البريد الإلكتروني
+          - generic [ref=e138]:
+            - textbox [ref=e139]
+            - generic [ref=e141]: كلمة المرور
+          - generic [ref=e144]:
+            - checkbox "قم بتسجيل الخروج بعد 7 أيام" [checked] [ref=e145] [cursor=pointer]
+            - generic [ref=e148] [cursor=pointer]: قم بتسجيل الخروج بعد 7 أيام
+          - button "تابع" [disabled]:
+            - generic: تابع
+          - button "نسيت كلمة المرور" [ref=e149] [cursor=pointer]:
+            - generic [ref=e150]: نسيت كلمة المرور
+          - generic [ref=e151]: أو
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - button [ref=e154] [cursor=pointer]
+              - generic [ref=e157] [cursor=pointer]:
+                - button "Sign in with Google. Opens in new tab" [ref=e159]:
+                  - generic [ref=e161]:
+                    - img [ref=e163]
+                    - generic [ref=e170]: Sign in with Google
+                - iframe
+            - button [ref=e172] [cursor=pointer]
+```
