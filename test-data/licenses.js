@@ -3,8 +3,7 @@ export const licenses = [
     name: "FCA",
     features: {
       mt4CreateAccountButton1: false,
-      mt4OpenAccountButton: true,
-      mt4CreateAccountButton2: true
+      mt4OpenAccountButton: true,     
     },
     paths: {
       EN: "/en-gb",
@@ -37,8 +36,7 @@ export const licenses = [
     name: "SCA",
     features: {
       mt4CreateAccountButton1: true,
-      mt4OpenAccountButton: true,
-      mt4CreateAccountButton2: true,
+      mt4OpenAccountButton: true,     
     },
     paths: {
       EN: "/en-ae",
@@ -71,8 +69,7 @@ export const licenses = [
     name: "CySEC",
     features: {
       mt4CreateAccountButton1: true,
-      mt4OpenAccountButton: true,
-      mt4CreateAccountButton2: true,
+      mt4OpenAccountButton: true,     
     },
     paths: {
       EN: "/en-eu",
@@ -100,7 +97,7 @@ export const licenses = [
       FRAUD_PREVENTION: true,
       MARGIN_CALLS: true,
       MOBILE_APPS: true,
-      MT4: ["EN", "DE", "RO", "AR", "IT", "NL", "PL", "RU", "ZHS", "ZHT"],
+      MT4: ["EN", "DE", "RO", "IT", "NL", "PL"],
       TRADING_VIEW: true,
       WEB_PLATFORM: true,
     },
@@ -110,8 +107,7 @@ export const licenses = [
     name: "ASIC",
     features: {
       mt4CreateAccountButton1: true,
-      mt4OpenAccountButton: true,
-      mt4CreateAccountButton2: false,
+      mt4OpenAccountButton: true,     
     },
     paths: {
       EN: "/en-au",
@@ -142,9 +138,8 @@ export const licenses = [
   {
     name: "SCB",
     features: {
-      mt4CreateAccountButton1: true,      
-      mt4OpenAccountButton: false,
-      mt4CreateAccountButton2: true,
+      mt4CreateAccountButton1: true,
+      mt4OpenAccountButton: false,     
     },
     paths: {
       EN: "/en-int",
@@ -153,8 +148,8 @@ export const licenses = [
       RU: "/ru-int",
       AR: "/ar-int",
       ES: "/es-int",
-      ZH: "/zh-hans",
-      ZH: "/zh-hant",
+      ZHS: "/zh-hans",
+      ZHT: "/zh-hant",
     },
     aboutSubmenus: {
       CLIENT_VULNERABILITY: true,
@@ -174,7 +169,7 @@ export const licenses = [
       FRAUD_PREVENTION: true,
       MARGIN_CALLS: true,
       MOBILE_APPS: true,
-      MT4: ["EN", "FR", "DE", "AR", "IT", "RU", "ZHS", "ZHT"],
+      MT4: ["EN", "FR", "DE", "RU", "AR", "ZHS", "ZHT"],
       TRADING_VIEW: true,
       WEB_PLATFORM: true,
     },

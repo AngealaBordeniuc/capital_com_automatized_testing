@@ -27,7 +27,8 @@ export default defineConfig({
   reporter: [
     ["list"],
     [
-      "allure-playwright", {outputFolder: `allure-results/${process.env.DATE}`}
+      "allure-playwright",
+      { outputFolder: `allure-results/${process.env.DATE}` },
     ],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -37,8 +38,8 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     headless: true,
-    trace: "on-first-retry",
-    video: "on-first-retry",
+    trace: "retain-on-failure",
+    video: "retain-on-failure",
     screenshot: "only-on-failure",
   },
 

@@ -34,8 +34,8 @@ export class MT4Page {
   }
 
   async verifyMt4DownloadForMac() {
-    const macHeading = this.page.getByRole("heading", { name: "For Mac" });
-    await macHeading.scrollIntoViewIfNeeded();
+    const mt4Heading = this.page.locator('h2[class="up0V c5pQ"]').nth(3);
+    await mt4Heading.scrollIntoViewIfNeeded();
     const downloadLink = this.page.locator('a[href*="MetaTrader4.dmg"]');
     const downloadPromise = this.page.waitForEvent("download");
     await downloadLink.click();
@@ -46,8 +46,8 @@ export class MT4Page {
   }
 
   async verifyMt4DownloadForWindows() {
-    const winHeading = this.page.getByRole("heading", { name: "For Windows" });
-    await winHeading.scrollIntoViewIfNeeded();
+    const mt4Heading = this.page.locator('h2[class="up0V c5pQ"]').nth(3);
+    await mt4Heading.scrollIntoViewIfNeeded();
     const downloadLink = this.page.locator('a[href*="capital.com4setup.exe"]');
 
     await downloadLink.click();
@@ -55,8 +55,8 @@ export class MT4Page {
   }
 
   async verifyMt4DownloadGooglePlay() {
-    const gplHeading = this.page.getByRole("heading", { name: "Google Play" });
-    await gplHeading.scrollIntoViewIfNeeded();
+    const mt4Heading = this.page.locator('h2[class="up0V c5pQ"]').nth(3);
+    await mt4Heading.scrollIntoViewIfNeeded();
     const downloadLink = this.page
       .locator('a[href*="Capital.com-Demo"]')
       .first();
@@ -69,8 +69,8 @@ export class MT4Page {
   }
 
   async verifyMt4DownloadAppStore() {
-    const appStHeading = this.page.getByRole("heading", { name: "App Store" });
-    await appStHeading.scrollIntoViewIfNeeded();
+      const mt4Heading = this.page.locator('h2[class="up0V c5pQ"]').nth(3);
+      await mt4Heading.scrollIntoViewIfNeeded();
     const downloadLink = this.page
       .locator('a[href*="Capital.com-Demo"]')
       .nth(1);
@@ -82,33 +82,25 @@ export class MT4Page {
   }
 
   async verifyMt4OpenWebTerminal() {
-    const webTerminalHeading = this.page.getByRole("heading", {
-      name: "Web Terminal",
-    });
-    await webTerminalHeading.scrollIntoViewIfNeeded();
+    const mt4Heading = this.page.locator('h2[class="up0V c5pQ"]').nth(3);
+    await mt4Heading.scrollIntoViewIfNeeded();
     const webTerminalLink = this.page.locator('a[href*="capital.com/mt4"]');
     await webTerminalLink.click();
     await this.page.waitForURL("/mt4", { timeout: 6000 });
   }
 
-  async clickSignUpButtonWhyChooseCapital() {
-    await handleCookiesPopUp(this.page);
-    await handleStayOnSitePopUp(this.page);
+  async clickSignUpNowDiscoverTrading() {
+    const discoverHeading = this.page.locator('h2[class="up0V c5pQ"]').nth(4);
+    await discoverHeading.scrollIntoViewIfNeeded();
 
-    await this.page
-      .getByRole("button", { name: "Sign up", exact: true })
-      .scrollIntoViewIfNeeded();
-    await this.page
-      .getByRole("button", { name: "Sign up", exact: true })
-      .click();
+    const signUpNowBtn = this.page.locator('button[data-type="tiles_w_img_link2_signup"]');
+    await signUpNowBtn.click();    
     await handleModalWindowSignUp(this.page);
   }
 
   async clickCreateYourAccountButtonFromReady() {
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
-    await bannerBtnReady.scrollIntoViewIfNeeded();
-    await handleCookiesPopUp(this.page);
-    await handleStayOnSitePopUp(this.page);
+    await bannerBtnReady.scrollIntoViewIfNeeded();   
     await bannerBtnReady.click({ force: true });
     await handleModalWindowSignUp(this.page);
   }
