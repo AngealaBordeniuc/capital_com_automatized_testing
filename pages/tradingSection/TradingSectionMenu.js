@@ -63,11 +63,11 @@ export class TradingSectionMenu {
     await this.openTradingSubMenu("MT4");
   }
 
-  async openWebPlatformPage() {
-    await this.openTradingSubMenu("Web platform", 0);
+  async openTradingViewPage() {
+    await this.openTradingSubMenu("TRADING_VIEW");
   }
 
-  async openTradingViewPage() {
-    await this.openTradingSubMenu("TradingView", 0);
+  async openWebPlatformPage() {
+    await this.openTradingSubMenu("Web platform", 0);
   }
 }

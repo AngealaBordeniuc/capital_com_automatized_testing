@@ -7,29 +7,29 @@ export class MT4Page {
     this.page = page;
   }
 
-  async clickCreateAccountButton() {    
-    const createAccountBtn = this.page.locator('button[data-type*="block_btn1_signup"]');
-
-    //  await expect(
-    //    createAccountBtn,
-    //    "Create Account CTA should be visible on MT4 page",
-    //  ).toBeVisible();
-
-    await createAccountBtn.click()
+  async clickCreateAccountButton() {
+    const createAccountBtn = this.page.locator(
+      'button[data-type*="block_btn1_signup"]',
+    );
+    await createAccountBtn.click();
     await handleModalWindowSignUp(this.page);
   }
 
-  async clickOpenAccountButton() {  
-    const openAccountBtn = this.page.locator('button[data-type="tiles_w_img_link1_signup"]');
-    await openAccountBtn.scrollIntoViewIfNeeded()     
+  async clickOpenAccountButton() {
+    const openAccountBtn = this.page.locator(
+      'button[data-type="tiles_w_img_link1_signup"]',
+    );
+    await openAccountBtn.scrollIntoViewIfNeeded();
     await openAccountBtn.click();
     await handleModalWindowSignUp(this.page);
   }
 
   async clickCreateAccountButtonThreeSteps() {
-    const createAccountBtnThSt = this.page.locator('button[data-type="tiles_w_img_btn1_signup"]').first();
-    await createAccountBtnThSt.scrollIntoViewIfNeeded()
-    await createAccountBtnThSt.click();         
+    const createAccountBtnThSt = this.page
+      .locator('button[data-type="tiles_w_img_btn1_signup"]')
+      .first();
+    await createAccountBtnThSt.scrollIntoViewIfNeeded();
+    await createAccountBtnThSt.click();
     await handleModalWindowSignUp(this.page);
   }
 
@@ -69,8 +69,8 @@ export class MT4Page {
   }
 
   async verifyMt4DownloadAppStore() {
-      const mt4Heading = this.page.locator('h2[class="up0V c5pQ"]').nth(3);
-      await mt4Heading.scrollIntoViewIfNeeded();
+    const mt4Heading = this.page.locator('h2[class="up0V c5pQ"]').nth(3);
+    await mt4Heading.scrollIntoViewIfNeeded();
     const downloadLink = this.page
       .locator('a[href*="Capital.com-Demo"]')
       .nth(1);
@@ -93,14 +93,27 @@ export class MT4Page {
     const discoverHeading = this.page.locator('h2[class="up0V c5pQ"]').nth(4);
     await discoverHeading.scrollIntoViewIfNeeded();
 
-    const signUpNowBtn = this.page.locator('button[data-type="tiles_w_img_link2_signup"]');
-    await signUpNowBtn.click();    
+    const signUpNowBtn = this.page.locator(
+      'button[data-type*="tiles_w_img_link"]',
+    );
+    await signUpNowBtn.click();
+    await handleModalWindowSignUp(this.page);
+  }
+
+  async clickSignUpWhyChoose() {
+    const area = this.page
+      .locator('div[class="HGwk cRY3 ME6O"]')
+      .nth(7);
+    await area.scrollIntoViewIfNeeded();
+
+    const signUpBtn = this.page.locator('button[data-type*="tiles_w_img_btn"]').last();
+    await signUpBtn.click();
     await handleModalWindowSignUp(this.page);
   }
 
   async clickCreateYourAccountButtonFromReady() {
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
-    await bannerBtnReady.scrollIntoViewIfNeeded();   
+    await bannerBtnReady.scrollIntoViewIfNeeded();
     await bannerBtnReady.click({ force: true });
     await handleModalWindowSignUp(this.page);
   }

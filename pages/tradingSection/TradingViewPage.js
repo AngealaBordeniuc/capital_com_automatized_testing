@@ -7,20 +7,22 @@ export class TradingViewPage {
   }
 
   async verifyDownloadForDesktop() {
-    const deskHeading = this.page.getByRole("heading", { name: "Desktop" });
-    await deskHeading.scrollIntoViewIfNeeded();
+    const downloadHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(2);
+    await downloadHeading.scrollIntoViewIfNeeded();
     const downloadLink = this.page.locator('a[href*="TradingView.msix"]');
+    await expect(downloadLink).toBeVisible({ timeout: 10000 });
     await downloadLink.click();
   }
   async verifyDownloadForMacOs() {
-    const deskHeading = this.page.getByRole("heading", { name: "MacOs" });
-    await deskHeading.scrollIntoViewIfNeeded();
+    const downloadHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(2);
+    await downloadHeading.scrollIntoViewIfNeeded();
     const downloadLink = this.page.locator('a[href*="TradingView.dmg"]');
+    await expect(downloadLink).toBeVisible({ timeout: 10000 });
     await downloadLink.click();
   }
   async verifyDownloadForLinux() {
-    const deskHeading = this.page.getByRole("heading", { name: "Linux" });
-    await deskHeading.scrollIntoViewIfNeeded();
+    const downloadHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(2);
+    await downloadHeading.scrollIntoViewIfNeeded();
     const downloadLink = this.page.locator(
       'a[href*="snapcraft.io/tradingview"]'
     );
@@ -36,9 +38,10 @@ export class TradingViewPage {
     throw new Error ("Linux download link is not visible")
   }
   }
+
   async verifyLaunchBrowser() {
-    const deskHeading = this.page.getByRole("heading", { name: "Browser" });
-    await deskHeading.scrollIntoViewIfNeeded();
+   const downloadHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(2);
+   await downloadHeading.scrollIntoViewIfNeeded();
     const downloadLink = this.page.locator('a[href*="tradingview.com/chart"]');
     const [newPage] = await Promise.all([
       this.page.waitForEvent("popup"),
@@ -50,12 +53,10 @@ export class TradingViewPage {
 
 
   async clickTradingViewLink() {
-    await this.page
-      .getByRole("heading", { name: "How can I connect TradingView?" })
-      .scrollIntoViewIfNeeded();
-    const tradingViewLink = this.page
-      .locator('a[href*="tradingview.com/broker"]')
-      .nth(1);
+    const howCanHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(1);
+    await howCanHeading.scrollIntoViewIfNeeded();
+   
+    const tradingViewLink = this.page.locator('a[href*="tradingview.com/broker"]').nth(1);
 
     const [newPage] = await Promise.all([
       this.page.waitForEvent("popup"),
@@ -67,18 +68,22 @@ export class TradingViewPage {
     });
   }
 
-  async clickSignUpButtonHowCan() {
-    await this.page
-      .getByRole("heading", { name: "How can I connect TradingView?" })
-      .scrollIntoViewIfNeeded();
-    await handleCookiesPopUp(this.page);
-    await this.page.getByRole("button", { name: "Sign up" }).nth(1).click();
+  async clickSignUpHowCanButton() {
+   const howCanHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(1);
+   await howCanHeading.scrollIntoViewIfNeeded();
+   
+    const signUpBtn = this.page.locator('button[data-type="background_banner_block_btn1_signup"]');
+    await expect(signUpBtn).toBeVisible({ timeout: 10000 });
+    await signUpBtn.click();
     await handleModalWindowSignUp(this.page);
   }
 
-  async clickSignUpButtonWhyChoose() {
-    const signUpButtonWhyChoose = this.page.getByRole("button", { name: "Sign up" }).nth(2)
-    await signUpButtonWhyChoose.scrollIntoViewIfNeeded()
+  async clickSignUpWhyChooseButton() {
+    const area = this.page.locator('div[class="HGwk cRY3 ME6O"]').nth(6);
+    await area.scrollIntoViewIfNeeded();
+    
+    const signUpButtonWhyChoose = this.page.locator('button[data-type="tiles_w_img_btn2_signup"]');
+    await expect(signUpButtonWhyChoose).toBeVisible({ timeout: 10000 });
     await signUpButtonWhyChoose.click()   
     await handleModalWindowSignUp(this.page);
   }

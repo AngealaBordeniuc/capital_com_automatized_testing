@@ -5,7 +5,7 @@ import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
 const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
-//  const languages = ["EN"]
+// const languages = ["ZHS"]
 
 licenses.forEach((license) => {
 languages.forEach((lang) => {
@@ -185,6 +185,55 @@ languages.forEach((lang) => {
            await expect(page).toHaveURL(expectedPath);
            await mT4Page.verifyMt4OpenWebTerminal()
          });          
+
+         if (license.features.mt4SignUpNowDiscoverTradingButton) {
+           test(`${license.name} ${lang} – MT4: Sign up now - un`, async ({
+             page,
+           }) => {
+             const path = license.paths[lang];
+
+             // await page.pause()
+
+             await page.goto(path, { waitUntil: "domcontentloaded" });
+
+             await handleOptionalPopups(page);
+
+             const tradingMenu = new TradingSectionMenu(page);
+             const mT4Page = new MT4Page(page);
+
+             await tradingMenu.openMT4Page();
+
+             const expectedPath = `${path}/trading-platforms/mt4`;
+
+             await expect(page).toHaveURL(expectedPath);
+             await mT4Page.clickSignUpNowDiscoverTrading()
+           });
+         }
+
+         if (license.features.mt4SignUpWhyChooseButton) {
+           test(`${license.name} ${lang} – MT4: Sign up, Why Choose - un`, async ({
+             page,
+           }) => {
+             const path = license.paths[lang];
+
+             await page.pause()
+
+             await page.goto(path, { waitUntil: "domcontentloaded" });
+
+             await handleOptionalPopups(page);
+
+             const tradingMenu = new TradingSectionMenu(page);
+             const mT4Page = new MT4Page(page);
+
+             await tradingMenu.openMT4Page();
+
+             const expectedPath = `${path}/trading-platforms/mt4`;
+
+             await expect(page).toHaveURL(expectedPath);
+             await mT4Page.clickSignUpWhyChoose()
+           });
+         }
+         
          
          test(`${license.name} ${lang} – MT4, Create your account- un`, async ({
            page,

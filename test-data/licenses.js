@@ -3,7 +3,9 @@ export const licenses = [
     name: "FCA",
     features: {
       mt4CreateAccountButton1: false,
-      mt4OpenAccountButton: true,     
+      mt4OpenAccountButton: true,
+      mt4SignUpNowDiscoverTradingButton: false,
+      mt4SignUpWhyChooseButton: false,
     },
     paths: {
       EN: "/en-gb",
@@ -37,6 +39,8 @@ export const licenses = [
     features: {
       mt4CreateAccountButton1: true,
       mt4OpenAccountButton: true,     
+      mt4SignUpNowDiscoverTradingButton: false,
+      mt4SignUpWhyChooseButton: true,
     },
     paths: {
       EN: "/en-ae",
@@ -70,6 +74,8 @@ export const licenses = [
     features: {
       mt4CreateAccountButton1: true,
       mt4OpenAccountButton: true,     
+      mt4SignUpNowDiscoverTradingButton: false,
+      mt4SignUpWhyChooseButton: true,
     },
     paths: {
       EN: "/en-eu",
@@ -108,6 +114,8 @@ export const licenses = [
     features: {
       mt4CreateAccountButton1: true,
       mt4OpenAccountButton: true,     
+      mt4SignUpNowDiscoverTradingButton: false,
+      mt4SignUpWhyChooseButton: false,
     },
     paths: {
       EN: "/en-au",
@@ -140,6 +148,8 @@ export const licenses = [
     features: {
       mt4CreateAccountButton1: true,
       mt4OpenAccountButton: false,     
+      mt4SignUpNowDiscoverTradingButton: true,
+      mt4SignUpWhyChooseButton: false,
     },
     paths: {
       EN: "/en-int",
