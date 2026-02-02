@@ -1,11 +1,26 @@
 import { expect } from '@playwright/test'
 
 export const handleOptionalPopups = async (page) => { 
-   await acceptAllCookies(page);
+  await acceptImportantNotice(page); 
+  await acceptAllCookies(page);
   await handleCookiesPopUp(page);
   await handleStayOnSitePopUp(page);
  
 };
+
+export const acceptImportantNotice = async (page) => {
+  if (page.isClosed()) return;
+
+  const confirmBtn = page.getByRole("button", { name: /i confirm/i });
+
+  try {
+    await confirmBtn.waitFor({ state: "visible", timeout: 3000 });
+    await confirmBtn.click();
+  } catch {
+    return;
+  }
+};
+
 
 export const handleCookiesPopUp = async (page) => {
   if (page.isClosed()) return;

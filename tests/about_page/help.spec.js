@@ -11,9 +11,7 @@ licenses.forEach((license) => {
     if (!license.paths[lang]) return;
 
     test(`${license.name} ${lang} – Help - un`, async ({ page }) => {
-      const path = license.paths[lang];
-
-      await page.pause()
+      const path = license.paths[lang];      
 
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",
