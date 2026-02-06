@@ -9,17 +9,26 @@ export const handleOptionalPopups = async (page) => {
 };
 
 export const acceptImportantNotice = async (page) => {
-  if (page.isClosed()) return;
+   if (page.isClosed()) return;
 
-  const confirmBtn = page.getByRole("button", { name: /i confirm/i });
+   const confirmBtn = page.getByRole("button", { name: /i confirm/i });
 
-  try {
-    await confirmBtn.waitFor({ state: "visible", timeout: 3000 });
-    await confirmBtn.click();
-  } catch {
-    return;
-  }
+   try {     
+     await confirmBtn.waitFor({ state: "visible", timeout: 3000 });
+    
+     await confirmBtn.evaluate((el) => {
+       el.style.display = "block";
+       el.style.visibility = "visible";
+       el.style.pointerEvents = "auto";
+       el.disabled = false;
+     });
+     
+     await confirmBtn.click();
+   } catch (e) {    
+     return;
+   }
 };
+
 
 
 export const handleCookiesPopUp = async (page) => {
