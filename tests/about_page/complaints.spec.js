@@ -5,7 +5,7 @@ import { ComplaintsPage } from "../../pages/aboutSection/ComplaintsPage";
 import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT"];
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {

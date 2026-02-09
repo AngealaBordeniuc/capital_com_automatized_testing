@@ -4,7 +4,7 @@ import { WhyCapitalComPage } from "../../pages/aboutSection/WhyCapitalComPage";
 import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {

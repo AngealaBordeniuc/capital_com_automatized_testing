@@ -4,7 +4,7 @@ import { OurOfficesPage } from "../../pages/aboutSection/OurOfficesPage";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 import { licenses } from "../../test-data/licenses";
 
-const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {

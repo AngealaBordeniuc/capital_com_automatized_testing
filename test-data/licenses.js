@@ -158,7 +158,6 @@ export const licenses = [
       RU: "/ru-int",
       AR: "/ar-int",
       ES: "/es-int",
-      ZHS: "/zh-hans",
       ZHT: "/zh-hant",
     },
     aboutSubmenus: {
@@ -179,7 +178,7 @@ export const licenses = [
       FRAUD_PREVENTION: true,
       MARGIN_CALLS: true,
       MOBILE_APPS: true,
-      MT4: ["EN", "FR", "DE", "RU", "AR", "ZHS", "ZHT"],
+      MT4: ["EN", "FR", "DE", "RU", "AR", "ZHT"],
       TRADING_VIEW: true,
       WEB_PLATFORM: true,
     },

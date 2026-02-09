@@ -4,7 +4,7 @@ import { CFDCalculator } from "../../pages/tradingSection/CFDCalculatorPage";
 import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-const languages = ["EN", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
+const languages = ["EN", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {

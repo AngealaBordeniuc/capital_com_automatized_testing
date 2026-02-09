@@ -4,7 +4,7 @@ import { IsCapitalComSafePage} from "../../pages/aboutSection/IsCapitalComSafePa
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 import { licenses } from "../../test-data/licenses";
 
-const languages = ["EN", "FR", "DE", "AR", "RU", "ZHS", "ZHT", "IT", "NL", "PL"];
+const languages = ["EN", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
