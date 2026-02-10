@@ -49,8 +49,7 @@ export class TradingViewPage {
     ]);
     await newPage.waitForURL("https://www.tradingview.com/chart/", 
       {timeout: 30000})      
-  } 
-
+  }
 
   async clickTradingViewLink() {
     const howCanHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(1);
