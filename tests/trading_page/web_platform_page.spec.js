@@ -1,34 +1,59 @@
-import { test, expect } from "allure-playwright";
+import { test, expect } from "@playwright/test";
 import { TradingSectionMenu } from "../../pages/tradingSection/TradingSectionMenu";
 import { WebPlatformPage } from "../../pages/tradingSection/WebPlatformPage";
-import { handleStayOnSitePopUp, handleCookiesPopUp, handleModalWindowSignUp } from "../../helpers/pop_ups";
+import { licenses } from "../../test-data/licenses";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-let tradingSectionMenu;
-let webPlatformPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
+// const languages = ["RO"]
 
-test.describe('CySec_License(EN), Web Platform Page', () => {
-    test.beforeEach(async({page}) => {
-        await page.goto('/en-eu')
-        await handleStayOnSitePopUp(page)
-        await handleCookiesPopUp(page)
-        tradingSectionMenu = new TradingSectionMenu(page)
-        webPlatformPage = new WebPlatformPage(page)
-    })
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
 
-    test('Smoke_CySEC_License(EN), Sign Up Form is opened after clicking on the [Create account] button on the banner "The Capital.com web trading platform", unauthorized user', async ({
+    test(`${license.name} ${lang} – Web Platform, Create account - un`, async ({
       page,
-    }) => {        
-      await tradingSectionMenu.openWebPlatformPage();
-      await expect(page).toHaveURL("/en-eu/trading-platforms/web-platform");
-      await webPlatformPage.clickCreateAccountButton();      
+    }) => {
+      const path = license.paths[lang]; 
+
+      await page.goto(path, { waitUntil: "domcontentloaded" });
+
+      // await page.pause()
+
+      await handleOptionalPopups(page);
+
+      const tradingMenu = new TradingSectionMenu(page);
+      const webPlatformPage = new WebPlatformPage(page);
+
+      await tradingMenu.openWebPlatformPage();
+
+      const expectedPath = `${path}/trading-platforms/web-platform`;
+
+      await expect(page).toHaveURL(expectedPath);
+      await webPlatformPage.clickCreateAccountButton();
     });
 
-    test('Smoke_CySEC_License(EN), Verify QR Code', async ({
+    test(`${license.name} ${lang} – Web Platform, Verify QR Code`, async ({
       page,
-    }) => {        
-      await tradingSectionMenu.openWebPlatformPage();
-      await expect(page).toHaveURL("/en-eu/trading-platforms/web-platform");
+    }) => {
+      const path = license.paths[lang];
+
+      await page.goto(path, { waitUntil: "domcontentloaded" });
+
+      // await page.pause()
+
+      await handleOptionalPopups(page);
+
+      const tradingMenu = new TradingSectionMenu(page);
+      const webPlatformPage = new WebPlatformPage(page);
+
+      await tradingMenu.openWebPlatformPage();
+
+      const expectedPath = `${path}/trading-platforms/web-platform`;
+
+      await expect(page).toHaveURL(expectedPath);
       await webPlatformPage.verifyQrRedirect();
-      
     });
+
+  })
 })

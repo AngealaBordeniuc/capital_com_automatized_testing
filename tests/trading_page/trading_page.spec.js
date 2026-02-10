@@ -1,32 +1,54 @@
-import{test, expect} from '@playwright/test';
-import { handleCookiesPopUp, handleStayOnSitePopUp, handleModalWindowSignUp} from "../../helpers/pop_ups";
-import {TradingPage} from '../../pages/tradingSection/TradingPage';
+import { test, expect } from "@playwright/test";
+import { TradingPage } from "../../pages/tradingSection/TradingPage";
+import { licenses } from "../../test-data/licenses";
+import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-let tradingPage;
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
+// const languages = ["EN"]
 
-test.describe('Trading Page', () => {
-    test.beforeEach(async({page}) => {
-        await page.goto('/en-eu')
-        await handleStayOnSitePopUp(page)
-        await handleCookiesPopUp(page)
-        tradingPage = new TradingPage(page);
-         await tradingPage.openTradingPage();
-    })
+licenses.forEach((license) => {
+  languages.forEach((lang) => {
+    if (!license.paths[lang]) return;
+    
+    test(`${license.name} ${lang} – Trading Page, Create account - un`, async ({
+          page,
+        }) => {
+          const path = license.paths[lang]; 
+    
+          await page.goto(path, { waitUntil: "domcontentloaded" });      
+    
+          await handleOptionalPopups(page);         
 
+          const tradingPage = new TradingPage(page);
 
+          await tradingPage.openTradingPage();
 
-test('Smoke_CySEC_License(EN), Sign Up Form is opened after clicking on the [Create account] button on the banner "Ways to trade", unauthorized user', 
-    async({page}) =>{   
-    await expect(page).toHaveURL('/en-eu/ways-to-trade', {timeout: 6000})
-    await tradingPage.clickCreateAccountButton()    
+          const expectedPath = `${path}/ways-to-trade`;
+
+          await expect(page).toHaveURL(expectedPath);
+          await tradingPage.clickCreateAccountButton()
+        });
+
+     test.only(`${license.name} ${lang} – Trading Page, Try demo account - un`, async ({
+           page,
+         }) => {
+           const path = license.paths[lang];
+
+           await page.goto(path, { waitUntil: "domcontentloaded" });
+
+           await handleOptionalPopups(page);
+
+           const tradingPage = new TradingPage(page);
+
+           await tradingPage.openTradingPage();
+
+           const expectedPath = `${path}/ways-to-trade`;
+
+           await expect(page).toHaveURL(expectedPath);
+           await tradingPage.clickTryDemoAccountButton();
+         });
+
 })
-
-test('Smoke_CySEC_License(EN), Sign Up Form is opened after clicking on the [Try demo account] button on the banner "Ways to trade", unauthorized user', 
-    async({page}) =>{   
-    await expect(page).toHaveURL('/en-eu/ways-to-trade')
-    await tradingPage.clickTryDemoAccountButton()
-})
-
 })
 
 

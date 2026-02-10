@@ -8,5 +8,5 @@ export const TRADING_MENU = {
   MOBILE_APPS: "/mobile-apps",
   MT4: "/mt4",
   TRADING_VIEW: "/trading-view",
-  WEB_PLATFMORM: "/web-platform",
+  WEB_PLATFORM: "/trading-platforms/web-platform"
 };

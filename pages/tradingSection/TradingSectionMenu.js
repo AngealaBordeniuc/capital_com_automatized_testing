@@ -1,9 +1,4 @@
-import { expect } from 'allure-playwright';
 import {TRADING_MENU, tradingSubmenus} from '../../test-data/trading-menu';
-import { handleCookiesPopUp,
-   handleStayOnSitePopUp, 
-   acceptAllCookies,
-   handleModalWindowSignUp} from '../../helpers/pop_ups'
 
 export class TradingSectionMenu {
   constructor(page) {
@@ -68,6 +63,6 @@ export class TradingSectionMenu {
   }
 
   async openWebPlatformPage() {
-    await this.openTradingSubMenu("Web platform", 0);
+    await this.openTradingSubMenu("WEB_PLATFORM");
   }
 }

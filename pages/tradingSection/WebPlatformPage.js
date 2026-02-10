@@ -8,15 +8,17 @@ export class WebPlatformPage {
   }
 
   async clickCreateAccountButton() {   
-    const createAccountBtn = this.page.getByRole("button", { name: "Create account" });
+    const createAccountBtn = this.page.locator('button[data-type="fullscreen_banner_block_btn1_signup"]');
     await expect(createAccountBtn).toBeVisible({ timeout: 10000 });
-    await createAccountBtn.click();
-    await handleModalWindowSignUp(this.page);   
+    await createAccountBtn.click();  
+    await handleModalWindowSignUp(this.page);
   }
 
   async getQrUrl() {
-    await this.qrImage.scrollIntoViewIfNeeded();
-    await this.qrImage.waitFor({ state: "visible" });
+    const area =  this.page.locator('h2.c5pQ').nth(3);
+    await area.scrollIntoViewIfNeeded();
+    await expect(area).toBeVisible({ timeout: 10000 });        
+    await expect(this.qrImage).toBeVisible({ timeout: 10000 });
     const src = await this.qrImage.getAttribute("src");
     return decodeURIComponent(
       new URLSearchParams(src.split("?")[1]).get("text")

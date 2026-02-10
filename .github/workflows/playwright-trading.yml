@@ -103,14 +103,7 @@ jobs:
     
       - name: Run Playwright Trading tests
         run: |
-          npx playwright test tests/trading_page/all_platforms_page.spec.js \
-            tests/trading_page/cfd_calculator_page.spec.js \
-            tests/trading_page/cfd_trading_page.spec.js \
-            tests/trading_page/demo_trading_page.spec.js \
-            tests/trading_page/fraud_prevention_page.spec.js \
-            tests/trading_page/margin_calls.spec.js \
-            tests/trading_page/mobile_apps_page.spec.js \
-            tests/trading_page/mt4_page.spec.js \
+          npx playwright test tests/trading_page \
             --reporter=list,allure-playwright \
             --retries=2
         continue-on-error: true

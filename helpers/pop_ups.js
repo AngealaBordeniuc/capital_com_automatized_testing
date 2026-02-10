@@ -4,7 +4,7 @@ export const handleOptionalPopups = async (page) => {  ;
   await acceptAllCookies(page);
   await handleCookiesPopUp(page);
   await handleStayOnSitePopUp(page);
-   await acceptImportantNotice(page);
+  // await acceptImportantNotice(page);
  
 };
 

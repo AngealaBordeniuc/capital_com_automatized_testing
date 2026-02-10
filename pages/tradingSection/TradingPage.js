@@ -3,38 +3,33 @@ import {handleCookiesPopUp,
   acceptAllCookies,  
   handleModalWindowSignUp
 } from "../../helpers/pop_ups";
+import { licenses } from "../../test-data/licenses";
 export class TradingPage {
   constructor(page) {
     this.page = page;
   }
-  async clickCTA(buttonLocator) {   
-    await acceptAllCookies(this.page);    
+  async clickCTA(buttonLocator) {
     await buttonLocator.scrollIntoViewIfNeeded();
     await expect(buttonLocator).toBeVisible({ timeout: 10000 });
     await expect(buttonLocator).toBeEnabled({ timeout: 10000 });
-    await buttonLocator.click({trial: true})
     await buttonLocator.click();    
     await handleModalWindowSignUp(this.page);
   }
 
   async openTradingPage() {
     const header = this.page.locator("#header");
-    const aboutMenu = header.getByRole("link", { name: "Trading" }).first();
-    await aboutMenu.click();
-  }
+     const tradingMenuLink = header.locator('a[href$="/ways-to-trade"]').first();
+     await expect(tradingMenuLink).toBeVisible({ timeout: 10000 });
+     await tradingMenuLink.click();
+  }     
 
   async clickCreateAccountButton() {    
-    const createAccountBtn = this.page.getByRole("button", {
-      name: "Create account",
-    });
-    await this.clickCTA(createAccountBtn);
-   
+    const createAccountBtn = this.page.locator('button[data-type="background_banner_block_btn1_signup"]');
+    await this.clickCTA(createAccountBtn);   
   }
 
   async clickTryDemoAccountButton() {    
-    const tryDemoAccountBtn = this.page.getByRole("button", {
-      name: "Try demo account",
-    });
-    await this.clickCTA(tryDemoAccountBtn);    
+    const tryDemoAccountBtn = this.page.locator('button[data-type="background_banner_block_btn2_demo"]');
+    await this.clickCTA(tryDemoAccountBtn);
   }
 }
