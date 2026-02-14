@@ -11,7 +11,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Trading View, Download for Desktop - un`, async ({
+    test(`${license.name} ${lang} – Trading View, Download for Desktop`, async ({
       page,
     }) => {
       const path = license.paths[lang]; 
@@ -31,7 +31,7 @@ licenses.forEach((license) => {
       await tradingViewPage.verifyDownloadForDesktop();
     });
 
-    test(`${license.name} ${lang} – Trading View, Download for MacOs - un`, async ({
+    test(`${license.name} ${lang} – Trading View, Download for MacOs`, async ({
       page,
     }) => {
       const path = license.paths[lang];
@@ -51,7 +51,7 @@ licenses.forEach((license) => {
       await tradingViewPage.verifyDownloadForMacOs()
     });
 
-    test(`${license.name} ${lang} – Trading View, Download for Linux - un`, async ({
+    test(`${license.name} ${lang} – Trading View, Download for Linux`, async ({
       page,
     }) => {
       const path = license.paths[lang];
@@ -71,7 +71,7 @@ licenses.forEach((license) => {
       await tradingViewPage.verifyDownloadForLinux();
     });
 
-    test(`${license.name} ${lang} – Trading View, Launch Browser - un`, async ({
+    test(`${license.name} ${lang} – Trading View, Launch Browser`, async ({
       page,
     }) => {
       const path = license.paths[lang];
@@ -91,7 +91,7 @@ licenses.forEach((license) => {
       await tradingViewPage.verifyLaunchBrowser();
     });
 
-     test(`${license.name} ${lang} – Trading View, Trading View Link - un`, async ({
+     test(`${license.name} ${lang} – Trading View, Trading View Link`, async ({
        page,
      }) => {
        const path = license.paths[lang];
@@ -113,7 +113,7 @@ licenses.forEach((license) => {
        await tradingViewPage.clickTradingViewLink()
      });
 
-      test(`${license.name} ${lang} – Trading View, Sign Up: How can I connect TradingView? - un`, async ({
+      test(`${license.name} ${lang} – Trading View, Sign Up: How can I connect TradingView?`, async ({
         page,
       }) => {
         const path = license.paths[lang];
@@ -133,14 +133,12 @@ licenses.forEach((license) => {
         await tradingViewPage.clickSignUpHowCanButton()
       });
 
-       test.skip(`${license.name} ${lang} – Trading View, Sign Up: Why choose Capital.com? - un`, async ({
+       test.skip(`${license.name} ${lang} – Trading View, Sign Up: Why choose Capital.com?`, async ({
          page,
        }) => {
          const path = license.paths[lang];
 
-         await page.goto(path, { waitUntil: "domcontentloaded" });
-
-        // await page.pause();
+         await page.goto(path, { waitUntil: "domcontentloaded" });       
 
          await handleOptionalPopups(page);
 

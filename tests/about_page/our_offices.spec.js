@@ -10,7 +10,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Our Offices - un`, async ({ page }) => {
+    test(`${license.name} ${lang} – Our Offices`, async ({ page }) => {
       const path = license.paths[lang];
 
       await page.goto(`https://capital.com${path}`, {

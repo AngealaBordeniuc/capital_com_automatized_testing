@@ -17,7 +17,7 @@ languages.forEach((lang) => {
       
     
     if (license.features.mt4CreateAccountButton1){
-    test(`${license.name} ${lang} – MT4: Create account - un`, async ({
+    test(`${license.name} ${lang} – MT4: Create account`, async ({
       page, 
     }) => {      
 
@@ -42,7 +42,7 @@ languages.forEach((lang) => {
   }
 
     if (license.features.mt4OpenAccountButton){
-    test(`${license.name} ${lang} – MT4: Open account - un`, async ({
+    test(`${license.name} ${lang} – MT4: Open account`, async ({
       page,
     }) => {
       const path = license.paths[lang];
@@ -65,7 +65,7 @@ languages.forEach((lang) => {
     });
   }
 
-      test(`${license.name} ${lang} – MT4, Create account: Three Steps - un`, async ({
+      test(`${license.name} ${lang} – MT4, Create account: Three Steps`, async ({
         page,
       }) => {
         const path = license.paths[lang];
@@ -85,7 +85,7 @@ languages.forEach((lang) => {
         await mT4Page.clickCreateAccountButtonThreeSteps()
       });
 
-       test(`${license.name} ${lang} – MT4, Download For Mac - un`, async ({
+       test(`${license.name} ${lang} – MT4, Download For Mac`, async ({
          page,
        }) => {
          const path = license.paths[lang];
@@ -105,7 +105,7 @@ languages.forEach((lang) => {
          await mT4Page.verifyMt4DownloadForMac()
        });
 
-       test(`${license.name} ${lang} – MT4, Download For Windows - un`, async ({
+       test(`${license.name} ${lang} – MT4, Download For Windows`, async ({
          page,
        }) => {
          const path = license.paths[lang];         
@@ -125,7 +125,7 @@ languages.forEach((lang) => {
          await mT4Page.verifyMt4DownloadForWindows()
        });
 
-        test(`${license.name} ${lang} – MT4, Download Google Play- un`, async ({
+        test(`${license.name} ${lang} – MT4, Download Google Play`, async ({
           page,
         }) => {
           const path = license.paths[lang];
@@ -146,7 +146,7 @@ languages.forEach((lang) => {
         });
         
 
-         test(`${license.name} ${lang} – MT4, Download from App Store- un`, async ({
+         test(`${license.name} ${lang} – MT4, Download from App Store`, async ({
            page,
          }) => {
            const path = license.paths[lang];       
@@ -166,7 +166,7 @@ languages.forEach((lang) => {
            await mT4Page.verifyMt4DownloadAppStore()
          });
 
-         test(`${license.name} ${lang} – MT4, Web Terminal- un`, async ({
+         test(`${license.name} ${lang} – MT4, Web Terminal`, async ({
            page,
          }) => {
            const path = license.paths[lang];
@@ -187,7 +187,7 @@ languages.forEach((lang) => {
          });          
 
          if (license.features.mt4SignUpNowDiscoverTradingButton) {
-           test(`${license.name} ${lang} – MT4: Sign up now - un`, async ({
+           test(`${license.name} ${lang} – MT4: Sign up now`, async ({
              page,
            }) => {
              const path = license.paths[lang];
@@ -211,7 +211,7 @@ languages.forEach((lang) => {
          }
 
          if (license.features.mt4SignUpWhyChooseButton) {
-           test(`${license.name} ${lang} – MT4: Sign up, Why Choose - un`, async ({
+           test(`${license.name} ${lang} – MT4: Sign up, Why Choose`, async ({
              page,
            }) => {
              const path = license.paths[lang];
@@ -235,7 +235,7 @@ languages.forEach((lang) => {
          }
          
          
-         test(`${license.name} ${lang} – MT4, Create your account- un`, async ({
+         test(`${license.name} ${lang} – MT4, Create your account`, async ({
            page,
          }) => {
            const path = license.paths[lang];           

@@ -11,7 +11,7 @@ licenses.forEach((license) => {
     if (!license.paths[lang]) return;
     if (!license.tradingSubmenus.CFD_CALCULATOR) return;
 
-    test(`${license.name} ${lang} – CFD Calculator: Sign up - un`, async ({
+    test(`${license.name} ${lang} – CFD Calculator: Sign up`, async ({
       page,
     }) => {
       const path = license.paths[lang];
@@ -33,7 +33,7 @@ licenses.forEach((license) => {
       await cfdCalculator.clickSignUpButton()
     });
 
-    test(`${license.name} ${lang} – CFD Calculator: Try demo- un`, async ({
+    test(`${license.name} ${lang} – CFD Calculator: Try demo`, async ({
       page,
     }) => {
       const path = license.paths[lang];       
@@ -55,7 +55,7 @@ licenses.forEach((license) => {
       await cfdCalculator.clickTryDemoButton()
     });
 
-    test(`${license.name} ${lang} – CFD Calculator: Trade now- un`, async ({
+    test(`${license.name} ${lang} – CFD Calculator: Trade now`, async ({
       page,
     }) => {
       const path = license.paths[lang];   
@@ -76,12 +76,10 @@ licenses.forEach((license) => {
       await cfdCalculator.clickTradeNowButton()
     });
 
-    test(`${license.name} ${lang} – CFD Calculator: Sign up - How to start- un`, async ({
+    test(`${license.name} ${lang} – CFD Calculator: Sign up - How to start`, async ({
       page,
     }) => {
-      const path = license.paths[lang];
-
-        // await page.pause()
+      const path = license.paths[lang];    
 
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",

@@ -11,9 +11,9 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – All Platforms: Create Account - un`, async ({
+    test(`${license.name} ${lang} – All Platforms: Create Account`, async ({
       page,
-    }) => {
+    }) => { 
       const path = license.paths[lang];
 
       await page.goto(`https://capital.com${path}`, {
@@ -33,7 +33,7 @@ licenses.forEach((license) => {
       await allPlatformsPage.clickCreateAccountButton()
     });
 
-    test(`${license.name} ${lang} – All Platforms: Try demo account - un`, async ({
+    test(`${license.name} ${lang} – All Platforms: Try demo account`, async ({
       page,
     }) => {
       const path = license.paths[lang];   
@@ -55,7 +55,7 @@ licenses.forEach((license) => {
       await allPlatformsPage.clickTryDemoAccountButton()
     });
 
-    test(`${license.name} ${lang} – All Platforms: Sign up - un`, async ({
+    test(`${license.name} ${lang} – All Platforms: Sign up`, async ({
       page,
     }) => {
       const path = license.paths[lang];

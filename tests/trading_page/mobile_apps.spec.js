@@ -11,7 +11,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Mobile Apps, QR Code: CFD trading app - un`, async ({
+    test(`${license.name} ${lang} – Mobile Apps, QR Code: CFD trading app`, async ({
       page,
     }) => {
       const path = license.paths[lang]; 
@@ -31,12 +31,10 @@ licenses.forEach((license) => {
       await mobileAppsPage.verifyQrRedirect_1();
     });
 
-    test(`${license.name} ${lang} – Mobile Apps, QR Code: Investmate - un`, async ({
+    test(`${license.name} ${lang} – Mobile Apps, QR Code: Investmate`, async ({
       page,
     }) => {
-      const path = license.paths[lang];
-
-      // await page.pause()      
+      const path = license.paths[lang];      
 
       await page.goto(path, { waitUntil: "domcontentloaded" });
       

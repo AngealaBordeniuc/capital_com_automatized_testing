@@ -11,12 +11,10 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Margin Calls: Create your account - un`, async ({
+    test(`${license.name} ${lang} – Margin Calls: Create your account`, async ({
       page,
     }) => {
-      const path = license.paths[lang];     
-
-    //   await page.pause()
+      const path = license.paths[lang];        
 
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",

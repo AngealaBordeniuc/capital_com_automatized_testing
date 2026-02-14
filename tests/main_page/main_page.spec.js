@@ -10,7 +10,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Main Page, "Sign up" - un`, async ({ page }) => {
+    test(`${license.name} ${lang} – Main Page, "Sign up"`, async ({ page }) => {
       const path = license.paths[lang];     
 
       await page.goto(`https://capital.com${path}`, {
@@ -23,7 +23,7 @@ licenses.forEach((license) => {
       await mainPage.clickSignUpButton()
     });
 
-    test(`${license.name} ${lang} – Main Page, "Try demo" - un`, async ({
+    test(`${license.name} ${lang} – Main Page, "Try demo"`, async ({
       page,
     }) => {
       const path = license.paths[lang];        
@@ -38,12 +38,10 @@ licenses.forEach((license) => {
       await mainPage.clickTryDemoButton()
     });
 
-     test(`${license.name} ${lang} – Main Page, "Sign up- Why Capital" - un`, async ({
+     test(`${license.name} ${lang} – Main Page, "Sign up- Why Capital"`, async ({
        page,
      }) => {
-       const path = license.paths[lang];    
-
-      //  await page.pause()
+       const path = license.paths[lang];          
 
        await page.goto(`https://capital.com${path}`, {
          waitUntil: "domcontentloaded",
@@ -54,7 +52,7 @@ licenses.forEach((license) => {
        await mainPage.clickSignUpButtonWhyChooseCapitalCom()
      });
 
-      test(`${license.name} ${lang} – Main Page, "Sell link" - un`, async ({
+      test(`${license.name} ${lang} – Main Page, "Sell link"`, async ({
         page,
       }) => {
         const path = license.paths[lang];        
@@ -68,7 +66,7 @@ licenses.forEach((license) => {
         await mainPage.clickSellButtonOurMarkets()
       });
 
-      test(`${license.name} ${lang} – Main Page, "Buy link" - un`, async ({
+      test(`${license.name} ${lang} – Main Page, "Buy link"`, async ({
         page,
       }) => {
         const path = license.paths[lang];       
@@ -83,7 +81,7 @@ licenses.forEach((license) => {
         await mainPage.clickBuyButtonOutMarkets()
       });
 
-      test(`${license.name} ${lang} – Main Page, "Try demo - For Learner" - un`, async ({
+      test(`${license.name} ${lang} – Main Page, "Try demo - For Learner"`, async ({
         page,
       }) => {
         const path = license.paths[lang];      
@@ -98,7 +96,7 @@ licenses.forEach((license) => {
         await mainPage.clickTryDemoButtonForLearnerTraders()
       });
 
-      test(`${license.name} ${lang} – Main Page, "Sign up - For Learner" - un`, async ({
+      test(`${license.name} ${lang} – Main Page, "Sign up - For Learner"`, async ({
         page,
       }) => {
         const path = license.paths[lang];            
@@ -114,7 +112,7 @@ licenses.forEach((license) => {
       });
 
       
-      test(`${license.name} ${lang} – Main Page, "Create your account - Ready" - un`, async ({
+      test(`${license.name} ${lang} – Main Page, "Create your account - Ready"`, async ({
         page,
       }) => {
         const path = license.paths[lang];        

@@ -11,14 +11,12 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Web Platform, Create account - un`, async ({
+    test(`${license.name} ${lang} – Web Platform, Create account`, async ({
       page,
     }) => {
       const path = license.paths[lang]; 
 
-      await page.goto(path, { waitUntil: "domcontentloaded" });
-
-      // await page.pause()
+      await page.goto(path, { waitUntil: "domcontentloaded" });      
 
       await handleOptionalPopups(page);
 
@@ -38,9 +36,7 @@ licenses.forEach((license) => {
     }) => {
       const path = license.paths[lang];
 
-      await page.goto(path, { waitUntil: "domcontentloaded" });
-
-      // await page.pause()
+      await page.goto(path, { waitUntil: "domcontentloaded" });     
 
       await handleOptionalPopups(page);
 

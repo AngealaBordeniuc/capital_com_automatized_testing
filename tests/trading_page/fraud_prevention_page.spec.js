@@ -11,7 +11,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Fraud Prevention: Create your account - un`, async ({
+    test(`${license.name} ${lang} – Fraud Prevention: Create your account`, async ({
       page,
     }) => {
       const path = license.paths[lang];       

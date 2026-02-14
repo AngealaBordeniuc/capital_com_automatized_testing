@@ -12,6 +12,17 @@
     "test": "playwright test",
     "test:main": "playwright test tests/main_page",
     "test:about": "playwright test tests/about_page",
-    "test:trading": "playwright test tests/trading_page"
+    "test:trading": "playwright test tests/trading_page",
+
+    "test:main:authorized": "npx playwright test tests/main_page --project=authorized",
+    "test:main:unauthorized": "npx playwright test tests/main_page --project=unauthorized",
+
+    "test:about:authorized": "npx playwright test tests/about_page --project=authorized",
+    "test:about:unauthorized": "npx playwright test tests/about_page --project=unauthorized",
+
+    "test:trading:authorized": "npx playwright test tests/trading_page --project=authorized",
+    "test:trading:unauthorized": "npx playwright test tests/trading_page --project=unauthorized"
   }
-}
+  
+  }
+

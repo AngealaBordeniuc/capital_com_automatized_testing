@@ -11,7 +11,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – CFD Trading: Create Account - un`, async ({
+    test(`${license.name} ${lang} – CFD Trading: Create Account`, async ({
       page,
     }) => {
       const path = license.paths[lang];     
@@ -33,7 +33,7 @@ licenses.forEach((license) => {
       await cfdTradingPage.clickCreateAccountButton()
     });
 
-     test(`${license.name} ${lang} – CFD Trading: Try demo - un`, async ({
+     test(`${license.name} ${lang} – CFD Trading: Try demo`, async ({
        page,
      }) => {
        const path = license.paths[lang];
@@ -55,7 +55,7 @@ licenses.forEach((license) => {
      });
 
      
-     test(`${license.name} ${lang} – CFD Trading: Sell - un`, async ({
+     test(`${license.name} ${lang} – CFD Trading: Sell`, async ({
        page,
      }) => {
        const path = license.paths[lang];  
@@ -77,7 +77,7 @@ licenses.forEach((license) => {
        await cfdTradingPage.clickSellButtonOurCFDMarkets()
      });
 
-      test(`${license.name} ${lang} – CFD Trading: Buy - un`, async ({
+      test(`${license.name} ${lang} – CFD Trading: Buy`, async ({
         page,
       }) => {
         const path = license.paths[lang];
@@ -99,7 +99,7 @@ licenses.forEach((license) => {
         await cfdTradingPage.clickBuyButtonOurCFDMarkets();
       });
 
-       test(`${license.name} ${lang} – CFD Trading: Create your account - un`, async ({
+       test(`${license.name} ${lang} – CFD Trading: Create your account`, async ({
          page,
        }) => {
          const path = license.paths[lang];       

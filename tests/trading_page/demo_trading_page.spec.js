@@ -12,7 +12,7 @@ licenses.forEach((license) => {
     if (!license.paths[lang]) return;
     if (!license.tradingSubmenus.DEMO_TRADING) return;
 
-    test(`${license.name} ${lang} – Demo Trading: Try demo - un`, async ({
+    test(`${license.name} ${lang} – Demo Trading: Try demo`, async ({
       page,
     }) => {
       const path = license.paths[lang];           
@@ -33,7 +33,7 @@ licenses.forEach((license) => {
       await demoTradingPage.clickTryDemoButton()
     });
 
-     test(`${license.name} ${lang} – Demo Trading: Verify QR code- un`, async ({
+     test(`${license.name} ${lang} – Demo Trading: Verify QR code`, async ({
        page,
      }) => {
        const path = license.paths[lang];     
@@ -54,7 +54,7 @@ licenses.forEach((license) => {
        await demoTradingPage.verifyQrRedirect()
      });
 
-    test(`${license.name} ${lang} – Demo Trading: Create your account - un`, async ({
+    test(`${license.name} ${lang} – Demo Trading: Create your account`, async ({
       page,
     }) => {
       const path = license.paths[lang];

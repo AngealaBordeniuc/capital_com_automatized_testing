@@ -10,7 +10,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
     
-    test(`${license.name} ${lang} – Trading Page, Create account - un`, async ({
+    test(`${license.name} ${lang} – Trading Page, Create account`, async ({
           page,
         }) => {
           const path = license.paths[lang]; 
@@ -29,7 +29,7 @@ licenses.forEach((license) => {
           await tradingPage.clickCreateAccountButton()
         });
 
-     test.only(`${license.name} ${lang} – Trading Page, Try demo account - un`, async ({
+     test(`${license.name} ${lang} – Trading Page, Try demo account`, async ({
            page,
          }) => {
            const path = license.paths[lang];
