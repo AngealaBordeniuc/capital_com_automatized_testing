@@ -1,0 +1,703 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "عقود الفروقات هي أدوات مالية معقدة تنطوي على مخاطر عالية قد تؤدي إلى خسارة سريعة للأموال بسبب الرافعة المالية.. وتجدر الإشارة إلى أن %81.31 من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع مقدم الخدمة هذا. يجب أن تفكر مليّا فيما إذا كنت قادرًا على تحمّل مخاطر عالية قد تؤدي إلى خسارة أموالك. يُرجى قراءة بيان الإفصاح عن المخاطر الخاص بنا بعناية" [ref=e3]:
+      - generic [ref=e6]:
+        - text: عقود الفروقات هي أدوات مالية معقدة تنطوي على مخاطر عالية قد تؤدي إلى خسارة سريعة للأموال بسبب الرافعة المالية..
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - strong [ref=e9]: وتجدر الإشارة إلى أن %81.31 من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع مقدم الخدمة هذا
+            - text: .
+          - text: يجب أن تفكر مليّا فيما إذا كنت قادرًا على تحمّل مخاطر عالية قد تؤدي إلى خسارة أموالك. يُرجى قراءة بيان الإفصاح عن المخاطر الخاص بنا بعناية
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - link "شخصي" [ref=e15] [cursor=pointer]:
+          - /url: /ar-int
+        - link "احترافي" [ref=e16] [cursor=pointer]:
+          - /url: /ar-int/professional
+        - link "الشركاء" [ref=e17] [cursor=pointer]:
+          - /url: /ar-int/partnerships
+      - generic [ref=e18]:
+        - link "الدعم" [ref=e19] [cursor=pointer]:
+          - /url: /ar-int/help
+        - button "ar" [ref=e21] [cursor=pointer]:
+          - strong [ref=e23]: ar
+    - generic [ref=e24]:
+      - link [ref=e25] [cursor=pointer]:
+        - /url: /ar-int
+        - img [ref=e26]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - link "التداول" [ref=e40] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade
+          - generic:
+            - generic:
+              - generic:
+                - link "التداول":
+                  - /url: /ar-int/ways-to-trade
+                  - generic:
+                    - generic: التداول
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: طرق التداول
+                  - generic:
+                    - generic:
+                      - link "تداول العقود مقابل الفروقات":
+                        - /url: /ar-int/ways-to-trade/cfd-trading
+                        - strong: تداول العقود مقابل الفروقات
+                - generic:
+                  - generic:
+                    - strong: منصات التداول
+                - generic:
+                  - generic:
+                    - strong: معلومات عن التداول
+                - generic:
+                  - generic:
+                    - strong: أدوات التداول
+        - generic [ref=e41]:
+          - link "الأسواق" [ref=e44] [cursor=pointer]:
+            - /url: /ar-int/markets
+          - generic:
+            - generic:
+              - generic:
+                - link "الأسواق":
+                  - /url: /ar-int/markets
+                  - generic:
+                    - generic: الأسواق
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: الأسواق المتاحة
+                - generic:
+                  - generic:
+                    - strong: تحديثات السوق
+        - generic [ref=e45]:
+          - link "الأسعار" [ref=e48] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade/fees-and-charges
+          - generic:
+            - generic:
+              - generic:
+                - link "الأسعار":
+                  - /url: /ar-int/ways-to-trade/fees-and-charges
+                  - generic:
+                    - generic: الأسعار
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: الأسعار
+        - generic [ref=e49]:
+          - link "تعلّم التداول" [ref=e52] [cursor=pointer]:
+            - /url: /ar-int/learn
+          - generic:
+            - generic:
+              - generic:
+                - link "تعلّم التداول":
+                  - /url: /ar-int/learn
+                  - generic:
+                    - generic: تعلّم التداول
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: للمتداولين المبتدئين
+                - generic:
+                  - generic:
+                    - strong: للمتداولين ذوي الخبرة
+        - generic [ref=e53]:
+          - link "من نحن" [ref=e56] [cursor=pointer]:
+            - /url: /ar-int/about-us
+          - generic:
+            - generic:
+              - generic:
+                - link "من نحن":
+                  - /url: /ar-int/about-us
+                  - generic:
+                    - generic: من نحن
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: عنّا
+                - generic:
+                  - generic:
+                    - strong: احصل على المساعدة
+      - generic [ref=e57]:
+        - generic:
+          - button "تسجيل الدخول"
+          - button "سجّل اشتراكك"
+        - link "افتح المنصة user" [ref=e58] [cursor=pointer]:
+          - /url: /trading/platform/
+          - text: افتح المنصة
+          - img "user" [ref=e59]
+  - generic [ref=e60]:
+    - paragraph [ref=e63]:
+      - link "الرئيسية•" [ref=e64] [cursor=pointer]:
+        - /url: /ar-int
+      - link "كافة المنصات •" [ref=e65] [cursor=pointer]:
+        - /url: /ar-int/trading-platforms
+      - text: التداول التجريبي
+    - generic [ref=e66]:
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - heading "تدرب على حساب تداول تجريبي" [level=1] [ref=e72]
+          - paragraph [ref=e74]: اغتنم فرص التداول في مئات الأسواق العالمية دون أي مخاطرة فعلية، مع رصيد افتراضي على منصتنا المُصممة لتوفير تجربة تداول استثنائية سهلة الاستخدام.
+        - button "جرِّب الحساب التجريبي" [ref=e76] [cursor=pointer]
+      - generic [ref=e80]:
+        - paragraph [ref=e81]: لماذا استخدام حساب تداول تجريبي؟
+        - generic [ref=e82]:
+          - paragraph [ref=e83]:
+            - paragraph [ref=e84]: يُعد التدرّب على حساب تداول تجريبي مجاني بمثابة بوابتك المثالية لدخول عالم الأسواق المالية، حيث يُتيح لك إتقان مبادئ تداول عقود الفروقات في بيئة آمنة وخالية من المخاطر.
+            - paragraph [ref=e85]
+            - paragraph [ref=e86]:
+              - text: ما يصل إلى 100,000 دولار افتراضية تحت تصرّفك لتتمكن من فتح صفقات على مُختلف الأسواق، من الفوركس والسلع وصولًا إلى المؤشرات والأسهم، وذلك باستخدام
+              - link "عقود الفروقات (CFDs)" [ref=e87] [cursor=pointer]:
+                - /url: /ar-int/ways-to-trade/cfd-trading
+              - text: ، دون المُخاطرة بأموالك الحقيقية.
+            - paragraph [ref=e88]
+            - paragraph [ref=e89]: سواء كنت تُفضل التداول عبر تطبيقنا أو منصة الحاسوب المكتبي، استكشف واجهة منصتنا البسيطة وسهلة الاستخدام، وارتقِ بمهاراتك إلى آفاق جديدة مع 8 إطارًا زمنيًا، وأكثر من 100 مؤشرًا فنيًا، ومجموعة شاملة من أدوات الرسم البياني عبر 6 أنماط مُتنوعة من المخططات البيانية. لا تقتصر مزايا منصتنا على ذلك، بل نُتيح لك فرصة التعلم المُستمر أثناء التداول من خلال الوصول إلى خلاصات إخبارية مُدمجة من وكالة Newsquawk، والتي تُبقيك على اطلاع بآخر المستجدات في السوق الذي اخترته. كما نُوفر لك مجموعة غنية من الموارد التعليمية الشاملة من خلال ندوات عبر الإنترنت، ومسارد مصطلحات مُتخصصة، ومقالات توضيحية ثرية بالمعلومات.
+            - paragraph [ref=e90]
+            - paragraph [ref=e91]: انضمّ الآن إلى أكثر من 500,000 مُتداول حقيقي، وابدأ خُطوتك الأولى نحو الاحتراف مع حسابنا التجريبي. ماذا تنتظر إذًا؟ ابدأ رحلتك في عالم التداول اليوم على منصتنا الحائزة على العديد من الجوائز.
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - text: 817K+
+              - generic [ref=e95]: متداولون حول العالم
+            - generic [ref=e96]:
+              - text: 114K+
+              - generic [ref=e97]: العملاء النشطون شهريًا
+            - generic [ref=e98]:
+              - text: 24/7
+              - generic [ref=e99]: دعم العملاء
+            - generic [ref=e100]:
+              - text: "100"
+              - generic [ref=e101]: المؤشرات الفنية
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - heading "اكتشف الموارد التعليمية" [level=2] [ref=e105]
+          - generic [ref=e106]: اطلع على أدلتنا التعليمية قبل تجربة حساب التداول التجريبي.
+        - generic [ref=e107]:
+          - generic [ref=e109]:
+            - heading "دليل التداول للمبتدئين" [level=3] [ref=e110]
+            - paragraph [ref=e112]: ابدأ من البداية واكتشف أساسيات التداول في دليل المبتدئين لدينا.
+            - link "انتقل إلى دليل التداول" [ref=e113] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/learn
+              - generic [ref=e114]: انتقل إلى دليل التداول
+          - generic [ref=e116]:
+            - heading "دليل المبتدئين لإدارة المخاطر" [level=3] [ref=e117]
+            - paragraph [ref=e119]: معرفة كيفية إدارة المخاطر هي مهارة تداول أساسية.
+            - link "انتقل إلى دليل إدارة المخاطر" [ref=e120] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/learn/risk-management
+              - generic [ref=e121]: انتقل إلى دليل إدارة المخاطر
+          - generic [ref=e123]:
+            - heading "دليل الأسواق المالية" [level=3] [ref=e124]
+            - paragraph [ref=e126]: اكتشف الأسواق الرئيسية التي تتيح منصتنا تداول عقود الفروقات عليها، وتعرّف على آليات التداول المُثلى لكل منها.
+            - link "انتقل إلى دليل الأسواق" [ref=e127] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/learn/risk-management
+              - generic [ref=e128]: انتقل إلى دليل الأسواق
+      - generic [ref=e131]:
+        - heading "أسواق عقود الفروقات المتاحة لدينا" [level=2] [ref=e133]
+        - generic [ref=e134]:
+          - generic [ref=e137]:
+            - heading "المؤشرات" [level=3] [ref=e138]
+            - generic [ref=e139]: الوصول لكافة الأسواق الماليّة، بما في ذلك كل من مؤشر US 500 و FTSE 100.
+            - link "أكثر" [ref=e140] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/markets/indices
+              - generic [ref=e141]: أكثر
+          - generic [ref=e144]:
+            - heading "الأسهم" [level=3] [ref=e145]
+            - generic [ref=e146]: تداول بأكثر من 3,000 سهم عالمي، بما في ذلك أسهم تِسلا وأمازون وميتا.
+            - link "أكثر" [ref=e147] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/markets/shares
+              - generic [ref=e148]: أكثر
+          - generic [ref=e151]:
+            - heading "السلع" [level=3] [ref=e152]
+            - generic [ref=e153]: قم بفتح صفقات
+            - link "أكثر" [ref=e154] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/markets/commodities
+              - generic [ref=e155]: أكثر
+          - generic [ref=e158]:
+            - heading "الفوركس" [level=3] [ref=e159]
+            - generic [ref=e160]: الوصول إلى أكثر من 120 من أزواج الفوركس الأكثر شهرة في العالم.
+            - link "أكثر" [ref=e161] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/markets/forex
+              - generic [ref=e162]: أكثر
+          - generic [ref=e165]:
+            - heading "العملات المشفرة" [level=3] [ref=e166]
+            - generic [ref=e167]: اكتشف مجموعة من العملات المشفّرة، من البيتكوين والإيثيريوم إلى كاردانو ودوجكوين.
+            - link "أكثر" [ref=e168] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/markets/cryptocurrencies
+              - generic [ref=e169]: أكثر
+      - generic [ref=e171]:
+        - heading "تطبيق الجوّالالمنصة الإلكترونية عبر الويبتدرّب على تداول عقود الفروقات على الحاسوب الإلكتروني أو حاسوبك المحمول أو الجّوال" [level=2] [ref=e173]
+        - generic [ref=e174]:
+          - generic [ref=e175]:
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - heading "المنصة الإلكترونية عبر الويب" [level=2] [ref=e178]
+                - paragraph [ref=e180]: ستكشف تقنياتنا المتطورة وسهلة الاستخدام التي تشمل أكثر من 100 مؤشرًا ونظام مُدمج لإدارة المخاطر.
+              - link "اعرف المزيد" [ref=e184] [cursor=pointer]:
+                - /url: /ar-int/trading-platforms/web-platform
+            - img "Image" [ref=e187]
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - generic [ref=e190]:
+                - heading "تطبيق الجوّال" [level=2] [ref=e191]
+                - paragraph [ref=e193]:
+                  - text: استمتع بتجربة التداول السلسة مع كافة ميزاتنا الرئيسية بين يديك، وتداول في آلاف الأسواق أثناء التنقل.
+                  - link "استكشف تجربة التداول من خلال التطبيق" [ref=e194] [cursor=pointer]:
+                    - /url: /ar-int/trading-platforms/mobile-apps
+                  - text: من خلال مسح رمز الاستجابة السريعة.
+              - link "اعرف المزيد" [ref=e196] [cursor=pointer]:
+                - /url: /ar-int/trading-platforms/mobile-apps
+            - img "Image" [ref=e199]
+      - generic [ref=e201]:
+        - generic [ref=e202]:
+          - heading "ما يقوله القطاع عنّا" [level=2] [ref=e203]
+          - generic [ref=e204]: لقد حازت منتجاتنا المُصممة بعناية لتلبية احتياجات المستخدم، وخدمة العملاء المتخصصة التي نقدّمها، والتزامنا الدائم بالابتكار، على إشادة وتقدير من أعرق المؤسسات الرائدة في مجال التداول مرارًا وتكرارًا. وفيما يلي نستعرض بعضًا من أبرز إنجازاتنا وجوائزنا الأخيرة.
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - img "award" [ref=e208]
+            - generic [ref=e209]:
+              - generic [ref=e210]: BrokerChooser
+              - strong [ref=e212]: أفضل وسيط عقود فروقات (2026)
+          - generic [ref=e213]:
+            - img "award" [ref=e215]
+            - generic [ref=e216]:
+              - generic [ref=e217]: جود ماني جايد
+              - strong [ref=e219]: "أفضل حساب تداول: جوائز خيار الشعب لعام 2025"
+          - generic [ref=e220]:
+            - img "award" [ref=e222]
+            - generic [ref=e223]:
+              - generic [ref=e224]: ForexBrokers.com
+              - strong [ref=e226]: "الأفضل في الفئة: سهولة الاستخدام (2025)"
+          - generic [ref=e227]:
+            - img "award" [ref=e229]
+            - generic [ref=e230]:
+              - generic [ref=e231]: ForexBrokers.com
+              - strong [ref=e233]: "الأفضل في الفئة: تداول العملات المشفّرة (2025)"
+          - generic [ref=e234]:
+            - img "award" [ref=e236]
+            - generic [ref=e237]:
+              - generic [ref=e238]: ForexBrokers.com
+              - strong [ref=e240]: "الأفضل في الفئة: التعليم (2025)"
+          - generic [ref=e241]:
+            - img "award" [ref=e243]
+            - generic [ref=e244]:
+              - generic [ref=e245]: ForexBrokers.com
+              - strong [ref=e247]: "الأفضل في الفئة: وسيط TradingView (2025)"
+          - generic [ref=e248]:
+            - img "award" [ref=e250]
+            - generic [ref=e251]:
+              - generic [ref=e252]: ForexBrokers.com
+              - strong [ref=e254]: "الأفضل في الفئة: العمولات والرسوم (2025)"
+          - generic [ref=e255]:
+            - img "award" [ref=e257]
+            - generic [ref=e258]:
+              - generic [ref=e259]: Investors' Chronicle & Financial Times
+              - strong [ref=e261]: تصنيف 5 نجوم - أفضل تطبيق (2024)
+          - generic [ref=e262]:
+            - img "award" [ref=e264]
+            - generic [ref=e265]:
+              - generic [ref=e266]: Investors' Chronicle & Financial Times
+              - strong [ref=e268]: تصنيف 5 نجوم - أفضل منصة انتقائية (2024)
+          - generic [ref=e269]:
+            - img "award" [ref=e271]
+            - generic [ref=e272]:
+              - generic [ref=e273]: Investors' Chronicle & Financial Times
+              - strong [ref=e275]: تصنيف 5 نجوم - أفضل مزوّد لعقود الفروقات (2024)
+          - generic [ref=e276]:
+            - img "award" [ref=e278]
+            - generic [ref=e279]:
+              - generic [ref=e280]: Online Money Awards
+              - strong [ref=e282]: أفضل منصة تداول شاملة (2024)
+          - generic [ref=e283]:
+            - img "award" [ref=e285]
+            - generic [ref=e286]:
+              - generic [ref=e287]: ForexBrokers.com
+              - strong [ref=e289]: "الأفضل في الفئة: العمولات والرسوم (2024)"
+          - generic [ref=e290]:
+            - img "award" [ref=e292]
+            - generic [ref=e293]:
+              - generic [ref=e294]: ForexBrokers.com
+              - strong [ref=e296]: "الأفضل في الفئة: سهولة الاستخدام (2024)"
+          - generic [ref=e297]:
+            - img "award" [ref=e299]
+            - generic [ref=e300]:
+              - generic [ref=e301]: ForexBrokers.com
+              - strong [ref=e303]: "الأفضل في الفئة: المبتدئين (2024)"
+          - generic [ref=e304]:
+            - img "award" [ref=e306]
+            - generic [ref=e307]:
+              - generic [ref=e308]: ForexBrokers.com
+              - strong [ref=e310]: "الأفضل في الفئة: التعليم (2024)"
+          - generic [ref=e311]:
+            - img "award" [ref=e313]
+            - generic [ref=e314]:
+              - generic [ref=e315]: الدليل المالي الجيد
+              - strong [ref=e317]: أفضل تطبيق تداول لعام 2023
+          - generic [ref=e318]:
+            - img "award" [ref=e320]
+            - generic [ref=e321]:
+              - generic [ref=e322]: الجوائز المالية عبر الإنترنت
+              - strong [ref=e324]: أفضل مزوّد لعقود الفروقات (2023)
+          - generic [ref=e325]:
+            - img "award" [ref=e327]
+            - generic [ref=e328]:
+              - generic [ref=e329]: ForexBrokers.com
+              - strong [ref=e331]: الوسيط الأسرع نموًا (2023)
+          - generic [ref=e332]:
+            - img "award" [ref=e334]
+            - generic [ref=e335]:
+              - generic [ref=e336]: انفستمنت ترند
+              - strong [ref=e338]: الرضا العام للعملاء (2022)
+          - generic [ref=e339]:
+            - img "award" [ref=e341]
+            - generic [ref=e342]:
+              - generic [ref=e343]: انفستمنت ترند
+              - strong [ref=e345]: أفضل قيمة مقابل السعر (2022)
+          - generic [ref=e346]:
+            - img "award" [ref=e348]
+            - generic [ref=e349]:
+              - generic [ref=e350]: ADVFN
+              - strong [ref=e352]: أفضل منصة للرهان على فروق الأسعار (2022)
+          - generic [ref=e353]:
+            - img "award" [ref=e355]
+            - generic [ref=e356]:
+              - generic [ref=e357]: Financial Times Investors’ Chronicle
+              - strong [ref=e359]: أفضل منصة للمستثمرين الجدد (2022)
+      - generic [ref=e362]:
+        - generic [ref=e363]:
+          - heading "مستعد للانضمام إلى أحد أكبر الوسطاء؟" [level=2] [ref=e364]
+          - generic [ref=e365]: انضم إلى مجتمعنا من المتداولين من جميع أنحاء العالم
+        - generic [ref=e366]:
+          - button [ref=e368] [cursor=pointer]
+          - generic [ref=e371]: 1. إنشاء حسابك
+          - generic [ref=e372]: 2. قم بإيداع أول مبلغ في حسابك
+          - generic [ref=e373]: 3. ابدأ التداول
+      - generic [ref=e375]:
+        - generic [ref=e376]:
+          - 'heading "الدعم: نحن موجودون لمساعدتك في أي وقت" [level=2] [ref=e377]'
+          - generic [ref=e378]: فريقنا هنا للإجابة على أسئلتك طوال رحلة التداول الخاصة بك.
+        - generic [ref=e379]:
+          - generic [ref=e381]:
+            - heading "موجود على مدار الساعة" [level=3] [ref=e382]
+            - paragraph [ref=e384]: تواصل مع فريق الدعم المتمرّس والودود في أي وقت.
+            - link "تواصل معنا" [ref=e385] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/contact-us
+              - generic [ref=e386]: تواصل معنا
+          - generic [ref=e388]:
+            - heading "قنوات متعددة" [level=3] [ref=e389]
+            - paragraph [ref=e391]: تواصل معنا عبر الدردشة المباشرة، واتساب، فيسبوك، فايبر، أو بإرسال طلب.
+            - link "احصل على المساعدة" [ref=e392] [cursor=pointer]:
+              - /url: https://capital.com/ar-int/help
+              - generic [ref=e393]: احصل على المساعدة
+      - generic [ref=e394]:
+        - generic [ref=e396]:
+          - heading "اكتشف لماذا يثق بنا عملاؤنا! اقرأ تقييماتهم وتعرّف على المزيد عنّا" [level=2] [ref=e397]
+          - generic [ref=e398]: تعرّف على آراء عملائنا من مختلف المستويات، من المبتدئين إلى الخبراء.
+        - generic [ref=e399]:
+          - generic [ref=e402]:
+            - link "2025-06-30 K***** A******* سهولة السحب والإيداع متابعة ممتازة من قبل موظفين خدمة العملاء خلال الأربعة والعشرون ساعة" [ref=e403] [cursor=pointer]:
+              - /url: https://www.trustpilot.com/review/capital.com
+              - generic [ref=e406]: 2025-06-30
+              - strong [ref=e407]: K***** A*******
+              - paragraph [ref=e409]: سهولة السحب والإيداع متابعة ممتازة من قبل موظفين خدمة العملاء خلال الأربعة والعشرون ساعة
+            - link "2025-06-21 k*** H***** من افضل البرامج اللتي رأيتها ، تعامل جيد ، منصة موثوقة ، فريق عمل اكثر من رائع" [ref=e411] [cursor=pointer]:
+              - /url: https://www.trustpilot.com/review/capital.com
+              - generic [ref=e414]: 2025-06-21
+              - strong [ref=e415]: k*** H*****
+              - paragraph [ref=e417]: من افضل البرامج اللتي رأيتها ، تعامل جيد ، منصة موثوقة ، فريق عمل اكثر من رائع
+            - link "2025-06-13 ي **ن ***ل*** اشكركم ع اجتهداتكم والله برنامج سهل في كل شيء وبالأخص في يحب الارباح اشكركم من أعماق قلبي ❤️❤️❤️" [ref=e419] [cursor=pointer]:
+              - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+              - generic [ref=e422]: 2025-06-13
+              - strong [ref=e423]: ي **ن ***ل***
+              - paragraph [ref=e425]: اشكركم ع اجتهداتكم والله برنامج سهل في كل شيء وبالأخص في يحب الارباح اشكركم من أعماق قلبي ❤️❤️❤️
+            - link "2025-06-13 h*******_a****_l*** سريع في تنفيذ الاوامر مع الوسيط" [ref=e427] [cursor=pointer]:
+              - /url: https://www.tradingview.com/broker/Capitalcom/
+              - generic [ref=e430]: 2025-06-13
+              - strong [ref=e431]: h*******_a****_l***
+              - paragraph [ref=e433]: سريع في تنفيذ الاوامر مع الوسيط
+            - link "2025-05-24 A**** اولا لان الايداع و السحب سلس جدأ و الاهم يمكن ان تربط المنصة مع منصة tradingView ." [ref=e435] [cursor=pointer]:
+              - /url: https://www.trustpilot.com/review/capital.com
+              - generic [ref=e438]: 2025-05-24
+              - strong [ref=e439]: A****
+              - paragraph [ref=e441]: اولا لان الايداع و السحب سلس جدأ و الاهم يمكن ان تربط المنصة مع منصة tradingView .
+            - link "2025-05-15 T**** M******* كانت المتابعه من طرفكم اخ زويا اكثر من رائعه اشكرك على عملك الدرؤب على حل المشاكل الكبيره والصغيره واتمنى لك التوفيق والنجاح" [ref=e443] [cursor=pointer]:
+              - /url: https://www.trustpilot.com/review/capital.com
+              - generic [ref=e446]: 2025-05-15
+              - strong [ref=e447]: T**** M*******
+              - paragraph [ref=e449]: كانت المتابعه من طرفكم اخ زويا اكثر من رائعه اشكرك على عملك الدرؤب على حل المشاكل الكبيره والصغيره واتمنى لك التوفيق والنجاح
+            - link "2025-05-06 س ***س *****س*** مصداقية بالتعامل للامانه وأفضل عرض للشاشه والتطبيق بوضوح" [ref=e451] [cursor=pointer]:
+              - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+              - generic [ref=e454]: 2025-05-06
+              - strong [ref=e455]: س ***س *****س***
+              - paragraph [ref=e457]: مصداقية بالتعامل للامانه وأفضل عرض للشاشه والتطبيق بوضوح
+            - link "2025-04-20 J****M* سهوله التطبيق والسحب والايداع والمصداقيه" [ref=e459] [cursor=pointer]:
+              - /url: https://www.tradingview.com/broker/Capitalcom/
+              - generic [ref=e462]: 2025-04-20
+              - strong [ref=e463]: J****M*
+              - paragraph [ref=e465]: سهوله التطبيق والسحب والايداع والمصداقيه
+            - link "2025-04-28 M***** A***** من افضل التطبيقات الي مرت عليا جميل جدا سهل للمبتدئين والمعلمين تستطيع ايداع وسحب أموال بدون الرجوع الى اي تطبيقات اخرى تطبيق متكامل وتحت إشراف خدمة عملاء رائعه متفاهمه مع المستخدمين" [ref=e467] [cursor=pointer]:
+              - /url: https://www.trustpilot.com/review/capital.com
+              - generic [ref=e470]: 2025-04-28
+              - strong [ref=e471]: M***** A*****
+              - paragraph [ref=e473]: من افضل التطبيقات الي مرت عليا جميل جدا سهل للمبتدئين والمعلمين تستطيع ايداع وسحب أموال بدون الرجوع الى اي تطبيقات اخرى تطبيق متكامل وتحت إشراف خدمة عملاء رائعه متفاهمه مع المستخدمين
+            - link "2025-04-01 A**** S**** A*** نشكر جهودكم الجبارة لجعل المواطنين تزداد ثقتهم في منصتكم الرائعة" [ref=e475] [cursor=pointer]:
+              - /url: https://www.trustpilot.com/review/capital.com
+              - generic [ref=e478]: 2025-04-01
+              - strong [ref=e479]: A**** S**** A***
+              - paragraph [ref=e481]: نشكر جهودكم الجبارة لجعل المواطنين تزداد ثقتهم في منصتكم الرائعة
+            - link "2025-03-25 S******* افضل منصة تداول على الإطلاق سهولة التداول في المنصه وخدمة عملاء تتجاوب معك بسرعة وامان شكراً لكم جميعا فريق منصة كابيتل" [ref=e483] [cursor=pointer]:
+              - /url: https://www.tradingview.com/broker/Capitalcom/
+              - generic [ref=e486]: 2025-03-25
+              - strong [ref=e487]: S*******
+              - paragraph [ref=e489]: افضل منصة تداول على الإطلاق سهولة التداول في المنصه وخدمة عملاء تتجاوب معك بسرعة وامان شكراً لكم جميعا فريق منصة كابيتل
+            - link "2025-03-08 ل *لر***ي*** كابيتال كوم عنوان الفخامه وجوهر الأناقه سعيد بالانضمام لموسوعتكم الماليه . دمتم بود" [ref=e491] [cursor=pointer]:
+              - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+              - generic [ref=e494]: 2025-03-08
+              - strong [ref=e495]: ل *لر***ي***
+              - paragraph [ref=e497]: كابيتال كوم عنوان الفخامه وجوهر الأناقه سعيد بالانضمام لموسوعتكم الماليه . دمتم بود
+            - link "2025-02-17 m******* h**** تطبيق جيد جدا وسهل الاستخدام انصح المبتدئين بتجربته." [ref=e499] [cursor=pointer]:
+              - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+              - generic [ref=e502]: 2025-02-17
+              - strong [ref=e503]: m******* h****
+              - paragraph [ref=e505]: تطبيق جيد جدا وسهل الاستخدام انصح المبتدئين بتجربته.
+            - link "2025-02-09 n********** صراحة برنامج رائع اشكر القائمين علية ومزيدا من التقدم" [ref=e507] [cursor=pointer]:
+              - /url: https://www.tradingview.com/broker/Capitalcom/
+              - generic [ref=e510]: 2025-02-09
+              - strong [ref=e511]: n**********
+              - paragraph [ref=e513]: صراحة برنامج رائع اشكر القائمين علية ومزيدا من التقدم
+          - paragraph [ref=e515]: نستعرض هنا التقييمات المميزة ذات 4 و5 نجوم. حرصًا على خصوصية عملائنا، تم إخفاء التفاصيل الشخصية للمستخدمين عن عمد تماشيًا مع متطلبات لائحة حماية البيانات العامة (GDPR)
+        - generic [ref=e517]:
+          - link "4.8" [ref=e518] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - strong [ref=e521]: "4.8"
+          - link "التقييمات والمراجعات 4.7" [ref=e524] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e526]: التقييمات والمراجعات
+            - strong [ref=e528]: "4.7"
+          - link "التقييمات والمراجعات 4.6" [ref=e531] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e533]: التقييمات والمراجعات
+            - strong [ref=e535]: "4.6"
+          - link "4.6" [ref=e538] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - strong [ref=e541]: "4.6"
+  - contentinfo [ref=e544]:
+    - generic [ref=e545]:
+      - link [ref=e546] [cursor=pointer]:
+        - /url: /ar-int
+        - img [ref=e547]
+      - generic [ref=e555]:
+        - link [ref=e556] [cursor=pointer]:
+          - /url: https://twitter.com/capitalcom
+        - link [ref=e557] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e558] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcom/
+        - link [ref=e559] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@capitalcom_international
+        - link [ref=e560] [cursor=pointer]:
+          - /url: https://www.facebook.com/capitalcom/
+        - link [ref=e561] [cursor=pointer]:
+          - /url: https://www.reddit.com/r/capitalcom/
+      - generic [ref=e562]:
+        - link [ref=e563] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e564] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e565] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=3c24769a-5c20-43f5-8ebe-803e08061784&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e566]:
+      - generic [ref=e567]:
+        - generic [ref=e568]:
+          - generic [ref=e569]:
+            - generic [ref=e570]: "البلد / المنطقة:"
+            - button "Egypt" [ref=e571] [cursor=pointer]: Egypt
+          - generic [ref=e573]: •
+          - generic [ref=e574]:
+            - generic [ref=e575]: "اللغة:"
+            - button "Arabic" [ref=e576] [cursor=pointer]
+        - generic [ref=e577]:
+          - generic [ref=e578]: "كما يمكنك الاتصال بنا على:"
+          - link "+971 4 576 8641" [ref=e581] [cursor=pointer]:
+            - /url: tel:+971 4 576 8641
+          - generic [ref=e582]: •
+          - link "support@capital.com" [ref=e584] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+      - generic [ref=e585]:
+        - generic [ref=e586]:
+          - link "التداول" [ref=e588] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade
+            - strong [ref=e589]: التداول
+          - generic [ref=e590]:
+            - generic [ref=e591]:
+              - generic [ref=e592]: طرق التداول
+              - generic [ref=e593]:
+                - generic [ref=e594]:
+                  - link "تداول العقود مقابل الفروقات" [ref=e595] [cursor=pointer]:
+                    - /url: /ar-int/ways-to-trade/cfd-trading
+                  - link "حاسبة تداول عقود الفروقات" [ref=e598] [cursor=pointer]:
+                    - /url: /ar-int/ways-to-trade/cfd-trading/cfd-calculator
+                - link "حسومات نقدية لجميع المتداولين" [ref=e600] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/rebates
+            - generic [ref=e601]:
+              - generic [ref=e602]: منصات التداول
+              - generic [ref=e603]:
+                - link "كافة المنصات" [ref=e605] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms
+                - link "منصة الإلكترونية" [ref=e607] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/web-platform
+                - link "تطبيق الجوّال" [ref=e609] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mobile-apps
+                - link "منصة TradingView" [ref=e611] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/trading-view
+                - link "MT4" [ref=e613] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mt4
+                - link "MT5" [ref=e615] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mt5
+            - generic [ref=e616]:
+              - generic [ref=e617]: معلومات عن التداول
+              - generic [ref=e618]:
+                - link "نداءات الهامش" [ref=e620] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/margin-calls
+                - link "آلية عمل عمليات السحب" [ref=e622] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/how-withdrawals-work
+                - link "منع الاحتيال" [ref=e624] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/fraud-awareness
+            - generic [ref=e625]:
+              - generic [ref=e626]: أدوات التداول
+              - generic [ref=e627]:
+                - link "حاسبة تداول عقود الفروقات" [ref=e629] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/cfd-trading/cfd-calculator
+                - link "التداول التجريبي" [ref=e631] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/demo-account
+        - generic [ref=e632]:
+          - link "الأسواق" [ref=e634] [cursor=pointer]:
+            - /url: /ar-int/markets
+            - strong [ref=e635]: الأسواق
+          - generic [ref=e636]:
+            - generic [ref=e637]:
+              - generic [ref=e638]: الأسواق المتاحة
+              - generic [ref=e639]:
+                - link "الأسهم" [ref=e641] [cursor=pointer]:
+                  - /url: /ar-int/markets/shares
+                - link "الفوركس" [ref=e643] [cursor=pointer]:
+                  - /url: /ar-int/markets/forex
+                - link "المؤشرات" [ref=e645] [cursor=pointer]:
+                  - /url: /ar-int/markets/indices
+                - link "السلع" [ref=e647] [cursor=pointer]:
+                  - /url: /ar-int/markets/commodities
+                - link "العملات المشفرة" [ref=e649] [cursor=pointer]:
+                  - /url: /ar-int/markets/cryptocurrencies
+            - generic [ref=e650]:
+              - generic [ref=e651]: تحديثات السوق
+              - link "تحليل السوق" [ref=e654] [cursor=pointer]:
+                - /url: /ar-int/analysis
+            - link "جميع الأسواق والأدوات" [ref=e656] [cursor=pointer]:
+              - /url: /ar-int/markets-and-instruments-sitemap
+        - generic [ref=e657]:
+          - link "الأسعار" [ref=e659] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade/fees-and-charges
+            - strong [ref=e660]: الأسعار
+          - generic [ref=e662]:
+            - generic [ref=e663]: الأسعار
+            - generic [ref=e664]:
+              - link "الرسوم والتكاليف" [ref=e666] [cursor=pointer]:
+                - /url: /ar-int/ways-to-trade/fees-and-charges
+              - link "نموذج عملنا" [ref=e668] [cursor=pointer]:
+                - /url: /ar-int/about-us/how-capital-makes-money
+              - link "هيكل تسعير Capital.com" [ref=e670] [cursor=pointer]:
+                - /url: /ar-int/ways-to-trade/pricing
+              - link "تسعير الأسواق" [ref=e672] [cursor=pointer]:
+                - /url: /ar-int/about-us/how-our-markets-are-priced
+        - generic [ref=e673]:
+          - link "تعلّم التداول" [ref=e675] [cursor=pointer]:
+            - /url: /ar-int/learn
+            - strong [ref=e676]: تعلّم التداول
+          - generic [ref=e677]:
+            - generic [ref=e678]:
+              - generic [ref=e679]: للمتداولين المبتدئين
+              - generic [ref=e680]:
+                - link "أساسيات التداول" [ref=e682] [cursor=pointer]:
+                  - /url: /ar-int/learn/essentials
+                - link "إدارة المخاطر" [ref=e684] [cursor=pointer]:
+                  - /url: /ar-int/learn/risk-management
+                - link "أدلة السوق" [ref=e686] [cursor=pointer]:
+                  - /url: /ar-int/learn/market-guides
+                - link "التداول التجريبي" [ref=e688] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/demo-account
+            - generic [ref=e689]:
+              - generic [ref=e690]: للمتداولين ذوي الخبرة
+              - generic [ref=e691]:
+                - link "استراتيجيات التداول" [ref=e693] [cursor=pointer]:
+                  - /url: /ar-int/learn/trading-strategies
+                - link "التحليل الفني" [ref=e695] [cursor=pointer]:
+                  - /url: /ar-int/learn/technical-analysis
+                - link "سيكولوجية التداول" [ref=e697] [cursor=pointer]:
+                  - /url: /ar-int/learn/trading-psychology
+            - link "التداول على الطروحات العامة الأولية (IPO)" [ref=e699] [cursor=pointer]:
+              - /url: /ar-int/learn/ipo
+        - generic [ref=e700]:
+          - link "من نحن" [ref=e702] [cursor=pointer]:
+            - /url: /ar-int/about-us
+            - strong [ref=e703]: من نحن
+          - generic [ref=e704]:
+            - generic [ref=e705]:
+              - generic [ref=e706]: عنّا
+              - generic [ref=e707]:
+                - link "فريق القيادة" [ref=e709] [cursor=pointer]:
+                  - /url: /ar-int/about-us/our-leadership
+                - link "لماذا Capital.com؟" [ref=e711] [cursor=pointer]:
+                  - /url: /ar-int/why-capital
+                - link "هل يُعتبرCapital.com آمن؟" [ref=e713] [cursor=pointer]:
+                  - /url: /ar-int/security-measures
+                - link "تاريخنا" [ref=e715] [cursor=pointer]:
+                  - /url: /ar-int/about-us/our-history
+                - link "مكاتبنا" [ref=e717] [cursor=pointer]:
+                  - /url: /ar-int/about-us/our-offices
+                - link "تواصل معنا" [ref=e719] [cursor=pointer]:
+                  - /url: /ar-int/contact-us
+                - link "احالة صديق" [ref=e721] [cursor=pointer]:
+                  - /url: /ar-int/refer-a-friend
+            - generic [ref=e722]:
+              - generic [ref=e723]: احصل على المساعدة
+              - generic [ref=e724]:
+                - link "المساعدة" [ref=e726] [cursor=pointer]:
+                  - /url: /ar-int/help
+                - link "نقاط الضعف للعميل" [ref=e728] [cursor=pointer]:
+                  - /url: /ar-int/help/client-vulnerability
+                - link "الشكاوى" [ref=e730] [cursor=pointer]:
+                  - /url: /ar-int/help/complaints
+                - link "الشروط والسياسات" [ref=e732] [cursor=pointer]:
+                  - /url: /ar-int/terms-and-policies
+                - link "كيفية الإيداع بعملة USDT" [ref=e734] [cursor=pointer]:
+                  - /url: /ar-int/help/how-to-deposit-usdt
+    - generic [ref=e736]:
+      - paragraph [ref=e737]:
+        - text: عقود الفروقات هي أدوات مالية معقدة تنطوي على مخاطر عالية قد تؤدي إلى خسارة سريعة للأموال بسبب الرافعة المالية..
+        - generic [ref=e738]:
+          - generic [ref=e739]:
+            - strong [ref=e740]: وتجدر الإشارة إلى أن %81.31 من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع مقدم الخدمة هذا
+            - text: .
+          - text: يجب أن تفكر مليّا فيما إذا كنت قادرًا على تحمّل مخاطر عالية قد تؤدي إلى خسارة أموالك. يُرجى قراءة بيان الإفصاح عن المخاطر الخاص بنا بعناية
+      - paragraph
+      - paragraph [ref=e741]: شركة Capital Com Online Investments Ltd هي شركة ذات مسؤولية محدودة تحمل رقم 209236B، وهي مُسجلة في كومنولث جزر البهاما ومُرخصة من قبل هيئة الأوراق المالية في جزر البهاما تحت رقم ترخيص SIA-F245. يقع المكتب المُسجّل للشركة في 3 بايسايد إكزكيوتيف بارك، شارع بليك-ويست باي، ص. ب. 13012، ناسو، جزر البهاما.
+    - generic [ref=e742]:
+      - paragraph [ref=e743]: © 2026 Capital Com Online Investments Ltd
+      - generic [ref=e744]:
+        - link "خريطة الموقع" [ref=e745] [cursor=pointer]:
+          - /url: /ar-int/sitemap
+        - link "إعدادات ملفات تعريف الارتباط" [ref=e746] [cursor=pointer]:
+          - /url: ""
+        - link:
+          - /url: /ar-int
+        - link "الشروط والسياسات" [ref=e747] [cursor=pointer]:
+          - /url: /ar-int/terms-and-policies
+        - link "إجراءات تقديم الشكاوى (SCB)" [ref=e748] [cursor=pointer]:
+          - /url: /ar-int/help/complaints
+  - generic:
+    - generic: Cookie settings
+  - button [ref=e749] [cursor=pointer]
+  - alert [ref=e751]: افتح حساب تداول تجريبي | Capital.com
+```
