@@ -18,7 +18,7 @@ licenses.forEach((license) => {
 
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",
-      });
+      });      
 
       await handleOptionalPopups(page);
 
@@ -40,7 +40,7 @@ licenses.forEach((license) => {
 
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",
-      });
+      });      
 
       await handleOptionalPopups(page);
 
@@ -64,6 +64,7 @@ licenses.forEach((license) => {
         waitUntil: "domcontentloaded",
       });
 
+      
       await handleOptionalPopups(page);
 
       const tradingMenu = new TradingSectionMenu(page);

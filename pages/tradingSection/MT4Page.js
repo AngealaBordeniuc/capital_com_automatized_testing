@@ -1,6 +1,4 @@
-import { handleCookiesPopUp, 
-  handleStayOnSitePopUp,
-handleModalWindowSignUp } from "../../helpers/pop_ups";
+import { handleModalWindowSignUp } from "../../helpers/modal_SignUp";
 
 export class MT4Page {
   constructor(page) {
@@ -12,7 +10,7 @@ export class MT4Page {
       'button[data-type*="block_btn1_signup"]',
     );
     await createAccountBtn.click();
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickOpenAccountButton() {
@@ -21,7 +19,7 @@ export class MT4Page {
     );
     await openAccountBtn.scrollIntoViewIfNeeded();
     await openAccountBtn.click();
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickCreateAccountButtonThreeSteps() {
@@ -30,7 +28,7 @@ export class MT4Page {
       .first();
     await createAccountBtnThSt.scrollIntoViewIfNeeded();
     await createAccountBtnThSt.click();
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async verifyMt4DownloadForMac() {
@@ -97,7 +95,7 @@ export class MT4Page {
       'button[data-type*="tiles_w_img_link"]',
     );
     await signUpNowBtn.click();
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickSignUpWhyChoose() {
@@ -108,14 +106,14 @@ export class MT4Page {
 
     const signUpBtn = this.page.locator('button[data-type*="tiles_w_img_btn"]').last();
     await signUpBtn.click();
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickCreateYourAccountButtonFromReady() {
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
     await bannerBtnReady.scrollIntoViewIfNeeded();
-    await bannerBtnReady.click({ force: true });
-    await handleModalWindowSignUp(this.page);
+    await bannerBtnReady.click();
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 }
 

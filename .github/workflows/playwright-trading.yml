@@ -1,65 +1,3 @@
-
-# name: Playwright Trading Tests with Allure
-
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
-
-# jobs:
-#   about-tests:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       # 1️⃣ Checkout repository
-#       - name: Checkout repository
-#         uses: actions/checkout@v4
-
-#       # 2️⃣ Setup Node.js
-#       - name: Setup Node.js
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: 20.18.0
-
-#       # 3️⃣ Install dependencies
-#       - name: Install dependencies
-#         run: npm ci
-
-#       # 4️⃣ Install Playwright browsers
-#       - name: Install Playwright browsers
-#         run: npx playwright install
-
-#       # 5️⃣ Install Allure CLI globally
-#       - name: Install Allure CLI
-#         run: npm install -g allure-commandline
-
-#       # 6️⃣ Run Playwright Trading tests
-#       - name: Run Playwright Trading tests
-#         run: |
-#           npx playwright test tests/trading_page/all_platforms_page.spec.js \
-#             tests/trading_page/cfd_calculator_page.spec.js \
-#             --reporter=list,allure-playwright \
-#             --retries=2
-
-#       # 7️⃣ Generate Allure report in daily folder (keeping history)
-#       - name: Generate Allure Report
-#         run: |
-#           DATE=$(date +'%Y-%m-%d')
-#           mkdir -p allure-report/Trading/$DATE
-#           npx allure generate allure-results -o allure-report/Trading/$DATE
-#           echo "✅ Allure report generated for $DATE"
-#           ls -la allure-report/Trading/$DATE
-
-#       # 8️⃣ Deploy Allure report to GitHub Pages (keeps old reports)
-#       - name: Deploy Allure Report to GitHub Pages
-#         uses: peaceiris/actions-gh-pages@v4
-#         with:
-#           github_token: ${{ secrets.GH_PAT }}   # Personal Access Token cu Read & Write
-#           publish_dir: ./allure-report
-#           publish_branch: gh-pages
-#           keep_files: true
-
 name: Playwright Trading Tests with Allure
 
 on:
@@ -69,7 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  trading-tests:
+
+  trading-unauthorized:
     runs-on: ubuntu-latest
 
     steps:
@@ -100,24 +39,20 @@ jobs:
 
       - name: Install Allure CLI
         run: npm install -g allure-commandline
-    
-      - name: Run Playwright Trading tests
+
+      - name: Run Playwright Trading UNAUTHORIZED tests
         run: |
-          npm run test:trading:authorized \
-            --reporter=list,allure-playwright \
-            --retries=2
           npm run test:trading:unauthorized \
             --reporter=list,allure-playwright \
             --retries=2
         continue-on-error: true
 
-      - name: Generate Allure report (Trading)
+      - name: Generate Allure report (Unauthorized)
         if: always()
         run: |
           DATE=$(date +'%Y-%m-%d')
-          mkdir -p allure-report/Trading/$DATE
-          npx allure generate allure-results -o allure-report/Trading/$DATE
-          echo "Allure Trading report generated for $DATE"
+          mkdir -p allure-report/Trading/Unauthorized/$DATE
+          npx allure generate allure-results -o allure-report/Trading/Unauthorized/$DATE
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -126,4 +61,128 @@ jobs:
           publish_dir: ./allure-report
           publish_branch: gh-pages
           keep_files: true
+
+
+  trading-authorized:
+    runs-on: ubuntu-latest
+    needs: trading-unauthorized
+
+    steps:
+      - name: Checkout repository (main)
+        uses: actions/checkout@v4
+
+      - name: Checkout gh-pages (for history)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Restore previous Allure reports
+        run: |
+          mkdir -p allure-report
+          cp -R gh-pages/* allure-report/ || true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.18.0
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install
+
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline
+
+      - name: Run Playwright Trading AUTHORIZED tests
+        run: |
+          npm run test:trading:authorized \
+            --reporter=list,allure-playwright \
+            --retries=2
+        continue-on-error: true
+
+      - name: Generate Allure report (Authorized)
+        if: always()
+        run: |
+          DATE=$(date +'%Y-%m-%d')
+          mkdir -p allure-report/Trading/Authorized/$DATE
+          npx allure generate allure-results -o allure-report/Trading/Authorized/$DATE
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GH_PAT }}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages
+          keep_files: true
+
+
+# name: Playwright Trading Tests with Allure
+
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+
+# jobs:
+#   trading-tests:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository (main)
+#         uses: actions/checkout@v4
+
+#       - name: Checkout gh-pages (for history)
+#         uses: actions/checkout@v4
+#         with:
+#           ref: gh-pages
+#           path: gh-pages
+
+#       - name: Restore previous Allure reports
+#         run: |
+#           mkdir -p allure-report
+#           cp -R gh-pages/* allure-report/ || true
+
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 20.18.0
+
+#       - name: Install dependencies
+#         run: npm ci
+
+#       - name: Install Playwright browsers
+#         run: npx playwright install
+
+#       - name: Install Allure CLI
+#         run: npm install -g allure-commandline
+    
+#       - name: Run Playwright Trading tests
+#         run: |
+#           npm run test:trading:authorized \
+#             --reporter=list,allure-playwright \
+#             --retries=2
+#           npm run test:trading:unauthorized \
+#             --reporter=list,allure-playwright \
+#             --retries=2
+#         continue-on-error: true
+
+#       - name: Generate Allure report (Trading)
+#         if: always()
+#         run: |
+#           DATE=$(date +'%Y-%m-%d')
+#           mkdir -p allure-report/Trading/$DATE
+#           npx allure generate allure-results -o allure-report/Trading/$DATE
+#           echo "Allure Trading report generated for $DATE"
+
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v4
+#         with:
+#           github_token: ${{ secrets.GH_PAT }}
+#           publish_dir: ./allure-report
+#           publish_branch: gh-pages
+#           keep_files: true
 

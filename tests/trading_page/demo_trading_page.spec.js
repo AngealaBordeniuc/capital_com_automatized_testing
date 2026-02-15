@@ -58,7 +58,6 @@ licenses.forEach((license) => {
       page,
     }) => {
       const path = license.paths[lang];
-      
 
       await page.goto(`https://capital.com${path}`, {
         waitUntil: "domcontentloaded",

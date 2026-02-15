@@ -1,4 +1,4 @@
-import {TRADING_MENU, tradingSubmenus} from '../../test-data/trading-menu';
+import {TRADING_MENU} from '../../test-data/trading-menu';
 
 export class TradingSectionMenu {
   constructor(page) {

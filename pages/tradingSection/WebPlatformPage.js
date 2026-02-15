@@ -1,5 +1,5 @@
 import { expect } from "allure-playwright";
-import {handleModalWindowSignUp} from "../../helpers/pop_ups";
+import {handleModalWindowSignUp} from "../../helpers/modal_SignUp";
 
 export class WebPlatformPage {
   constructor(page) {
@@ -11,7 +11,7 @@ export class WebPlatformPage {
     const createAccountBtn = this.page.locator('button[data-type="fullscreen_banner_block_btn1_signup"]');
     await expect(createAccountBtn).toBeVisible({ timeout: 10000 });
     await createAccountBtn.click();  
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async getQrUrl() {

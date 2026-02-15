@@ -58,24 +58,25 @@ licenses.forEach((license) => {
      test(`${license.name} ${lang} – CFD Trading: Sell`, async ({
        page,
      }) => {
-       const path = license.paths[lang];  
+      const path = license.paths[lang];  
 
-       await page.goto(`https://capital.com${path}`, {
-         waitUntil: "domcontentloaded",
-       });
+      await page.goto(`https://capital.com${path}`, {
+        waitUntil: "domcontentloaded",
+      });
+    
 
-       await handleOptionalPopups(page);
+      await handleOptionalPopups(page);
 
-       const tradingMenu = new TradingSectionMenu(page);
-       const cfdTradingPage = new CFDTradingPage(page);
+      const tradingMenu = new TradingSectionMenu(page);
+      const cfdTradingPage = new CFDTradingPage(page);
 
-       await tradingMenu.openCFDTradingPage();
+      await tradingMenu.openCFDTradingPage();
 
-       const expectedPath = `${path}/ways-to-trade/cfd-trading`;
+      const expectedPath = `${path}/ways-to-trade/cfd-trading`;
 
-       await expect(page).toHaveURL(expectedPath);
-       await cfdTradingPage.clickSellButtonOurCFDMarkets()
-     });
+      await expect(page).toHaveURL(expectedPath);
+      await cfdTradingPage.clickSellButtonOurCFDMarkets()
+    });
 
       test(`${license.name} ${lang} – CFD Trading: Buy`, async ({
         page,
@@ -106,8 +107,8 @@ licenses.forEach((license) => {
 
          await page.goto(`https://capital.com${path}`, {
            waitUntil: "domcontentloaded",
-         });
-
+         });      
+         
          await handleOptionalPopups(page);
 
          const tradingMenu = new TradingSectionMenu(page);

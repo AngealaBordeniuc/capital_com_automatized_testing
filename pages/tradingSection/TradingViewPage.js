@@ -1,5 +1,5 @@
 import { expect } from "allure-playwright";
-import { handleCookiesPopUp, handleModalWindowSignUp } from "../../helpers/pop_ups";
+import {handleModalWindowSignUp } from "../../helpers/modal_SignUp";
 
 export class TradingViewPage {
   constructor(page) {
@@ -74,7 +74,7 @@ export class TradingViewPage {
     const signUpBtn = this.page.locator('button[data-type="background_banner_block_btn1_signup"]');
     await expect(signUpBtn).toBeVisible({ timeout: 10000 });
     await signUpBtn.click();
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickSignUpWhyChooseButton() {
@@ -84,6 +84,6 @@ export class TradingViewPage {
     const signUpButtonWhyChoose = this.page.locator('button[data-type="tiles_w_img_btn2_signup"]');
     await expect(signUpButtonWhyChoose).toBeVisible({ timeout: 10000 });
     await signUpButtonWhyChoose.click()   
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 }

@@ -69,18 +69,7 @@ export const acceptAllCookies = async (page) => {
   }
 };
 
-export const handleModalWindowSignUp = async (page) => {
-  if (page.isClosed()) return;
 
-  const modal = page.locator('[data-sentry-component="Modal"]');
-
-  try {
-    await modal.waitFor({ state: "visible", timeout: 5000 });
-    await expect(modal).toBeVisible();
-  } catch {
-    return; 
-  }
-};
 
 
 

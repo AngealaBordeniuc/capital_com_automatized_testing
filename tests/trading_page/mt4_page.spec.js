@@ -21,10 +21,7 @@ languages.forEach((lang) => {
       page, 
     }) => {      
 
-      const path = license.paths[lang];     
-
-      // await page.pause()
-
+      const path = license.paths[lang];
       await page.goto(path, {waitUntil: "domcontentloaded"});
 
       await handleOptionalPopups(page);
@@ -46,9 +43,6 @@ languages.forEach((lang) => {
       page,
     }) => {
       const path = license.paths[lang];
-
-      // await page.pause()
-
       await page.goto(path, { waitUntil: "domcontentloaded" });
 
       await handleOptionalPopups(page);
@@ -190,9 +184,7 @@ languages.forEach((lang) => {
            test(`${license.name} ${lang} – MT4: Sign up now`, async ({
              page,
            }) => {
-             const path = license.paths[lang];
-
-             // await page.pause()
+             const path = license.paths[lang];            
 
              await page.goto(path, { waitUntil: "domcontentloaded" });
 
@@ -214,9 +206,7 @@ languages.forEach((lang) => {
            test(`${license.name} ${lang} – MT4: Sign up, Why Choose`, async ({
              page,
            }) => {
-             const path = license.paths[lang];
-
-             await page.pause()
+             const path = license.paths[lang];             
 
              await page.goto(path, { waitUntil: "domcontentloaded" });
 

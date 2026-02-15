@@ -1,9 +1,6 @@
 import { expect } from "allure-playwright";
-import {handleCookiesPopUp, 
-  acceptAllCookies,  
-  handleModalWindowSignUp
-} from "../../helpers/pop_ups";
-import { licenses } from "../../test-data/licenses";
+import { handleModalWindowSignUp} from "../../helpers/modal_SignUp";
+
 export class TradingPage {
   constructor(page) {
     this.page = page;
@@ -13,7 +10,7 @@ export class TradingPage {
     await expect(buttonLocator).toBeVisible({ timeout: 10000 });
     await expect(buttonLocator).toBeEnabled({ timeout: 10000 });
     await buttonLocator.click();    
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async openTradingPage() {

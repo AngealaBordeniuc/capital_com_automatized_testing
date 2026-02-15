@@ -1,5 +1,5 @@
 import { expect } from "allure-playwright";
-import { handleCookiesPopUp, handleStayOnSitePopUp, handleModalWindowSignUp } from "../../helpers/pop_ups";
+import {handleModalWindowSignUp } from "../../helpers/modal_SignUp";
 export class DemoTradingPage {
   constructor(page) {
     this.page = page;
@@ -18,7 +18,7 @@ export class DemoTradingPage {
       'button[data-type="background_banner_block_btn1_demo"]',
     );
     await this.clickCTA(tryDemoBtn);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   } 
 
   async getQrUrlOrFail() {
@@ -47,6 +47,6 @@ export class DemoTradingPage {
   async clickCreateYourAccountButtonFromReady() {
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
     await this.clickCTA(bannerBtnReady);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 }
