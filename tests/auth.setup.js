@@ -9,9 +9,9 @@ setup('authentication', async({page}) => {
     await handleOptionalPopups(page)
     await page.locator('button[data-type="btn_header_login"]').nth(1).click()
     const emailInput = page.locator('input[type="email"]');
-    await emailInput.fill('angelabordeniuc5@gmail.com');
+    await emailInput.fill(process.env.TEST_EMAIL);
     const passwordInput = page.locator('input[type="password"]');
-    await passwordInput.fill("Test2026$");
+    await passwordInput.fill(process.env.TEST_PASSWORD);
     const submitButton = page.locator('button[type="submit"]');
     await submitButton.click();
 

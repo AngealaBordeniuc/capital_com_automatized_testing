@@ -5,7 +5,8 @@
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.1",
-    "allure-playwright": "^3.4.3"
+    "allure-playwright": "^3.4.3",
+    "dotenv": "^17.3.1"
   },
   "scripts": {
     "allure": "allure generate allure-results --clean",
@@ -13,16 +14,11 @@
     "test:main": "playwright test tests/main_page",
     "test:about": "playwright test tests/about_page",
     "test:trading": "playwright test tests/trading_page",
-
     "test:main:authorized": "npx playwright test tests/main_page --project=authorized",
     "test:main:unauthorized": "npx playwright test tests/main_page --project=unauthorized",
-
     "test:about:authorized": "npx playwright test tests/about_page --project=authorized",
     "test:about:unauthorized": "npx playwright test tests/about_page --project=unauthorized",
-
     "test:trading:authorized": "npx playwright test tests/trading_page --project=authorized",
     "test:trading:unauthorized": "npx playwright test tests/trading_page --project=unauthorized"
   }
-  
-  }
-
+}
