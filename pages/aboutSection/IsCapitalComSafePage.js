@@ -1,4 +1,4 @@
-import { handleModalWindowSignUp} from "../../helpers/pop_ups";
+import { handleModalWindowSignUp} from "../../helpers/modal_SignUp";
 
 export class IsCapitalComSafePage{
     constructor(page){
@@ -6,9 +6,7 @@ export class IsCapitalComSafePage{
     }
 
     async clickOpenAnAccountButton(){  
-    // const openAccountBtn = this.page.locator("text=/open an account/i").first();
-
-      const openAccountBtn = this.page
+    const openAccountBtn = this.page
         .locator(`
     a[href*="sign-up"],
     a[href*="signup"],
@@ -19,10 +17,10 @@ export class IsCapitalComSafePage{
 
      await Promise.all([
        this.page.waitForLoadState("domcontentloaded"),
-       openAccountBtn.click({ force: true }),
+       openAccountBtn.click(),
      ]);   
 
-     await handleModalWindowSignUp(this.page)
+     await handleModalWindowSignUp(this.page, "/trading/platform/");
     }
 
 }

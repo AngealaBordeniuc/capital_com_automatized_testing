@@ -10,26 +10,6 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Why Capital Com?, "Create your account"`, async ({ page }) => {
-      const path = license.paths[lang];
-
-      await page.goto(`https://capital.com${path}`, {
-        waitUntil: "domcontentloaded",
-      });
-
-      await handleOptionalPopups(page);
-
-      const aboutMenu = new AboutSectionMenu(page);
-      const whyCapitalComPage = new WhyCapitalComPage(page)
-
-      await aboutMenu.openWhyCapitalComPage();
-
-      const expectedPath = `${path}/why-capital`;
-
-      await expect(page).toHaveURL(expectedPath);
-      await whyCapitalComPage.clickCreateYourAccountButtonFromReady();
-    });
-
      test(`${license.name} ${lang} – Why Capital Com?, "Create account"`, async ({
        page,
      }) => {
@@ -74,7 +54,27 @@ licenses.forEach((license) => {
           await whyCapitalComPage.clickTryDemoAccountButton()
         });
 
+       test(`${license.name} ${lang} – Why Capital Com?, "Create your account"`, async ({
+         page,
+       }) => {
+         const path = license.paths[lang];
 
+         await page.goto(`https://capital.com${path}`, {
+           waitUntil: "domcontentloaded",
+         });
+
+         await handleOptionalPopups(page);
+
+         const aboutMenu = new AboutSectionMenu(page);
+         const whyCapitalComPage = new WhyCapitalComPage(page);
+
+         await aboutMenu.openWhyCapitalComPage();
+
+         const expectedPath = `${path}/why-capital`;
+
+         await expect(page).toHaveURL(expectedPath);
+         await whyCapitalComPage.clickCreateYourAccountButtonFromReady();
+       });
   });
 });
 

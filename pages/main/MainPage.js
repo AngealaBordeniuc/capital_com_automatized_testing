@@ -1,5 +1,5 @@
 import { expect } from "allure-playwright";
-import { handleModalWindowSignUp, handleOptionalPopups } from "../../helpers/pop_ups";
+import { handleModalWindowSignUp, handleOptionalPopups } from "../../helpers/modal_SignUp";
 
 export class MainPage {
   constructor(page) {
@@ -7,7 +7,6 @@ export class MainPage {
   }
   async clickCTA(locator) {
     await locator.scrollIntoViewIfNeeded();
-
     await expect(locator).toBeVisible({ timeout: 10000 });
     await locator.click();
   }
@@ -15,7 +14,7 @@ export class MainPage {
   async clickSignUpButton() {
     const signUpBtn = this.page.locator("button.l_btn_signup").first();
     await this.clickCTA(signUpBtn);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickTryDemoButton() {
@@ -23,7 +22,7 @@ export class MainPage {
       .locator('button[data-type*="homepage"]')
       .last();
     await this.clickCTA(tryDemoBtn);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }  
 
   async clickSignUpButtonWhyChooseCapitalCom() {
@@ -41,7 +40,7 @@ export class MainPage {
       await expect(signUpBtnWhyChoose).toHaveAttribute("data-type", /tiles/);
 
       await this.clickCTA(signUpBtnWhyChoose);
-      await handleModalWindowSignUp(this.page);
+      await handleModalWindowSignUp(this.page, "/trading/platform/");
     } else {
       await this.page.screenshot();
 
@@ -52,15 +51,13 @@ export class MainPage {
   async clickSellButtonOurMarkets() {
     const sellBtnOurMarkets = this.page.locator(`a[data-type*="sell_btn"]`);
     await this.clickCTA(sellBtnOurMarkets);
-    await expect(this.page).toHaveURL("/trading/platform/charting");
-    await this.page.locator('input[type="email"]').waitFor();
+    await handleModalWindowSignUp(this.page, /\/trading\/platform\/charting/);   
   }
 
   async clickBuyButtonOutMarkets() {
     const buyBtnOurMarkets = this.page.locator(`a[data-type*="buy_btn"]`);
     await this.clickCTA(buyBtnOurMarkets);
-    await expect(this.page).toHaveURL("/trading/platform/charting");
-    await this.page.locator('input[type="email"]').waitFor();
+    await handleModalWindowSignUp(this.page, /\/trading\/platform\/charting/);  
   }
 
   async clickTryDemoButtonForLearnerTraders() {
@@ -68,7 +65,7 @@ export class MainPage {
       .locator(`button[data-type*="learn_traders"]`)
       .first();
     await this.clickCTA(tryDemoBtnLearner);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickSignUpButtonForLearnerTraders() {
@@ -76,12 +73,12 @@ export class MainPage {
       `button[data-type="learn_traders_block_btn1_signup"]`,
     );
     await this.clickCTA(signUpBtnLearner);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickCreateYourAccountButtonFromReady() {
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
     await this.clickCTA(bannerBtnReady);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 }

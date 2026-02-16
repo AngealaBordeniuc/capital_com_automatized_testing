@@ -1,17 +1,16 @@
-import {handleModalWindowSignUp} from "../../helpers/pop_ups";
+import {handleModalWindowSignUp} from "../../helpers/modal_SignUp";
 
 export class ComplaintsPage {
   constructor(page) {
     this.page = page;
   }
 
-  async clickCreateYourAccountButtonFromReady() {
-    // await handleOptionalPopups(this.page);
+  async clickCreateYourAccountButtonFromReady() {    
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
     await bannerBtnReady.waitFor({ state: "attached", timeout: 40000 });
     await bannerBtnReady.scrollIntoViewIfNeeded();
     await bannerBtnReady.waitFor({ state: "visible", timeout: 40000 });
-    await bannerBtnReady.click({ force: true });
-    await handleModalWindowSignUp(this.page);
+    await bannerBtnReady.click();
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 }

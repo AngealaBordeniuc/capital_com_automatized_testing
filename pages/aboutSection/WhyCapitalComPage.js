@@ -1,4 +1,4 @@
-import {handleModalWindowSignUp} from "../../helpers/pop_ups";
+import {handleModalWindowSignUp} from "../../helpers/modal_SignUp";
 
 export class WhyCapitalComPage {
   constructor(page) {
@@ -9,12 +9,11 @@ export class WhyCapitalComPage {
     const btn = this.page.locator(`button[data-type*="btn1_signup"]`).first()
 
     await btn.waitFor({ state: "visible", timeout: 40000 });
-
     await Promise.all([
       this.page.waitForLoadState("domcontentloaded"),
-      btn.click({ force: true }),
+      btn.click(),
     ]);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
   async clickTryDemoAccountButton() {
@@ -24,18 +23,17 @@ export class WhyCapitalComPage {
 
    await Promise.all([
      this.page.waitForLoadState("domcontentloaded"),
-     btn.click({ force: true }),
+     btn.click(),
    ]);
-    await handleModalWindowSignUp(this.page);
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
-  async clickCreateYourAccountButtonFromReady() {
-    //  await handleOptionalPopups(this.page);    
+  async clickCreateYourAccountButtonFromReady() {   
     const bannerBtnReady = this.page.locator('[data-type="banner_with_steps"]');
     await bannerBtnReady.waitFor({ state: "attached", timeout: 40000 });
     await bannerBtnReady.scrollIntoViewIfNeeded();
     await bannerBtnReady.waitFor({ state: "visible", timeout: 40000 });
-    await bannerBtnReady.click({ force: true });
-    await handleModalWindowSignUp(this.page);
+    await bannerBtnReady.click();
+    await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 }
