@@ -1,77 +1,26 @@
 name: Playwright Trading Tests with Allure
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
 
 jobs:
-
-  trading-unauthorized:
+  trading:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository (main)
-        uses: actions/checkout@v4
+    strategy:
+      matrix:
+        type: [unauthorized, authorized]
 
-      - name: Checkout gh-pages (for history)
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Restore previous Allure reports
-        run: |
-          mkdir -p allure-report
-          cp -R gh-pages/* allure-report/ || true
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20.18.0
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Install Playwright browsers
-        run: npx playwright install
-
-      - name: Install Allure CLI
-        run: npm install -g allure-commandline
-
-      - name: Run Playwright Trading UNAUTHORIZED tests
-        run: |
-          npm run test:trading:unauthorized \
-            --reporter=list,allure-playwright \
-            --retries=2
-        continue-on-error: true
-
-      - name: Generate Allure report (Unauthorized)
-        if: always()
-        run: |
-          DATE=$(date +'%Y-%m-%d')
-          mkdir -p allure-report/Trading/Unauthorized/$DATE
-          npx allure generate allure-results -o allure-report/Trading/Unauthorized/$DATE
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GH_PAT }}
-          publish_dir: ./allure-report
-          publish_branch: gh-pages
-          keep_files: true
-
-
-  trading-authorized:
-    runs-on: ubuntu-latest
-    needs: trading-unauthorized
     env:
       TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
     steps:
-      - name: Checkout repository (main)
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Checkout gh-pages (for history)
@@ -94,32 +43,157 @@ jobs:
         run: npm ci
 
       - name: Install Playwright browsers
-        run: npx playwright install
+        run: npx playwright install --with-deps
 
-      - name: Install Allure CLI
-        run: npm install -g allure-commandline
+      - name: Clean previous allure results
+        run: rm -rf allure-results
 
-      - name: Run Playwright Trading AUTHORIZED tests
+      - name: Run Playwright Trading tests
         run: |
-          npm run test:trading:authorized \
+          npm run test:trading:${{ matrix.type }} \
             --reporter=list,allure-playwright \
             --retries=2
         continue-on-error: true
 
-      - name: Generate Allure report (Authorized)
+      - name: Generate Allure report
         if: always()
         run: |
           DATE=$(date +'%Y-%m-%d')
-          mkdir -p allure-report/Trading/Authorized/$DATE
-          npx allure generate allure-results -o allure-report/Trading/Authorized/$DATE
+          mkdir -p allure-report/Trading/${{ matrix.type }}/$DATE
+          npx allure generate allure-results \
+            -o allure-report/Trading/${{ matrix.type }}/$DATE
 
       - name: Deploy to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
           keep_files: true
+
+# name: Playwright Trading Tests with Allure
+
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+
+# jobs:
+
+#   trading-unauthorized:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository (main)
+#         uses: actions/checkout@v4
+
+#       - name: Checkout gh-pages (for history)
+#         uses: actions/checkout@v4
+#         with:
+#           ref: gh-pages
+#           path: gh-pages
+
+#       - name: Restore previous Allure reports
+#         run: |
+#           mkdir -p allure-report
+#           cp -R gh-pages/* allure-report/ || true
+
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 20.18.0
+
+#       - name: Install dependencies
+#         run: npm ci
+
+#       - name: Install Playwright browsers
+#         run: npx playwright install
+
+#       - name: Install Allure CLI
+#         run: npm install -g allure-commandline
+
+#       - name: Run Playwright Trading UNAUTHORIZED tests
+#         run: |
+#           npm run test:trading:unauthorized \
+#             --reporter=list,allure-playwright \
+#             --retries=2
+#         continue-on-error: true
+
+#       - name: Generate Allure report (Unauthorized)
+#         if: always()
+#         run: |
+#           DATE=$(date +'%Y-%m-%d')
+#           mkdir -p allure-report/Trading/Unauthorized/$DATE
+#           npx allure generate allure-results -o allure-report/Trading/Unauthorized/$DATE
+
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v4
+#         with:
+#           github_token: ${{ secrets.GH_PAT }}
+#           publish_dir: ./allure-report
+#           publish_branch: gh-pages
+#           keep_files: true
+
+
+#   trading-authorized:
+#     runs-on: ubuntu-latest
+#     needs: trading-unauthorized
+#     env:
+#       TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+#       TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+
+#     steps:
+#       - name: Checkout repository (main)
+#         uses: actions/checkout@v4
+
+#       - name: Checkout gh-pages (for history)
+#         uses: actions/checkout@v4
+#         with:
+#           ref: gh-pages
+#           path: gh-pages
+
+#       - name: Restore previous Allure reports
+#         run: |
+#           mkdir -p allure-report
+#           cp -R gh-pages/* allure-report/ || true
+
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 20.18.0
+
+#       - name: Install dependencies
+#         run: npm ci
+
+#       - name: Install Playwright browsers
+#         run: npx playwright install
+
+#       - name: Install Allure CLI
+#         run: npm install -g allure-commandline
+
+#       - name: Run Playwright Trading AUTHORIZED tests
+#         run: |
+#           npm run test:trading:authorized \
+#             --reporter=list,allure-playwright \
+#             --retries=2
+#         continue-on-error: true
+
+#       - name: Generate Allure report (Authorized)
+#         if: always()
+#         run: |
+#           DATE=$(date +'%Y-%m-%d')
+#           mkdir -p allure-report/Trading/Authorized/$DATE
+#           npx allure generate allure-results -o allure-report/Trading/Authorized/$DATE
+
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v4
+#         with:
+#           github_token: ${{ secrets.GH_PAT }}
+#           publish_dir: ./allure-report
+#           publish_branch: gh-pages
+#           keep_files: true
 
 
 # name: Playwright Trading Tests with Allure
