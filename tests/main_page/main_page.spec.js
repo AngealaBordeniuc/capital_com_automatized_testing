@@ -96,7 +96,7 @@ licenses.forEach((license) => {
         await mainPage.clickTryDemoButtonForLearnerTraders()
       });
 
-      test.only(`${license.name} ${lang} – Main Page, "Sign up - For Learner"`, async ({
+      test(`${license.name} ${lang} – Main Page, "Sign up - For Learner"`, async ({
         page,
       }) => {
         const path = license.paths[lang];            
