@@ -1,0 +1,796 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "عقود الفروقات هي أدوات مالية معقدة تنطوي على مخاطر عالية قد تؤدي إلى خسارة سريعة للأموال بسبب الرافعة المالية.. وتجدر الإشارة إلى أن %81.31 من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع مقدم الخدمة هذا. يجب أن تفكر مليّا فيما إذا كنت قادرًا على تحمّل مخاطر عالية قد تؤدي إلى خسارة أموالك. يُرجى قراءة بيان الإفصاح عن المخاطر الخاص بنا بعناية" [ref=e3]:
+      - generic [ref=e6]:
+        - text: عقود الفروقات هي أدوات مالية معقدة تنطوي على مخاطر عالية قد تؤدي إلى خسارة سريعة للأموال بسبب الرافعة المالية..
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - strong [ref=e9]: وتجدر الإشارة إلى أن %81.31 من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع مقدم الخدمة هذا
+            - text: .
+          - text: يجب أن تفكر مليّا فيما إذا كنت قادرًا على تحمّل مخاطر عالية قد تؤدي إلى خسارة أموالك. يُرجى قراءة بيان الإفصاح عن المخاطر الخاص بنا بعناية
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - link "شخصي" [ref=e15] [cursor=pointer]:
+          - /url: /ar-int
+        - link "احترافي" [ref=e16] [cursor=pointer]:
+          - /url: /ar-int/professional
+        - link "الشركاء" [ref=e17] [cursor=pointer]:
+          - /url: /ar-int/partnerships
+      - generic [ref=e18]:
+        - link "الدعم" [ref=e19] [cursor=pointer]:
+          - /url: /ar-int/help
+        - button "ar" [ref=e21] [cursor=pointer]:
+          - strong [ref=e23]: ar
+    - generic [ref=e24]:
+      - link [ref=e25] [cursor=pointer]:
+        - /url: /ar-int
+        - img [ref=e26]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - link "التداول" [ref=e40] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade
+          - generic:
+            - generic:
+              - generic:
+                - link "التداول":
+                  - /url: /ar-int/ways-to-trade
+                  - generic:
+                    - generic: التداول
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: طرق التداول
+                  - generic:
+                    - generic:
+                      - link "تداول العقود مقابل الفروقات":
+                        - /url: /ar-int/ways-to-trade/cfd-trading
+                        - strong: تداول العقود مقابل الفروقات
+                - generic:
+                  - generic:
+                    - strong: منصات التداول
+                - generic:
+                  - generic:
+                    - strong: معلومات عن التداول
+                - generic:
+                  - generic:
+                    - strong: أدوات التداول
+        - generic [ref=e41]:
+          - link "الأسواق" [ref=e44] [cursor=pointer]:
+            - /url: /ar-int/markets
+          - generic:
+            - generic:
+              - generic:
+                - link "الأسواق":
+                  - /url: /ar-int/markets
+                  - generic:
+                    - generic: الأسواق
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: الأسواق المتاحة
+                - generic:
+                  - generic:
+                    - strong: تحديثات السوق
+        - generic [ref=e45]:
+          - link "الأسعار" [ref=e48] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade/fees-and-charges
+          - generic:
+            - generic:
+              - generic:
+                - link "الأسعار":
+                  - /url: /ar-int/ways-to-trade/fees-and-charges
+                  - generic:
+                    - generic: الأسعار
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: الأسعار
+        - generic [ref=e49]:
+          - link "تعلّم التداول" [ref=e52] [cursor=pointer]:
+            - /url: /ar-int/learn
+          - generic:
+            - generic:
+              - generic:
+                - link "تعلّم التداول":
+                  - /url: /ar-int/learn
+                  - generic:
+                    - generic: تعلّم التداول
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: للمتداولين المبتدئين
+                - generic:
+                  - generic:
+                    - strong: للمتداولين ذوي الخبرة
+        - generic [ref=e53]:
+          - link "من نحن" [ref=e56] [cursor=pointer]:
+            - /url: /ar-int/about-us
+          - generic:
+            - generic:
+              - generic:
+                - link "من نحن":
+                  - /url: /ar-int/about-us
+                  - generic:
+                    - generic: من نحن
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: عنّا
+                - generic:
+                  - generic:
+                    - strong: احصل على المساعدة
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - button "تسجيل الدخول" [ref=e59] [cursor=pointer]
+          - button "سجّل اشتراكك" [ref=e60] [cursor=pointer]
+        - link "افتح المنصة user":
+          - /url: /trading/platform/
+          - text: افتح المنصة
+          - img "user"
+  - generic [ref=e63]:
+    - generic [ref=e65]:
+      - generic [ref=e69]:
+        - heading "تداول على الذهب والنفط والغاز الطبيعي والبيتكوين وغيرهم الكثير" [level=1] [ref=e70]
+        - paragraph [ref=e72]: اغتنم فرصة التداول على الأسواق العالمية باستخدام عقود الفروقات ورافعة مالية تصل إلى 200:1. انضم إلى وسيط عالمي يجمع بين الخبرة العالمية والمعرفة المحلية وابدأ التداول اليوم.
+        - generic [ref=e73]:
+          - button "سجّل اشتراكك" [ref=e74] [cursor=pointer]
+          - button "جرّب الوضع التجريبي" [ref=e75] [cursor=pointer]
+      - paragraph [ref=e76]: مرخّصة ومنظّمة من قبل هيئة الأوراق المالية في جزر البهاما (SCB)
+    - generic [ref=e78]:
+      - link "4.8" [ref=e79] [cursor=pointer]:
+        - /url: https://www.tradingview.com/broker/Capitalcom/
+        - strong [ref=e82]: "4.8"
+      - link "التقييمات والمراجعات 4.7" [ref=e85] [cursor=pointer]:
+        - /url: https://app.appsflyer.com/id1230088754?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - strong [ref=e87]: التقييمات والمراجعات
+        - strong [ref=e89]: "4.7"
+      - link "التقييمات والمراجعات 4.6" [ref=e92] [cursor=pointer]:
+        - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - strong [ref=e94]: التقييمات والمراجعات
+        - strong [ref=e96]: "4.6"
+      - link "4.6" [ref=e99] [cursor=pointer]:
+        - /url: https://www.trustpilot.com/review/capital.com
+        - strong [ref=e102]: "4.6"
+    - generic [ref=e106]:
+      - heading "لماذا اختيار Capital.com؟" [level=2] [ref=e108]
+      - generic [ref=e109]:
+        - generic [ref=e112]:
+          - heading "منصة تداول سهلة الاستخدام" [level=3] [ref=e113]
+          - generic [ref=e114]: تداول على أكثر من 5,000 سوق على منصة وتطبيق واضحين وبسيطين - مُصممّين لعرض كل ما تحتاج إلى رؤيته، ولا شيء أكثر.
+          - link "ابدأ في اكتشاف منصتنا" [ref=e115] [cursor=pointer]:
+            - /url: https://capital.com/ar-int/trading-platforms
+            - generic [ref=e116]: ابدأ في اكتشاف منصتنا
+        - generic [ref=e119]:
+          - heading "تداول اليوم" [level=3] [ref=e120]
+          - generic [ref=e121]: فتح حساب معنا سريع وبسيط - يُمكنك فتح حسابك اليوم، وبدء التداول في دقائق.
+          - button "قم بالتسجيل الآن" [ref=e122] [cursor=pointer]:
+            - generic [ref=e123]: قم بالتسجيل الآن
+        - generic [ref=e126]:
+          - heading "خدمة عملاء استثنائية" [level=3] [ref=e127]
+          - generic [ref=e128]: احصل على الدعم الذي تستحقه. استمتع بخدمة استثنائية من فريقنا المتخصص، سواء عبر الهاتف أو البريد الإلكتروني أو خدمة الدردشة المباشرة. خدمة العملاء مُتاحة باللغة العربية خلال ساعات العمل، وباللغة الإنجليزية على مدار الساعة طوال أيام الأسبوع.
+          - link "ابقى على تواصل" [ref=e129] [cursor=pointer]:
+            - /url: https://capital.com/ar-int/contact-us
+            - generic [ref=e130]: ابقى على تواصل
+        - generic [ref=e133]:
+          - heading "وسيط تداول عالمي وموثوق" [level=3] [ref=e134]
+          - generic [ref=e135]: انضم إلى مجتمع يضمّ أكثر من 817 ألف متداول من جميع أنحاء العالم. عملاؤنا يثقون بنا بشدة، حيث تجاوز حجم تداولاتهم على منصتنا أكثر من 1 تريليون دولار.
+          - link "اكتشف المزيد عنّا" [ref=e136] [cursor=pointer]:
+            - /url: https://capital.com/ar-int/about-us
+            - generic [ref=e137]: اكتشف المزيد عنّا
+        - generic [ref=e140]:
+          - heading "أسواقك التي ترغب بها، الرافعة المالية التي تناسبك" [level=3] [ref=e141]
+          - generic [ref=e142]: تداول عقود الفروقات على الذهب والبيتكوين والنفط والغاز والمزيد برافعة مالية تُناسبك.
+          - link "استكشف الأصول التي يُمكنك تداولها" [ref=e143] [cursor=pointer]:
+            - /url: https://capital.com/ar-int/markets
+            - generic [ref=e144]: استكشف الأصول التي يُمكنك تداولها
+        - generic [ref=e147]:
+          - heading "رسوم شفّافة وتنافسية" [level=3] [ref=e148]
+          - generic [ref=e149]: عمولة صفرية، إلى الأبد. رسوم شفافة لفروقات الأسعار (السبريد)، ورسوم التبييت، وأوامر وقف الخسارة المضمونة. اُنقر على الرابط أدناه لمعرفة المزيد.
+          - link "اطلع على رسومنا" [ref=e150] [cursor=pointer]:
+            - /url: https://capital.com/ar-int/ways-to-trade/fees-and-charges
+            - generic [ref=e151]: اطلع على رسومنا
+      - button "سجّل اشتراكك" [ref=e153] [cursor=pointer]
+    - generic [ref=e154]:
+      - generic [ref=e156]:
+        - heading "اكتشف لماذا يثق بنا عملاؤنا! اقرأ تقييماتهم وتعرّف على المزيد عنّا" [level=2] [ref=e157]
+        - generic [ref=e158]: تعرّف على آراء عملائنا من مختلف المستويات، من المبتدئين إلى الخبراء.
+      - generic [ref=e159]:
+        - region [ref=e160]:
+          - generic [ref=e162]:
+            - group [ref=e163]:
+              - link [ref=e164] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e167]: 2025-06-30
+                - strong [ref=e168]: K***** A*******
+                - paragraph [ref=e170]: سهولة السحب والإيداع متابعة ممتازة من قبل موظفين خدمة العملاء خلال الأربعة والعشرون ساعة
+            - group [ref=e172]:
+              - link [ref=e173] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e176]: 2025-06-21
+                - strong [ref=e177]: k*** H*****
+                - paragraph [ref=e179]: من افضل البرامج اللتي رأيتها ، تعامل جيد ، منصة موثوقة ، فريق عمل اكثر من رائع
+            - group [ref=e181]:
+              - link [ref=e182] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e185]: 2025-06-13
+                - strong [ref=e186]: ي **ن ***ل***
+                - paragraph [ref=e188]: اشكركم ع اجتهداتكم والله برنامج سهل في كل شيء وبالأخص في يحب الارباح اشكركم من أعماق قلبي ❤️❤️❤️
+            - group [ref=e190]:
+              - link [ref=e191] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e194]: 2025-06-13
+                - strong [ref=e195]: h*******_a****_l***
+                - paragraph [ref=e197]: سريع في تنفيذ الاوامر مع الوسيط
+            - group [ref=e199]:
+              - link [ref=e200] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e203]: 2025-05-24
+                - strong [ref=e204]: A****
+                - paragraph [ref=e206]: اولا لان الايداع و السحب سلس جدأ و الاهم يمكن ان تربط المنصة مع منصة tradingView .
+            - group [ref=e208]:
+              - link [ref=e209] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e212]: 2025-05-15
+                - strong [ref=e213]: T**** M*******
+                - paragraph [ref=e215]: كانت المتابعه من طرفكم اخ زويا اكثر من رائعه اشكرك على عملك الدرؤب على حل المشاكل الكبيره والصغيره واتمنى لك التوفيق والنجاح
+            - group [ref=e217]:
+              - link [ref=e218] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e221]: 2025-05-06
+                - strong [ref=e222]: س ***س *****س***
+                - paragraph [ref=e224]: مصداقية بالتعامل للامانه وأفضل عرض للشاشه والتطبيق بوضوح
+            - group [ref=e226]:
+              - link [ref=e227] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e230]: 2025-04-20
+                - strong [ref=e231]: J****M*
+                - paragraph [ref=e233]: سهوله التطبيق والسحب والايداع والمصداقيه
+            - group [ref=e235]:
+              - link [ref=e236] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e239]: 2025-04-28
+                - strong [ref=e240]: M***** A*****
+                - paragraph [ref=e242]: من افضل التطبيقات الي مرت عليا جميل جدا سهل للمبتدئين والمعلمين تستطيع ايداع وسحب أموال بدون الرجوع الى اي تطبيقات اخرى تطبيق متكامل وتحت إشراف خدمة عملاء رائعه متفاهمه مع المستخدمين
+            - group [ref=e244]:
+              - link [ref=e245] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e248]: 2025-04-01
+                - strong [ref=e249]: A**** S**** A***
+                - paragraph [ref=e251]: نشكر جهودكم الجبارة لجعل المواطنين تزداد ثقتهم في منصتكم الرائعة
+            - group [ref=e253]:
+              - link [ref=e254] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e257]: 2025-03-25
+                - strong [ref=e258]: S*******
+                - paragraph [ref=e260]: افضل منصة تداول على الإطلاق سهولة التداول في المنصه وخدمة عملاء تتجاوب معك بسرعة وامان شكراً لكم جميعا فريق منصة كابيتل
+            - group [ref=e262]:
+              - link [ref=e263] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e266]: 2025-03-08
+                - strong [ref=e267]: ل *لر***ي***
+                - paragraph [ref=e269]: كابيتال كوم عنوان الفخامه وجوهر الأناقه سعيد بالانضمام لموسوعتكم الماليه . دمتم بود
+            - group [ref=e271]:
+              - link [ref=e272] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e275]: 2025-02-17
+                - strong [ref=e276]: m******* h****
+                - paragraph [ref=e278]: تطبيق جيد جدا وسهل الاستخدام انصح المبتدئين بتجربته.
+            - group [ref=e280]:
+              - link [ref=e281] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e284]: 2025-02-09
+                - strong [ref=e285]: n**********
+                - paragraph [ref=e287]: صراحة برنامج رائع اشكر القائمين علية ومزيدا من التقدم
+            - group "1 of 14" [ref=e289]:
+              - link "2025-06-30 K***** A******* سهولة السحب والإيداع متابعة ممتازة من قبل موظفين خدمة العملاء خلال الأربعة والعشرون ساعة" [ref=e290] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e293]: 2025-06-30
+                - strong [ref=e294]: K***** A*******
+                - paragraph [ref=e296]: سهولة السحب والإيداع متابعة ممتازة من قبل موظفين خدمة العملاء خلال الأربعة والعشرون ساعة
+            - group "2 of 14" [ref=e298]:
+              - link "2025-06-21 k*** H***** من افضل البرامج اللتي رأيتها ، تعامل جيد ، منصة موثوقة ، فريق عمل اكثر من رائع" [ref=e299] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e302]: 2025-06-21
+                - strong [ref=e303]: k*** H*****
+                - paragraph [ref=e305]: من افضل البرامج اللتي رأيتها ، تعامل جيد ، منصة موثوقة ، فريق عمل اكثر من رائع
+            - group "3 of 14" [ref=e307]:
+              - link "2025-06-13 ي **ن ***ل*** اشكركم ع اجتهداتكم والله برنامج سهل في كل شيء وبالأخص في يحب الارباح اشكركم من أعماق قلبي ❤️❤️❤️" [ref=e308] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e311]: 2025-06-13
+                - strong [ref=e312]: ي **ن ***ل***
+                - paragraph [ref=e314]: اشكركم ع اجتهداتكم والله برنامج سهل في كل شيء وبالأخص في يحب الارباح اشكركم من أعماق قلبي ❤️❤️❤️
+            - group [ref=e316]:
+              - link [ref=e317] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e320]: 2025-06-13
+                - strong [ref=e321]: h*******_a****_l***
+                - paragraph [ref=e323]: سريع في تنفيذ الاوامر مع الوسيط
+            - group [ref=e325]:
+              - link [ref=e326] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e329]: 2025-05-24
+                - strong [ref=e330]: A****
+                - paragraph [ref=e332]: اولا لان الايداع و السحب سلس جدأ و الاهم يمكن ان تربط المنصة مع منصة tradingView .
+            - group [ref=e334]:
+              - link [ref=e335] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e338]: 2025-05-15
+                - strong [ref=e339]: T**** M*******
+                - paragraph [ref=e341]: كانت المتابعه من طرفكم اخ زويا اكثر من رائعه اشكرك على عملك الدرؤب على حل المشاكل الكبيره والصغيره واتمنى لك التوفيق والنجاح
+            - group [ref=e343]:
+              - link [ref=e344] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e347]: 2025-05-06
+                - strong [ref=e348]: س ***س *****س***
+                - paragraph [ref=e350]: مصداقية بالتعامل للامانه وأفضل عرض للشاشه والتطبيق بوضوح
+            - group [ref=e352]:
+              - link [ref=e353] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e356]: 2025-04-20
+                - strong [ref=e357]: J****M*
+                - paragraph [ref=e359]: سهوله التطبيق والسحب والايداع والمصداقيه
+            - group [ref=e361]:
+              - link [ref=e362] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e365]: 2025-04-28
+                - strong [ref=e366]: M***** A*****
+                - paragraph [ref=e368]: من افضل التطبيقات الي مرت عليا جميل جدا سهل للمبتدئين والمعلمين تستطيع ايداع وسحب أموال بدون الرجوع الى اي تطبيقات اخرى تطبيق متكامل وتحت إشراف خدمة عملاء رائعه متفاهمه مع المستخدمين
+            - group [ref=e370]:
+              - link [ref=e371] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e374]: 2025-04-01
+                - strong [ref=e375]: A**** S**** A***
+                - paragraph [ref=e377]: نشكر جهودكم الجبارة لجعل المواطنين تزداد ثقتهم في منصتكم الرائعة
+            - group [ref=e379]:
+              - link [ref=e380] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e383]: 2025-03-25
+                - strong [ref=e384]: S*******
+                - paragraph [ref=e386]: افضل منصة تداول على الإطلاق سهولة التداول في المنصه وخدمة عملاء تتجاوب معك بسرعة وامان شكراً لكم جميعا فريق منصة كابيتل
+            - group [ref=e388]:
+              - link [ref=e389] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e392]: 2025-03-08
+                - strong [ref=e393]: ل *لر***ي***
+                - paragraph [ref=e395]: كابيتال كوم عنوان الفخامه وجوهر الأناقه سعيد بالانضمام لموسوعتكم الماليه . دمتم بود
+            - group [ref=e397]:
+              - link [ref=e398] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                - generic [ref=e401]: 2025-02-17
+                - strong [ref=e402]: m******* h****
+                - paragraph [ref=e404]: تطبيق جيد جدا وسهل الاستخدام انصح المبتدئين بتجربته.
+            - group [ref=e406]:
+              - link [ref=e407] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e410]: 2025-02-09
+                - strong [ref=e411]: n**********
+                - paragraph [ref=e413]: صراحة برنامج رائع اشكر القائمين علية ومزيدا من التقدم
+            - group [ref=e415]:
+              - link [ref=e416] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e419]: 2025-06-30
+                - strong [ref=e420]: K***** A*******
+                - paragraph [ref=e422]: سهولة السحب والإيداع متابعة ممتازة من قبل موظفين خدمة العملاء خلال الأربعة والعشرون ساعة
+            - group [ref=e424]:
+              - link [ref=e425] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e428]: 2025-06-21
+                - strong [ref=e429]: k*** H*****
+                - paragraph [ref=e431]: من افضل البرامج اللتي رأيتها ، تعامل جيد ، منصة موثوقة ، فريق عمل اكثر من رائع
+            - group [ref=e433]:
+              - link [ref=e434] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e437]: 2025-06-13
+                - strong [ref=e438]: ي **ن ***ل***
+                - paragraph [ref=e440]: اشكركم ع اجتهداتكم والله برنامج سهل في كل شيء وبالأخص في يحب الارباح اشكركم من أعماق قلبي ❤️❤️❤️
+            - group [ref=e442]:
+              - link [ref=e443] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e446]: 2025-06-13
+                - strong [ref=e447]: h*******_a****_l***
+                - paragraph [ref=e449]: سريع في تنفيذ الاوامر مع الوسيط
+            - group [ref=e451]:
+              - link [ref=e452] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e455]: 2025-05-24
+                - strong [ref=e456]: A****
+                - paragraph [ref=e458]: اولا لان الايداع و السحب سلس جدأ و الاهم يمكن ان تربط المنصة مع منصة tradingView .
+            - group [ref=e460]:
+              - link [ref=e461] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e464]: 2025-05-15
+                - strong [ref=e465]: T**** M*******
+                - paragraph [ref=e467]: كانت المتابعه من طرفكم اخ زويا اكثر من رائعه اشكرك على عملك الدرؤب على حل المشاكل الكبيره والصغيره واتمنى لك التوفيق والنجاح
+            - group [ref=e469]:
+              - link [ref=e470] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e473]: 2025-05-06
+                - strong [ref=e474]: س ***س *****س***
+                - paragraph [ref=e476]: مصداقية بالتعامل للامانه وأفضل عرض للشاشه والتطبيق بوضوح
+            - group [ref=e478]:
+              - link [ref=e479] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e482]: 2025-04-20
+                - strong [ref=e483]: J****M*
+                - paragraph [ref=e485]: سهوله التطبيق والسحب والايداع والمصداقيه
+            - group [ref=e487]:
+              - link [ref=e488] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e491]: 2025-04-28
+                - strong [ref=e492]: M***** A*****
+                - paragraph [ref=e494]: من افضل التطبيقات الي مرت عليا جميل جدا سهل للمبتدئين والمعلمين تستطيع ايداع وسحب أموال بدون الرجوع الى اي تطبيقات اخرى تطبيق متكامل وتحت إشراف خدمة عملاء رائعه متفاهمه مع المستخدمين
+            - group [ref=e496]:
+              - link [ref=e497] [cursor=pointer]:
+                - /url: https://www.trustpilot.com/review/capital.com
+                - generic [ref=e500]: 2025-04-01
+                - strong [ref=e501]: A**** S**** A***
+                - paragraph [ref=e503]: نشكر جهودكم الجبارة لجعل المواطنين تزداد ثقتهم في منصتكم الرائعة
+            - group [ref=e505]:
+              - link [ref=e506] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e509]: 2025-03-25
+                - strong [ref=e510]: S*******
+                - paragraph [ref=e512]: افضل منصة تداول على الإطلاق سهولة التداول في المنصه وخدمة عملاء تتجاوب معك بسرعة وامان شكراً لكم جميعا فريق منصة كابيتل
+            - group [ref=e514]:
+              - link [ref=e515] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e518]: 2025-03-08
+                - strong [ref=e519]: ل *لر***ي***
+                - paragraph [ref=e521]: كابيتال كوم عنوان الفخامه وجوهر الأناقه سعيد بالانضمام لموسوعتكم الماليه . دمتم بود
+            - group [ref=e523]:
+              - link [ref=e524] [cursor=pointer]:
+                - /url: https://app.appsflyer.com/com.capital.trading
+                - generic [ref=e527]: 2025-02-17
+                - strong [ref=e528]: m******* h****
+                - paragraph [ref=e530]: تطبيق جيد جدا وسهل الاستخدام انصح المبتدئين بتجربته.
+            - group [ref=e532]:
+              - link [ref=e533] [cursor=pointer]:
+                - /url: https://www.tradingview.com/broker/Capitalcom/
+                - generic [ref=e536]: 2025-02-09
+                - strong [ref=e537]: n**********
+                - paragraph [ref=e539]: صراحة برنامج رائع اشكر القائمين علية ومزيدا من التقدم
+          - generic:
+            - button "Go to last slide" [ref=e541] [cursor=pointer]
+            - button "Next slide" [ref=e542] [cursor=pointer]
+        - paragraph [ref=e543]: نستعرض هنا التقييمات المميزة ذات 4 و5 نجوم. حرصًا على خصوصية عملائنا، تم إخفاء التفاصيل الشخصية للمستخدمين عن عمد تماشيًا مع متطلبات لائحة حماية البيانات العامة (GDPR)
+      - generic [ref=e545]:
+        - link "4.8" [ref=e546] [cursor=pointer]:
+          - /url: https://www.tradingview.com/broker/Capitalcom/
+          - strong [ref=e549]: "4.8"
+        - link "التقييمات والمراجعات 4.7" [ref=e552] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+          - strong [ref=e554]: التقييمات والمراجعات
+          - strong [ref=e556]: "4.7"
+        - link "التقييمات والمراجعات 4.6" [ref=e559] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+          - strong [ref=e561]: التقييمات والمراجعات
+          - strong [ref=e563]: "4.6"
+        - link "4.6" [ref=e566] [cursor=pointer]:
+          - /url: https://www.trustpilot.com/review/capital.com
+          - strong [ref=e569]: "4.6"
+    - generic [ref=e573]:
+      - generic [ref=e574]:
+        - heading "للمتداولين المحترفين" [level=2] [ref=e575]
+        - paragraph [ref=e577]: خدمة سريعة، أدوات تحليلية، ومواد تعليمية من أجل تجربة تداول لا مثيل لها.
+      - generic [ref=e578]:
+        - generic [ref=e580]:
+          - heading "أدوات رسم ومجموعة من المؤشرات" [level=3] [ref=e581]
+          - paragraph [ref=e583]: حسّن من تحليلاتك من خلال الاستفادة من مجموعة واسعة من المخططات البيانية، وأدوات تخطيط متطورة و100 مؤشرًا فنيّاً.
+        - generic [ref=e585]:
+          - heading "رافعة مالية مرنة" [level=3] [ref=e586]
+          - paragraph [ref=e588]: افتح مراكز بحجم تداول كبير مع هوامش صغيرة داخل الأسواق العالمية. يرجى العلم, ان الرافعة المالية قد ينتج عنها مضاعفة للأرباح والخسائر على حد سواء. قد تُطبّق بعض القيود.
+        - generic [ref=e590]:
+          - heading "خدمة دعم للعملاء متاحة 24/7" [level=3] [ref=e591]
+          - paragraph [ref=e593]: فريقنا المتخصص متاح على مدار الساعة طوال أيام الأسبوع لمساعدتك.
+        - generic [ref=e595]:
+          - heading "تنبيهات للأسعار قابلة للتخصيص" [level=3] [ref=e596]
+          - paragraph [ref=e598]: تابع تحرّكات أسعار الأصول المفضلة لديك وحافظ على تميّز استراتيجيتك.
+      - generic [ref=e599]:
+        - img "platform" [ref=e601]
+        - generic [ref=e602]:
+          - heading "عمليات سحب سريعة للأموال" [level=2] [ref=e603]
+          - paragraph [ref=e605]: يتم معالجة 99% من عمليات السحب خلال 24 ساعة، وفقًا لبيانات الخادم الداخلية لدينا من عام 2024.
+    - generic [ref=e607]:
+      - generic [ref=e608]:
+        - heading "الأسواق المتاحة" [level=2] [ref=e609]
+        - generic [ref=e610]: ابقَ مطلعًا على البيانات المهمة، في أكثر من 3000 سوق. اطلع على آخر الأخبار، مشاعر المتداولين، الفروقات السعرية، حركة الأسعار والمزيد.
+      - generic [ref=e611]:
+        - generic [ref=e614]:
+          - button "الكل الكل السلع الفوركس المؤشرات الأسهم العملات المشفّرة" [ref=e615]:
+            - button "الكل" [ref=e616] [cursor=pointer]:
+              - textbox "الكل" [ref=e618]
+            - generic:
+              - button "الكل"
+              - button "السلع"
+              - button "الفوركس"
+              - button "المؤشرات"
+              - button "الأسهم"
+              - button "العملات المشفّرة"
+          - button "الأكثر تداولًا ترتيب المحققين لأكبر خسائر الأكثر تداولًا المحققين لأعلى أرباح الأكثر تقلبًا" [ref=e619]:
+            - button "الأكثر تداولًا ترتيب" [ref=e620] [cursor=pointer]:
+              - generic [ref=e621]:
+                - textbox "ترتيب" [ref=e622]:
+                  - /placeholder: " "
+                  - text: الأكثر تداولًا
+                - generic: ترتيب
+            - generic:
+              - button "المحققين لأكبر خسائر"
+              - button "الأكثر تداولًا"
+              - button "المحققين لأعلى أرباح"
+              - button "الأكثر تقلبًا"
+        - region [ref=e623]:
+          - group "1 of 1" [ref=e625]:
+            - link "تصفّح كافة الأسواق" [ref=e626] [cursor=pointer]:
+              - /url: /ar-int/markets
+              - generic [ref=e627]: تصفّح كافة الأسواق
+        - generic [ref=e628]:
+          - link "تصفّح كافة الأسواق" [ref=e649] [cursor=pointer]:
+            - /url: /ar-int/markets
+            - generic [ref=e650]: تصفّح كافة الأسواق
+          - strong [ref=e654]: الأداء السابق ليس مؤشرًا موثوقًا على النتائج المستقبلية
+    - generic [ref=e657]:
+      - generic [ref=e658]:
+        - heading "للمتداولين المبتدئين" [level=2] [ref=e659]
+        - paragraph [ref=e661]: ابدأ رحلتك في عالم التداول على منصة كابيتال دوت كوم.
+      - generic [ref=e662]:
+        - generic [ref=e663]:
+          - generic [ref=e664]:
+            - heading "حساب تجريبي سهل الاستخدام" [level=3] [ref=e665]
+            - paragraph [ref=e667]: قم ببناء تجربة التداول الخاصة بك بكل سهولة ومن دون المخاطر.
+            - button "جرّب الوضع التجريبي" [ref=e669] [cursor=pointer]:
+              - generic [ref=e670]: جرّب الوضع التجريبي
+          - img "phone" [ref=e672]
+        - generic [ref=e673]:
+          - generic [ref=e674]:
+            - heading "تعليم مُتعمّق" [level=3] [ref=e675]
+            - paragraph [ref=e677]: تعلّم المفاهيم الأساسية من خلال دوراتنا التعليمية وندواتنا ومقاطع الفيديو.
+            - link "اعرف المزيد" [ref=e679] [cursor=pointer]:
+              - /url: ar-int/learn
+              - generic [ref=e680]: اعرف المزيد
+          - img "phone" [ref=e682]
+        - generic [ref=e684]:
+          - heading "دعم متواصل 24/7" [level=3] [ref=e685]
+          - paragraph [ref=e687]: فريق دعم للعملاء من ذوي الخبرة، موجود لمساعدتك 24/7.
+        - generic [ref=e689]:
+          - heading "حجم مراكز مرن" [level=3] [ref=e690]
+          - paragraph [ref=e692]: حافظ على مستوى تعرّضك للأسواق وتداول بحجم صفقات يتناسب مع رصيدك.
+        - generic [ref=e694]:
+          - heading "أدوات لإدارة المخاطر" [level=3] [ref=e695]
+          - paragraph [ref=e697]:
+            - text: استخدم أوامر وقف الخسارة
+            - superscript [ref=e698]: "1"
+            - text: للحد من خسائرك في حال اتجهت الأسواق عكس توقعاتك.
+      - button "سجّل اشتراكك" [ref=e700] [cursor=pointer]
+    - generic [ref=e703]:
+      - generic [ref=e704]:
+        - heading "مستعد للانضمام إلى أحد أكبر الوسطاء؟" [level=2] [ref=e705]
+        - generic [ref=e706]: انضم إلى مجتمعنا من المتداولين من جميع أنحاء العالم
+      - generic [ref=e707]:
+        - button [ref=e709] [cursor=pointer]
+        - generic [ref=e712]: 1. إنشاء حسابك
+        - generic [ref=e713]: 2. قم بإيداع أول مبلغ في حسابك
+        - generic [ref=e714]: 3. ابدأ التداول
+    - paragraph [ref=e717]:
+      - superscript [ref=e718]: "1"
+      - text: أوامر وقف الخسارة قد لا تكون مضمونة دائمًا.
+  - contentinfo [ref=e720]:
+    - generic [ref=e721]:
+      - link [ref=e722] [cursor=pointer]:
+        - /url: /ar-int
+        - img [ref=e723]
+      - generic [ref=e731]:
+        - link [ref=e732] [cursor=pointer]:
+          - /url: https://twitter.com/capitalcom
+        - link [ref=e733] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e734] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcom/
+        - link [ref=e735] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@capitalcom_international
+        - link [ref=e736] [cursor=pointer]:
+          - /url: https://www.facebook.com/capitalcom/
+        - link [ref=e737] [cursor=pointer]:
+          - /url: https://www.reddit.com/r/capitalcom/
+      - generic [ref=e738]:
+        - link [ref=e739] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e740] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e741] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=db0a5a97-287d-497a-b511-306f86f6f969&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e742]:
+      - generic [ref=e743]:
+        - generic [ref=e744]:
+          - generic [ref=e745]:
+            - generic [ref=e746]: "البلد / المنطقة:"
+            - button "Egypt" [ref=e747] [cursor=pointer]: Egypt
+          - generic [ref=e749]: •
+          - generic [ref=e750]:
+            - generic [ref=e751]: "اللغة:"
+            - button "Arabic" [ref=e752] [cursor=pointer]
+        - generic [ref=e753]:
+          - generic [ref=e754]: "كما يمكنك الاتصال بنا على:"
+          - link "+971 4 576 8641" [ref=e757] [cursor=pointer]:
+            - /url: tel:+971 4 576 8641
+          - generic [ref=e758]: •
+          - link "support@capital.com" [ref=e760] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+      - generic [ref=e761]:
+        - generic [ref=e762]:
+          - link "التداول" [ref=e764] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade
+            - strong [ref=e765]: التداول
+          - generic [ref=e766]:
+            - generic [ref=e767]:
+              - generic [ref=e768]: طرق التداول
+              - generic [ref=e769]:
+                - generic [ref=e770]:
+                  - link "تداول العقود مقابل الفروقات" [ref=e771] [cursor=pointer]:
+                    - /url: /ar-int/ways-to-trade/cfd-trading
+                  - link "حاسبة تداول عقود الفروقات" [ref=e774] [cursor=pointer]:
+                    - /url: /ar-int/ways-to-trade/cfd-trading/cfd-calculator
+                - link "حسومات نقدية لجميع المتداولين" [ref=e776] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/rebates
+            - generic [ref=e777]:
+              - generic [ref=e778]: منصات التداول
+              - generic [ref=e779]:
+                - link "كافة المنصات" [ref=e781] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms
+                - link "منصة الإلكترونية" [ref=e783] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/web-platform
+                - link "تطبيق الجوّال" [ref=e785] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mobile-apps
+                - link "منصة TradingView" [ref=e787] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/trading-view
+                - link "MT4" [ref=e789] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mt4
+                - link "MT5" [ref=e791] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mt5
+            - generic [ref=e792]:
+              - generic [ref=e793]: معلومات عن التداول
+              - generic [ref=e794]:
+                - link "نداءات الهامش" [ref=e796] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/margin-calls
+                - link "آلية عمل عمليات السحب" [ref=e798] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/how-withdrawals-work
+                - link "منع الاحتيال" [ref=e800] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/fraud-awareness
+            - generic [ref=e801]:
+              - generic [ref=e802]: أدوات التداول
+              - generic [ref=e803]:
+                - link "حاسبة تداول عقود الفروقات" [ref=e805] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/cfd-trading/cfd-calculator
+                - link "التداول التجريبي" [ref=e807] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/demo-account
+        - generic [ref=e808]:
+          - link "الأسواق" [ref=e810] [cursor=pointer]:
+            - /url: /ar-int/markets
+            - strong [ref=e811]: الأسواق
+          - generic [ref=e812]:
+            - generic [ref=e813]:
+              - generic [ref=e814]: الأسواق المتاحة
+              - generic [ref=e815]:
+                - link "الأسهم" [ref=e817] [cursor=pointer]:
+                  - /url: /ar-int/markets/shares
+                - link "الفوركس" [ref=e819] [cursor=pointer]:
+                  - /url: /ar-int/markets/forex
+                - link "المؤشرات" [ref=e821] [cursor=pointer]:
+                  - /url: /ar-int/markets/indices
+                - link "السلع" [ref=e823] [cursor=pointer]:
+                  - /url: /ar-int/markets/commodities
+                - link "العملات المشفرة" [ref=e825] [cursor=pointer]:
+                  - /url: /ar-int/markets/cryptocurrencies
+            - generic [ref=e826]:
+              - generic [ref=e827]: تحديثات السوق
+              - link "تحليل السوق" [ref=e830] [cursor=pointer]:
+                - /url: /ar-int/analysis
+            - link "جميع الأسواق والأدوات" [ref=e832] [cursor=pointer]:
+              - /url: /ar-int/markets-and-instruments-sitemap
+        - generic [ref=e833]:
+          - link "الأسعار" [ref=e835] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade/fees-and-charges
+            - strong [ref=e836]: الأسعار
+          - generic [ref=e838]:
+            - generic [ref=e839]: الأسعار
+            - generic [ref=e840]:
+              - link "الرسوم والتكاليف" [ref=e842] [cursor=pointer]:
+                - /url: /ar-int/ways-to-trade/fees-and-charges
+              - link "نموذج عملنا" [ref=e844] [cursor=pointer]:
+                - /url: /ar-int/about-us/how-capital-makes-money
+              - link "هيكل تسعير Capital.com" [ref=e846] [cursor=pointer]:
+                - /url: /ar-int/ways-to-trade/pricing
+              - link "تسعير الأسواق" [ref=e848] [cursor=pointer]:
+                - /url: /ar-int/about-us/how-our-markets-are-priced
+        - generic [ref=e849]:
+          - link "تعلّم التداول" [ref=e851] [cursor=pointer]:
+            - /url: /ar-int/learn
+            - strong [ref=e852]: تعلّم التداول
+          - generic [ref=e853]:
+            - generic [ref=e854]:
+              - generic [ref=e855]: للمتداولين المبتدئين
+              - generic [ref=e856]:
+                - link "أساسيات التداول" [ref=e858] [cursor=pointer]:
+                  - /url: /ar-int/learn/essentials
+                - link "إدارة المخاطر" [ref=e860] [cursor=pointer]:
+                  - /url: /ar-int/learn/risk-management
+                - link "أدلة السوق" [ref=e862] [cursor=pointer]:
+                  - /url: /ar-int/learn/market-guides
+                - link "التداول التجريبي" [ref=e864] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/demo-account
+            - generic [ref=e865]:
+              - generic [ref=e866]: للمتداولين ذوي الخبرة
+              - generic [ref=e867]:
+                - link "استراتيجيات التداول" [ref=e869] [cursor=pointer]:
+                  - /url: /ar-int/learn/trading-strategies
+                - link "التحليل الفني" [ref=e871] [cursor=pointer]:
+                  - /url: /ar-int/learn/technical-analysis
+                - link "سيكولوجية التداول" [ref=e873] [cursor=pointer]:
+                  - /url: /ar-int/learn/trading-psychology
+            - link "التداول على الطروحات العامة الأولية (IPO)" [ref=e875] [cursor=pointer]:
+              - /url: /ar-int/learn/ipo
+        - generic [ref=e876]:
+          - link "من نحن" [ref=e878] [cursor=pointer]:
+            - /url: /ar-int/about-us
+            - strong [ref=e879]: من نحن
+          - generic [ref=e880]:
+            - generic [ref=e881]:
+              - generic [ref=e882]: عنّا
+              - generic [ref=e883]:
+                - link "فريق القيادة" [ref=e885] [cursor=pointer]:
+                  - /url: /ar-int/about-us/our-leadership
+                - link "لماذا Capital.com؟" [ref=e887] [cursor=pointer]:
+                  - /url: /ar-int/why-capital
+                - link "هل يُعتبرCapital.com آمن؟" [ref=e889] [cursor=pointer]:
+                  - /url: /ar-int/security-measures
+                - link "تاريخنا" [ref=e891] [cursor=pointer]:
+                  - /url: /ar-int/about-us/our-history
+                - link "مكاتبنا" [ref=e893] [cursor=pointer]:
+                  - /url: /ar-int/about-us/our-offices
+                - link "تواصل معنا" [ref=e895] [cursor=pointer]:
+                  - /url: /ar-int/contact-us
+                - link "احالة صديق" [ref=e897] [cursor=pointer]:
+                  - /url: /ar-int/refer-a-friend
+            - generic [ref=e898]:
+              - generic [ref=e899]: احصل على المساعدة
+              - generic [ref=e900]:
+                - link "المساعدة" [ref=e902] [cursor=pointer]:
+                  - /url: /ar-int/help
+                - link "نقاط الضعف للعميل" [ref=e904] [cursor=pointer]:
+                  - /url: /ar-int/help/client-vulnerability
+                - link "الشكاوى" [ref=e906] [cursor=pointer]:
+                  - /url: /ar-int/help/complaints
+                - link "الشروط والسياسات" [ref=e908] [cursor=pointer]:
+                  - /url: /ar-int/terms-and-policies
+                - link "كيفية الإيداع بعملة USDT" [ref=e910] [cursor=pointer]:
+                  - /url: /ar-int/help/how-to-deposit-usdt
+    - generic [ref=e912]:
+      - paragraph [ref=e913]:
+        - text: عقود الفروقات هي أدوات مالية معقدة تنطوي على مخاطر عالية قد تؤدي إلى خسارة سريعة للأموال بسبب الرافعة المالية..
+        - generic [ref=e914]:
+          - generic [ref=e915]:
+            - strong [ref=e916]: وتجدر الإشارة إلى أن %81.31 من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع مقدم الخدمة هذا
+            - text: .
+          - text: يجب أن تفكر مليّا فيما إذا كنت قادرًا على تحمّل مخاطر عالية قد تؤدي إلى خسارة أموالك. يُرجى قراءة بيان الإفصاح عن المخاطر الخاص بنا بعناية
+      - paragraph
+      - paragraph [ref=e917]: شركة Capital Com Online Investments Ltd هي شركة ذات مسؤولية محدودة تحمل رقم 209236B، وهي مُسجلة في كومنولث جزر البهاما ومُرخصة من قبل هيئة الأوراق المالية في جزر البهاما تحت رقم ترخيص SIA-F245. يقع المكتب المُسجّل للشركة في 3 بايسايد إكزكيوتيف بارك، شارع بليك-ويست باي، ص. ب. 13012، ناسو، جزر البهاما.
+    - generic [ref=e918]:
+      - paragraph [ref=e919]: © 2026 Capital Com Online Investments Ltd
+      - generic [ref=e920]:
+        - link "خريطة الموقع" [ref=e921] [cursor=pointer]:
+          - /url: /ar-int/sitemap
+        - link "إعدادات ملفات تعريف الارتباط" [ref=e922] [cursor=pointer]:
+          - /url: ""
+        - link:
+          - /url: /ar-int
+        - link "الشروط والسياسات" [ref=e923] [cursor=pointer]:
+          - /url: /ar-int/terms-and-policies
+        - link "إجراءات تقديم الشكاوى (SCB)" [ref=e924] [cursor=pointer]:
+          - /url: /ar-int/help/complaints
+  - generic:
+    - generic: Cookie settings
+  - button [ref=e925] [cursor=pointer]
+  - alert [ref=e927]
+```
