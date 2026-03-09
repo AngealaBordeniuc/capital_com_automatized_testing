@@ -1,0 +1,766 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "差價合約 (CFD) 是一種複雜的金融工具，利用槓桿交易雖然可能放大收益，但同樣也會加劇虧損風險，導致資金快速流失。數據顯示，81.31% 的散戶投資者在使用該提供商服務進行差價合約交易時出現帳戶虧損。在進行交易之前，請確保您充分了解差價合約的運作機制，並仔細評估自己是否有能力承擔資金虧損的高風險。" [ref=e3]:
+      - generic [ref=e6]:
+        - text: 差價合約 (CFD) 是一種複雜的金融工具，利用槓桿交易雖然可能放大收益，但同樣也會加劇虧損風險，導致資金快速流失。
+        - generic [ref=e7]:
+          - text: 數據顯示，
+          - strong [ref=e8]: 81.31% 的散戶投資者在使用該提供商服務進行差價合約交易時出現帳戶虧損。
+          - text: 在進行交易之前，請確保您充分了解差價合約的運作機制，並仔細評估自己是否有能力承擔資金虧損的高風險。
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - link "個人版" [ref=e14] [cursor=pointer]:
+          - /url: /zh-hant
+        - link "專業版" [ref=e15] [cursor=pointer]:
+          - /url: /zh-hant/professional
+        - link "合作夥伴" [ref=e16] [cursor=pointer]:
+          - /url: /zh-hant/partnerships
+      - generic [ref=e17]:
+        - link "支援" [ref=e18] [cursor=pointer]:
+          - /url: /zh-hant/help
+        - button "zh" [ref=e20] [cursor=pointer]:
+          - strong [ref=e22]: zh
+    - generic [ref=e23]:
+      - link [ref=e24] [cursor=pointer]:
+        - /url: /zh-hant
+        - img [ref=e25]
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - link "交易" [ref=e39] [cursor=pointer]:
+            - /url: /zh-hant/ways-to-trade
+          - generic:
+            - generic:
+              - generic:
+                - link "交易":
+                  - /url: /zh-hant/ways-to-trade
+                  - generic:
+                    - generic: 交易
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: 交易方式
+                - generic:
+                  - generic:
+                    - strong: 交易平台
+                - generic:
+                  - generic:
+                    - strong: 交易資訊
+                - generic:
+                  - generic:
+                    - strong: 交易工具
+        - generic [ref=e40]:
+          - link "市場" [ref=e43] [cursor=pointer]:
+            - /url: /zh-hant/markets
+          - generic:
+            - generic:
+              - generic:
+                - link "市場":
+                  - /url: /zh-hant/markets
+                  - generic:
+                    - generic: 市場
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: 我們的市場
+                - generic:
+                  - generic:
+                    - strong: 市場動態
+        - generic [ref=e44]:
+          - link "定價" [ref=e47] [cursor=pointer]:
+            - /url: /zh-hant/ways-to-trade/fees-and-charges
+          - generic:
+            - generic:
+              - generic:
+                - link "定價":
+                  - /url: /zh-hant/ways-to-trade/fees-and-charges
+                  - generic:
+                    - generic: 定價
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: 定價
+        - generic [ref=e48]:
+          - link "學習" [ref=e51] [cursor=pointer]:
+            - /url: /zh-hant/learn
+          - generic:
+            - generic:
+              - generic:
+                - link "學習":
+                  - /url: /zh-hant/learn
+                  - generic:
+                    - generic: 學習
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: 新手交易者版
+                - generic:
+                  - generic:
+                    - strong: 資深交易者版
+        - generic [ref=e52]:
+          - link "關於我們" [ref=e55] [cursor=pointer]:
+            - /url: /zh-hant/about-us
+          - generic:
+            - generic:
+              - generic:
+                - link "關於我們":
+                  - /url: /zh-hant/about-us
+                  - generic:
+                    - generic: 關於我們
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: 關於我們
+                - generic:
+                  - generic:
+                    - strong: 獲取幫助
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - button "登入" [ref=e58] [cursor=pointer]
+          - button "註冊" [ref=e59] [cursor=pointer]
+        - link "打開平台 user":
+          - /url: /trading/platform/
+          - text: 打開平台
+          - img "user"
+  - generic [ref=e60]:
+    - paragraph [ref=e63]:
+      - link "首頁•" [ref=e64] [cursor=pointer]:
+        - /url: /zh-hant
+      - text: 所有平台
+    - generic [ref=e65]:
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - heading "探索我們的交易平台" [level=1] [ref=e73]
+          - paragraph [ref=e75]:
+            - text: 從我們直觀的網頁平台和響應迅速的 APP，到
+            - link "MT4" [ref=e76] [cursor=pointer]:
+              - /url: /zh-hant/trading-platforms/mt4
+            - text: 和
+            - link "TradingView" [ref=e77] [cursor=pointer]:
+              - /url: /zh-hant/trading-platforms/trading-view
+            - text: ，請選擇合適的交易平台，提升您的交易體驗。
+        - generic [ref=e79]:
+          - button "建立賬戶" [ref=e80] [cursor=pointer]
+          - button "嘗試模擬賬戶" [ref=e81] [cursor=pointer]
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - heading "我們的網頁平台" [level=2] [ref=e87]
+          - paragraph [ref=e89]: 在一個簡單易用的平台上進行交易，享受各種強大的功能，包括最新的 TradingView 圖表和 Newsquawk 提供的最新市場洞見等。
+        - generic [ref=e90]:
+          - generic [ref=e93]:
+            - heading "清晰直觀的介面" [level=3] [ref=e94]
+            - generic [ref=e95]: 隨時根據需要獲取所有必備工具。您可以輕鬆地從圖表介面過渡到關注列表、即時聊天等功能——所有的這些功能都具備簡單易用的特性。
+          - generic [ref=e98]:
+            - heading "創新型分析工具" [level=3] [ref=e99]
+            - generic [ref=e100]: 從布林帶® (Bollinger Bands®) 到MACD，借助100種以上的直觀技術分析指標和六種圖表類型的繪圖工具，您可以進行更加精准的分析。
+          - generic [ref=e103]:
+            - heading "毫不設限的關注列表" [level=3] [ref=e104]
+            - generic [ref=e105]: 將您心儀的市場添加到關注列表中，登入平台後即可一目了然地查看這些市場的表現。
+        - link "了解更多" [ref=e107] [cursor=pointer]:
+          - /url: /zh-hant/trading-platforms/web-platform
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - heading "我們的交易 APP" [level=2] [ref=e112]
+          - paragraph [ref=e114]:
+            - text: 無論您身在何處，您都可以隨時體驗我們的響應迅速的
+            - link "APP" [ref=e115] [cursor=pointer]:
+              - /url: /zh-hant/trading-platforms/mobile-apps
+            - text: 。
+        - generic [ref=e116]:
+          - generic [ref=e119]:
+            - heading "無縫導航" [level=3] [ref=e120]
+            - generic [ref=e121]: 輕鬆訪問我們的平台功能，只需輕輕一點，即可在交易訂單、資產價格和關注列表之間自如切換。
+          - generic [ref=e124]:
+            - heading "價格提醒" [level=3] [ref=e125]
+            - generic [ref=e126]: 抓住每一個交易機會，當資產價格達到您的目標價位時，您將立即收到通知。
+          - generic [ref=e129]:
+            - heading "智能饋送" [level=3] [ref=e130]
+            - generic [ref=e131]: 無論您身在何處，都不會錯過任何影響您關注的交易市場的重要資訊。
+        - link "了解更多" [ref=e133] [cursor=pointer]:
+          - /url: /zh-hant/trading-platforms/mobile-apps
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - heading "TradingView 平台" [level=2] [ref=e138]
+          - paragraph [ref=e140]: 將您的帳戶連結至 TradingView，享受無與倫比的交易體驗。
+        - generic [ref=e141]:
+          - generic [ref=e144]:
+            - heading "獨家提供、享譽世界的圖表功能" [level=3] [ref=e145]
+            - generic [ref=e146]: 借助高互動性、響應迅速且適合流動裝置的圖表，以及超過50種智能繪圖工具，優化您的交易體驗。
+          - generic [ref=e149]:
+            - heading "金融分析" [level=3] [ref=e150]
+            - generic [ref=e151]: 透過基本面指標和比率、財務報表、估值分析以及公司歷史數據，為您的建倉策略提供有力參考。
+          - generic [ref=e154]:
+            - heading "加入積極活躍的網路「大家庭」" [level=3] [ref=e155]
+            - generic [ref=e156]: 加入互動社區，與志同道合的交易者透過直播和即時聊天分享交易策略。
+        - link "了解更多" [ref=e158] [cursor=pointer]:
+          - /url: /zh-hant/trading-platforms/trading-view
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - heading "MT4 平台" [level=2] [ref=e163]
+          - paragraph [ref=e165]: 在 MetaTrader 4 上進行交易。MetaTrader 4 內置強大的技術分析功能，幫助您更好地進行市場分析和決策。
+        - generic [ref=e166]:
+          - generic [ref=e169]:
+            - heading "獲取深入的市場數據" [level=3] [ref=e170]
+            - generic [ref=e171]: 透過即時報價、歷史價格走勢圖表和數據饋送功能，提升您的分析能力。
+          - generic [ref=e174]:
+            - heading "開啟自動化交易" [level=3] [ref=e175]
+            - generic [ref=e176]: 探索用於回測的智能交易顧問和高級演算法，即時監控市場動態。
+          - generic [ref=e179]:
+            - heading "從一系列豐富的工具中挑選最適合您的工具" [level=3] [ref=e180]
+            - generic [ref=e181]: 利用更多的智能交易工具，包括30種常用技術指標和24種分析對象方法，提升您的技術分析水平。
+        - link "了解更多" [ref=e183] [cursor=pointer]:
+          - /url: /zh-hant/trading-platforms/mt4
+      - generic [ref=e185]:
+        - generic [ref=e186]:
+          - heading "業界對我們的評價" [level=2] [ref=e187]
+          - generic [ref=e188]: 我們的產品、客戶服務和創新能力多次獲得業內權威機構的認可。以下是我們最近獲得的一些獎項。
+        - region [ref=e189]:
+          - generic [ref=e190]:
+            - group "1 of 22" [ref=e191]:
+              - generic [ref=e192]:
+                - img "award" [ref=e194]
+                - generic [ref=e195]:
+                  - generic [ref=e196]: BrokerChooser
+                  - strong [ref=e198]: 最佳差價合約券商（2026 年）
+            - group "2 of 22" [ref=e199]:
+              - generic [ref=e200]:
+                - img "award" [ref=e202]
+                - generic [ref=e203]:
+                  - generic [ref=e204]: Good Money Guide
+                  - strong [ref=e206]: 最佳交易帳戶：大眾之選（2025 年）
+            - group "3 of 22" [ref=e207]:
+              - generic [ref=e208]:
+                - img "award" [ref=e210]
+                - generic [ref=e211]:
+                  - generic [ref=e212]: ForexBrokers.com
+                  - strong [ref=e214]: 同類最佳：佣金與收費（2025 年）
+            - group "4 of 22" [ref=e215]:
+              - generic [ref=e216]:
+                - img "award" [ref=e218]
+                - generic [ref=e219]:
+                  - generic [ref=e220]: ForexBrokers.com
+                  - strong [ref=e222]: 同類最佳：易用性（2025 年）
+            - group [ref=e223]:
+              - generic [ref=e224]:
+                - img [ref=e226]
+                - generic [ref=e227]:
+                  - generic [ref=e228]: ForexBrokers.com
+                  - strong [ref=e230]: 同類最佳：加密貨幣交易（2025 年）
+            - group [ref=e231]:
+              - generic [ref=e232]:
+                - img [ref=e234]
+                - generic [ref=e235]:
+                  - generic [ref=e236]: ForexBrokers.com
+                  - strong [ref=e238]: 同類最佳：教育（2025 年）
+            - group [ref=e239]:
+              - generic [ref=e240]:
+                - img [ref=e242]
+                - generic [ref=e243]:
+                  - generic [ref=e244]: ForexBrokers.com
+                  - strong [ref=e246]: 最佳 TradingView 券商（2025 年）
+            - group [ref=e247]:
+              - generic [ref=e248]:
+                - img [ref=e250]
+                - generic [ref=e251]:
+                  - generic [ref=e252]: 《投資者紀事報》與《金融時報》
+                  - strong [ref=e254]: 五星級大獎得主 - App (2024)
+            - group [ref=e255]:
+              - generic [ref=e256]:
+                - img [ref=e258]
+                - generic [ref=e259]:
+                  - generic [ref=e260]: 《投資者紀事報》與《金融時報》
+                  - strong [ref=e262]: 五星級大獎得主 - 差價合約服務提供者 (2024)
+            - group [ref=e263]:
+              - generic [ref=e264]:
+                - img [ref=e266]
+                - generic [ref=e267]:
+                  - generic [ref=e268]: 《投資者紀事報》與《金融時報》
+                  - strong [ref=e270]: 五星級大獎得主 - 精選平台 (2024)
+            - group [ref=e271]:
+              - generic [ref=e272]:
+                - img [ref=e274]
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Online Money Awards
+                  - strong [ref=e278]: 最佳綜合交易平台（2024 年）
+            - group [ref=e279]:
+              - generic [ref=e280]:
+                - img [ref=e282]
+                - generic [ref=e283]:
+                  - generic [ref=e284]: ForexBrokers.com
+                  - strong [ref=e286]: 同類最佳：佣金與收費（2024 年）
+            - group [ref=e287]:
+              - generic [ref=e288]:
+                - img [ref=e290]
+                - generic [ref=e291]:
+                  - generic [ref=e292]: ForexBrokers.com
+                  - strong [ref=e294]: 同類最佳：易用性（2024 年）
+            - group [ref=e295]:
+              - generic [ref=e296]:
+                - img [ref=e298]
+                - generic [ref=e299]:
+                  - generic [ref=e300]: ForexBrokers.com
+                  - strong [ref=e302]: 同類最佳：教育（2024 年）
+            - group [ref=e303]:
+              - generic [ref=e304]:
+                - img [ref=e306]
+                - generic [ref=e307]:
+                  - generic [ref=e308]: ForexBrokers.com
+                  - strong [ref=e310]: 同類最佳：交易新手（2024 年）
+            - group [ref=e311]:
+              - generic [ref=e312]:
+                - img [ref=e314]
+                - generic [ref=e315]:
+                  - generic [ref=e316]: Good Money Guide
+                  - strong [ref=e318]: 2023年最佳交易應用程式
+            - group [ref=e319]:
+              - generic [ref=e320]:
+                - img [ref=e322]
+                - generic [ref=e323]:
+                  - generic [ref=e324]: Online Money Awards
+                  - strong [ref=e326]: 2023年最佳差價合約提供商
+            - group [ref=e327]:
+              - generic [ref=e328]:
+                - img [ref=e330]
+                - generic [ref=e331]:
+                  - generic [ref=e332]: ForexBrokers.com
+                  - strong [ref=e334]: 2023 年增長最快經紀商
+            - group [ref=e335]:
+              - generic [ref=e336]:
+                - img [ref=e338]
+                - generic [ref=e339]:
+                  - generic [ref=e340]: Investment Trends
+                  - strong [ref=e342]: 2022 年總體客戶滿意度
+            - group [ref=e343]:
+              - generic [ref=e344]:
+                - img [ref=e346]
+                - generic [ref=e347]:
+                  - generic [ref=e348]: Investment Trends
+                  - strong [ref=e350]: 2022 年性價比之選
+            - group [ref=e351]:
+              - generic [ref=e352]:
+                - img [ref=e354]
+                - generic [ref=e355]:
+                  - generic [ref=e356]: ADVFN
+                  - strong [ref=e358]: 2022 年最佳點差交易平台
+            - group [ref=e359]:
+              - generic [ref=e360]:
+                - img [ref=e362]
+                - generic [ref=e363]:
+                  - generic [ref=e364]: 《金融時報》投資者記事
+                  - strong [ref=e366]: 新投資者最佳平台（2022 年）
+          - generic:
+            - button "Previous slide" [disabled] [ref=e367] [cursor=pointer]
+            - button "Next slide" [ref=e368] [cursor=pointer]
+      - generic [ref=e370]:
+        - generic [ref=e371]:
+          - heading "我們隨時幫助您" [level=2] [ref=e372]
+          - paragraph [ref=e374]: 我們的團隊很樂意隨時解答您的任何疑問。
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - strong [ref=e382]: 7×24 小時全天候支援
+            - paragraph [ref=e384]: 隨時與我們友好、專業的員工取得聯繫。
+          - link "開設賬戶" [ref=e386] [cursor=pointer]:
+            - /url: /zh-hant/contact-us
+      - generic [ref=e387]:
+        - generic [ref=e389]:
+          - heading "閱讀客戶評價，進一步了解我們" [level=2] [ref=e390]
+          - generic [ref=e391]: 閱讀我們的客戶回饋，無論他們的經驗水平如何。
+        - generic [ref=e392]:
+          - region [ref=e393]:
+            - generic [ref=e395]:
+              - group [ref=e396]:
+                - link [ref=e397] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e400]: 2024-08-29
+                  - strong [ref=e401]: d**********
+                  - paragraph [ref=e403]: 操作簡單，安全可靠！對新手太友好啦~已經推薦給周圍的朋友啦
+              - group [ref=e405]:
+                - link [ref=e406] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e409]: 2022-06-20
+                  - strong [ref=e410]: 黃**
+                  - paragraph [ref=e412]: 順滑介面
+              - group [ref=e414]:
+                - link [ref=e415] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e418]: 2024-06-15
+                  - strong [ref=e419]: 孫******
+                  - paragraph [ref=e421]: 很簡單
+              - group [ref=e423]:
+                - link [ref=e424] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e427]: 2023-07-16
+                  - strong [ref=e428]: 何**（A** H*）
+                  - paragraph [ref=e430]: 容易操作，有教學影片提示
+              - group [ref=e432]:
+                - link [ref=e433] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e436]: 2022-03-03
+                  - strong [ref=e437]: K*** C**
+                  - paragraph [ref=e439]: 可體驗，有中文。感覺挺好
+              - group [ref=e441]:
+                - link [ref=e442] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e445]: 2021-05-05
+                  - strong [ref=e446]: 曾***
+                  - paragraph [ref=e448]: 大家應該利用Credit card 入錢或提取按金, 我個人就試過, 非常快及方便。
+              - group [ref=e450]:
+                - link [ref=e451] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e454]: 2023-02-15
+                  - strong [ref=e455]: y*********
+                  - paragraph [ref=e457]: 帳號申請與審核快速，商品多樣，支援在台灣使用TradingView交易(有些經紀商不開放台灣用戶使用TradingView下單交易)
+              - group "1 of 7" [ref=e459]:
+                - link "2024-08-29 d********** 操作簡單，安全可靠！對新手太友好啦~已經推薦給周圍的朋友啦" [ref=e460] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e463]: 2024-08-29
+                  - strong [ref=e464]: d**********
+                  - paragraph [ref=e466]: 操作簡單，安全可靠！對新手太友好啦~已經推薦給周圍的朋友啦
+              - group "2 of 7" [ref=e468]:
+                - link "2022-06-20 黃** 順滑介面" [ref=e469] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e472]: 2022-06-20
+                  - strong [ref=e473]: 黃**
+                  - paragraph [ref=e475]: 順滑介面
+              - group "3 of 7" [ref=e477]:
+                - link "2024-06-15 孫****** 很簡單" [ref=e478] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e481]: 2024-06-15
+                  - strong [ref=e482]: 孫******
+                  - paragraph [ref=e484]: 很簡單
+              - group [ref=e486]:
+                - link [ref=e487] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e490]: 2023-07-16
+                  - strong [ref=e491]: 何**（A** H*）
+                  - paragraph [ref=e493]: 容易操作，有教學影片提示
+              - group [ref=e495]:
+                - link [ref=e496] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e499]: 2022-03-03
+                  - strong [ref=e500]: K*** C**
+                  - paragraph [ref=e502]: 可體驗，有中文。感覺挺好
+              - group [ref=e504]:
+                - link [ref=e505] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+                  - generic [ref=e508]: 2021-05-05
+                  - strong [ref=e509]: 曾***
+                  - paragraph [ref=e511]: 大家應該利用Credit card 入錢或提取按金, 我個人就試過, 非常快及方便。
+              - group [ref=e513]:
+                - link [ref=e514] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e517]: 2023-02-15
+                  - strong [ref=e518]: y*********
+                  - paragraph [ref=e520]: 帳號申請與審核快速，商品多樣，支援在台灣使用TradingView交易(有些經紀商不開放台灣用戶使用TradingView下單交易)
+              - group [ref=e522]:
+                - link [ref=e523] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e526]: 2024-08-29
+                  - strong [ref=e527]: d**********
+                  - paragraph [ref=e529]: 操作簡單，安全可靠！對新手太友好啦~已經推薦給周圍的朋友啦
+              - group [ref=e531]:
+                - link [ref=e532] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e535]: 2022-06-20
+                  - strong [ref=e536]: 黃**
+                  - paragraph [ref=e538]: 順滑介面
+              - group [ref=e540]:
+                - link [ref=e541] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e544]: 2024-06-15
+                  - strong [ref=e545]: 孫******
+                  - paragraph [ref=e547]: 很簡單
+              - group [ref=e549]:
+                - link [ref=e550] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e553]: 2023-07-16
+                  - strong [ref=e554]: 何**（A** H*）
+                  - paragraph [ref=e556]: 容易操作，有教學影片提示
+              - group [ref=e558]:
+                - link [ref=e559] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e562]: 2022-03-03
+                  - strong [ref=e563]: K*** C**
+                  - paragraph [ref=e565]: 可體驗，有中文。感覺挺好
+              - group [ref=e567]:
+                - link [ref=e568] [cursor=pointer]:
+                  - /url: https://app.appsflyer.com/com.capital.trading
+                  - generic [ref=e571]: 2021-05-05
+                  - strong [ref=e572]: 曾***
+                  - paragraph [ref=e574]: 大家應該利用Credit card 入錢或提取按金, 我個人就試過, 非常快及方便。
+              - group [ref=e576]:
+                - link [ref=e577] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/broker/Capitalcom/
+                  - generic [ref=e580]: 2023-02-15
+                  - strong [ref=e581]: y*********
+                  - paragraph [ref=e583]: 帳號申請與審核快速，商品多樣，支援在台灣使用TradingView交易(有些經紀商不開放台灣用戶使用TradingView下單交易)
+            - generic:
+              - button "Go to last slide" [ref=e585] [cursor=pointer]
+              - button "Next slide" [ref=e586] [cursor=pointer]
+          - paragraph [ref=e587]: 展示我們的 4 星和 5 星好評。為遵守 GDPR 要求並保護用戶隱私，用戶的具體資料已被匿名處理
+        - generic [ref=e589]:
+          - link "4.8" [ref=e590] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - strong [ref=e593]: "4.8"
+          - link "評級和評論 4.7" [ref=e596] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e598]: 評級和評論
+            - strong [ref=e600]: "4.7"
+          - link "評級和評論 4.7" [ref=e603] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - strong [ref=e605]: 評級和評論
+            - strong [ref=e607]: "4.7"
+          - link "4.6" [ref=e610] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - strong [ref=e613]: "4.6"
+      - heading "常見問題解答" [level=2] [ref=e618]
+      - generic [ref=e620]:
+        - group [ref=e621]:
+          - generic "什麼是交易平台？" [ref=e622] [cursor=pointer]:
+            - heading "什麼是交易平台？" [level=3] [ref=e623]
+        - group [ref=e624]:
+          - generic "什麼是交易 APP？" [ref=e625] [cursor=pointer]:
+            - heading "什麼是交易 APP？" [level=3] [ref=e626]
+        - group [ref=e627]:
+          - generic "什麼是 MT4？" [ref=e628] [cursor=pointer]:
+            - heading "什麼是 MT4？" [level=3] [ref=e629]
+        - group [ref=e630]:
+          - generic "什麼是 TradingView？" [ref=e631] [cursor=pointer]:
+            - heading "什麼是 TradingView？" [level=3] [ref=e632]
+      - generic [ref=e634]:
+        - generic [ref=e635]:
+          - paragraph [ref=e636]: 為什麼選擇 Capital.com？我們的數字說明了一切
+          - generic [ref=e637]: Capital.com 集團
+        - generic [ref=e638]:
+          - generic [ref=e639]:
+            - text: 827K+
+            - text: 全球交易者
+          - generic [ref=e641]:
+            - text: 827K+
+            - text: 月活躍客戶
+          - generic [ref=e643]:
+            - text: 24/7
+            - text: 客戶支援
+          - generic [ref=e645]:
+            - text: "100"
+            - text: 技術指標
+        - button "註冊" [ref=e648] [cursor=pointer]
+  - contentinfo [ref=e650]:
+    - generic [ref=e651]:
+      - link [ref=e652] [cursor=pointer]:
+        - /url: /zh-hant
+        - img [ref=e653]
+      - generic [ref=e661]:
+        - link [ref=e662] [cursor=pointer]:
+          - /url: https://twitter.com/capitalcom
+        - link [ref=e663] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e664] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcom/
+        - link [ref=e665] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@capitalcom_international
+        - link [ref=e666] [cursor=pointer]:
+          - /url: https://www.facebook.com/capitalcom/
+        - link [ref=e667] [cursor=pointer]:
+          - /url: https://www.reddit.com/r/capitalcom/
+      - generic [ref=e668]:
+        - link [ref=e669] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e670] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e671] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=4a37dc66-a511-4ca0-82c0-8ea8e69c18d1&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e672]:
+      - generic [ref=e673]:
+        - generic [ref=e674]:
+          - generic [ref=e675]:
+            - generic [ref=e676]: "國家 / 地區:"
+            - button "Hong Kong" [ref=e677] [cursor=pointer]: Hong Kong
+          - generic [ref=e679]: •
+          - generic [ref=e680]:
+            - generic [ref=e681]: "語言:"
+            - button "Traditional Chinese" [ref=e682] [cursor=pointer]
+        - generic [ref=e683]:
+          - generic [ref=e684]: 您還可以聯絡：
+          - link "+65 3125 2302" [ref=e687] [cursor=pointer]:
+            - /url: tel:+65 3125 2302
+          - generic [ref=e688]: •
+          - link "support@capital.com" [ref=e690] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+      - generic [ref=e691]:
+        - generic [ref=e692]:
+          - link "交易" [ref=e694] [cursor=pointer]:
+            - /url: /zh-hant/ways-to-trade
+            - strong [ref=e695]: 交易
+          - generic [ref=e696]:
+            - generic [ref=e697]:
+              - generic [ref=e698]: 交易方式
+              - generic [ref=e699]:
+                - link "差價合約交易" [ref=e701] [cursor=pointer]:
+                  - /url: /zh-hant/ways-to-trade/cfd-trading
+                - link "適用於所有交易者的回贈" [ref=e703] [cursor=pointer]:
+                  - /url: /zh-hant/ways-to-trade/rebates
+            - generic [ref=e704]:
+              - generic [ref=e705]: 交易平台
+              - generic [ref=e706]:
+                - link "所有平台" [ref=e708] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms
+                - link "網頁平台" [ref=e710] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/web-platform
+                - link "行動應用程式" [ref=e712] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e714] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/trading-view
+                - link "MT4" [ref=e716] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/mt4
+                - link "MT5" [ref=e718] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/mt5
+            - generic [ref=e719]:
+              - generic [ref=e720]: 交易資訊
+              - generic [ref=e721]:
+                - link "追加保證金通知" [ref=e723] [cursor=pointer]:
+                  - /url: /zh-hant/ways-to-trade/margin-calls
+                - link "預防詐騙" [ref=e725] [cursor=pointer]:
+                  - /url: /zh-hant/ways-to-trade/fraud-awareness
+            - generic [ref=e726]:
+              - generic [ref=e727]: 交易工具
+              - generic [ref=e728]:
+                - link "模擬交易" [ref=e730] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/demo-account
+                - link "差價合約交易計算器" [ref=e732] [cursor=pointer]:
+                  - /url: /zh-hant/ways-to-trade/cfd-trading/cfd-calculator
+        - generic [ref=e733]:
+          - link "市場" [ref=e735] [cursor=pointer]:
+            - /url: /zh-hant/markets
+            - strong [ref=e736]: 市場
+          - generic [ref=e737]:
+            - generic [ref=e738]:
+              - generic [ref=e739]: 我們的市場
+              - generic [ref=e740]:
+                - link "股票" [ref=e742] [cursor=pointer]:
+                  - /url: /zh-hant/markets/shares
+                - link "外匯" [ref=e744] [cursor=pointer]:
+                  - /url: /zh-hant/markets/forex
+                - link "指數" [ref=e746] [cursor=pointer]:
+                  - /url: /zh-hant/markets/indices
+                - link "商品" [ref=e748] [cursor=pointer]:
+                  - /url: /zh-hant/markets/commodities
+                - link "加密貨幣" [ref=e750] [cursor=pointer]:
+                  - /url: /zh-hant/markets/cryptocurrencies
+            - generic [ref=e751]:
+              - generic [ref=e752]: 市場動態
+              - link "市場分析" [ref=e755] [cursor=pointer]:
+                - /url: /zh-hant/analysis
+            - link "所有市場和工具" [ref=e757] [cursor=pointer]:
+              - /url: /zh-hant/markets-and-instruments-sitemap
+        - generic [ref=e758]:
+          - link "定價" [ref=e760] [cursor=pointer]:
+            - /url: /zh-hant/ways-to-trade/fees-and-charges
+            - strong [ref=e761]: 定價
+          - generic [ref=e763]:
+            - generic [ref=e764]: 定價
+            - generic [ref=e765]:
+              - link "收費" [ref=e767] [cursor=pointer]:
+                - /url: /zh-hant/ways-to-trade/fees-and-charges
+              - link "我們的商業模式" [ref=e769] [cursor=pointer]:
+                - /url: /zh-hant/about-us/how-capital-makes-money
+              - link "Capital.com 的定價與費用結構" [ref=e771] [cursor=pointer]:
+                - /url: /zh-hant/ways-to-trade/pricing
+              - link "市場定價" [ref=e773] [cursor=pointer]:
+                - /url: /zh-hant/about-us/how-our-markets-are-priced
+        - generic [ref=e774]:
+          - link "學習" [ref=e776] [cursor=pointer]:
+            - /url: /zh-hant/learn
+            - strong [ref=e777]: 學習
+          - generic [ref=e778]:
+            - generic [ref=e779]:
+              - generic [ref=e780]: 新手交易者版
+              - generic [ref=e781]:
+                - link "交易要點" [ref=e783] [cursor=pointer]:
+                  - /url: /zh-hant/learn/essentials
+                - link "風險管理" [ref=e785] [cursor=pointer]:
+                  - /url: /zh-hant/learn/risk-management
+                - generic [ref=e786]:
+                  - link "市場指南" [ref=e787] [cursor=pointer]:
+                    - /url: /zh-hant/learn/market-guides
+                  - link "恆生指數交易全指南" [ref=e790] [cursor=pointer]:
+                    - /url: /zh-hant/learn/market-guides/trade-hangseng
+                - link "模擬交易" [ref=e792] [cursor=pointer]:
+                  - /url: /zh-hant/trading-platforms/demo-account
+                - link "Investmate 应用程序" [ref=e794] [cursor=pointer]:
+                  - /url: /zh-hant/learn/investmate-trading-app
+            - generic [ref=e795]:
+              - generic [ref=e796]: 資深交易者版
+              - generic [ref=e797]:
+                - link "交易策略" [ref=e799] [cursor=pointer]:
+                  - /url: /zh-hant/learn/trading-strategies
+                - link "交易心理" [ref=e801] [cursor=pointer]:
+                  - /url: /zh-hant/learn/trading-psychology
+                - link "技術分析" [ref=e803] [cursor=pointer]:
+                  - /url: /zh-hant/learn/technical-analysis
+                - link "IPO 交易" [ref=e805] [cursor=pointer]:
+                  - /url: /zh-hant/learn/ipo
+        - generic [ref=e806]:
+          - link "關於我們" [ref=e808] [cursor=pointer]:
+            - /url: /zh-hant/about-us
+            - strong [ref=e809]: 關於我們
+          - generic [ref=e810]:
+            - generic [ref=e811]:
+              - generic [ref=e812]: 關於我們
+              - generic [ref=e813]:
+                - link "領導團隊" [ref=e815] [cursor=pointer]:
+                  - /url: /zh-hant/about-us/our-leadership
+                - link "Capital.com 安全嗎？" [ref=e817] [cursor=pointer]:
+                  - /url: /zh-hant/security-measures
+                - link "為何選擇 Capital.com？" [ref=e819] [cursor=pointer]:
+                  - /url: /zh-hant/why-capital
+                - link "我們的歷史" [ref=e821] [cursor=pointer]:
+                  - /url: /zh-hant/about-us/our-history
+                - link "我们的辦事處" [ref=e823] [cursor=pointer]:
+                  - /url: /zh-hant/about-us/our-offices
+                - link "聯絡我們" [ref=e825] [cursor=pointer]:
+                  - /url: /zh-hant/contact-us
+                - link "推薦朋友" [ref=e827] [cursor=pointer]:
+                  - /url: /zh-hant/refer-a-friend
+            - generic [ref=e828]:
+              - generic [ref=e829]: 獲取幫助
+              - generic [ref=e830]:
+                - link "幫助" [ref=e832] [cursor=pointer]:
+                  - /url: /zh-hant/help
+                - link "客戶脆弱性" [ref=e834] [cursor=pointer]:
+                  - /url: /zh-hant/help/client-vulnerability
+                - link "投訴" [ref=e836] [cursor=pointer]:
+                  - /url: /zh-hant/help/complaints
+                - link "條款與政策" [ref=e838] [cursor=pointer]:
+                  - /url: /zh-hant/terms-and-policies
+                - link "如何使用 USDT 入金" [ref=e840] [cursor=pointer]:
+                  - /url: /zh-hant/help/how-to-deposit-usdt
+    - generic [ref=e842]:
+      - paragraph [ref=e843]:
+        - text: 差價合約 (CFD) 是一種複雜的金融工具，利用槓桿交易雖然可能放大收益，但同樣也會加劇虧損風險，導致資金快速流失。
+        - generic [ref=e844]:
+          - text: 數據顯示，
+          - strong [ref=e845]: 81.31% 的散戶投資者在使用該提供商服務進行差價合約交易時出現帳戶虧損。
+          - text: 在進行交易之前，請確保您充分了解差價合約的運作機制，並仔細評估自己是否有能力承擔資金虧損的高風險。
+      - paragraph
+      - paragraph [ref=e846]: Capital Com Online Investments Ltd 是一家有限責任公司，公司註冊號碼為 209236B。 Capital Com Online Investments Ltd 在巴哈馬國註冊，由巴哈馬證券委員會授權，許可證號為 SIA-F245。公司註冊辦公室地址是：#3 Bayside Executive Park, Blake Road and West Bay Street, P. O. Box CB 13012, Nassau, The Bahamas。
+    - generic [ref=e847]:
+      - paragraph [ref=e848]: © 2026 Capital Com Online Investments Ltd
+      - generic [ref=e849]:
+        - link "網站地圖" [ref=e850] [cursor=pointer]:
+          - /url: /zh-hant/sitemap
+        - link "Cookie 設定" [ref=e851] [cursor=pointer]:
+          - /url: ""
+        - link:
+          - /url: /zh-hant
+        - link "條款及條件" [ref=e852] [cursor=pointer]:
+          - /url: /zh-hant/terms-and-policies
+        - link "投訴程序 (SCB)" [ref=e853] [cursor=pointer]:
+          - /url: /zh-hant/help/complaints
+  - generic:
+    - generic: Cookie settings
+  - button [ref=e854] [cursor=pointer]
+  - alert [ref=e856]: 產品和服務 | Capital.com
+```
