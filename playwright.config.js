@@ -48,6 +48,9 @@ export default defineConfig({
     {
       name: "setup",
       testMatch: "auth.setup.js",
+      use: {
+        headless: false,
+      }
     },
     {
       name: "authorized",
@@ -55,7 +58,7 @@ export default defineConfig({
         ...devices["Desktop Chrome"],
         storageState: ".auth/authorized.json",
       },
-      dependencies: ["setup"],
+      // dependencies: ["setup"],
     },
     {
       name: "unauthorized",
@@ -63,6 +66,15 @@ export default defineConfig({
         ...devices["Desktop Chrome"]
     },
   },
+    {
+      name: "unregistered",
+      use: {
+        ...devices["Desktop Chrome"],
+        storageState: undefined,
+      },
+
+    },
+  
 
 
     // {

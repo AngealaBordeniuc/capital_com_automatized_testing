@@ -11,14 +11,22 @@
   "scripts": {
     "allure": "allure generate allure-results --clean",
     "test": "playwright test",
+    
     "test:main": "playwright test tests/main_page",
     "test:about": "playwright test tests/about_page",
     "test:trading": "playwright test tests/trading_page",
+
     "test:main:authorized": "npx playwright test tests/main_page --project=authorized",
     "test:main:unauthorized": "npx playwright test tests/main_page --project=unauthorized",
+    "test:main:unregistered": "npx playwright test tests/main_page --project=unregistered",
+
     "test:about:authorized": "npx playwright test tests/about_page --project=authorized",
     "test:about:unauthorized": "npx playwright test tests/about_page --project=unauthorized",
+    "test:about:unregistered": "npx playwright test tests/about_page --project=unregistered",
+
+
     "test:trading:authorized": "npx playwright test tests/trading_page --project=authorized",
-    "test:trading:unauthorized": "npx playwright test tests/trading_page --project=unauthorized"
+    "test:trading:unauthorized": "npx playwright test tests/trading_page --project=unauthorized",
+    "test:trading:unregistered": "npx playwright test tests/trading_page --project=unregistered"
   }
 }

@@ -12,5 +12,4 @@ node_modules/
 allure-results/
 allure-reports/
 allure-report/
-.auth/
 .env

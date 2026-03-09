@@ -13,11 +13,11 @@ jobs:
 
     strategy:
       matrix:
-        type: [unauthorized, authorized]
+        type: [unauthorized, authorized, unregistered]
 
-    env:
-      TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-      TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+    # env:
+    #   TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+    #   TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
     steps:
       - name: Checkout repository (main)
