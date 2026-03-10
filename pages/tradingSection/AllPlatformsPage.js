@@ -15,7 +15,8 @@ import { handleModalWindowSignUp } from "../../helpers/modal_SignUp";
    }
 
    async clickCreateAccountButton() {
-     const createAccountButton = this.page.locator('button[data-type="fullscreen_banner_block_btn1_signup"]');
+     const createAccountButton = this.page.locator(
+      'button[data-type="fullscreen_banner_block_btn1_signup"]');
      await this.clickCTA(createAccountButton);
 
     await handleModalWindowSignUp(this.page, "/trading/platform/");     
@@ -23,7 +24,7 @@ import { handleModalWindowSignUp } from "../../helpers/modal_SignUp";
 
    async clickTryDemoAccountButton() {
      const tryDemoAccountButton = this.page.locator(
-       'button[data-type="fullscreen_banner_block_btn2demo"]');
+       'button[data-type="fullscreen_banner_block_btn2_demo"]');
      await this.clickCTA(tryDemoAccountButton);
 
      await handleModalWindowSignUp(this.page, "/trading/platform/");

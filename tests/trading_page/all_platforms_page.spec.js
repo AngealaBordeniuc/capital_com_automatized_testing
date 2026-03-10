@@ -5,7 +5,7 @@ import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
 const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
-// const languages = ["ZHS"]
+// const languages = ["EN"]
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
