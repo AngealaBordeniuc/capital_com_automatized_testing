@@ -15,7 +15,7 @@ setup('authentication', async({page}) => {
   await passwordInput.fill(process.env.TEST_PASSWORD); 
 
   const submitButton = page.locator('button[type="submit"]');
-  await submitButton.click({ force: true });
+  await submitButton.click({ force: true }); git status
 
   const overlay = page.locator("div.c8Rg");
       if ((await overlay.isVisible())){      
