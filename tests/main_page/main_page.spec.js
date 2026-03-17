@@ -13,7 +13,7 @@ licenses.forEach((license) => {
     test(`${license.name} ${lang} – Main Page, "Sign up"`, async ({ page }) => {
       const path = license.paths[lang];     
 
-      await page.goto(`https://capital.com${path}`, {
+      await page.goto(path, {
         waitUntil: "domcontentloaded",
       });
 
@@ -28,7 +28,7 @@ licenses.forEach((license) => {
     }) => {
       const path = license.paths[lang];        
 
-      await page.goto(`https://capital.com${path}`, {
+      await page.goto(path, {
         waitUntil: "domcontentloaded",
       });
 
@@ -43,7 +43,7 @@ licenses.forEach((license) => {
      }) => {
        const path = license.paths[lang];          
 
-       await page.goto(`https://capital.com${path}`, {
+       await page.goto(path, {
          waitUntil: "domcontentloaded",
        });       
        await handleOptionalPopups(page)
@@ -57,7 +57,7 @@ licenses.forEach((license) => {
       }) => {
         const path = license.paths[lang];        
 
-        await page.goto(`https://capital.com${path}`, {
+        await page.goto(path, {
           waitUntil: "domcontentloaded",
         });
         await handleOptionalPopups(page)
@@ -71,7 +71,7 @@ licenses.forEach((license) => {
       }) => {
         const path = license.paths[lang];       
 
-        await page.goto(`https://capital.com${path}`, {
+        await page.goto(path, {
           waitUntil: "domcontentloaded",
         }); 
 
@@ -86,7 +86,7 @@ licenses.forEach((license) => {
       }) => {
         const path = license.paths[lang];      
 
-        await page.goto(`https://capital.com${path}`, {
+        await page.goto(path, {
           waitUntil: "domcontentloaded",
         });      
 
@@ -101,7 +101,7 @@ licenses.forEach((license) => {
       }) => {
         const path = license.paths[lang];            
 
-        await page.goto(`https://capital.com${path}`, {
+        await page.goto(path, {
           waitUntil: "domcontentloaded",
         });
 
@@ -117,7 +117,7 @@ licenses.forEach((license) => {
       }) => {
         const path = license.paths[lang];        
 
-        await page.goto(`https://capital.com${path}`, {
+        await page.goto(path, {
           waitUntil: "domcontentloaded",
         });
         await handleOptionalPopups(page)

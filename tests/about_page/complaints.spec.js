@@ -15,7 +15,7 @@ licenses.forEach((license) => {
     test(`${license.name} ${lang} – Complaints`, async ({ page }) => {
       const path = license.paths[lang];
 
-      await page.goto(`https://capital.com${path}`, {
+      await page.goto(path, {
         waitUntil: "domcontentloaded",
       });
 

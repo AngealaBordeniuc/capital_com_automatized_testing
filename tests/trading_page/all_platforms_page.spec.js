@@ -16,7 +16,7 @@ licenses.forEach((license) => {
     }) => { 
       const path = license.paths[lang];
 
-      await page.goto(`https://capital.com${path}`, {
+      await page.goto(path, {
         waitUntil: "domcontentloaded",
       });      
 
@@ -38,7 +38,7 @@ licenses.forEach((license) => {
     }) => {
       const path = license.paths[lang];   
 
-      await page.goto(`https://capital.com${path}`, {
+      await page.goto(path, {
         waitUntil: "domcontentloaded",
       });      
 
@@ -60,7 +60,7 @@ licenses.forEach((license) => {
     }) => {
       const path = license.paths[lang];
 
-      await page.goto(`https://capital.com${path}`, {
+      await page.goto(path, {
         waitUntil: "domcontentloaded",
       });
 

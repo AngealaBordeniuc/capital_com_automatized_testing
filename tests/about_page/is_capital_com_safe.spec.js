@@ -13,7 +13,7 @@ licenses.forEach((license) => {
     test(`${license.name} ${lang} – Is Capital Com Safe?`, async ({ page }) => {
       const path = license.paths[lang];
 
-      await page.goto(`https://capital.com${path}`, {
+      await page.goto(path, {
         waitUntil: "domcontentloaded",
       });
 

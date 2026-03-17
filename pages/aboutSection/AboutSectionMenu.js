@@ -9,39 +9,7 @@ import { ABOUT_MENU } from "../../test-data/about-menu";
 export class AboutSectionMenu {
   constructor(page) {
     this.page = page;
-  }
-
-  //   async openAboutSubMenu({ subMenuText }) {
-  //   const header = this.page.locator("#header");
-
-  //   const aboutMenu = header.locator(
-  //     'a[href$="/about-us"]'
-  //   );
-
-  //   await aboutMenu.hover({ force: true });
-
-  //   const subLink = header.getByRole("link", { name: subMenuText });
-
-  //   await subLink.waitFor({ state: "visible", timeout: 10000 });
-  //   await subLink.click();
-
-  //   await this.page.waitForLoadState("domcontentloaded");
-  // }
-
-  // async openAboutSubMenu({ subMenuText }) {
-  //   const header = this.page.locator("#header");
-
-  //   const aboutMenu = this.page.locator('a[href$="/about-us"]').first();
-
-  //   await aboutMenu.hover({ force: true });
-
-  //   const subLink = header.getByRole("link", { name: subMenuText });
-
-  //   await subLink.waitFor({ state: "visible", timeout: 10000 });
-  //   await subLink.click();
-
-  //   await this.page.waitForLoadState("domcontentloaded");
-  // }
+  }  
 
   async openAboutSubMenu(menuKey) {
     const header = this.page.locator("#header");

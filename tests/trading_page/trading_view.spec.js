@@ -97,9 +97,7 @@ licenses.forEach((license) => {
        const path = license.paths[lang];
 
        await page.goto(path, { waitUntil: "domcontentloaded" });
-
-      //  await page.pause();
-
+      
        await handleOptionalPopups(page);
 
        const tradingMenu = new TradingSectionMenu(page);
