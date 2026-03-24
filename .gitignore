@@ -13,3 +13,5 @@ allure-results/
 allure-reports/
 allure-report/
 .env
+
+Dockerfile

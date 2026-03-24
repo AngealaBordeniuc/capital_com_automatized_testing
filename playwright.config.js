@@ -13,7 +13,7 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  timeout: 60000,
+  // timeout: 60000,
   testDir: "./tests",
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -50,32 +50,33 @@ export default defineConfig({
       testMatch: "auth.setup.js",
       use: {
         headless: false,
-      }
+        // ignoreHTTPSErrors:true,
+      },
     },
     {
       name: "authorized",
       use: {
         ...devices["Desktop Chrome"],
         storageState: ".auth/authorized.json",
+        // ignoreHTTPSErrors: true,
       },
       // dependencies: ["setup"],
     },
     {
       name: "unauthorized",
       use: {
-        ...devices["Desktop Chrome"]
+        ...devices["Desktop Chrome"],
+        // ignoreHTTPSErrors: true,
+      },
     },
-  },
     {
       name: "unregistered",
       use: {
         ...devices["Desktop Chrome"],
         storageState: undefined,
+        // ignoreHTTPSErrors: true,
       },
-
     },
-  
-
 
     // {
     //   name: 'firefox',
@@ -107,6 +108,12 @@ export default defineConfig({
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
   ],
+
+  // webServer: {
+  //   command: "",
+  //   url: "http://localhost:3000",
+  //   reuseExistingServer: true,
+  // },
 
   /* Run your local dev server before starting the tests */
   // webServer: {

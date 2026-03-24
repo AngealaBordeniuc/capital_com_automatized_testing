@@ -11,7 +11,7 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – All Platforms: Create Account`, async ({
+    test.only(`${license.name} ${lang} – All Platforms: Create Account`, async ({
       page,
     }) => { 
       const path = license.paths[lang];
