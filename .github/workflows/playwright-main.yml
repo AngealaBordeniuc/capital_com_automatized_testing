@@ -75,7 +75,7 @@ jobs:
 
       - name: Generate Allure report
         run: |
-          allure generate merged-results -o allure-report
+          allure generate merged-results -o allure-report --clean
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
