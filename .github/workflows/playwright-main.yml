@@ -16,68 +16,63 @@ jobs:
         type: [unauthorized, authorized, unregistered]
 
     steps:
-      - name: Checkout repository
+      # 1️⃣ Checkout main branch
+      - name: Checkout repository (main)
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20.18.0
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
-      - name: Run Playwright tests
-        run: |
-          npm run test:main:${{ matrix.type }} \
-            --reporter=list,allure-playwright \
-            --retries=2
-        continue-on-error: true
-
-      - name: Upload Allure results
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-${{ matrix.type }}
-          path: allure-results
-
-  deploy:
-    needs: main
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
+      # 2️⃣ Checkout gh-pages for history
       - name: Checkout gh-pages (for history)
         uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
 
-      - name: Download all artifacts
-        uses: actions/download-artifact@v4
-
-      - name: Merge Allure results
+      # 3️⃣ Restore previous Allure reports
+      - name: Restore previous Allure reports
         run: |
-          mkdir merged-results
-          cp -r allure-*/* merged-results/ || true
+          mkdir -p allure-report
+          cp -R gh-pages/* allure-report/ || true
 
-      - name: Restore Allure history
-        run: |
-          mkdir -p merged-results/history
-          cp -r gh-pages/history/* merged-results/history/ || true
+      # 4️⃣ Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.18.0
 
+      # 5️⃣ Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # 6️⃣ Install Playwright browsers
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      # 7️⃣ Install Allure CLI
       - name: Install Allure CLI
         run: npm install -g allure-commandline
 
-      - name: Generate Allure report
+      # 8️⃣ Run Playwright tests (each type are separate folder)
+      - name: Run Playwright Main tests
         run: |
-          allure generate merged-results -o allure-report --clean
+          mkdir -p allure-results/${{ matrix.type }}
+          npm run test:main:${{ matrix.type }} \
+            --reporter=list,allure-playwright \
+            --output allure-results/${{ matrix.type }} \
+            --retries=2
+        continue-on-error: true
 
-      - name: Deploy to GitHub Pages
+      # 9️⃣ Generate Allure report (type-specific)
+      - name: Generate Allure report (Main)
+        if: always()
+        run: |
+          DATE=$(date +'%Y-%m-%d')
+          mkdir -p allure-report/Main/${{ matrix.type }}/$DATE
+          npx allure generate allure-results/${{ matrix.type }} -o allure-report/Main/${{ matrix.type }}/$DATE
+          echo "Allure Main ${{ matrix.type }} report generated for $DATE"
+
+      # 🔟 Deploy to GitHub Pages
+      - name: Deploy Allure Reports to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GH_PAT }}
