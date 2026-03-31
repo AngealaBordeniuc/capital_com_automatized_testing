@@ -15,24 +15,9 @@ jobs:
       matrix:
         type: [unauthorized, authorized, unregistered]
 
-    # env:
-    #   TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-    #   TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-
     steps:
-      - name: Checkout repository (main)
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Checkout gh-pages (for history)
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Restore previous Allure reports
-        run: |
-          mkdir -p allure-report
-          cp -R gh-pages/* allure-report/ || true
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -45,26 +30,54 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Install Allure CLI
-        run: npm install -g allure-commandline
-
-      - name: Run Playwright Main tests
+      - name: Run Playwright tests
         run: |
           npm run test:main:${{ matrix.type }} \
             --reporter=list,allure-playwright \
             --retries=2
         continue-on-error: true
-    
-      - name: Generate Allure report (Main)
-        if: always()
+
+      - name: Upload Allure results
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-${{ matrix.type }}
+          path: allure-results
+
+  deploy:
+    needs: main
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Checkout gh-pages (for history)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+
+      - name: Merge Allure results
         run: |
-          DATE=$(date +'%Y-%m-%d')
-          mkdir -p allure-report/Main/${{ matrix.type }}/$DATE
-          npx allure generate allure-results -o allure-report/Main/${{ matrix.type }}/$DATE
-          echo "Allure Main ${{ matrix.type }} report generated for $DATE"
+          mkdir merged-results
+          cp -r allure-*/* merged-results/ || true
+
+      - name: Restore Allure history
+        run: |
+          mkdir -p merged-results/history
+          cp -r gh-pages/history/* merged-results/history/ || true
+
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline
+
+      - name: Generate Allure report
+        run: |
+          allure generate merged-results -o allure-report
 
       - name: Deploy to GitHub Pages
-        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GH_PAT }}
@@ -73,18 +86,26 @@ jobs:
           keep_files: true
 
 
-
 # name: Playwright Main Tests with Allure
 
 # on:
+#   workflow_dispatch:
 #   push:
 #     branches: [ main ]
 #   pull_request:
 #     branches: [ main ]
 
 # jobs:
-#   main-unauthorized:
+#   main:
 #     runs-on: ubuntu-latest
+
+#     strategy:
+#       matrix:
+#         type: [unauthorized, authorized, unregistered]
+
+#     # env:
+#     #   TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+#     #   TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
 #     steps:
 #       - name: Checkout repository (main)
@@ -110,14 +131,14 @@ jobs:
 #         run: npm ci
 
 #       - name: Install Playwright browsers
-#         run: npx playwright install
+#         run: npx playwright install --with-deps
 
 #       - name: Install Allure CLI
 #         run: npm install -g allure-commandline
 
 #       - name: Run Playwright Main tests
 #         run: |
-#           npm run test:main:unauthorized \
+#           npm run test:main:${{ matrix.type }} \
 #             --reporter=list,allure-playwright \
 #             --retries=2
 #         continue-on-error: true
@@ -126,9 +147,9 @@ jobs:
 #         if: always()
 #         run: |
 #           DATE=$(date +'%Y-%m-%d')
-#           mkdir -p allure-report/Main/Unauthorized/$DATE
-#           npx allure generate allure-results -o allure-report/Main/Unauthorized/$DATE
-#           echo "Allure Main Unauthorized report generated for $DATE"
+#           mkdir -p allure-report/Main/${{ matrix.type }}/$DATE
+#           npx allure generate allure-results -o allure-report/Main/${{ matrix.type }}/$DATE
+#           echo "Allure Main ${{ matrix.type }} report generated for $DATE"
 
 #       - name: Deploy to GitHub Pages
 #         if: always()
@@ -139,58 +160,5 @@ jobs:
 #           publish_branch: gh-pages
 #           keep_files: true
 
-#   main-authorized:
-#     runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout repository (main)
-#         uses: actions/checkout@v4
 
-#       - name: Checkout gh-pages (for history)
-#         uses: actions/checkout@v4
-#         with:
-#           ref: gh-pages
-#           path: gh-pages
-
-#       - name: Restore previous Allure reports
-#         run: |
-#           mkdir -p allure-report
-#           cp -R gh-pages/* allure-report/ || true
-
-#       - name: Setup Node.js
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: 20.18.0
-
-#       - name: Install dependencies
-#         run: npm ci
-
-#       - name: Install Playwright browsers
-#         run: npx playwright install
-
-#       - name: Install Allure CLI
-#         run: npm install -g allure-commandline
-
-#       - name: Run Playwright Main tests
-#         run: |
-#           npm run test:main:authorized \
-#             --reporter=list,allure-playwright \
-#             --retries=2
-#         continue-on-error: true
-    
-#       - name: Generate Allure report (Main)
-#         if: always()
-#         run: |
-#           DATE=$(date +'%Y-%m-%d')
-#           mkdir -p allure-report/Main/Authorized/$DATE
-#           npx allure generate allure-results -o allure-report/Main/Authorized/$DATE
-#           echo "Allure Main Authorized report generated for $DATE"
-
-#       - name: Deploy to GitHub Pages
-#         if: always()
-#         uses: peaceiris/actions-gh-pages@v4
-#         with:
-#           github_token: ${{ secrets.GH_PAT }}
-#           publish_dir: ./allure-report
-#           publish_branch: gh-pages
-#           keep_files: true
