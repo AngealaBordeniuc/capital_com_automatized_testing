@@ -1,0 +1,526 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "CFDs sind komplexe Instrumente und beinhalten wegen der Hebelwirkung ein hohes Risiko, schnell Geld zu verlieren. 76 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel mit diesem Anbieter. Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leisten können, das hohe Risiko einzugehen, Ihr Geld zu verlieren. Bitte beachten Sie unsere Risikoaufklärung" [ref=e3]:
+      - generic [ref=e6]:
+        - text: CFDs sind komplexe Instrumente und beinhalten wegen der Hebelwirkung ein hohes Risiko, schnell Geld zu verlieren.
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - strong [ref=e9]: 76 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+            - text: .
+          - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leisten können, das hohe Risiko einzugehen, Ihr Geld zu verlieren. Bitte beachten Sie unsere
+          - link "Risikoaufklärung" [ref=e10] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - link "PERSÖNLICH" [ref=e16] [cursor=pointer]:
+          - /url: /de-de
+        - link "PROFESSIONELL" [ref=e17] [cursor=pointer]:
+          - /url: /de-de/professional-clients
+      - generic [ref=e18]:
+        - link "Support" [ref=e19] [cursor=pointer]:
+          - /url: /de-de/help
+        - button "de" [ref=e21] [cursor=pointer]:
+          - strong [ref=e23]: de
+    - generic [ref=e24]:
+      - link [ref=e25] [cursor=pointer]:
+        - /url: /de-de
+        - img [ref=e26]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - link "Handel" [ref=e40] [cursor=pointer]:
+            - /url: /de-de/ways-to-trade
+          - generic:
+            - generic:
+              - generic:
+                - link "Handel":
+                  - /url: /de-de/ways-to-trade
+                  - generic:
+                    - generic: Handel
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Traden lernen
+                - generic:
+                  - generic:
+                    - strong: Handelsplattformen
+                - generic:
+                  - generic:
+                    - strong: Trading-Information
+                - generic:
+                  - generic:
+                    - strong: Trading-Tools
+        - generic [ref=e41]:
+          - link "Märkte" [ref=e44] [cursor=pointer]:
+            - /url: /de-de/markets
+          - generic:
+            - generic:
+              - generic:
+                - link "Märkte":
+                  - /url: /de-de/markets
+                  - generic:
+                    - generic: Märkte
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Unsere Märkte
+                - generic:
+                  - generic:
+                    - strong: Marktaktualisierungen
+        - generic [ref=e45]:
+          - link "Preisgestaltung" [ref=e48] [cursor=pointer]:
+            - /url: /de-de/ways-to-trade/fees-and-charges
+          - generic:
+            - generic:
+              - generic:
+                - link "Preisgestaltung":
+                  - /url: /de-de/ways-to-trade/fees-and-charges
+                  - generic:
+                    - generic: Preisgestaltung
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Preisgestaltung
+        - generic [ref=e49]:
+          - link "Lernen" [ref=e52] [cursor=pointer]:
+            - /url: /de-de/learn
+          - generic:
+            - generic:
+              - generic:
+                - link "Lernen":
+                  - /url: /de-de/learn
+                  - generic:
+                    - generic: Lernen
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Für Trading-Anfänger
+                - generic:
+                  - generic:
+                    - strong: Für erfahrene Händler
+        - generic [ref=e53]:
+          - link "Über uns" [ref=e56] [cursor=pointer]:
+            - /url: /de-de/about-us
+          - generic:
+            - generic:
+              - generic:
+                - link "Über uns":
+                  - /url: /de-de/about-us
+                  - generic:
+                    - generic: Über uns
+              - generic:
+                - generic:
+                  - generic:
+                    - strong: Über uns
+                - generic:
+                  - generic:
+                    - strong: Hilfe erhalten
+                - generic:
+                  - link "Rechtliche Dokumentation":
+                    - /url: /de-de/terms-and-policies
+                    - strong: Rechtliche Dokumentation
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - button "Anmelden" [ref=e59] [cursor=pointer]: Anmelden
+          - button "Registrieren" [ref=e60] [cursor=pointer]: Registrieren
+        - link "Plattform öffnen user":
+          - /url: /trading/platform/
+          - text: Plattform öffnen
+          - img "user"
+  - generic [ref=e61]:
+    - paragraph [ref=e64]:
+      - link "Startseite•" [ref=e65] [cursor=pointer]:
+        - /url: /de-de
+      - link "Trading-Plattformen •" [ref=e66] [cursor=pointer]:
+        - /url: /de-de/trading-platforms
+      - text: MT4
+    - generic [ref=e67]:
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - heading "Traden Sie mit MetaTrader 4" [level=1] [ref=e75]
+          - paragraph [ref=e77]: Schalten Sie eine äußerst anpassbare Trading-Plattform mit Tools für die fortgeschrittene technische Analyse frei. Verbinden Sie Ihre Konten bei Capital.com und MT4 noch heute.
+        - generic [ref=e79]:
+          - button "Konto erstellen" [ref=e80] [cursor=pointer]
+          - link "Mehr erfahren" [ref=e81] [cursor=pointer]:
+            - /url: "##connectaccounttomt4"
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - heading "Das fortschrittliche Charting in Ihrer Hand" [level=2] [ref=e86]
+          - generic [ref=e87]: Nutzen Sie die Technologie des MetaTrader 4 mit Capital.com bereits heute
+        - generic [ref=e88]:
+          - generic [ref=e90]:
+            - heading "Erhalten Sie tiefere Einblicke" [level=3] [ref=e91]
+            - paragraph [ref=e93]: Verfeinern Sie Ihre technische Analyse mit einer großen Auswahl an individuellen Indikatoren, von Pivot-Punkten bis hin zu angepassten Oszillatoren und Varianten des gleitenden Durchschnitts.
+          - generic [ref=e95]:
+            - heading "Passen Sie Ihr Trading-Hub individuell an" [level=3] [ref=e96]
+            - paragraph [ref=e98]: Erstellen Sie Ihre eigenen Indikatoren und Skripte – und personalisieren Sie Ihr Dashboard, Ihre Charts, Symbolleisten und mehr.
+          - generic [ref=e100]:
+            - heading "Treffen Sie besser informierte Entscheidungen" [level=3] [ref=e101]
+            - paragraph [ref=e103]: Stärken Sie Ihre Analyse mit den Smart Trader Tools, darunter 30 beliebte Indikatoren und 24 Analyseobjekte.
+          - generic [ref=e105]:
+            - heading "Managen Sie Ihre Positionen schnell" [level=3] [ref=e106]
+            - paragraph [ref=e108]: Greifen Sie auf mehrere Chart-Setups zu und passen Sie Ihre Layouts, Vorlagen sowie Profile an Ihren Stil an.
+          - generic [ref=e110]:
+            - heading "Verfeinern Sie Ihre Trading-Strategien" [level=3] [ref=e111]
+            - paragraph [ref=e113]: Optimieren Sie Ihren Ansatz mit Feedback und Einblicken in Echtzeit über das Guardian Angel-Tool.
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - heading "Verbinden Sie Ihr Konto mit MT4 in drei Schritten" [level=2] [ref=e118]
+          - paragraph [ref=e120]: Nutzen Sie die Vorteile der neuesten technologischen Innovationen.
+        - generic [ref=e121]:
+          - generic [ref=e124]:
+            - heading "Schritt 1" [level=3] [ref=e125]
+            - generic [ref=e126]: Öffnen Sie Ihr Capital.com-Konto, um MT4 zu aktivieren (stellen Sie sicher, dass Sie bereits für das Traden verifiziert sind).
+            - button "Konto eröffnen" [ref=e127] [cursor=pointer]:
+              - generic [ref=e128]: Konto eröffnen
+          - generic [ref=e131]:
+            - heading "Schritt 2" [level=3] [ref=e132]
+            - generic [ref=e133]: Erstellen Sie Ihr MT4-Konto in unserer App oder auf unserer Web-Plattform, indem Sie den Anweisungen in unserer Schritt-für-Schritt-Anleitung folgen.
+            - link "Wie man ein MT4-Konto erstellt" [ref=e134] [cursor=pointer]:
+              - /url: https://help.capital.com/hc/en-us/articles/4404606589586-How-to-create-a-MetaTrader4-MT4-account
+              - generic [ref=e135]: Wie man ein MT4-Konto erstellt
+          - generic [ref=e138]:
+            - heading "Schritt 3" [level=3] [ref=e139]
+            - generic [ref=e140]: Laden Sie MT4 für mobile Betriebssysteme, das Web oder den Laptop herunter. Geben Sie Ihre MT4-Anmeldedaten im MT4-Client ein. Jetzt sind Sie bereit, um mit MT4 zu traden.
+            - link "Wo Sie Ihre MT4-Anmeldedaten finden" [ref=e141] [cursor=pointer]:
+              - /url: https://help.capital.com/hc/de/articles/4404606603538-Wo-finde-ich-meine-Zugangsdaten-f%C3%BCr-MetaTrader4-MT4
+              - generic [ref=e142]: Wo Sie Ihre MT4-Anmeldedaten finden
+        - button "Konto erstellen" [ref=e144] [cursor=pointer]
+      - generic [ref=e146]:
+        - heading "Laden Sie MT4 herunter" [level=2] [ref=e148]
+        - generic [ref=e149]:
+          - generic [ref=e151]:
+            - heading "Für Mac" [level=3] [ref=e152]
+            - link "Herunterladen" [ref=e153] [cursor=pointer]:
+              - /url: https://download.mql5.com/cdn/web/metaquotes.software.corp/mt4/MetaTrader4.dmg?utm_source=www.metatrader4.com&utm_campaign=download.mt4.macos
+              - generic [ref=e154]: Herunterladen
+          - generic [ref=e156]:
+            - heading "Für Windows" [level=3] [ref=e157]
+            - link "Herunterladen" [ref=e158] [cursor=pointer]:
+              - /url: https://download.mql5.com/cdn/web/capital.com.sv/mt4/capital.com4setup.exe
+              - generic [ref=e159]: Herunterladen
+          - generic [ref=e161]:
+            - heading "Google Play" [level=3] [ref=e162]
+            - link "Herunterladen" [ref=e163] [cursor=pointer]:
+              - /url: https://download.mql5.com/cdn/mobile/mt4/android?server=Capital.com-Real,Capital.com-Demo
+              - generic [ref=e164]: Herunterladen
+          - generic [ref=e166]:
+            - heading "App Store" [level=3] [ref=e167]
+            - link "Herunterladen" [ref=e168] [cursor=pointer]:
+              - /url: https://download.mql5.com/cdn/mobile/mt4/ios?server=Capital.com-Real,Capital.com-Demo
+              - generic [ref=e169]: Herunterladen
+          - generic [ref=e171]:
+            - heading "Web-Terminal" [level=3] [ref=e172]
+            - link "Herunterladen" [ref=e173] [cursor=pointer]:
+              - /url: https://capital.com/mt4
+              - generic [ref=e174]: Herunterladen
+      - generic [ref=e177]:
+        - heading "Warum Capital.com?" [level=2] [ref=e179]
+        - generic [ref=e180]:
+          - generic [ref=e183]:
+            - heading "Ein vertrauenswürdiger globaler Broker" [level=3] [ref=e184]
+            - generic [ref=e186]:
+              - text: Schließen Sie sich einer Community von 845,000+ Tradern aus der ganzen Welt an. Unsere Kunden lieben uns so sehr, dass sie mit uns ein Volumen von mehr als 1 Bill. $ gehandelt haben.
+              - superscript [ref=e187]: "1"
+            - link "Erfahren Sie mehr über uns" [ref=e188] [cursor=pointer]:
+              - /url: /de-de/about-us
+              - generic [ref=e189]: Erfahren Sie mehr über uns
+          - generic [ref=e192]:
+            - heading "Schnelle Kontoeröffnung" [level=3] [ref=e193]
+            - generic [ref=e194]: Die Eröffnung eines Kontos ist mit uns schnell und einfach – Sie könnten sich noch heute anmelden und traden.
+            - link "Jetzt registrieren" [ref=e195] [cursor=pointer]:
+              - /url: /trading/signup
+              - generic [ref=e196]: Jetzt registrieren
+          - generic [ref=e199]:
+            - heading "Ihre Märkte, Ihre Hebelwirkung" [level=3] [ref=e200]
+            - generic [ref=e201]: Traden Sie CFDs auf den Germany 40, EUR/USD, Gold, Aktien sowie Tausende weitere und wählen Sie die Hebelwirkung, die zu Ihnen passt.
+            - link "Entdecken Sie, was Sie traden können" [ref=e202] [cursor=pointer]:
+              - /url: /de-de/markets
+              - generic [ref=e203]: Entdecken Sie, was Sie traden können
+          - generic [ref=e206]:
+            - heading "Klare, wettbewerbsfähige Gebühren" [level=3] [ref=e207]
+            - generic [ref=e208]: 0 % Provision, immer. 0 % Übernachtfinanzierung für Aktien und Krypto-CFDs ohne Hebelwirkung. Überprüfen Sie die anderen geltenden Gebühren mit unserer übersichtlichen Gebührenstruktur.
+            - link "Gebühren überprüfen" [ref=e209] [cursor=pointer]:
+              - /url: /de-de/ways-to-trade/fees-and-charges
+              - generic [ref=e210]: Gebühren überprüfen
+          - generic [ref=e213]:
+            - heading "Kompetenter Support auf Deutsch" [level=3] [ref=e214]
+            - generic [ref=e215]: Haben Sie Fragen zu Ihrem Konto oder zum Trading mit uns? Kontaktieren Sie unser freundliches, hilfsbereites Team per Telefon, E-Mail, Whatsapp oder Live-Chat. Auf Englisch 24/7, auf Deutsch während der Geschäftszeiten.
+            - link "Kontakt" [ref=e216] [cursor=pointer]:
+              - /url: /de-de/contact-us
+              - generic [ref=e217]: Kontakt
+          - generic [ref=e220]:
+            - heading "Alles, was Sie zum Traden brauchen" [level=3] [ref=e221]
+            - generic [ref=e222]: Vergleichen Sie mehrere Märkte auf schnellen Charts. Finden Sie handelbare Muster mit 100+ Indikatoren. Traden Sie direkt aus den Nachrichten auf der Plattform. Eine nahtlose Integration von TradingView und MT4. Es gibt noch vieles mehr, aber uns geht der Platz aus!
+            - link "Mehr Wege zur Unterstützung Ihres Tradings" [ref=e223] [cursor=pointer]:
+              - /url: /de-de/learn/trading-strategies
+              - generic [ref=e224]: Mehr Wege zur Unterstützung Ihres Tradings
+        - button "Registrieren" [ref=e226] [cursor=pointer]
+      - generic [ref=e229]:
+        - generic [ref=e230]:
+          - heading "Bereit, einem führenden Broker beizutreten?" [level=2] [ref=e231]
+          - generic [ref=e232]: Treten Sie unserer weltweiten Trader-Community bei
+        - generic [ref=e233]:
+          - button [ref=e235] [cursor=pointer]
+          - generic [ref=e238]: 1. Erstellen Sie Ihr Konto
+          - generic [ref=e239]: 2. Tätigen Sie Ihre erste Einzahlung
+          - generic [ref=e240]: 3. Beginnen Sie mit dem Trading
+      - heading "Häufig gestellte Fragen" [level=2] [ref=e243]
+      - generic [ref=e245]:
+        - group [ref=e246]:
+          - generic "Was ist ein MT4-Broker?" [ref=e247] [cursor=pointer]:
+            - heading "Was ist ein MT4-Broker?" [level=3] [ref=e248]
+        - group [ref=e249]:
+          - generic "Ist MT4 ein Broker?" [ref=e250] [cursor=pointer]:
+            - heading "Ist MT4 ein Broker?" [level=3] [ref=e251]
+        - group [ref=e252]:
+          - generic "Warum benutzen Traders MetaTrader 4?" [ref=e253] [cursor=pointer]:
+            - heading "Warum benutzen Traders MetaTrader 4?" [level=3] [ref=e254]
+        - group [ref=e255]:
+          - generic "Ist MetaTrader 4 gut für Einsteiger geeignet?" [ref=e256] [cursor=pointer]:
+            - heading "Ist MetaTrader 4 gut für Einsteiger geeignet?" [level=3] [ref=e257]
+        - group [ref=e258]:
+          - generic "Kann ich MT4 in meinem Demo-Trading-Konto verwenden?" [ref=e259] [cursor=pointer]:
+            - heading "Kann ich MT4 in meinem Demo-Trading-Konto verwenden?" [level=3] [ref=e260]
+        - group [ref=e261]:
+          - generic "Wie viel kostet MetaTrader 4?" [ref=e262] [cursor=pointer]:
+            - heading "Wie viel kostet MetaTrader 4?" [level=3] [ref=e263]
+        - group [ref=e264]:
+          - generic "Wie erstellt man ein MetaTrader4-Konto?" [ref=e265] [cursor=pointer]:
+            - heading "Wie erstellt man ein MetaTrader4-Konto?" [level=3] [ref=e266]
+          - text: • • • • • • • •
+        - group [ref=e267]:
+          - generic "Wo finde ich meine Zugangsdaten für MetaTrader 4?" [ref=e268] [cursor=pointer]:
+            - heading "Wo finde ich meine Zugangsdaten für MetaTrader 4?" [level=3] [ref=e269]
+      - paragraph [ref=e272]:
+        - superscript [ref=e273]: "1"
+        - text: Die angegebenen Informationen beziehen sich auf die Capital Com Group.
+  - contentinfo [ref=e275]:
+    - generic [ref=e276]:
+      - link [ref=e277] [cursor=pointer]:
+        - /url: /de-de
+        - img [ref=e278]
+      - generic [ref=e286]:
+        - link [ref=e287] [cursor=pointer]:
+          - /url: https://www.facebook.com/profile.php?id=100093678124596
+        - link [ref=e288] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e289] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcom_de/
+        - link [ref=e290] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCi0KTKzvmLkDunVCrD2-BAg
+      - generic [ref=e291]:
+        - link [ref=e292] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=98dc386e-a576-46a8-8f81-b5e96e9deded&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e293] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=98dc386e-a576-46a8-8f81-b5e96e9deded&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e294] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=98dc386e-a576-46a8-8f81-b5e96e9deded&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e295]:
+      - generic [ref=e296]:
+        - generic [ref=e297]:
+          - generic [ref=e298]:
+            - generic [ref=e299]: "Land / Region:"
+            - button "Germany" [ref=e300] [cursor=pointer]: Germany
+          - generic [ref=e302]: •
+          - generic [ref=e303]:
+            - generic [ref=e304]: "Anmelden:"
+            - button "German" [ref=e305] [cursor=pointer]
+        - generic [ref=e306]:
+          - generic [ref=e307]: "Unsere Kontakte:"
+          - link "+49 3046690292" [ref=e310] [cursor=pointer]:
+            - /url: tel:+49 3046690292
+          - generic [ref=e311]: •
+          - link "support@capital.com" [ref=e313] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+      - generic [ref=e314]:
+        - generic [ref=e315]:
+          - link "Handel" [ref=e317] [cursor=pointer]:
+            - /url: /de-de/ways-to-trade
+            - strong [ref=e318]: Handel
+          - generic [ref=e319]:
+            - generic [ref=e320]:
+              - generic [ref=e321]: Traden lernen
+              - generic [ref=e322]:
+                - link "CFD-Trading" [ref=e324] [cursor=pointer]:
+                  - /url: /de-de/ways-to-trade/cfd-trading
+                - link "Knock-outs" [ref=e326] [cursor=pointer]:
+                  - /url: /de-de/ways-to-trade/knock-outs
+            - generic [ref=e327]:
+              - generic [ref=e328]: Handelsplattformen
+              - generic [ref=e329]:
+                - link "Trading-Plattformen" [ref=e331] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms
+                - link "Web-Plattform" [ref=e333] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/web-platform
+                - link "TradingView" [ref=e335] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/trading-view
+                - link "Mobile Apps" [ref=e337] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/mobile-apps
+                - link "MT4" [ref=e339] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/mt4
+                - link "MT5" [ref=e341] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/mt5
+            - generic [ref=e342]:
+              - generic [ref=e343]: Trading-Information
+              - generic [ref=e344]:
+                - link "Margin-Calls" [ref=e346] [cursor=pointer]:
+                  - /url: /de-de/ways-to-trade/margin-calls
+                - link "Betrugsprävention" [ref=e348] [cursor=pointer]:
+                  - /url: /de-de/ways-to-trade/fraud-awareness
+                - link "Wie Auszahlungen funktionieren" [ref=e350] [cursor=pointer]:
+                  - /url: /de-de/ways-to-trade/how-withdrawals-work
+            - generic [ref=e351]:
+              - generic [ref=e352]: Trading-Tools
+              - generic [ref=e353]:
+                - link "CFD-Trading-Rechner" [ref=e355] [cursor=pointer]:
+                  - /url: /de-de/ways-to-trade/cfd-trading/cfd-calculator
+                - link "Demo-Trading" [ref=e357] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/demo-account
+        - generic [ref=e358]:
+          - link "Märkte" [ref=e360] [cursor=pointer]:
+            - /url: /de-de/markets
+            - strong [ref=e361]: Märkte
+          - generic [ref=e362]:
+            - generic [ref=e363]:
+              - generic [ref=e364]: Unsere Märkte
+              - generic [ref=e365]:
+                - link "Währungen" [ref=e367] [cursor=pointer]:
+                  - /url: /de-de/markets/forex
+                - link "Aktien" [ref=e369] [cursor=pointer]:
+                  - /url: /de-de/markets/shares
+                - link "Indizes" [ref=e371] [cursor=pointer]:
+                  - /url: /de-de/markets/indices
+                - link "Rohstoffe" [ref=e373] [cursor=pointer]:
+                  - /url: /de-de/markets/commodities
+                - link "Kryptowährungen" [ref=e375] [cursor=pointer]:
+                  - /url: /de-de/markets/cryptocurrencies
+            - generic [ref=e376]:
+              - generic [ref=e377]: Marktaktualisierungen
+              - link "Marktanalyse" [ref=e380] [cursor=pointer]:
+                - /url: /de-de/analysis
+            - link "Alle Märkte & Instrumente" [ref=e382] [cursor=pointer]:
+              - /url: /de-de/markets-and-instruments-sitemap
+        - generic [ref=e383]:
+          - link "Preisgestaltung" [ref=e385] [cursor=pointer]:
+            - /url: /de-de/ways-to-trade/fees-and-charges
+            - strong [ref=e386]: Preisgestaltung
+          - generic [ref=e388]:
+            - generic [ref=e389]: Preisgestaltung
+            - generic [ref=e390]:
+              - link "Kosten und Gebühren" [ref=e392] [cursor=pointer]:
+                - /url: /de-de/ways-to-trade/fees-and-charges
+              - link "Unser Geschäftsmodell" [ref=e394] [cursor=pointer]:
+                - /url: /de-de/about-us/how-capital-makes-money
+              - link "Die Preisgestaltung von Capital.com" [ref=e396] [cursor=pointer]:
+                - /url: /de-de/ways-to-trade/pricing
+              - link "Preisgestaltung der Märkte" [ref=e398] [cursor=pointer]:
+                - /url: /de-de/about-us/how-our-markets-are-priced
+        - generic [ref=e399]:
+          - link "Lernen" [ref=e401] [cursor=pointer]:
+            - /url: /de-de/learn
+            - strong [ref=e402]: Lernen
+          - generic [ref=e403]:
+            - generic [ref=e404]:
+              - generic [ref=e405]: Für Trading-Anfänger
+              - generic [ref=e406]:
+                - link "Trading-Essentials" [ref=e408] [cursor=pointer]:
+                  - /url: /de-de/learn/essentials
+                - link "Risikomanagement" [ref=e410] [cursor=pointer]:
+                  - /url: /de-de/learn/risk-management
+                - link "Marktleitfäden" [ref=e412] [cursor=pointer]:
+                  - /url: /de-de/learn/market-guides
+                - link "Demo-Trading" [ref=e414] [cursor=pointer]:
+                  - /url: /de-de/trading-platforms/demo-account
+                - link "Investmate app" [ref=e416] [cursor=pointer]:
+                  - /url: /de-de/learn/investmate-trading-app
+                - link "Finanzglossar" [ref=e418] [cursor=pointer]:
+                  - /url: /de-de/learn/glossary
+            - generic [ref=e419]:
+              - generic [ref=e420]: Für erfahrene Händler
+              - generic [ref=e421]:
+                - link "Trading-Strategien" [ref=e423] [cursor=pointer]:
+                  - /url: /de-de/learn/trading-strategies
+                - link "Technische Analyse" [ref=e425] [cursor=pointer]:
+                  - /url: /de-de/learn/technical-analysis
+                - link "Trading-Psychologie" [ref=e427] [cursor=pointer]:
+                  - /url: /de-de/learn/trading-psychology
+                - link "IPO-Handel" [ref=e429] [cursor=pointer]:
+                  - /url: /de-de/learn/ipo
+                - link "Marktanalyse" [ref=e431] [cursor=pointer]:
+                  - /url: /de-de/analysis
+                - link "Webinare" [ref=e433] [cursor=pointer]:
+                  - /url: /de-de/learn/webinars
+        - generic [ref=e434]:
+          - link "Über uns" [ref=e436] [cursor=pointer]:
+            - /url: /de-de/about-us
+            - strong [ref=e437]: Über uns
+          - generic [ref=e438]:
+            - generic [ref=e439]:
+              - generic [ref=e440]: Über uns
+              - generic [ref=e441]:
+                - link "Führungsteam" [ref=e443] [cursor=pointer]:
+                  - /url: /de-de/about-us/our-leadership
+                - link "Warum Capital.com?" [ref=e445] [cursor=pointer]:
+                  - /url: /de-de/why-capital
+                - link "Unsere Geschichte" [ref=e447] [cursor=pointer]:
+                  - /url: /de-de/about-us/our-history
+                - link "Unsere Büros" [ref=e449] [cursor=pointer]:
+                  - /url: /de-de/about-us/our-offices
+                - link "Kundengelder" [ref=e451] [cursor=pointer]:
+                  - /url: /de-de/about-us/what-capital-does-with-your-money
+                - link "Unsere Kontakte" [ref=e453] [cursor=pointer]:
+                  - /url: /de-de/contact-us
+                - link "Ist Capital.com sicher?" [ref=e455] [cursor=pointer]:
+                  - /url: /de-de/security-measures
+                - link "Viktor Prokopenya" [ref=e457] [cursor=pointer]:
+                  - /url: /de-de/about-us/viktor-prokopenya
+            - generic [ref=e458]:
+              - generic [ref=e459]: Hilfe erhalten
+              - generic [ref=e460]:
+                - link "Hilfe" [ref=e462] [cursor=pointer]:
+                  - /url: /de-de/help
+                - link "Kunden-Verwundbarkeit" [ref=e464] [cursor=pointer]:
+                  - /url: /de-de/help/client-vulnerability
+            - generic [ref=e465]:
+              - link "Rechtliche Dokumentation" [ref=e466] [cursor=pointer]:
+                - /url: /de-de/terms-and-policies
+              - link "Beschwerdeverfahren (CCSV)" [ref=e469] [cursor=pointer]:
+                - /url: /de-de/terms-and-policies/complaints-procedure
+    - generic [ref=e471]:
+      - paragraph [ref=e472]:
+        - text: CFDs sind komplexe Instrumente und beinhalten wegen der Hebelwirkung ein hohes Risiko, schnell Geld zu verlieren.
+        - generic [ref=e473]:
+          - generic [ref=e474]:
+            - strong [ref=e475]: 76 % der Kleinanlegerkonten verlieren Geld beim CFD-Handel mit diesem Anbieter
+            - text: .
+          - text: Sie sollten überlegen, ob Sie verstehen, wie CFD funktionieren und ob Sie es sich leisten können, das hohe Risiko einzugehen, Ihr Geld zu verlieren. Bitte beachten Sie unsere
+          - link "Risikoaufklärung" [ref=e476] [cursor=pointer]:
+            - /url: https://capital.com/risk-disclosure-policy
+      - paragraph [ref=e477]:
+        - text: "Risikowarnung: Der Wert von Aktien und ETFs, die über ein Aktienhandelskonto gekauft werden, kann steigen und fallen. Die Wertentwicklung in der Vergangenheit ist keine Garantie für zukünftige Ergebnisse."
+        - text: Transaktionen mit nicht lieferbaren außerbörslichen Instrumenten wie Knock-out-Optionen und CFDs sind komplexe Finanzprodukte, die mit einem hohen Risiko verbunden sind, das gesamte investierte Kapital zu verlieren. Derartige Produkte sind nicht für alle Anleger geeignet, da sie sowohl zu Gewinnen als auch zu erheblichen Verlusten führen können. Bevor Sie sich an dieser Art des Handels beteiligen, sollten Sie sollten abwägen, ob Sie die Funktionsweise dieser Instrumente verstehen und ob Sie es sich leisten können, das hohe Risiko des Geldverlusts einzugehen.
+        - text: Für professionelle Kunden besteht das Risiko, mehr als die ursprüngliche Einzahlung zu verlieren. Die Informationen auf dieser Website sind allgemein gehalten und berücksichtigen weder Ihre finanzielle Situation noch Ihre Ziele oder Bedürfnisse. Bitte prüfen Sie unsere Rechtsdokumente und vergewissern Sie sich, dass Sie die Risiken vollständig verstehen, bevor Sie eine Handelsentscheidung treffen. Wir ermutigen Sie, die Schulungsdienste unseres Unternehmens in Anspruch zu nehmen, um die Risiken besser zu verstehen, bevor Sie sich an Handelsgeschäften beteiligen.
+      - paragraph [ref=e478]: "Capital Com SV Investments Limited ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer HE 354252, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 319/17) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+      - paragraph [ref=e479]: "Capital Com Group Ltd ist ein in der Republik Zypern ansässiges Unternehmen mit der Registrierungsnummer ΗΕ 446198, welches von der Cyprus Securities and Exchange Commission (Lizenznummer 463/25) zugelassen und reguliert ist. Eingetragener Geschäftssitz: Vasileiou Makedonos 8, Kinnis Business Center, 2. Stock, 3040, Limassol, Zypern."
+      - paragraph [ref=e480]: Die Informationen auf dieser Seite richten sich nicht an Personen, die in den Vereinigten Staaten, Kanada und Belgien oder in einem anderen Land außerhalb des EWR leben. Zudem sind sie nicht für die Verbreitung an oder die Nutzung durch Personen in Ländern oder Gerichtsbarkeiten bestimmt, in denen eine solche Verbreitung oder Nutzung gegen die dort geltenden Gesetze oder Regulierungen verstoßen würde.
+    - generic [ref=e481]:
+      - paragraph [ref=e482]: © 2026 Capital Com SV Investments Limited
+      - generic [ref=e483]:
+        - link "Sitemap" [ref=e484] [cursor=pointer]:
+          - /url: /de-de/sitemap
+        - link "Cookie-Einstellungen" [ref=e485] [cursor=pointer]:
+          - /url: ""
+        - link "Richtlinien" [ref=e486] [cursor=pointer]:
+          - /url: /de-de/terms-and-policies/regulations
+        - link "Nutzungsbedingungen und Richtlinien" [ref=e487] [cursor=pointer]:
+          - /url: /de-de/terms-and-policies
+        - link "Beschwerdeverfahren" [ref=e488] [cursor=pointer]:
+          - /url: /de-de/terms-and-policies/complaints-procedure
+  - generic:
+    - generic: Cookie settings
+  - button [ref=e489] [cursor=pointer]
+  - alert [ref=e491]: Beginnen Sie das Trading mit MetaTrader 4 | Capital.com Deutschland
+```
