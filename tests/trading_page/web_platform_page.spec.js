@@ -41,8 +41,7 @@ licenses.forEach((license) => {
       await handleOptionalPopups(page);
 
       const tradingMenu = new TradingSectionMenu(page);
-      const webPlatformPage = new WebPlatformPage(page);
-      await page.pause()
+      const webPlatformPage = new WebPlatformPage(page);    
 
       await tradingMenu.openWebPlatformPage();
 
