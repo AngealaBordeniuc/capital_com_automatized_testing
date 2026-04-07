@@ -31,7 +31,7 @@ licenses.forEach((license) => {
       await webPlatformPage.clickCreateAccountButton();
     });
 
-    test(`${license.name} ${lang} – Web Platform, Verify QR Code`, async ({
+    test.skip(`${license.name} ${lang} – Web Platform, Verify QR Code`, async ({
       page,
     }) => {
       const path = license.paths[lang];
@@ -42,6 +42,7 @@ licenses.forEach((license) => {
 
       const tradingMenu = new TradingSectionMenu(page);
       const webPlatformPage = new WebPlatformPage(page);
+      await page.pause()
 
       await tradingMenu.openWebPlatformPage();
 

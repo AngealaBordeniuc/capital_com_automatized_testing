@@ -14,7 +14,7 @@ export class WebPlatformPage {
     await handleModalWindowSignUp(this.page, "/trading/platform/");
   }
 
-  async getQrUrl() {
+  async getQrUrl() {    
     const area =  this.page.locator('h2.c5pQ').nth(3);
     await area.scrollIntoViewIfNeeded();
     await expect(area).toBeVisible({ timeout: 10000 });        

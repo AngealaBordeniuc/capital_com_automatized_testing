@@ -15,10 +15,11 @@ licenses.forEach((license) => {
       page,
     }) => {
       const path = license.paths[lang];     
+      await page.pause()
 
       await page.goto(path, {
         waitUntil: "domcontentloaded",
-      });
+      }); 
 
       await handleOptionalPopups(page);
 

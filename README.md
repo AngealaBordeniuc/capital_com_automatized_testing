@@ -1,9 +1,28 @@
-# Capital.com Automated Testing Framework
+# Capital.com Automation Testing Framework (Playwright/JavaScript)
+Automated UI testing framework built with Playwright, featuring CI/CD integration and Allure reporting.
 
 ## 📌 Project Overview
-This project is an automated testing framework built with Playwright for testing key sections of the Capital.com platform: Main, Trading, and About.
+This project represents an independently designed and implemented Playwright-based automation framework for testing key areas of the Capital.com platform: **Main, Trading, and About**.
 
-The framework covers multiple user scenarios and ensures application stability through automated smoke tests and CI/CD integration.
+The goal of the project is to simulate a **real-world QA automation environment**, focusing on scalability, maintainability, and integration with CI/CD pipelines.
+
+---
+
+## 🔥 Key Highlights
+- Independently designed and implemented a scalable automation framework
+- Multi-user testing: authorized, unauthorized, unregistered
+- CI/CD integration using GitHub Actions
+- Allure reporting with history published via GitHub Pages
+- Data-driven testing across multiple languages/locales
+- Token-based authentication using `localStorage`
+
+---
+
+## 📊 Test Metrics
+- Covers 3 core application areas (Main, Trading, About)
+- Multiple user states supported
+- Data-driven execution for multi-language validation
+- Automated execution on every push via CI/CD
 
 ---
 
@@ -25,31 +44,33 @@ The framework covers multiple user scenarios and ensures application stability t
   - Authorized users
   - Unauthorized users
   - Unregistered users
-- Multi-language testing using data-driven approach
+- Multi-language testing using a data-driven approach
 
 ---
 
 ## 🏗️ Architecture
-- Page Object Model (POM) for maintainability
-- Reusable utilities for:
+- Page Object Model (POM) for scalability and maintainability
+- Reusable utility methods for:
   - Handling pop-ups
-  - Cookie consent
-- Environment configuration using `.env`
-- Centralized `baseURL` configuration
+  - Cookie consent flows
+- Environment configuration via `.env`
+- Centralized `baseURL` configuration for flexible execution
 
 ---
 
 ## 🔐 Authentication
-Authorized tests use token-based authentication:
-- Login state is saved in `localStorage`
-- Reused across tests for faster execution
+Authorized scenarios are handled via token-based authentication:
+- Login state is stored in `localStorage`
+- Reused across tests to avoid repeated login steps
+- Improves test speed and stability
 
 ---
 
 ## 🔁 Test Strategy
-- DRY principle applied using reusable test logic (`forEach`)
-- Data-driven testing for different locales and environments
+- DRY principle applied using reusable logic (`forEach`)
+- Data-driven testing for multiple locales and environments
 - Focus on critical user flows (smoke testing)
+- Separation of concerns using Page Object Model
 
 ---
 
@@ -60,16 +81,19 @@ Authorized tests use token-based authentication:
   - Main
   - Trading
   - About
-- Execution history is preserved
+- Historical test results are preserved across runs
 
-👉 [View reports here](https://angealabordeniuc.github.io/capital_com_automatized_testing/)
+👉 **Live Reports:**  
+https://angealabordeniuc.github.io/capital_com_automatized_testing/
 
 ---
 
 ## ⚙️ CI/CD
-- GitHub Actions used for automated test execution
-- Tests run on every push / pull request
-- Reports are automatically generated and deployed
+- CI/CD pipeline implemented using GitHub Actions
+- Tests executed on:
+  - Push
+  - Pull Request
+- Automatic report generation and deployment to GitHub Pages
 
 ---
 
