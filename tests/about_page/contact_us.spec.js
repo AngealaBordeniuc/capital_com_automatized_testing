@@ -5,6 +5,7 @@ import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
 const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
+// const languages = ["EN"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
@@ -18,6 +19,7 @@ licenses.forEach((license) => {
       });
 
       await handleOptionalPopups(page);
+     
 
       const aboutMenu = new AboutSectionMenu(page);
       const contactUsPage = new ContactUsPage(page)
