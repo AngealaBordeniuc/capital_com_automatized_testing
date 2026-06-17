@@ -20,9 +20,10 @@ licenses.forEach((license) => {
       await handleOptionalPopups(page)
 
       const logIn = new LogIn(page)
-      await logIn.clickLogInButton()
+      await logIn.clickLogInButton()     
 
       await logIn.submitLogInForm("angelabordeniuc5@gmail.com", "Test2026$")
+      ;
       await expect(page).toHaveURL("/trading/platform/")          
       
     });

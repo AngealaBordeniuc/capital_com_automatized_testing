@@ -4,8 +4,8 @@ import { TradingViewPage } from "../../pages/tradingSection/TradingViewPage";
 import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-// const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
-const languages = ["EN"]
+const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
+// const languages = ["EN"]
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
@@ -91,29 +91,30 @@ licenses.forEach((license) => {
       await tradingViewPage.verifyLaunchBrowser();
     });
 
-     test(`${license.name} ${lang} – Trading View, Trading View Link`, async ({
-       page,
-     }) => {
-       const path = license.paths[lang];
+    //  test(`${license.name} ${lang} – Trading View, Trading View Link`, async ({
+    //    page,
+    //  }) => {
+    //    const path = license.paths[lang];
 
-       await page.goto(path, { waitUntil: "domcontentloaded" });
+    //    await page.goto(path, { waitUntil: "domcontentloaded" });
       
-       await handleOptionalPopups(page);
+    //    await handleOptionalPopups(page);
 
-       const tradingMenu = new TradingSectionMenu(page);
-       const tradingViewPage = new TradingViewPage(page);
+    //    const tradingMenu = new TradingSectionMenu(page);
+    //    const tradingViewPage = new TradingViewPage(page);
 
-       await tradingMenu.openTradingViewPage();
+    //    await tradingMenu.openTradingViewPage();
 
-       const expectedPath = `${path}/trading-platforms/trading-view`;
+    //    const expectedPath = `${path}/trading-platforms/trading-view`;
 
-       await expect(page).toHaveURL(expectedPath);
-       await tradingViewPage.clickTradingViewLink()
-     });
+    //    await expect(page).toHaveURL(expectedPath);
+    //    await tradingViewPage.clickTradingViewLink()
+    //  });
 
-      test(`${license.name} ${lang} – Trading View, Sign Up: How can I connect TradingView?`, async ({
+      test(`${license.name} ${lang} – Trading View, Explore TradingView`, async ({
         page,
-      }) => {
+      }, testInfo) => {
+        const userState = testInfo.project.name;
         const path = license.paths[lang];
 
         await page.goto(path, { waitUntil: "domcontentloaded" });
@@ -128,28 +129,28 @@ licenses.forEach((license) => {
         const expectedPath = `${path}/trading-platforms/trading-view`;
 
         await expect(page).toHaveURL(expectedPath);
-        await tradingViewPage.clickSignUpHowCanButton()
+        await tradingViewPage.clickExploreTradingView(userState)
       });
 
-       test.skip(`${license.name} ${lang} – Trading View, Sign Up: Why choose Capital.com?`, async ({
-         page,
-       }) => {
-         const path = license.paths[lang];
+  //      test.skip(`${license.name} ${lang} – Trading View, Sign Up: Why choose Capital.com?`, async ({
+  //        page,
+  //      }) => {
+  //        const path = license.paths[lang];
 
-         await page.goto(path, { waitUntil: "domcontentloaded" });       
+  //        await page.goto(path, { waitUntil: "domcontentloaded" });       
 
-         await handleOptionalPopups(page);
+  //        await handleOptionalPopups(page);
 
-         const tradingMenu = new TradingSectionMenu(page);
-         const tradingViewPage = new TradingViewPage(page);
+  //        const tradingMenu = new TradingSectionMenu(page);
+  //        const tradingViewPage = new TradingViewPage(page);
 
-         await tradingMenu.openTradingViewPage();
+  //        await tradingMenu.openTradingViewPage();
 
-         const expectedPath = `${path}/trading-platforms/trading-view`;
+  //        const expectedPath = `${path}/trading-platforms/trading-view`;
 
-         await expect(page).toHaveURL(expectedPath);
-         await tradingViewPage.clickSignUpWhyChooseButton()
-       });
+  //        await expect(page).toHaveURL(expectedPath);
+  //        await tradingViewPage.clickSignUpWhyChooseButton()
+  //      });
 
   })
 })

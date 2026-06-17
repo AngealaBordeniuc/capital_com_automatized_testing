@@ -17,6 +17,8 @@
     "test:about": "playwright test tests/about_page",
     "test:trading": "playwright test tests/trading_page",
 
+    "test:setup": "npx playwright test tests/auth.setup.js --project=setup",
+
     "test:main:authorized": "npx playwright test tests/main_page --project=authorized",
     "test:main:unauthorized": "npx playwright test tests/main_page --project=unauthorized",
     "test:main:unregistered": "npx playwright test tests/main_page --project=unregistered",
@@ -28,6 +30,9 @@
 
     "test:trading:authorized": "npx playwright test tests/trading_page --project=authorized",
     "test:trading:unauthorized": "npx playwright test tests/trading_page --project=unauthorized",
-    "test:trading:unregistered": "npx playwright test tests/trading_page --project=unregistered"
+    "test:trading:unregistered": "npx playwright test tests/trading_page --project=unregistered",
+
+    "debug": "npx playwright test --project=unauthorized --grep \"ASIC EN\" --debug"
+    
   }
 }

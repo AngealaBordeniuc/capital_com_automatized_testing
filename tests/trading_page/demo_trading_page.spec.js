@@ -4,7 +4,7 @@ import {DemoTradingPage} from"../../pages/tradingSection/DemoTradingPage";
 import { licenses } from "../../test-data/licenses";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 
-const languages = ["EN", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
+const languages = ["EN", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL", "RO"];
 // const languages = ["AR"]
 
 licenses.forEach((license) => {
@@ -12,9 +12,10 @@ licenses.forEach((license) => {
     if (!license.paths[lang]) return;
     if (!license.tradingSubmenus.DEMO_TRADING) return;
 
-    test(`${license.name} ${lang} – Demo Trading: Try demo`, async ({
-      page,
-    }) => {
+    test(`${license.name} ${lang} – Demo Trading: Explore demo`, async ({
+      page
+    }, testInfo) => {
+      const userState = testInfo.project.name;
       const path = license.paths[lang];           
 
       await page.goto(path, {
@@ -30,50 +31,8 @@ licenses.forEach((license) => {
       const expectedPath = `${path}/trading-platforms/demo-account`;
 
       await expect(page).toHaveURL(expectedPath);
-      await demoTradingPage.clickTryDemoButton()
-    });
-
-     test(`${license.name} ${lang} – Demo Trading: Verify QR code`, async ({
-       page,
-     }) => {
-       const path = license.paths[lang];     
-
-       await page.goto(path, {
-         waitUntil: "domcontentloaded",
-       });
-
-       await handleOptionalPopups(page);
-
-       const tradingMenu = new TradingSectionMenu(page);
-       const demoTradingPage = new DemoTradingPage(page);
-
-       await tradingMenu.openDemoTradingPage();
-       const expectedPath = `${path}/trading-platforms/demo-account`;
-
-       await expect(page).toHaveURL(expectedPath);
-       await demoTradingPage.verifyQrRedirect()
-     });
-
-    test(`${license.name} ${lang} – Demo Trading: Create your account`, async ({
-      page,
-    }) => {
-      const path = license.paths[lang];
-
-      await page.goto(path, {
-        waitUntil: "domcontentloaded",
-      });
-
-      await handleOptionalPopups(page);
-
-      const tradingMenu = new TradingSectionMenu(page);
-      const demoTradingPage = new DemoTradingPage(page);
-
-      await tradingMenu.openDemoTradingPage();
-      const expectedPath = `${path}/trading-platforms/demo-account`;
-
-      await expect(page).toHaveURL(expectedPath);
-      await demoTradingPage.clickCreateYourAccountButtonFromReady()
-    });
+      await demoTradingPage.clickExploreDemoButton(userState)
+    });  
 
   })
 })

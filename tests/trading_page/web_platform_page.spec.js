@@ -13,7 +13,8 @@ licenses.forEach((license) => {
 
     test(`${license.name} ${lang} – Web Platform, Create account`, async ({
       page,
-    }) => {
+    }, testInfo) => {
+      const userState = testInfo.project.name;
       const path = license.paths[lang]; 
 
       await page.goto(path, { waitUntil: "domcontentloaded" });      
@@ -28,28 +29,28 @@ licenses.forEach((license) => {
       const expectedPath = `${path}/trading-platforms/web-platform`;
 
       await expect(page).toHaveURL(expectedPath);
-      await webPlatformPage.clickCreateAccountButton();
+      await webPlatformPage.clickExplorePlatformButton(userState);
     });
 
-    test.skip(`${license.name} ${lang} – Web Platform, Verify QR Code`, async ({
-      page,
-    }) => {
-      const path = license.paths[lang];
+    // test.skip(`${license.name} ${lang} – Web Platform, Verify QR Code`, async ({
+    //   page,
+    // }) => {
+    //   const path = license.paths[lang];
 
-      await page.goto(path, { waitUntil: "domcontentloaded" });     
+    //   await page.goto(path, { waitUntil: "domcontentloaded" });     
 
-      await handleOptionalPopups(page);
+    //   await handleOptionalPopups(page);
 
-      const tradingMenu = new TradingSectionMenu(page);
-      const webPlatformPage = new WebPlatformPage(page);    
+    //   const tradingMenu = new TradingSectionMenu(page);
+    //   const webPlatformPage = new WebPlatformPage(page);    
 
-      await tradingMenu.openWebPlatformPage();
+    //   await tradingMenu.openWebPlatformPage();
 
-      const expectedPath = `${path}/trading-platforms/web-platform`;
+    //   const expectedPath = `${path}/trading-platforms/web-platform`;
 
-      await expect(page).toHaveURL(expectedPath);
-      await webPlatformPage.verifyQrRedirect();
-    });
+    //   await expect(page).toHaveURL(expectedPath);
+    //   await webPlatformPage.verifyQrRedirect();
+    // });
 
   })
 })

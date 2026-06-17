@@ -1,9 +1,10 @@
 import { expect } from '@playwright/test'
 
-export const handleOptionalPopups = async (page) => {  ; 
-  await acceptAllCookies(page);
-  await handleCookiesPopUp(page);
+export const handleOptionalPopups = async (page) => {  
   await handleStayOnSitePopUp(page);
+  await acceptAllCookies(page);
+  await handleCookiesPopUp(page);  
+  
   // await acceptImportantNotice(page);
  
 };
@@ -67,7 +68,10 @@ export const acceptAllCookies = async (page) => {
   } catch {
     return; 
   }
-};
+}
+
+  
+
 
 
 

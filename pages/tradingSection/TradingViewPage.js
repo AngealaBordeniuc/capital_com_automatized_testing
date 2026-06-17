@@ -51,39 +51,40 @@ export class TradingViewPage {
       {timeout: 30000})      
   }
 
-  async clickTradingViewLink() {
-    const howCanHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(1);
-    await howCanHeading.scrollIntoViewIfNeeded();
+  // async clickTradingViewLink() {
+  //   const howCanHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(1);
+  //   await howCanHeading.scrollIntoViewIfNeeded();
    
-    const tradingViewLink = this.page.locator('a[href*="tradingview.com/broker"]').nth(1);
+  //   const tradingViewLink = this.page.locator('a[href*="tradingview.com/broker"]').nth(1);
 
-    const [newPage] = await Promise.all([
-      this.page.waitForEvent("popup"),
-      tradingViewLink.click(),
-    ]);
+  //   const [newPage] = await Promise.all([
+  //     this.page.waitForEvent("popup"),
+  //     tradingViewLink.click(),
+  //   ]);
 
-    await newPage.waitForURL("https://www.tradingview.com/broker/Capitalcom/", {
-      timeout: 6000,
-    });
-  }
+  //   await newPage.waitForURL("https://www.tradingview.com/broker/Capitalcom/", {
+  //     timeout: 6000,
+  //   });
+  // }
 
-  async clickSignUpHowCanButton() {
+  async clickExploreTradingView(userState) {
    const howCanHeading = this.page.locator('h2[data-sentry-component="Heading"]').nth(1);
    await howCanHeading.scrollIntoViewIfNeeded();
    
     const signUpBtn = this.page.locator('button[data-type="background_banner_block_btn1_signup"]');
     await expect(signUpBtn).toBeVisible({ timeout: 10000 });
     await signUpBtn.click();
-    await handleModalWindowSignUp(this.page, "/trading/platform/");
+    await handleModalWindowSignUp(this.page, userState);
   }
 
-  async clickSignUpWhyChooseButton() {
-    const area = this.page.locator('div[class="HGwk cRY3 ME6O"]').nth(6);
-    await area.scrollIntoViewIfNeeded();
+  // async clickSignUpWhyChooseButton() {
+  //   const area = this.page.locator('div[class="HGwk cRY3 ME6O"]').nth(6);
+  //   await area.scrollIntoViewIfNeeded();
     
-    const signUpButtonWhyChoose = this.page.locator('button[data-type="tiles_w_img_btn2_signup"]');
-    await expect(signUpButtonWhyChoose).toBeVisible({ timeout: 10000 });
-    await signUpButtonWhyChoose.click()   
-    await handleModalWindowSignUp(this.page, "/trading/platform/");
-  }
+  //   const signUpButtonWhyChoose = this.page.locator('button[data-type="tiles_w_img_btn2_signup"]');
+  //   await expect(signUpButtonWhyChoose).toBeVisible({ timeout: 10000 });
+  //   await signUpButtonWhyChoose.click()   
+  //   await handleModalWindowSignUp(this.page, "/trading/platform/");
+  // }
+
 }

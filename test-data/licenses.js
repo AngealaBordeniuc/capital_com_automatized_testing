@@ -6,6 +6,10 @@ export const licenses = [
       mt4OpenAccountButton: true,
       mt4SignUpNowDiscoverTradingButton: false,
       mt4SignUpWhyChooseButton: false,
+      openAccountButton: true,
+      logInButton: true,
+      qrCodeNewToCapital: false,
+      qrCodeExisting: false,
     },
     paths: {
       EN: "/en-gb",
@@ -31,11 +35,13 @@ export const licenses = [
       MT4: ["EN"],
       TRADING_VIEW: true,
       WEB_PLATFORM: true,
+      KNOCK_OUTS: false,
+      PRO_ACCOUNT: true,
       },
     },
 
   {
-    name: "SCA",
+    name: "CMA",
     features: {
       mt4CreateAccountButton1: true,
       mt4OpenAccountButton: true,     
@@ -67,6 +73,8 @@ export const licenses = [
       MT4: ["EN", "AR"],
       TRADING_VIEW: true,
       WEB_PLATFORM: true,
+      KNOCK_OUTS: false,
+      PRO_ACCOUNT: false,
     },
   },
   {
@@ -76,6 +84,10 @@ export const licenses = [
       mt4OpenAccountButton: true,     
       mt4SignUpNowDiscoverTradingButton: false,
       mt4SignUpWhyChooseButton: true,
+      openAccountButton: false,
+      logInButton: false,
+      qrCodeNewToCapital: true,
+      qrCodeExisting: true,
     },
     paths: {
       EN: "/en-eu",
@@ -85,6 +97,7 @@ export const licenses = [
       IT: "/it-it",
       NL: "/nl-nl",
       PL: "/pl-pl",
+      RO: "/ro-ro",
     },
     aboutSubmenus: {
       CLIENT_VULNERABILITY: true,
@@ -106,6 +119,8 @@ export const licenses = [
       MT4: ["EN", "DE", "RO", "IT", "NL", "PL"],
       TRADING_VIEW: true,
       WEB_PLATFORM: true,
+      KNOCK_OUTS: true,
+      PRO_ACCOUNT: true,
     },
   },
 
@@ -116,6 +131,10 @@ export const licenses = [
       mt4OpenAccountButton: true,     
       mt4SignUpNowDiscoverTradingButton: false,
       mt4SignUpWhyChooseButton: false,
+      openAccountButton: true,
+      logInButton: true,
+      qrCodeNewToCapital: false,
+      qrCodeExisting: false,
     },
     paths: {
       EN: "/en-au",
@@ -141,6 +160,8 @@ export const licenses = [
       MT4: ["EN"],
       TRADING_VIEW: true,
       WEB_PLATFORM: true,
+      KNOCK_OUTS: false,
+      PRO_ACCOUNT: true,
     },
   },
   {
@@ -150,6 +171,10 @@ export const licenses = [
       mt4OpenAccountButton: false,     
       mt4SignUpNowDiscoverTradingButton: true,
       mt4SignUpWhyChooseButton: false,
+      openAccountButton: true,
+      logInButton: true,
+      qrCodeNewToCapital: false,
+      qrCodeExisting: false,
     },
     paths: {
       EN: "/en-int",
@@ -181,6 +206,8 @@ export const licenses = [
       MT4: ["EN", "FR", "DE", "RU", "AR", "ZHT"],
       TRADING_VIEW: true,
       WEB_PLATFORM: true,
+      KNOCK_OUTS: false,
+      PRO_ACCOUNT: true,
     },
   },
 ];
