@@ -50,18 +50,60 @@ jobs:
         if: always()
         run: |
           DATE=$(date +'%Y-%m-%d')
-          mkdir -p allure-report/Trading/${{ matrix.type }}/$DATE
+          mkdir -p report/${{ matrix.type }}/$DATE
           npx allure generate allure-results \
-            -o allure-report/Trading/${{ matrix.type }}/$DATE
+            -o report/${{ matrix.type }}/$DATE
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ matrix.type }}
+          path: report/
+
+  deploy:
+    needs: trading
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Restore previous reports
+        run: |
+          mkdir -p allure-report
+          cp -R gh-pages/* allure-report/ || true
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: downloaded
+
+      - name: Debug downloaded structure
+        run: find downloaded
+
+      - name: Merge reports
+        run: |
+          mkdir -p allure-report/Trading
+          cp -R downloaded/report-authorized/* allure-report/Trading/ || true
+          cp -R downloaded/report-unauthorized/* allure-report/Trading/ || true
+          cp -R downloaded/report-unregistered/* allure-report/Trading/ || true
 
       - name: Deploy to GitHub Pages
-        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
-          keep_files: false
+          keep_files: true
 
 # # With history
 # name: Playwright Trading Tests with Allure

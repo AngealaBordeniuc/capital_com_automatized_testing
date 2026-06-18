@@ -1,8 +1,28 @@
 {
   "cookies": [
     {
+      "name": "capital-ingress-trading-web-cc-3-36-0-1780907261",
+      "value": "1780921831.563.30429.4941|9c8aba01dadad275754769c2a0c0e109",
+      "domain": "capital.com",
+      "path": "/trading/platform",
+      "expires": 1782131429.92089,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "capital-ingress-trading-web-cc-3-37-0-1781508845",
+      "value": "1781530907.39.1119.227256|82b45fc2e61a4e3e8ad0894affa30835",
+      "domain": "capital.com",
+      "path": "/trading/platform",
+      "expires": 1782740504.467363,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
       "name": "capital-ingress-trading-web-cc-3-37-0-1781531763",
-      "value": "1781703293.19.2320.635615|11ceea09b93a5d595c19ca96667364ec",
+      "value": "1781793071.395.2324.122243|11ceea09b93a5d595c19ca96667364ec",
       "domain": "capital.com",
       "path": "/trading/platform",
       "expires": -1,
@@ -11,21 +31,247 @@
       "sameSite": "Lax"
     },
     {
-      "name": "X-AB",
-      "value": "5a451a364e1a482f884857efdcb93ef6",
-      "domain": "sc-static.net",
-      "path": "/scevent.min.js",
-      "expires": 1781789657.498456,
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwgtfUELC2v90g84cDfql4Px31cGxyBY6KzTSY5VNCD31xNb3liZLyI8O59xl6i8XUYBB2TibHgD583mSSY",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1797345069.750321,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SNID",
+      "value": "ALQpT-WL7hn0L2Qe4uEdODGgOdy3FsEqeEyVpkhFE_cBgD63oYZ0CKdgAEGtVUrgn0EMvIl1D-0T4E-YGGFZrxDW-0t23hHAZqE",
+      "domain": ".google.com",
+      "path": "/verify",
+      "expires": 1796732205.162407,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AEC",
+      "value": "AaJma5uVTom9rWXbIvQ6lFjI0KSv5jfmfJLQ9kct79ovI-B1EIDiqU8wh8k",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1796473004.781469,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "oai-did",
+      "value": "b634c46d-ba02-420d-91c9-b607878602b2",
+      "domain": ".chatgpt.com",
+      "path": "/",
+      "expires": 1812025031.11099,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cf_clearance",
+      "value": "P5tZKLAVH2Ljx1_ujRRbla6jQ3KJG1Dt_rPfhTEVPTM-1780921032-1.2.1.1-iIXA.jW6ZXXehstWVPJRd.rE.ui4XFzGpSUvJaOAS4drYNjfFOACSt0Xu1Zao7nVkMuygJSgWeGFq8uYbW3O5sQg0BKR3oZyeL5NyIwH83v7.k64syqXekvqxxKnXvVDnsLHYyUt3tC3zA2i9m7.2F1_Nl9QD.Ly3hbmfctO0XCjXTiEmXsoc.3ZwCv4EcX_wTcWLapcpz4hEr2oT2pbIawjZ0pwwehxrmVjwXbAWAbFpVM6vBGXbvvTmyvLXPeON3F1_VcdiTkqWw0Lo648OO.L9i_I4sdYcDv2wdqBODKlleoXWQv.MTJ0xOaUwt.cjzxr_uZ8wdRmrMGb5AROXQ",
+      "domain": ".chatgpt.com",
+      "path": "/",
+      "expires": 1812457031.420607,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://chatgpt.com",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "g_state",
+      "value": "{\"i_l\":0,\"i_ll\":1780921032440,\"i_b\":\"/52Ga3Pn/0JD0eIN/ZgObp3HKOa5ChJ8YdTUTDpGyMY\",\"i_e\":{\"enable_itp_optimization\":0},\"i_et\":1780921032438}",
+      "domain": "chatgpt.com",
+      "path": "/",
+      "expires": 1796473032,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "oai-nav-state",
+      "value": "0",
+      "domain": "chatgpt.com",
+      "path": "/",
+      "expires": 1815481061.036798,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dd_s",
+      "value": "aid=05b7903a-a15a-4fe8-9186-84d9e3a3b6e2&rum=0&expire=1780921963435&logs=1&id=788eaea1-3a9a-4e8e-a45b-b1d492ee4761&created=1780921031831",
+      "domain": "chatgpt.com",
+      "path": "/",
+      "expires": 1812457063,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "visid_incap_2326300",
+      "value": "Gtk8vB5dSb+5oWEGkPOIAra0JmoAAAAAQUIPAAAAAACN3xDMIsvQp0z7l2Bbi9SP",
+      "domain": ".capital.com",
+      "path": "/",
+      "expires": 1812406292.761635,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "visid_incap_2784786",
+      "value": "n9FN0u1xToa045FfvbLVxre0JmoAAAAAQUIPAAAAAACwkO2gtGBxoE5k4z6rbqlY",
+      "domain": ".capital.com",
+      "path": "/",
+      "expires": 1812406292.982931,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cp_ln",
+      "value": "en",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": 1813329046,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ad-id",
+      "value": "A5WgdYncoUSknZBO0jOvu2I",
+      "domain": ".amazon-adsystem.com",
+      "path": "/",
+      "expires": 1798813849.194495,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ad-privacy",
+      "value": "0",
+      "domain": ".amazon-adsystem.com",
+      "path": "/",
+      "expires": 1816353049.194758,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "08B07174F5326B1E01306606F4C86A45",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1815226889.828134,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "_GRECAPTCHA",
-      "value": "09AKhCRwh2eAwEX6G_XfMqi9OCSdyA7YD_SKkeaSZfFYNPMqtKxWEWCMvjG1mA9VzRWLMTZidsxdJg5K7FzQIcDhc",
-      "domain": "www.google.com",
-      "path": "/recaptcha",
-      "expires": 1797255289.596706,
+      "name": "SRM_B",
+      "value": "08B07174F5326B1E01306606F4C86A45",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1815489049.857728,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "08B07174F5326B1E01306606F4C86A45",
+      "domain": ".clarity.ms",
+      "path": "/",
+      "expires": 1815226889.908293,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "visid_incap_2859063",
+      "value": "PJJXyZ+OQquH9PwTLd5l/Oa1JmoAAAAAQUIPAAAAAABJtJ5OGfohU/fr81fvSqBT",
+      "domain": ".backend-capital.com",
+      "path": "/",
+      "expires": 1812406301.957956,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cp_lastPage",
+      "value": "https%3A%2F%2Fcapital.com%2Ftrading%2Fplatform%2F",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": 1798761601,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "io_token_7c6a6574-f011-4c9a-abdd-9894a102ccef",
+      "value": "h6czBjI7ASCL/Iflm9DrhkXDon1U/dbfcFoZ18ldNOA=",
+      "domain": "mpsnare.iesnare.com",
+      "path": "/",
+      "expires": 1813329071.753039,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://capital.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "fp_token_7c6a6574-f011-4c9a-abdd-9894a102ccef",
+      "value": "2/uC3c3w5NlMRs2EgLczfDTb87LAQTp05tiUcvlmGiw=",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": 1813329071.694082,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://capital.com",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "referrer",
+      "value": "eyJnZXQiOiJjcF9kZXZpY2VfaWQ9NjQwMzI1ZjYtOTI1Zi00NjZkLWJlZmQtYTYyOWZhZmU0YWFlIiwidXJsIjoiIn0=",
+      "domain": "capital.com",
+      "path": "/",
+      "expires": 1782132014,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1782135689.828244,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1782135689.908352,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "NID",
+      "value": "532=Pjjr-nODyaa2sCFK6jhXUxlm5DfmDnELsucRY73xfoTBF1MxgyIH3Ij31BeT4or_Y8zGjyW77gKTMCcbirn5dVw7muXuQiz1v4hdcSLgeTaeAMHEEIDqduQ9iX7mXcvVlQ9ePJWjiGiaqu56Q4AucA6tXZ8VBtMpxjaPzxh8TkT1u1QlE76bAU-K5ZjOsvk421cXfXRrSRd3w1gslMhoE0mgZYIV5Z7LP9xKbF9sIwQW1HYEAUxhln6R_wgseirCi6BDwA",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1797604244.876107,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -41,18 +287,8 @@
       "sameSite": "Lax"
     },
     {
-      "name": "visid_incap_2326300",
-      "value": "w9cMVGvFS9O1EfHhjxGai1aiMmoAAAAAQUIPAAAAAAByOqoUVnL2A9M4PBgnnXY7",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1813185950.443058,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "nlbi_2326300",
-      "value": "ddiHEPNP3Xcl6SRdxQSD8QAAAABP9U7sWD9OmFlN4B4ePbyA",
+      "value": "ahV0Yz+Tlyo7QzirxQSD8QAAAADEN9Xfs+gbl0G3akIRTCHz",
       "domain": ".capital.com",
       "path": "/",
       "expires": -1,
@@ -62,7 +298,7 @@
     },
     {
       "name": "incap_ses_656_2326300",
-      "value": "VQnZc6xftGWPhPcPmZQaCVaiMmoAAAAAGcw4LBCx25nXwveVmKuz5w==",
+      "value": "9JH/Dp7lkTCU82UbmZQaCRUBNGoAAAAAkJyLfz2pZnqRfRasZ0iGxg==",
       "domain": ".capital.com",
       "path": "/",
       "expires": -1,
@@ -102,7 +338,7 @@
     },
     {
       "name": "__cp_deviceId",
-      "value": "6a72f0a3-0964-40d8-a158-cc3cab4062e9",
+      "value": "718feff0-3302-4b85-97c6-fe7ba3386b79",
       "domain": "capital.com",
       "path": "/",
       "expires": -1,
@@ -111,18 +347,8 @@
       "sameSite": "Lax"
     },
     {
-      "name": "visid_incap_2784786",
-      "value": "R3ezHQwcSSG6kAyaLywSXleiMmoAAAAAQUIPAAAAAADpKTDSkNwjPcjGl6NhkJQX",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1813184706.666652,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "incap_ses_788_2784786",
-      "value": "YbskeSj+AwE+RONgIorvCleiMmoAAAAAmBxkjMuaTquhdMl31sFK1w==",
+      "value": "RaO6cu0ZP0m7axqxJIrvChYBNGoAAAAAF6pDxPaVZqEgzwQRdEEaHA==",
       "domain": ".capital.com",
       "path": "/",
       "expires": -1,
@@ -132,7 +358,7 @@
     },
     {
       "name": "uid",
-      "value": "6a72f0a3-0964-40d8-a158-cc3cab4062e9",
+      "value": "640325f6-925f-466d-befd-a629fafe4aae",
       "domain": "capital.com",
       "path": "/",
       "expires": -1,
@@ -141,224 +367,44 @@
       "sameSite": "Lax"
     },
     {
-      "name": "referrer",
-      "value": "eyJnZXQiOiJjcF9kZXZpY2VfaWQ9NmE3MmYwYTMtMDk2NC00MGQ4LWExNTgtY2MzY2FiNDA2MmU5IiwidXJsIjoiIn0=",
-      "domain": "capital.com",
+      "name": "AMP_23a2071c89",
+      "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI3MThmZWZmMC0zMzAyLTRiODUtOTdjNi1mZTdiYTMzODZiNzklMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjIzNzM2OTgzNCUyMiUyQyUyMmRlZmVycmVkU2Vzc2lvbklkJTIyJTNBLTElMkMlMjJvcHRPdXQlMjIlM0F0cnVlJTJDJTIyY29va2llRG9tYWluJTIyJTNBJTIyLmNhcGl0YWwuY29tJTIyJTdE",
+      "domain": ".capital.com",
       "path": "/",
-      "expires": 1782308054,
+      "expires": 1813329046,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "__cp_ln",
-      "value": "en",
+      "name": "g_state",
+      "value": "{\"i_l\":0,\"i_ll\":1781793049114,\"i_b\":\"Vhj5yqfjloX4Ktkb+mP3LjMloZfQW2FlcvKk3vPI8zg\",\"i_e\":{\"enable_itp_optimization\":0},\"i_et\":1780921784241}",
       "domain": "capital.com",
       "path": "/",
-      "expires": 1813239254,
+      "expires": 1797345049,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "CLID",
-      "value": "84e33035bec949f480689f1f23e4c326.20260617.20270617",
+      "value": "67f73d590b29470399760551971bd591.20260608.20270618",
       "domain": "www.clarity.ms",
       "path": "/",
-      "expires": 1813239256.974715,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "consent_preferences",
-      "value": "{\"necessary\":true,\"performance\":true,\"functional\":true,\"targeting\":true,\"social\":true,\"timestamp\":1781703257240,\"version\":\"2.3.0\",\"consentId\":\"0feed3b6-18bf-41b6-8eb3-e420592e31e0\",\"consentMode\":\"opt_in_banner\",\"fallback\":false}",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": 1813239257,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga",
-      "value": "GA1.1.360252886.1781703257",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1816263257.259264,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "AMP_MKTG_23a2071c89",
-      "value": "JTdCJTdE",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1813239257,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_twpid",
-      "value": "tw.1781703257383.2158144653599279",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1815399289.344532,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Strict"
-    },
-    {
-      "name": "ad-id",
-      "value": "A0g9dN9JK0GEvFlqTnLil4k",
-      "domain": ".amazon-adsystem.com",
-      "path": "/",
-      "expires": 1798810457.451111,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "ad-privacy",
-      "value": "0",
-      "domain": ".amazon-adsystem.com",
-      "path": "/",
-      "expires": 1816263257.451184,
+      "expires": 1813329049.214,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_clck",
-      "value": "1uor99x%5E2%5Eg6z%5E1%5E2359",
+      "value": "ljwbiq%5E2%5Eg70%5E1%5E2350",
       "domain": ".capital.com",
       "path": "/",
-      "expires": 1813239257,
+      "expires": 1813329049,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
-    },
-    {
-      "name": "MUID",
-      "value": "3049628403F3608D15F275FF0209613D",
-      "domain": ".bing.com",
-      "path": "/",
-      "expires": 1815399257.497252,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "MR",
-      "value": "0",
-      "domain": ".c.bing.com",
-      "path": "/",
-      "expires": 1782308057.497336,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "SRM_B",
-      "value": "3049628403F3608D15F275FF0209613D",
-      "domain": ".c.bing.com",
-      "path": "/",
-      "expires": 1815399257.497368,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_scid",
-      "value": "A1x40gGZvQIxP9ueRYdVRSZhNFjjkS09",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1815831257,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ttp",
-      "value": "3FGZF6U60Gz5LXhIEgLmS50jD3P",
-      "domain": ".tiktok.com",
-      "path": "/",
-      "expires": 1815399257.543364,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_scid_r",
-      "value": "A1x40gGZvQIxP9ueRYdVRSZhNFjjkS09",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1815831257,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_fbp",
-      "value": "fb.1.1781703257603.501152247893073194",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1789479257,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "guest_id_marketing",
-      "value": "v1%3A178170325959036428",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1816263257.699436,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "guest_id_ads",
-      "value": "v1%3A178170325959036428",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1816263257.699578,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "personalization_id",
-      "value": "\"v1_eOIeUnyq1ry5k03j1zmW8w==\"",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1816263257.699649,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "guest_id",
-      "value": "v1%3A178170325959036428",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1816263257.699698,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "2NxSpG6iBdliEo2ukz75G0.h7sUOR7yecquS54RtUeI-1781703259.4954967-1.0.1.1-ocIKimPd.ME2nb9u.VxdmLG0O.gwFCAScq8bg2z3.ZvoyewkMJjxtZRdnF4u6BKMYGH5SvdeLpJ6zhAoov8ggsdD4i.18gxFovFMpSrh7BQ.h3FawEJ_ZWURRRgGrC5y",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1781705057.699743,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
     },
     {
       "name": "SM",
@@ -371,251 +417,31 @@
       "sameSite": "None"
     },
     {
-      "name": "MUID",
-      "value": "3049628403F3608D15F275FF0209613D",
-      "domain": ".clarity.ms",
-      "path": "/",
-      "expires": 1815399257.702828,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "MR",
-      "value": "0",
-      "domain": ".c.clarity.ms",
-      "path": "/",
-      "expires": 1782308057.702931,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "ANONCHK",
       "value": "0",
       "domain": ".c.clarity.ms",
       "path": "/",
-      "expires": 1781703857.702982,
+      "expires": 1781793649.938857,
       "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "muc_ads",
-      "value": "53679f78-d6ae-4730-98c8-ad226f63daed",
-      "domain": ".t.co",
-      "path": "/",
-      "expires": 1816263257.704446,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "IDE",
-      "value": "AHWqTUkt9BPyIezaVo8I3NO3x9Ov74CGeWqRHhoER2VhpHLFMMRzpbm4FqmohTvwvpk",
-      "domain": ".doubleclick.net",
-      "path": "/",
-      "expires": 1816263257.717904,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TDID",
-      "value": "58bf2f65-99c7-4cf3-9259-4f7529148fec",
-      "domain": ".adsrvr.org",
-      "path": "/",
-      "expires": 1813239257.868967,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_tt_enable_cookie",
-      "value": "1",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1815399257,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ttp",
-      "value": "01KVAWMBPE2BM906HRSQDZ4N89_.tt.1",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1815399257,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "TDCPM",
-      "value": "CAEYBSgGMgsIyvun3fufpj8QBUIPIg0IARIJCgV0aWVyMhABWgdjOTVibXp3YAE.",
-      "domain": ".adsrvr.org",
-      "path": "/",
-      "expires": 1813239257.869072,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "li_sugr",
-      "value": "31b90658-b1fa-4685-a6a6-4c1a559a2cd9",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1789479258.55144,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "bcookie",
-      "value": "\"v=2&a0ed9d7a-f58b-4d55-864e-33a9efe3699a\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1813239258.551626,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "lidc",
-      "value": "\"b=TGST05:s=T:r=T:a=T:p=T:g=3538:u=1:x=1:i=1781703259:t=1781789659:v=2:sig=AQGlY2ykQwq10vCVh6x3Kn0eJC_NqqFF\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1781789657.920289,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "qadvzvntwjwdaUdLSlNdHmGPdw4CIwmlWYcT_yndwj0-1781703259.7993393-1.0.1.1-EaBEKxy.lBRy6Ok06ZAgGq6tdDhPqgCZ1TzqYUZfQmnMIA9wYLSuJqRMa1EgCgTbvGHgVIbywZKt_8vP1jyl2.aTLbuyRrc1iw4BFMvibppo.EqQhTfDtRoTht7UFBzj",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1781705057.920319,
-      "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_clsk",
-      "value": "l27ji0%5E1781703258013%5E2%5E1%5Ed.clarity.ms%2Fcollect",
+      "value": "qxyvqq%5E1781793050424%5E1%5E1%5Ed.clarity.ms%2Fcollect",
       "domain": ".capital.com",
       "path": "/",
-      "expires": 1781789658,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "sc_at",
-      "value": "v2|H4sIAAAAAAAA/03GyREAIAgEsIqYARUW7AavKizer3nlKGARIIQfagNKOdekYqq5PFOwrzTuAhdwLcb3Kz9eFoiRQAAAAA==",
-      "domain": ".snapchat.com",
-      "path": "/",
-      "expires": 1815399258.315717,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "UserMatchHistory",
-      "value": "AQJHhbvI6wj4dAAAAZ7VyjfC6Klis1rIrB62tfRpPkI18eCfjTmyMAIAWO8qZgaAgTPnUhBlXe9a2w",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1784295258.120641,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AnalyticsSyncHistory",
-      "value": "AQJKNtI6Kzp7SgAAAZ7VyjfC0bHlNRwp6TWsHaZylnOz-NceaoUoyb5yC4q7hbYiB0sg0x7ooEx3Ci1VvvTsXQ",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1784295258.120699,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_TS",
-      "value": "1781703260237",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1786887258.255665,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_DID",
-      "value": "db47f2f7-07bd-46ce-b1cf-6e380a6c3f05",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1786887258.255818,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_3WAY_SYNCS",
-      "value": "",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1786887258.255888,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_sctr",
-      "value": "1%7C1781643600000",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1815831258,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "bscookie",
-      "value": "\"v=1&2026061713342010e8bb96-e02e-4e15-85bb-4a694bf42b20AQFVsybp4DGZ2JtmpYmVa65Ju4w2Gm8U\"",
-      "domain": ".www.linkedin.com",
-      "path": "/",
-      "expires": 1813239258.34259,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "g_state",
-      "value": "{\"i_l\":0,\"i_ll\":1781703260438,\"i_b\":\"FDh/wwocw3sC5R+O2pWWwVFfkj02rMtQvOZ6XDZYF+s\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1781703260438}",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": 1797255260,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_gcl_au",
-      "value": "1.1.1433789520.1781703257.2049806260.1781703265.1781703289",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1789479257,
+      "expires": 1781879450,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__cp_at",
-      "value": "902bc6a4-31ec-48ef-9770-ec2eb9acb450",
+      "value": "01cc74f3-3d1a-4483-b042-8e0e092e00b6",
       "domain": "capital.com",
       "path": "/",
-      "expires": 1784295289,
+      "expires": 1784385069,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -625,24 +451,24 @@
       "value": "30",
       "domain": "capital.com",
       "path": "/",
-      "expires": 1784295289,
+      "expires": 1784385069,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__cp_att",
-      "value": "Fri%2C%2017%20Jul%202026%2013%3A34%3A49%20GMT",
+      "value": "Sat%2C%2018%20Jul%202026%2014%3A31%3A09%20GMT",
       "domain": "capital.com",
       "path": "/",
-      "expires": 1784295289,
+      "expires": 1784385069,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__cp_sid",
-      "value": "bd697679-5785-4049-a38e-7e1e99bdd487",
+      "value": "9008fa97-8e69-4e29-be7f-1e89f9f08eae",
       "domain": "capital.com",
       "path": "/",
       "expires": -1,
@@ -661,88 +487,28 @@
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_E0HDCHTG1C",
-      "value": "GS2.1.s1781703257$o1$g1$t1781703290$j27$l0$h0",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1816263290.095584,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "AMP_23a2071c89",
-      "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI2YTcyZjBhMy0wOTY0LTQwZDgtYTE1OC1jYzNjYWI0MDYyZTklMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjIzNzM2OTgzNCUyMiUyQyUyMnNlc3Npb25JZCUyMiUzQTE3ODE3MDMyNTczMzYlMkMlMjJvcHRPdXQlMjIlM0FmYWxzZSUyQyUyMmxhc3RFdmVudFRpbWUlMjIlM0ExNzgxNzAzMjkwMDk5JTJDJTIybGFzdEV2ZW50SWQlMjIlM0EyOSUyQyUyMnBhZ2VDb3VudGVyJTIyJTNBMSUyQyUyMmNvb2tpZURvbWFpbiUyMiUzQSUyMi5jYXBpdGFsLmNvbSUyMiU3RA==",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1813239290,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "ttcsid_D3JO9F3C77UCTDLH5MF0",
-      "value": "1781703257809::zSUK8uNkAfzGYLoluMPi.1.1781703290141.1",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1815399290,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "ttcsid",
-      "value": "1781703257809::n_aZg4lP1lXdotoVJzfl.1.1781703290141.0::1.-4767.0::31527.9.684.515::0.0.0",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1815399290,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga_NLW189VMLL",
-      "value": "GS2.1.s1781703257$o1$g0$t1781703290$j27$l0$h0",
-      "domain": ".capital.com",
-      "path": "/",
-      "expires": 1816263290.187513,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "AWSALBTGCORS",
-      "value": "laoujIRThRvi0iJZESCXLYkGFXryWvzL/g4Kni685rIUaktEct1PCsOBbcNx0AUcoN4TC5opUFsjEI16wWqGkUqjS8nvKqfFA5KQxn2Vud+NVtjBUhx9/01Lc/ccaUwR00hK88n9abo/wGWkN//9HtMgJjxZjmVDhHHmIRZQmAYosqx625M=",
+      "value": "9MgKLMI8UpiPT8fAoe9LUD3lXtdPuMRrU54A7CBk1bRmIKX7KIQ5mmyMFBQGFtl7jUNy3S4dK7jeQ4Gb25WbiOhEGpmbu17dAKNRl1cJtFXhCqJYqT+iBziCGIg3FXQcQgySyyPrm7oX9I0KnZr086nbpFZHl2piNXXaKBV4n/XRafghOzs=",
       "domain": "api.backend-capital.com",
       "path": "/",
-      "expires": 1782308091.084154,
+      "expires": 1782397871.075691,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "AWSALBCORS",
-      "value": "W+QcJUvhD9E6EnogSlQXfJyrAmwgdgbIcE1hk1ilOFfu6aE+/yvGTw9gqxPFvvcJ2510gycJtDrcuQ/nFJq9cpuxRFE3Egh2D99GlsgKa/pgT4TyPjKFvAx2tpnM",
+      "value": "nSdbOqZQLypjTt0RvyOef3vs+L5hX9fX5jy7Cyc7Vet2Y5W9T+6G6gf8DIDQEq39ZwsxIl41u49FLRamwm6fPJ+qVVYquqpSDuXGG8DbiwiXJ6sNYiuQMMioGEQAkQZyEWCT+QU9o8DGRV/2s6bzy5OOvuSHjTNg6YdvYheX9eqX7O6uYC1FiOyjL84wEA==",
       "domain": "api.backend-capital.com",
       "path": "/",
-      "expires": 1782308091.084222,
+      "expires": 1782397871.075896,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "visid_incap_2859063",
-      "value": "GV2vtcuqTMWc2xMEp2grU3yiMmoAAAAAQUIPAAAAAABYIpt9tfNZpzB0ZDLuCdVX",
-      "domain": ".backend-capital.com",
-      "path": "/",
-      "expires": 1813184705.084249,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "nlbi_2859063",
-      "value": "EAaSVPUyvhd6oWH8EbJTAwAAAACUnbRniduMcZZ6jnoicr9P",
+      "value": "OaD6LqQb7hQwrqZQEbJTAwAAAAAhobR0irLZS11fYngNchKb",
       "domain": ".backend-capital.com",
       "path": "/",
       "expires": -1,
@@ -752,35 +518,13 @@
     },
     {
       "name": "incap_ses_788_2859063",
-      "value": "LvU7dxYyiBxQZeNgIorvCnyiMmoAAAAA3cLrd/ffyte2OJz2XK5N4w==",
+      "value": "nQuiYeX48SVHfxqxJIrvCi4BNGoAAAAAFbAk4QC3ppN3fNZQgE/O2Q==",
       "domain": ".backend-capital.com",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "__cp_lastPage",
-      "value": "https%3A%2F%2Fcapital.com%2Ftrading%2Fplatform%2F",
-      "domain": "capital.com",
-      "path": "/",
-      "expires": 1798761601,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "io_token_7c6a6574-f011-4c9a-abdd-9894a102ccef",
-      "value": "Tr5ohrkHElE4m5+xomm/i14wvlbfSta4m7WW5nEM8RQ=",
-      "domain": "mpsnare.iesnare.com",
-      "path": "/",
-      "expires": 1813239291.832988,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None",
-      "partitionKey": "https://capital.com",
-      "_crHasCrossSiteAncestor": true
     }
   ],
   "origins": [
@@ -788,97 +532,148 @@
       "origin": "https://capital.com",
       "localStorage": [
         {
-          "name": "u_sclid",
-          "value": "UOqoUz3hv2I_PIEW7LIpI1L-ZNkf6S-dA1x40gGZvQIxP9ueRYdVRSZhNFjjkS09"
+          "name": "io_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
+          "value": "h6czBjI7ASCL/Iflm9DrhkXDon1U/dbfcFoZ18ldNOA="
         },
         {
-          "name": "chartOverrides_web",
-          "value": "{\"installationId\":\"336ec7c0-6ab1-470a-a660-79da10591da8\",\"chartsOvr\":{}}"
+          "name": "survi::ebcbe974fc901cd265e6d871c8a9dd2e::allvisitor",
+          "value": "{\"attributes\":{\"country\":{\"throttledTo\":null,\"timestamp\":1781793072302,\"value\":\"MD\"},\"isLoggedIn\":{\"throttledTo\":null,\"timestamp\":1781793072302,\"value\":\"true\"},\"ageGroup\":{\"throttledTo\":null,\"timestamp\":1781793072302,\"value\":\"36-45\"},\"userId\":{\"throttledTo\":null,\"timestamp\":1781793072302,\"value\":\"37369834\"},\"isDemo\":{\"throttledTo\":null,\"timestamp\":1781793072302,\"value\":\"false\"},\"isVerified\":{\"throttledTo\":null,\"timestamp\":1781793072302,\"value\":\"false\"}},\"displayedSurveys\":[],\"engagedSurveys\":[],\"identities\":{},\"initialSurveysEngagement\":[],\"tags\":[],\"uuid\":\"37f2fe24-d914-40b1-a8cf-53483294f406\",\"validation\":{\"previousValidatedUserId\":null,\"timestamp\":null},\"visitsCount\":15}"
+        },
+        {
+          "name": "tvlocalstorage.available",
+          "value": "true"
         },
         {
           "name": "ss_incoming_params",
-          "value": "[{\"af_ss_exp_at\":1781710456775}]"
-        },
-        {
-          "name": "tabsLastCloseTimestamp",
-          "value": "1781703290078"
-        },
-        {
-          "name": "amp-exp-$default_instance-6XuNSE",
-          "value": "{}"
+          "value": "[{\"af_ss_exp_at\":1781800249006}]"
         },
         {
           "name": "__anon_id",
-          "value": "\"895d45bd-0f16-4845-937b-928873077255\""
+          "value": "\"4cd37f47-83d6-47d2-83c7-a28145d4f0b2\""
         },
         {
           "name": "__user_id",
           "value": "\"9acbe673521dd4af0c7bc118e2a01a11bdfe4093695d34360b1e832d5c3df7ff\""
         },
         {
-          "name": "_gcl_ls",
-          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1781703257243},\"expires\":1789479257243}}"
-        },
-        {
           "name": "_grecaptcha",
-          "value": "09AKhCRwjDzutHdbW-VKMeRn4DGV10RU6G0LnC10CLscsUD8gIsPLhyo5NVireWyUnqCOpaAAMcVCrI7vNf9TzE9FDii0D-pNKCEwG1VpHqoHgYYaGTF6_yVxpL51BJ7Y6"
+          "value": "09AKhCRwg9ukxeAiRLCdqgQ1uE7gxSJFUhWlNw-lnqm7NiI5MRyPo3P5z1FbHksVpITlj9tHO8mo4hZwDxiPgXY1t4jie4VsX2RfmHjuOefzq57Bt01h4AO8jcs-hikpWX"
         },
         {
           "name": "EXP_unsent_$default_instance",
           "value": "[]"
         },
         {
-          "name": "EXP_client-LkM_DEFAULT_USER_PROVIDER",
-          "value": "{\"first_seen\":\"1781703254.487\"}"
+          "name": "tradingview.sessions",
+          "value": "{\"sessionHighlight\":{\"backgrounds\":{\"preMarket\":{\"color\":\"#FF9800\",\"transparency\":92},\"postMarket\":{\"color\":\"#2962FF\",\"transparency\":92},\"electronic\":{\"color\":\"#2962FF\",\"transparency\":92},\"outOfSession\":{\"color\":\"#2962FF\",\"transparency\":92,\"visible\":true,\"available\":true}},\"vertlines\":{\"sessBreaks\":{\"color\":\"#4985e7\",\"style\":2,\"visible\":false,\"width\":1,\"available\":true}}}}"
         },
         {
-          "name": "u_sclid_r",
-          "value": "UOqoUz3hv2I_PIEW7LIpI1L-ZNkf6S-dA1x40gGZvQIxP9ueRYdVRSZhNFjjkS09"
+          "name": "survi::languageCodes",
+          "value": "{\"data\":[\"ab\",\"ace\",\"ach\",\"af\",\"ak\",\"alz\",\"am\",\"ar\",\"as\",\"awa\",\"ay\",\"az\",\"ba\",\"ban\",\"bbc\",\"be\",\"bem\",\"bew\",\"bg\",\"bho\",\"bik\",\"bm\",\"bn\",\"br\",\"bs\",\"btx\",\"bts\",\"bua\",\"ca\",\"ceb\",\"chm\",\"ckb\",\"cgg\",\"cnh\",\"co\",\"crh\",\"crs\",\"cs\",\"cv\",\"cy\",\"da\",\"de\",\"din\",\"doi\",\"dov\",\"dv\",\"dz\",\"ee\",\"el\",\"en\",\"en-gb\",\"en-us\",\"eo\",\"es\",\"et\",\"eu\",\"fa\",\"ff\",\"fi\",\"fj\",\"fr\",\"fy\",\"ga\",\"gaa\",\"gd\",\"gl\",\"gn\",\"gom\",\"gu\",\"ha\",\"haw\",\"he\",\"hil\",\"hi\",\"hmn\",\"hr\",\"hrx\",\"ht\",\"hu\",\"hy\",\"id\",\"ig\",\"ilo\",\"is\",\"it\",\"ja\",\"jw\",\"ka\",\"kk\",\"km\",\"kn\",\"ko\",\"kri\",\"ktu\",\"ku\",\"ky\",\"la\",\"lb\",\"lg\",\"lij\",\"li\",\"ln\",\"lo\",\"lmo\",\"lt\",\"ltg\",\"luo\",\"lus\",\"lv\",\"mai\",\"mak\",\"mg\",\"min\",\"mk\",\"ml\",\"mni-mtei\",\"mn\",\"ms\",\"ms-arab\",\"mt\",\"my\",\"ne\",\"new\",\"nl\",\"no\",\"nso\",\"nr\",\"nus\",\"ny\",\"oc\",\"om\",\"or\",\"pa\",\"pa-arab\",\"pag\",\"pam\",\"pap\",\"pl\",\"ps\",\"pt\",\"pt-br\",\"pt-pt\",\"qu\",\"rn\",\"ro\",\"rom\",\"ru\",\"rw\",\"sa\",\"scn\",\"sd\",\"sg\",\"shn\",\"si\",\"sk\",\"sl\",\"sm\",\"sn\",\"so\",\"sq\",\"sr\",\"ss\",\"st\",\"su\",\"sv\",\"sw\",\"szl\",\"ta\",\"te\",\"tet\",\"tg\",\"th\",\"ti\",\"tk\",\"tl\",\"tn\",\"tr\",\"ts\",\"tt\",\"ug\",\"uk\",\"ur\",\"uz\",\"vi\",\"xh\",\"yi\",\"yo\",\"yua\",\"yue\",\"zh\",\"zh-tw\",\"zu\"],\"timestamp\":1780921833598}"
         },
         {
-          "name": "__user_traits",
-          "value": "{\"userEmail\":\"b0d311aa4c8a7f1926430f3781e3009f3767f076af43e7c794074c423be4cc6a\"}"
+          "name": "tradingview.toggle_delete_locked_linetools",
+          "value": "false"
         },
         {
-          "name": "lastExternalReferrerTime",
-          "value": "1781703257591"
+          "name": "survi::ebcbe974fc901cd265e6d871c8a9dd2e::statusrequestHandler_contacts",
+          "value": "{\"handlerId\":\"2bea3a58-617e-4730-8d7c-f1a372954dec\",\"maximumTime\":1781793083697}"
+        },
+        {
+          "name": "tradingview.trading.Broker",
+          "value": "{\"qty\":{\"21674419315365060\":1}}"
+        },
+        {
+          "name": "tradingview.chartproperties",
+          "value": "{\"timezone\":\"Africa/Cairo\",\"priceScaleSelectionStrategyName\":\"auto\",\"inactivityGaps\":false,\"paneProperties\":{\"backgroundType\":\"solid\",\"gridLinesMode\":\"both\",\"vertGridProperties\":{\"style\":0,\"color\":\"#373737\"},\"horzGridProperties\":{\"style\":0,\"color\":\"#373737\"},\"crossHairProperties\":{\"style\":1,\"transparency\":0,\"width\":2,\"color\":\"rgba(117, 122, 142, 0.4)\"},\"topMargin\":20,\"bottomMargin\":5,\"axisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"indexedTo100\":false,\"log\":false,\"logDisabled\":false,\"alignLabels\":true,\"isInverted\":false},\"legendProperties\":{\"showStudyArguments\":true,\"showStudyTitles\":true,\"showStudyValues\":true,\"showSeriesTitle\":true,\"showSeriesOHLC\":true,\"showLegend\":true,\"showLastDayChange\":false,\"showBarChange\":true,\"showVolume\":false,\"showBackground\":true,\"showPriceSource\":true,\"backgroundTransparency\":50,\"showLogo\":true,\"showTradingButtons\":true,\"showTradingButtonsMobile\":true,\"showSeriesLegendCloseOnMobile\":true,\"barChangeUpColor\":\"#089981\",\"barChangeDownColor\":\"#F23645\",\"useBarChangeCustomColors\":false},\"separatorColor\":\"#2E2E2E\",\"background\":\"#1B1B1B\",\"backgroundGradientStartColor\":\"#1F1F1F\",\"backgroundGradientEndColor\":\"#0F0F0F\"},\"scalesProperties\":{\"fontSize\":12,\"scaleSeriesOnly\":false,\"showSeriesLastValue\":true,\"seriesLastValueMode\":1,\"showSeriesPrevCloseValue\":false,\"showStudyLastValue\":true,\"showSymbolLabels\":false,\"showStudyPlotLabels\":false,\"showBidAskLabels\":false,\"showPrePostMarketPriceLabel\":true,\"showFundamentalNameLabel\":false,\"showFundamentalLastValue\":true,\"barSpacing\":6,\"saveLeftEdge\":false,\"textColor\":\"#edeef2\",\"lineColor\":\"rgba(27, 27, 27, 0.5)\",\"backgroundColor\":\"#ffffff\"},\"chartEventsSourceProperties\":{\"visible\":true,\"futureOnly\":true,\"breaks\":{\"color\":\"#555555\",\"visible\":false,\"style\":2,\"width\":1}},\"tradingProperties\":{\"showPositions\":true,\"positionPL\":{\"visibility\":true,\"display\":0},\"bracketsPL\":{\"visibility\":true,\"display\":0},\"positionAndBracketsPL\":true,\"showProjectMarketOrder\":false,\"showOrders\":true,\"showExecutions\":false,\"showExecutionsLabels\":false,\"showReverse\":true,\"horizontalAlignment\":2,\"extendLeft\":true,\"lineLength\":5,\"lineWidth\":1,\"lineStyle\":0},\"volumePaneSize\":\"medium\"}"
+        },
+        {
+          "name": "deviceProperties2",
+          "value": "{\"installationId\":\"640325f6-925f-466d-befd-a629fafe4aae\",\"launchCount\":15,\"installationVersion\":\"3.35.0\",\"currentVersionLaunchCount\":2,\"actualLaunchTime\":1781793070764,\"isPreviouslyLoggedIn\":false,\"language\":\"en\",\"chartType\":3,\"chartPeriod\":60000,\"drawingToolsPanelPosition\":\"{}\",\"drawingPanelPosition\":\"{}\",\"drawingPanelVisibility\":false,\"chartDrawings\":\"{}\",\"chartsState2\":\"{}\",\"keepMeLoggedIn\":true,\"theme\":\"black-theme\",\"priceTimeTerm\":{},\"toggledPortfolioGroups2\":{},\"toggledPortfolioOrderGroups\":{},\"collapsedTradePositionGroups\":{},\"collapsedTradeOrderGroups\":{},\"chartPanelSettings\":{},\"rememberedUserId\":37369834,\"usersAuthData\":{\"37369834\":{\"userId\":37369834,\"authTypes\":[0],\"authTypeChangeProposed\":false,\"email\":\"newtest26@gmail.com\"}},\"noRewardsBannerCloseCount\":0,\"closedLearnTradeOnexBanner\":false,\"shownProAccountBanner\":false,\"clickNumOnProAccountBanner\":0,\"inviteFriendsBannerCloseCount\":0,\"usersAcceptedCryptoDepositTerms\":[],\"noveltyList\":[{\"name\":\"STOCK_REPORTS\",\"isNovelty\":true,\"releaseVersion\":\"2.84.0\",\"content\":[]},{\"name\":\"MAJOR_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"FOR_YOU_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"QUICK_FEED\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"ALL_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]},{\"name\":\"NEW_NEWS\",\"isNovelty\":true,\"releaseVersion\":\"3.11.0\",\"content\":[]}],\"howDidYouHearBannerClosedCount\":0,\"waitingListBannerClosed\":{},\"proofsLastReminder\":{\"date\":1781793071563,\"proofs\":[]},\"numberOfVisitedInstruments\":0,\"isDemoTooltipShown\":false,\"lastLaunchVersion\":\"3.37.0\",\"lastLaunchTime\":1781640829676}"
         },
         {
           "name": "AMP_remote_config_23a2071c89",
-          "value": "{\"remoteConfig\":{\"configs\":{\"diagnostics\":{\"browserSDK\":{\"sampleRate\":0.02}},\"sessionReplay\":{},\"analyticsSDK\":{}}},\"lastFetch\":\"2026-06-17T13:34:17.342Z\"}"
+          "value": "{\"remoteConfig\":{\"configs\":{\"diagnostics\":{\"browserSDK\":{\"sampleRate\":0.02}},\"sessionReplay\":{\"sr_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"medium\"},\"sr_sampling_config\":{\"capture_enabled\":true}},\"analyticsSDK\":{}}},\"lastFetch\":\"2026-06-18T14:30:46.753Z\"}"
         },
         {
           "name": "ss_webReferrer",
           "value": "\"\""
         },
         {
-          "name": "lastExternalReferrer",
-          "value": "empty"
+          "name": "fp_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
+          "value": "2/uC3c3w5NlMRs2EgLczfDTb87LAQTp05tiUcvlmGiw="
+        },
+        {
+          "name": "tradingview.current_theme.name",
+          "value": "dark"
         },
         {
           "name": "pusherTransportTLS",
-          "value": "{\"timestamp\":1781703254273,\"transport\":\"ws\",\"latency\":328}"
+          "value": "{\"timestamp\":1781793046694,\"transport\":\"ws\",\"latency\":312}"
         },
         {
           "name": "tabsCount",
-          "value": "0"
+          "value": "9"
         },
         {
-          "name": "AMP_unsent_23a2071c89",
-          "value": "[{\"device_id\":\"6a72f0a3-0964-40d8-a158-cc3cab4062e9\",\"session_id\":1781703257336,\"time\":1781703289367,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"6428c445-7c7f-4a35-94a1-aea5f434d6e9\",\"event_type\":\"[Amplitude] Element Clicked\",\"event_properties\":{\"[Amplitude] Element Hierarchy\":[{\"tag\":\"button\",\"index\":2,\"indexOfType\":0,\"prevSib\":\"div\",\"classes\":[\"XEUC\",\"kLvC\",\"lgVq\"],\"attrs\":{\"data-sentry-element\":\"Button\",\"data-sentry-source-file\":\"index.tsx\",\"type\":\"submit\",\"data-sentry-component\":\"renderButton\"}},{\"tag\":\"div\",\"index\":0,\"indexOfType\":0,\"classes\":[\"HGwk\",\"OzVE\"],\"attrs\":{\"data-sentry-element\":\"Tag\",\"data-sentry-component\":\"Grid\",\"data-sentry-source-file\":\"index.tsx\"}},{\"tag\":\"form\",\"index\":1,\"indexOfType\":0,\"prevSib\":\"div\",\"attrs\":{\"method\":\"post\",\"novalidate\":\"\",\"data-sentry-component\":\"LogIn\",\"data-sentry-source-file\":\"index.tsx\",\"data-gtm-form-interact-id\":\"0\"}},{\"tag\":\"div\",\"index\":1,\"indexOfType\":0,\"prevSib\":\"button\",\"classes\":[\"HGwk\",\"OzVE\"],\"attrs\":{\"data-sentry-element\":\"Tag\",\"data-sentry-component\":\"Grid\",\"data-sentry-source-file\":\"index.tsx\"}},{\"tag\":\"div\",\"index\":0,\"indexOfType\":0,\"classes\":[\"Kzxh\",\"xlPT\",\"OEzd\",\"YdLl\"],\"attrs\":{\"data-sentry-component\":\"Box\",\"data-sentry-source-file\":\"index.tsx\"}},{\"tag\":\"div\",\"index\":6,\"indexOfType\":5,\"prevSib\":\"div\",\"classes\":[\"z656\"],\"attrs\":{\"data-sentry-component\":\"Modal\",\"data-sentry-source-file\":\"index.tsx\"}},{\"tag\":\"body\",\"index\":1,\"indexOfType\":0,\"prevSib\":\"head\"}],\"[Amplitude] Element Tag\":\"button\",\"[Amplitude] Element Text\":\"Continue\",\"[Amplitude] Element Position Left\":410,\"[Amplitude] Element Position Top\":472,\"[Amplitude] Element Path\":\"html > body > div.z656 > div > div > form > div > button\",\"[Amplitude] Element Parent Label\":\"Supported locally. Connected globally.\",\"[Amplitude] Page URL\":\"https://capital.com/en-int\",\"[Amplitude] Page Title\":\"Online Trading with Our Award-winning Platform | Capital.com\",\"[Amplitude] Viewport Height\":720,\"[Amplitude] Viewport Width\":1280,\"[Amplitude] Page View ID\":\"bc3e00f0-0a16-43f6-ae28-b2fdb4463688\",\"[Amplitude] Element Class\":\"XEUC kLvC lgVq\",\"[Amplitude] Page Domain\":\"capital.com\",\"[Amplitude] Page Location\":\"https://capital.com/en-int\",\"[Amplitude] Page Path\":\"/en-int\",\"[Amplitude] Previous Page Location\":\"\",\"[Amplitude] Previous Page Type\":\"direct\"},\"event_id\":26,\"library\":\"amplitude-ts/2.40.0\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36\"},{\"device_id\":\"6a72f0a3-0964-40d8-a158-cc3cab4062e9\",\"session_id\":1781703257336,\"time\":1781703289376,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"20743e89-648b-460c-a92e-02ebe47aa3ea\",\"event_type\":\"[Amplitude] Form Started\",\"event_properties\":{\"[Amplitude] Form ID\":\"\",\"[Amplitude] Form Name\":\"\",\"[Amplitude] Form Destination\":\"https://capital.com/en-int\",\"[Amplitude] Page Domain\":\"capital.com\",\"[Amplitude] Page Location\":\"https://capital.com/en-int\",\"[Amplitude] Page Path\":\"/en-int\",\"[Amplitude] Page Title\":\"Online Trading with Our Award-winning Platform | Capital.com\",\"[Amplitude] Page URL\":\"https://capital.com/en-int\",\"[Amplitude] Previous Page Location\":\"\",\"[Amplitude] Previous Page Type\":\"direct\"},\"event_id\":27,\"library\":\"amplitude-ts/2.40.0\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36\"},{\"device_id\":\"6a72f0a3-0964-40d8-a158-cc3cab4062e9\",\"session_id\":1781703257336,\"time\":1781703289389,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"8f7a4c9f-9ea2-44b4-888e-b250171a4e50\",\"event_type\":\"[Amplitude] Form Submitted\",\"event_properties\":{\"[Amplitude] Form ID\":\"\",\"[Amplitude] Form Name\":\"\",\"[Amplitude] Form Destination\":\"https://capital.com/en-int\",\"[Amplitude] Page Domain\":\"capital.com\",\"[Amplitude] Page Location\":\"https://capital.com/en-int\",\"[Amplitude] Page Path\":\"/en-int\",\"[Amplitude] Page Title\":\"Online Trading with Our Award-winning Platform | Capital.com\",\"[Amplitude] Page URL\":\"https://capital.com/en-int\",\"[Amplitude] Previous Page Location\":\"\",\"[Amplitude] Previous Page Type\":\"direct\"},\"event_id\":28,\"library\":\"amplitude-ts/2.40.0\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36\"},{\"user_id\":\"37369834\",\"device_id\":\"6a72f0a3-0964-40d8-a158-cc3cab4062e9\",\"session_id\":1781703257336,\"time\":1781703290099,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"d0b59c57-7e91-47c0-89e4-94e1ef48557e\",\"event_type\":\"[Amplitude] Viewport Content Updated\",\"event_properties\":{\"[Amplitude] Page URL\":\"https://capital.com/en-int\",\"[Amplitude] Max Page X\":1280,\"[Amplitude] Max Page Y\":720,\"[Amplitude] Viewport Height\":720,\"[Amplitude] Viewport Width\":1280,\"[Amplitude] Element Exposed\":[\"div#header-panel > div > a\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(1) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(1) > a:nth-child(3)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(1) > a:nth-child(4)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(2) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(2) > a:nth-child(3)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(2) > a:nth-child(4)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(2) > a:nth-child(5)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(2) > a:nth-child(6)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(2) > a:nth-child(7)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(3) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(3) > a:nth-child(3)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(3) > a:nth-child(4)\",\"div#header-holder > div > nav > div:nth-child(1) > div.zIlv > div > div:nth-child(3) > a:nth-child(5)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(1) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(1) > a:nth-child(3)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(1) > a:nth-child(4)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(1) > a:nth-child(5)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(1) > a:nth-child(6)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(1) > a:nth-child(7)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(1) > a:nth-child(8)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(1) > a:nth-child(9)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(2) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(2) > div.zIlv > div > div:nth-child(2) > a:nth-child(3)\",\"div#header-holder > div > nav > div:nth-child(3) > div > a\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(1) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(1) > a:nth-child(3)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(1) > a:nth-child(4)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(1) > a:nth-child(5)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(1) > a:nth-child(6)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(1) > a:nth-child(7)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(1) > a:nth-child(8)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(2) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(2) > a:nth-child(3)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(2) > a:nth-child(4)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(3) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(3) > a:nth-child(3)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(3) > a:nth-child(4)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(4) > a:nth-child(2)\",\"div#header-holder > div > nav > div:nth-child(4) > div.zIlv > div > div:nth-child(4) > a:nth-child(3)\",\"div#header-holder > div > button\",\"div#header-panel > div > div.TZZR.AQGb > div > button.XEUC.ER68.Dhb7.JN6Z.js-analyticsClick.js-analyticsVisible.js-analyticsClick\",\"div#header-panel > div > div.TZZR.AQGb > div > button.XEUC.S9Tg.Dhb7.js-analyticsClick.js-analyticsVisible.JN6Z.js-analyticsClick\",\"div#header-panel > div > div.TZZR.AQGb > a.XEUC.S9Tg.Dhb7.cG7U.JN6Z.UoAH.js-analyticsClick.AMZV\",\"html > body > div.E0P4 > div > div.cwNM > div.vNFy > div.Nwgp > div.pLO9 > div > div > div > div.gp1L > div > button\",\"html > body > button\",\"html > body > div.consent-sdk > dialog > div > div.consent-banner__content.consent-banner__content--opt-in > p > a\",\"html > body > div.consent-sdk > dialog > div > div.consent-banner__actions > button:nth-child(1)\",\"html > body > div.consent-sdk > dialog > div > div.consent-banner__actions > button:nth-child(2)\",\"html > body > div.consent-sdk > dialog > div > div.consent-banner__actions > button.consent-banner__button.consent-banner__button--secondary.js-analyticsClick\",\"html > body > div.z656 > div > button\",\"html > body > div.z656 > div > div > div.HGwk.nmfq.ME6O > p > button\",\"input#email\",\"input#password\",\"html > body > div.z656 > div > div > form > div > div > div:nth-child(2) > div > label\",\"html > body > div.z656 > div > div > form > div > div > div.HGwk.peMT.DwNG.M1aH.xp51 > label\",\"input#remember_me\",\"html > body > div.z656 > div > div > form > div > div > div.HGwk.peMT.DwNG.M1aH.xp51 > button\",\"html > body > div.z656 > div > div > form > div > button\",\"html > body > div.z656 > div > div > div.HGwk.pVGX.OzVE.cdfW.CbLy > button\",\"html > body > div.z656 > div > div > form > div > div > div.o88T.o0zA.BRhb.lgc0.ccs0 > button\",\"html > body > div.z656 > div > div > form > div > div > div.o88T.o0zA.BRhb.lgc0.ccs0 > div > label\",\"html > body > div.z656 > div > div > form > div > div > div.o88T.o0zA.BRhb.lgc0.ccs0 > button:nth-child(2)\",\"html > body > div.z656 > div > div > form > div > div > div.o88T.o0zA.BRhb.lgc0.ccs0 > button:nth-child(3)\"],\"[Amplitude] Page View ID\":\"bc3e00f0-0a16-43f6-ae28-b2fdb4463688\",\"[Amplitude] Page Domain\":\"capital.com\",\"[Amplitude] Page Location\":\"https://capital.com/en-int\",\"[Amplitude] Page Path\":\"/en-int\",\"[Amplitude] Page Title\":\"Online Trading with Our Award-winning Platform | Capital.com\",\"[Amplitude] Previous Page Location\":\"\",\"[Amplitude] Previous Page Type\":\"direct\"},\"event_id\":29,\"library\":\"amplitude-ts/2.40.0\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36\"}]"
-        }
-      ]
-    },
-    {
-      "origin": "https://tr.snapchat.com",
-      "localStorage": [
-        {
-          "name": "u_sclid_r",
-          "value": "bs8PPqkwZ2hQWwCU3Uvn-FjTy7SLONka_IUyLjrR22iCicZhfBdlMQCa_qQc2U0a"
+          "name": "trading.active_broker",
+          "value": "Broker"
         },
         {
-          "name": "u_sclid",
-          "value": "bs8PPqkwZ2hQWwCU3Uvn-FjTy7SLONka_IUyLjrR22iCicZhfBdlMQCa_qQc2U0a"
+          "name": "tradingview.BarsMarksContainer.visibile",
+          "value": "true"
+        },
+        {
+          "name": "chartOverrides_web",
+          "value": "{\"installationId\":\"6b82ec49-2b38-40c8-b2f0-84fa152a18bc\",\"chartsOvr\":{}}"
+        },
+        {
+          "name": "tabsLastCloseTimestamp",
+          "value": "1781793070277"
+        },
+        {
+          "name": "amp-exp-$default_instance-6XuNSE",
+          "value": "{}"
+        },
+        {
+          "name": "survi::ebcbe974fc901cd265e6d871c8a9dd2e::statusrequestHandler_respondent",
+          "value": "{\"handlerId\":\"a54c8453-1fa6-4293-b563-043b2d39cf97\",\"maximumTime\":1781793083697}"
+        },
+        {
+          "name": "tradingview.trading.orderWidgetMode.",
+          "value": "popup"
+        },
+        {
+          "name": "EXP_client-LkM_DEFAULT_USER_PROVIDER",
+          "value": "{\"first_seen\":\"1780921527.698\"}"
+        },
+        {
+          "name": "__user_traits",
+          "value": "{\"userEmail\":\"b0d311aa4c8a7f1926430f3781e3009f3767f076af43e7c794074c423be4cc6a\"}"
+        },
+        {
+          "name": "tradingview.widgetbar.widget.watchlistterminal",
+          "value": "5iURFbSUARhK"
+        },
+        {
+          "name": "survi::tldToLanguageMap",
+          "value": "{\"data\":{\"ae\":\"ar\",\"ar\":\"es\",\"at\":\"de\",\"au\":\"en\",\"az\":\"az\",\"be\":[\"nl\",\"fr\"],\"bg\":\"bg\",\"br\":\"pt\",\"by\":\"be\",\"ca\":[\"en\",\"fr\"],\"ch\":[\"de\",\"fr\",\"it\"],\"cl\":\"es\",\"cn\":\"zh\",\"cz\":\"cs\",\"de\":\"de\",\"dk\":\"da\",\"ee\":\"et\",\"eg\":\"ar\",\"es\":\"es\",\"fi\":\"fi\",\"fr\":\"fr\",\"ge\":\"ka\",\"gr\":\"el\",\"hk\":\"zh\",\"hr\":\"hr\",\"hu\":\"hu\",\"id\":\"id\",\"ie\":\"en\",\"il\":\"he\",\"in\":[\"hi\",\"en\"],\"is\":\"is\",\"it\":\"it\",\"jp\":\"ja\",\"kr\":\"ko\",\"kz\":\"kk\",\"lt\":\"lt\",\"lu\":[\"fr\",\"de\",\"lb\"],\"lv\":\"lv\",\"ma\":[\"ar\",\"fr\"],\"mx\":\"es\",\"my\":[\"ms\",\"en\"],\"nl\":\"nl\",\"no\":\"no\",\"nz\":\"en\",\"pe\":\"es\",\"ph\":[\"en\",\"tl\"],\"pl\":\"pl\",\"pt\":\"pt\",\"ro\":\"ro\",\"rs\":\"sr\",\"ru\":\"ru\",\"sa\":\"ar\",\"se\":\"sv\",\"sg\":[\"en\",\"ms\",\"zh\",\"ta\"],\"si\":\"sl\",\"sk\":\"sk\",\"th\":\"th\",\"tr\":\"tr\",\"tw\":\"zh\",\"ua\":\"uk\",\"uk\":\"en\",\"us\":\"en\",\"vn\":\"vi\",\"za\":[\"en\",\"af\",\"zu\",\"xh\"]},\"timestamp\":1780921833598}"
+        },
+        {
+          "name": "last-crosstab-monotonic-timestamp",
+          "value": "1781793072876"
+        },
+        {
+          "name": "tradingview.chartproperties.mainSeriesProperties",
+          "value": "{\"style\":1,\"esdShowDividends\":true,\"esdShowSplits\":true,\"esdShowEarnings\":true,\"esdShowBreaks\":false,\"showContinuousContractSwitches\":true,\"showContinuousContractSwitchesBreaks\":false,\"showFuturesContractExpiration\":true,\"showLastNews\":true,\"showCountdown\":false,\"showPriceLine\":true,\"priceLineWidth\":1,\"showPrevClosePriceLine\":false,\"prevClosePriceLineWidth\":1,\"minTick\":\"default\",\"dividendsAdjustment\":{},\"backAdjustment\":false,\"settlementAsClose\":true,\"sessionId\":\"regular\",\"bidAsk\":{\"visible\":false,\"lineStyle\":1,\"lineWidth\":1,\"bidLineColor\":\"#2962FF\",\"askLineColor\":\"#F7525F\"},\"prePostMarket\":{\"visible\":true,\"lineStyle\":1,\"lineWidth\":1,\"preMarketColor\":\"#FB8C00\",\"postMarketColor\":\"#2962FF\"},\"highLowAvgPrice\":{\"highLowPriceLinesVisible\":false,\"highLowPriceLabelsVisible\":false,\"averageClosePriceLineVisible\":false,\"averageClosePriceLabelVisible\":false,\"highLowPriceLinesWidth\":1,\"averagePriceLineWidth\":1,\"highLowPriceLinesColor\":\"\",\"averagePriceLineColor\":\"\"},\"statusViewStyle\":{\"fontSize\":16,\"showExchange\":true,\"showInterval\":true,\"symbolTextSource\":\"ticker\"},\"lineStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"lineWithMarkersStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"steplineStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"colorType\":\"gradient\",\"color\":\"#59a0e4\",\"gradientStartColor\":\"#D500F9\",\"gradientEndColor\":\"#00BCE5\"},\"baselineStyle\":{\"topLineWidth\":2,\"bottomLineWidth\":2,\"topLineStyle\":0,\"bottomLineStyle\":0,\"priceSource\":\"close\",\"transparency\":40,\"baseLevelPercentage\":50,\"baselineColor\":\"rgba(117, 122, 142, 0.4)\",\"topFillColor1\":\"rgba(46, 135, 215, 0.1)\",\"topFillColor2\":\"rgba(46, 135, 215, 0.1)\",\"bottomFillColor1\":\"rgba(234, 59, 87, 0.1)\",\"bottomFillColor2\":\"rgba(234, 59, 87, 0.1)\",\"topLineColor\":\"#388EE3\",\"bottomLineColor\":\"#EB434E\"},\"areaStyle\":{\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"transparency\":100,\"color1\":\"rgba(89, 160, 228, 0.1)\",\"color2\":\"rgba(89, 160, 228, 0.1)\",\"linecolor\":\"#59a0e4\"},\"hlcAreaStyle\":{\"highLineVisible\":true,\"highLineStyle\":0,\"highLineWidth\":2,\"lowLineVisible\":true,\"lowLineStyle\":0,\"lowLineWidth\":2,\"closeLineStyle\":0,\"closeLineWidth\":2,\"highLineColor\":\"#388EE3\",\"lowLineColor\":\"#EB434E\",\"closeLineColor\":\"#7d7d7d\",\"highCloseFillColor\":\"rgba(56, 142, 227, 0.2)\",\"closeLowFillColor\":\"rgba(235, 67, 78, 0.2)\"},\"barStyle\":{\"barColorsOnPrevClose\":false,\"dontDrawOpen\":false,\"thinBars\":true,\"downColor\":\"#EB434E\",\"upColor\":\"#388EE3\"},\"hlcBarsStyle\":{\"thinBars\":true,\"color\":\"#2962FF\"},\"candleStyle\":{\"drawWick\":true,\"drawBorder\":false,\"barColorsOnPrevClose\":false,\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"volCandlesStyle\":{\"drawWick\":true,\"drawBorder\":true,\"barColorsOnPrevClose\":false,\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"hollowCandleStyle\":{\"drawWick\":true,\"drawBorder\":false,\"drawBody\":true,\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderColor\":\"#388EE3\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\"},\"haStyle\":{\"drawWick\":true,\"drawBorder\":true,\"showRealLastPrice\":false,\"barColorsOnPrevClose\":false,\"inputs\":{},\"inputInfo\":{},\"drawBody\":true,\"borderColor\":\"#378658\",\"upColor\":\"#388EE3\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\"},\"hiloStyle\":{\"showBorders\":true,\"showLabels\":true,\"drawBody\":true,\"color\":\"#59a0e4\",\"borderColor\":\"#2962FF\",\"labelColor\":\"#2962FF\"},\"columnStyle\":{\"barColorsOnPrevClose\":true,\"priceSource\":\"close\",\"baselinePosition\":\"bottom\",\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\"},\"renkoStyle\":{\"inputs\":{\"source\":\"close\",\"sources\":\"Close\",\"boxSize\":3,\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"wicks\":true},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"wicks\":{\"name\":\"Wicks\"}},\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"borderUpColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"borderDownColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"wickUpColor\":\"#388EE3\",\"wickDownColor\":\"#EB434E\"},\"pbStyle\":{\"inputs\":{\"lb\":3},\"inputInfo\":{\"lb\":{\"name\":\"Number of line\"}},\"upColor\":\"#388EE3\",\"downColor\":\"#EB434E\",\"borderUpColor\":\"#388EE3\",\"borderDownColor\":\"#EB434E\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\",\"borderUpColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"borderDownColorProjection\":\"rgba(235, 67, 78, 0.6)\"},\"kagiStyle\":{\"inputs\":{\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"reversalAmount\":1},\"inputInfo\":{\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"reversalAmount\":{\"name\":\"Reversal amount\"}},\"downColor\":\"#EB434E\",\"upColor\":\"#388EE3\",\"upColorProjection\":\"rgba(56, 142, 227, 0.6)\",\"downColorProjection\":\"rgba(235, 67, 78, 0.6)\"},\"pnfStyle\":{\"inputs\":{\"sources\":\"Close\",\"reversalAmount\":3,\"boxSize\":1,\"style\":\"ATR\",\"atrLength\":14,\"percentageLTP\":1,\"oneStepBackBuilding\":false},\"inputInfo\":{\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"reversalAmount\":{\"name\":\"Reversal amount\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"percentageLTP\":{\"name\":\"Percentage\"},\"oneStepBackBuilding\":{\"name\":\"One step back building\"}},\"downColor\":\"#F23645\",\"upColor\":\"#089981\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\"},\"rangeStyle\":{\"barStyle\":0,\"thinBars\":true,\"inputs\":{\"range\":10,\"phantomBars\":false},\"inputInfo\":{\"range\":{\"name\":\"Range\"},\"phantomBars\":{\"name\":\"Phantom bars\"}},\"upColor\":\"#089981\",\"downColor\":\"#F23645\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"candlesUpColor\":\"#089981\",\"candlesDownColor\":\"#F23645\",\"candlesBorderUpColor\":\"#089981\",\"candlesBorderDownColor\":\"#F23645\",\"candlesWickUpColor\":\"#089981\",\"candlesWickDownColor\":\"#F23645\"},\"tpoStyle\":{},\"svpStyle\":{},\"volFootprintStyle\":{},\"baseLineColor\":\"#636363\",\"prevClosePriceLineColor\":\"#555555\",\"priceLineColor\":\"\",\"timeframe\":\"\",\"shortName\":\"Virgin Galactic Holdings Inc\",\"unitId\":null,\"metricId\":null,\"symbol\":\"21674419315365060\",\"interval\":\"60\",\"priceAxisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"log\":false,\"logDisabled\":false,\"alignLabels\":true,\"isInverted\":false,\"indexedTo100\":false}}"
+        },
+        {
+          "name": "userManagementWebDeviceSettings2",
+          "value": "{\"installationId\":\"c603a4da-de56-4576-99e1-7ec4738ab9ee\",\"userData\":{\"userModelLookupUserId\":{\"37369834\":{\"licence\":\"BAH\",\"live\":true,\"history\":{}}}}}"
+        },
+        {
+          "name": "tradingview.savedwatch.5iURFbSUARhK",
+          "value": "{\"symbols\":[],\"title\":\"Watchlist\"}"
         }
       ]
     },
@@ -886,12 +681,36 @@
       "origin": "https://www.google.com",
       "localStorage": [
         {
-          "name": "rc::a",
-          "value": "MWdreTh1YTE5bHI0aGY="
+          "name": "sb_wiz.zpc.gws-wiz-serp.",
+          "value": "{\"0\":[[\"chatgpt download\",0,[512,650,67,871,362,308],{\"zl\":90000}],[\"quillbot\",0,[512,650,67,871,362,308],{\"zl\":90000}],[\"paraphrasing tool\",0,[512,650,67,871,362,308],{\"zl\":90000}],[\"galati drona ruseasca\",0,[3,143,362,308],{\"zl\":90001,\"zp\":{\"gs_ss\":\"1\"},\"zf\":33}],[\"sergiu cretu\",0,[3,143,362,308],{\"zf\":33,\"zp\":{\"gs_ss\":\"1\"},\"zl\":90001}],[\"permis de conducere\",0,[3,143,362,308],{\"zf\":33,\"zl\":90001,\"zp\":{\"gs_ss\":\"1\"}}],[\"centrală nucleară\",0,[3,143,362,308],{\"zf\":33,\"zp\":{\"gs_ss\":\"1\"},\"zl\":90001}],[\"viceprimar\",0,[3,143,362,308],{\"zl\":90001,\"zp\":{\"gs_ss\":\"1\"},\"zf\":33}],[\"benzină\",0,[3,143,362,308],{\"zl\":90001,\"zp\":{\"gs_ss\":\"1\"},\"zf\":33}]],\"1\":{\"av\":\"14005434100362019251\",\"ag\":{\"a\":{\"8\":[\"Căutări populare\"],\"90000\":[\"Similare căutărilor recente\",\"\",\"\",7],\"90001\":[\"Căutări populare\",\"\",\"\",10]}}}}"
+        },
+        {
+          "name": "sb_wiz.pq_tm_hp",
+          "value": "1780921029620"
         },
         {
           "name": "rc::f",
-          "value": "0aAJh6Vko-0JHaEL1N7ItKu50b_up3cdtgUgh7EJrDOmfD5OQysaNy0-CJKjay2yAoJothn5o"
+          "value": "0aAD5oO36h3WMR-29wUDrMEFWFOpOLoyfVVD0amO5Zv93QBkLjKaXpzYt_NK045_MiGR7-QDPDrtJKRC1mt7e_sVV81ATU"
+        },
+        {
+          "name": "sb_wiz.pq",
+          "value": "chatgpt"
+        },
+        {
+          "name": "rc::a",
+          "value": "MTd3MmNiYTZzaWN4NQ=="
+        },
+        {
+          "name": "sb_wiz.sr_di",
+          "value": "GM3mqMqytcHeYhikq5evo9fu6VQY5LCG37zambPzARj7qNLGwtzirJQBGL-1q8DGp435iwE"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AKhCRwgBPieIVbCNBbaVfWxwaLXX73unfrTI-UU3fFbCO7z1Y-AHcl7wmzgIGHQHqBo0FdIbMeryEK5mx4wXfDXNlPEE5EJXcsKZFl2X1oB1xNd0PpW557ejAWYAk30m"
+        },
+        {
+          "name": "sb_wiz.sc_pq",
+          "value": ""
         }
       ]
     }
