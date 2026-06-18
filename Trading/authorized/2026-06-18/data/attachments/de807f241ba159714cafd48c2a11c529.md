@@ -1,0 +1,485 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - text: عقود الفروقات هي أدوات مالية معقدة تنطوي على مخاطر عالية قد تؤدي إلى خسارة سريعة للأموال بسبب الرافعة المالية..
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - strong [ref=e10]: وتجدر الإشارة إلى أن %78.48 من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع مقدم الخدمة هذا
+          - text: .
+        - text: يجب أن تفكر مليّا فيما إذا كنت قادرًا على تحمّل مخاطر عالية قد تؤدي إلى خسارة أموالك. يُرجى قراءة بيان الإفصاح عن المخاطر الخاص بنا بعناية
+    - generic [ref=e12]:
+      - link [ref=e13] [cursor=pointer]:
+        - /url: /ar-int
+        - img [ref=e14]
+      - generic [ref=e19]:
+        - navigation [ref=e20]:
+          - button "التداول التداول تداول عقود الفروقات التداول التجريبي احترافي حسومات نقدية لجميع المتداولين المنصات منصة الويب تطبيقات الهاتف المحمول للتداول TradingView MT4 MT5 تعلّم التداول استراتيجيات التداول التحليل الفني سيكولوجية التداول تعلّم التداول" [ref=e21]:
+            - button "التداول" [ref=e22]:
+              - generic [ref=e23]: التداول
+            - generic [ref=e25]:
+              - generic [ref=e26]:
+                - generic [ref=e27]: التداول
+                - link "تداول عقود الفروقات" [ref=e28] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/cfd-trading
+                - link "التداول التجريبي" [ref=e29] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/demo-account
+                - link "احترافي" [ref=e30] [cursor=pointer]:
+                  - /url: /ar-int/professional
+                - link "حسومات نقدية لجميع المتداولين" [ref=e31] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/rebates
+              - generic [ref=e32]:
+                - generic [ref=e33]: المنصات
+                - link "منصة الويب" [ref=e34] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/web-platform
+                - link "تطبيقات الهاتف المحمول للتداول" [ref=e35] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e36] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/trading-view
+                - link "MT4" [ref=e37] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mt4
+                - link "MT5" [ref=e38] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mt5
+              - generic [ref=e39]:
+                - generic [ref=e40]: تعلّم التداول
+                - link "استراتيجيات التداول" [ref=e41] [cursor=pointer]:
+                  - /url: /ar-int/learn/trading-strategies
+                - link "التحليل الفني" [ref=e42] [cursor=pointer]:
+                  - /url: /ar-int/learn/technical-analysis
+                - link "سيكولوجية التداول" [ref=e43] [cursor=pointer]:
+                  - /url: /ar-int/learn/trading-psychology
+                - link "تعلّم التداول" [ref=e44] [cursor=pointer]:
+                  - /url: /ar-int/learn
+          - button "الأسواق" [ref=e45]:
+            - button "الأسواق" [ref=e46]:
+              - generic [ref=e47]: الأسواق
+          - link "التسعير" [ref=e50] [cursor=pointer]:
+            - /url: /ar-int/ways-to-trade/fees-and-charges
+          - button "من نحن" [ref=e51]:
+            - button "من نحن" [ref=e52]:
+              - generic [ref=e53]: من نحن
+        - button "ar" [ref=e54] [cursor=pointer]:
+          - generic [ref=e56]: ar
+      - link "افتح المنصة" [ref=e58] [cursor=pointer]:
+        - /url: /trading/platform/
+  - generic [ref=e61]:
+    - generic [ref=e62]:
+      - generic [ref=e66]:
+        - heading "دعم محلي يواكب تطلعاتك. تواصل عالمي يضع الأسواق بين يديك." [level=2] [ref=e67]:
+          - generic [ref=e68]: دعم محلي يواكب تطلعاتك.
+          - text: تواصل عالمي يضع الأسواق بين يديك.
+        - paragraph [ref=e69]: مرخّصة ومنظّمة من قبل هيئة الأوراق المالية في جزر البهاما (SCB)
+      - generic [ref=e73]:
+        - generic [ref=e77]:
+          - generic [ref=e79]:
+            - heading "في أسواقٍ تضج بالعشوائية والصخب، نمهد لك الطريق لاتخاذ قرارات استثمارية مدروسة" [level=1] [ref=e80]
+            - generic [ref=e82]:
+              - text: حضور عالمي
+              - text: منصة لتداول عقود الفروقات
+              - text: ٥٥٠٠+ أداة مالية
+            - button "افتح حسابك" [ref=e83] [cursor=pointer]: افتح حسابك
+          - generic [ref=e84]:
+            - generic:
+              - generic:
+                - img "Hero slide 1 Bottom"
+          - generic [ref=e86]:
+            - link "Android" [ref=e87] [cursor=pointer]:
+              - /url: /ar-int/trading-platforms/mobile-apps
+            - link "IOS" [ref=e88] [cursor=pointer]:
+              - /url: /ar-int/trading-platforms/mobile-apps
+            - link "MT4" [ref=e89] [cursor=pointer]:
+              - /url: /ar-int/trading-platforms/mt4
+            - link "MT5" [ref=e90] [cursor=pointer]:
+              - /url: /ar-int/trading-platforms/mt5
+            - link "TradingView" [ref=e91] [cursor=pointer]:
+              - /url: /ar-int/trading-platforms/trading-view
+            - link "بوابة الويب" [ref=e92] [cursor=pointer]:
+              - /url: /ar-int/trading-platforms/web-platform
+        - generic [ref=e95]:
+          - img [ref=e96]
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - heading "5,500+ أداة مالية. بيئة واحدة لصنع القرار" [level=2] [ref=e99]:
+                - text: 5,500+ أداة مالية.
+                - text: بيئة واحدة لصنع القرار
+              - link "استكشف أسواق عقود الفروقات" [ref=e100] [cursor=pointer]:
+                - /url: /ar-int/markets
+            - list [ref=e104]:
+              - listitem [ref=e105]:
+                - button "السلع" [ref=e106] [cursor=pointer]:
+                  - heading "السلع" [level=3] [ref=e109]
+              - listitem [ref=e110]:
+                - button "العملات المشفّرة" [ref=e111] [cursor=pointer]:
+                  - heading "العملات المشفّرة" [level=3] [ref=e114]
+              - listitem [ref=e115]:
+                - button "الأسهم" [ref=e116] [cursor=pointer]:
+                  - heading "الأسهم" [level=3] [ref=e119]
+              - listitem [ref=e120]:
+                - button "السندات" [ref=e121] [cursor=pointer]:
+                  - heading "السندات" [level=3] [ref=e124]
+              - listitem [ref=e125]:
+                - button "صناديق الاستثمار المتداولة" [ref=e126] [cursor=pointer]:
+                  - heading "صناديق الاستثمار المتداولة" [level=3] [ref=e129]
+              - listitem [ref=e130]:
+                - button "المؤشرات" [ref=e131] [cursor=pointer]:
+                  - heading "المؤشرات" [level=3] [ref=e134]
+              - listitem [ref=e135]:
+                - button "أسعار الفائدة" [ref=e136] [cursor=pointer]:
+                  - heading "أسعار الفائدة" [level=3] [ref=e139]
+              - listitem [ref=e140]:
+                - button "السلع" [ref=e141] [cursor=pointer]:
+                  - heading "السلع" [level=3] [ref=e144]
+              - listitem [ref=e145]:
+                - button "العملات المشفّرة" [ref=e146] [cursor=pointer]:
+                  - heading "العملات المشفّرة" [level=3] [ref=e149]
+              - listitem [ref=e150]:
+                - button "الأسهم" [ref=e151] [cursor=pointer]:
+                  - heading "الأسهم" [level=3] [ref=e154]
+              - listitem [ref=e155]:
+                - button "السندات" [ref=e156] [cursor=pointer]:
+                  - heading "السندات" [level=3] [ref=e159]
+              - listitem [ref=e160]:
+                - button "صناديق الاستثمار المتداولة" [ref=e161] [cursor=pointer]:
+                  - heading "صناديق الاستثمار المتداولة" [level=3] [ref=e164]
+              - listitem [ref=e165]:
+                - button "المؤشرات" [ref=e166] [cursor=pointer]:
+                  - heading "المؤشرات" [level=3] [ref=e169]
+              - listitem [ref=e170]:
+                - button "أسعار الفائدة" [ref=e171] [cursor=pointer]:
+                  - heading "أسعار الفائدة" [level=3] [ref=e174]
+              - listitem [ref=e175]:
+                - button "السلع" [ref=e176] [cursor=pointer]:
+                  - heading "السلع" [level=3] [ref=e179]
+              - listitem [ref=e180]:
+                - button "العملات المشفّرة" [ref=e181] [cursor=pointer]:
+                  - heading "العملات المشفّرة" [level=3] [ref=e184]
+              - listitem [ref=e185]:
+                - button "الأسهم" [ref=e186] [cursor=pointer]:
+                  - heading "الأسهم" [level=3] [ref=e189]
+              - listitem [ref=e190]:
+                - button "السندات" [ref=e191] [cursor=pointer]:
+                  - heading "السندات" [level=3] [ref=e194]
+              - listitem [ref=e195]:
+                - button "صناديق الاستثمار المتداولة" [ref=e196] [cursor=pointer]:
+                  - heading "صناديق الاستثمار المتداولة" [level=3] [ref=e199]
+              - listitem [ref=e200]:
+                - button "المؤشرات" [ref=e201] [cursor=pointer]:
+                  - heading "المؤشرات" [level=3] [ref=e204]
+              - listitem [ref=e205]:
+                - button "أسعار الفائدة" [ref=e206] [cursor=pointer]:
+                  - heading "أسعار الفائدة" [level=3] [ref=e209]
+    - generic [ref=e210]:
+      - generic [ref=e212]:
+        - heading "على كل شاشة. نظام تداول واحد." [level=2] [ref=e213]:
+          - text: على كل شاشة.
+          - generic [ref=e214]: نظام تداول واحد.
+        - paragraph [ref=e215]: منصات متعددة، أسواق شاملة، عبر أي جهاز. بنيتك التحتية المتكاملة للتداول.
+        - generic [ref=e216]:
+          - link [ref=e217] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+          - link [ref=e218] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+          - link [ref=e219] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+      - generic:
+        - generic:
+          - generic:
+            - img "Mobile platform"
+        - generic:
+          - generic:
+            - img "Web platform"
+    - generic [ref=e220]:
+      - img [ref=e221]
+      - generic [ref=e223]:
+        - heading "رؤية جلية لتكاليف التداول قبل الشروع في أي صفقة" [level=2] [ref=e224]
+        - generic [ref=e225]:
+          - list [ref=e226]:
+            - listitem [ref=e227]:
+              - heading "نحقق عائداتنا فقط من السبريد للصفقات المنفذة" [level=3] [ref=e228]
+              - paragraph [ref=e229]: شفافية مطلقة تسبق فتح أي صفقة.
+            - listitem [ref=e230]:
+              - heading "إيداع وسحب مجاني تمامًا" [level=3] [ref=e231]
+              - paragraph [ref=e232]: وسائل دفع موثوقة. حوالات مصرفية، وبطاقات دفع، ومحافظ رقمية
+          - generic [ref=e233]:
+            - generic [ref=e234]: يمكن الاطلاع على هيكل الرسوم الكامل لدينا على صفحة
+            - link "الرسوم والأتعاب." [ref=e235] [cursor=pointer]:
+              - /url: /ar-int/ways-to-trade/fees-and-charges
+    - generic [ref=e236]:
+      - generic [ref=e238]:
+        - img "risk graph 1" [ref=e240]
+        - img "risk graph 2" [ref=e242]
+      - generic [ref=e243]:
+        - generic [ref=e245]:
+          - heading "معظم المتداولين يتكبدون خسائر مالية" [level=2] [ref=e247]
+          - heading "قد يكون لتقلبات السوق دور في ذلك" [level=2] [ref=e249]
+          - heading "لكن قراراتك هي الفاصل الحقيقي" [level=2] [ref=e251]
+        - generic [ref=e252]:
+          - generic [ref=e254]:
+            - heading "خطط باستراتيجية في أوقات الهدوء." [level=2] [ref=e255]
+            - heading "لتصمد بثبات تحت وطأة ضغوط السوق." [level=2] [ref=e256]
+          - generic [ref=e257]:
+            - generic [ref=e258]:
+              - heading "حدد مستوى وقف الخسارة قبل بدء التداول" [level=3] [ref=e259]
+              - img "trading" [ref=e261]
+            - generic [ref=e262]:
+              - heading "اختر الرافعة المالية" [level=3] [ref=e263]
+              - img "cfd" [ref=e265]
+              - img "leverage" [ref=e267]
+            - generic [ref=e268]:
+              - heading "أكد أمر التنفيذ" [level=3] [ref=e269]
+              - img "bottomSheet" [ref=e271]
+    - generic [ref=e272]:
+      - generic [ref=e273]:
+        - heading "الانضباط المالي يتجلى بوضوح وكذلك الثقة التي نحظى بها" [level=2] [ref=e275]:
+          - text: الانضباط المالي يتجلى بوضوح
+          - text: وكذلك الثقة التي نحظى بها
+        - generic [ref=e276]:
+          - img "Secondary phone" [ref=e279]
+          - img "Main phone" [ref=e282]
+      - list [ref=e288]:
+        - listitem [ref=e289]:
+          - link "4.7 التقييمات وآراء العملاء" [ref=e290] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e291]: "4.7"
+            - generic [ref=e292]: التقييمات وآراء العملاء
+        - listitem [ref=e293]:
+          - link "4.7 التقييمات وآراء العملاء" [ref=e294] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e295]: "4.7"
+            - generic [ref=e296]: التقييمات وآراء العملاء
+        - listitem [ref=e297]:
+          - link "4.6 TradingView" [ref=e298] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - generic [ref=e299]: "4.6"
+            - generic [ref=e300]: TradingView
+        - listitem [ref=e301]:
+          - link "4.6 Trustpilot" [ref=e302] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e303]: "4.6"
+            - generic [ref=e304]: Trustpilot
+        - listitem [ref=e305]:
+          - link "4.7 التقييمات وآراء العملاء" [ref=e306] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e307]: "4.7"
+            - generic [ref=e308]: التقييمات وآراء العملاء
+        - listitem [ref=e309]:
+          - link "4.7 التقييمات وآراء العملاء" [ref=e310] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e311]: "4.7"
+            - generic [ref=e312]: التقييمات وآراء العملاء
+        - listitem [ref=e313]:
+          - link "4.6 TradingView" [ref=e314] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - generic [ref=e315]: "4.6"
+            - generic [ref=e316]: TradingView
+        - listitem [ref=e317]:
+          - link "4.6 Trustpilot" [ref=e318] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e319]: "4.6"
+            - generic [ref=e320]: Trustpilot
+        - listitem [ref=e321]:
+          - link "4.7 التقييمات وآراء العملاء" [ref=e322] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/id1230088754?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e323]: "4.7"
+            - generic [ref=e324]: التقييمات وآراء العملاء
+        - listitem [ref=e325]:
+          - link "4.7 التقييمات وآراء العملاء" [ref=e326] [cursor=pointer]:
+            - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+            - generic [ref=e327]: "4.7"
+            - generic [ref=e328]: التقييمات وآراء العملاء
+        - listitem [ref=e329]:
+          - link "4.6 TradingView" [ref=e330] [cursor=pointer]:
+            - /url: https://www.tradingview.com/broker/Capitalcom/
+            - generic [ref=e331]: "4.6"
+            - generic [ref=e332]: TradingView
+        - listitem [ref=e333]:
+          - link "4.6 Trustpilot" [ref=e334] [cursor=pointer]:
+            - /url: https://www.trustpilot.com/review/capital.com
+            - generic [ref=e335]: "4.6"
+            - generic [ref=e336]: Trustpilot
+  - contentinfo [ref=e338]:
+    - generic [ref=e339]:
+      - link [ref=e340] [cursor=pointer]:
+        - /url: /ar-int
+        - img [ref=e341]
+      - generic [ref=e345]:
+        - link [ref=e346] [cursor=pointer]:
+          - /url: https://twitter.com/capitalcom
+        - link [ref=e347] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com/
+        - link [ref=e348] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcom/
+        - link [ref=e349] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@capitalcom_international
+        - link [ref=e350] [cursor=pointer]:
+          - /url: https://www.facebook.com/capitalcom/
+        - link [ref=e351] [cursor=pointer]:
+          - /url: https://www.reddit.com/r/capitalcom/
+      - generic [ref=e352]:
+        - link [ref=e353] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e354] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e355] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e356]:
+      - generic [ref=e357]:
+        - generic [ref=e358]:
+          - generic [ref=e359]:
+            - generic [ref=e360]: "البلد / المنطقة:"
+            - button "Moldova, Republic of" [ref=e361] [cursor=pointer]:
+              - generic [ref=e363]: Moldova, Republic of
+          - generic [ref=e364]: •
+          - generic [ref=e365]:
+            - generic [ref=e366]: "اللغة:"
+            - button "Arabic" [ref=e367] [cursor=pointer]:
+              - generic [ref=e368]: Arabic
+        - generic [ref=e369]:
+          - generic [ref=e370]: "كما يمكنك الاتصال بنا على:"
+          - link "+971 4 576 8641" [ref=e373] [cursor=pointer]:
+            - /url: tel:+971 4 576 8641
+            - strong [ref=e374]: +971 4 576 8641
+            - strong
+          - generic [ref=e375]: •
+          - link "support@capital.com" [ref=e377] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e378]: support@capital.com
+      - generic [ref=e379]:
+        - generic [ref=e380]:
+          - strong [ref=e382]: التداول
+          - generic [ref=e383]:
+            - generic [ref=e384]:
+              - generic [ref=e385]: التداول
+              - generic [ref=e386]:
+                - generic [ref=e387]:
+                  - link "تداول عقود الفروقات" [ref=e388] [cursor=pointer]:
+                    - /url: /ar-int/ways-to-trade/cfd-trading
+                  - link "حاسبة تداول عقود الفروقات" [ref=e391] [cursor=pointer]:
+                    - /url: /ar-int/ways-to-trade/cfd-trading/cfd-calculator
+                - link "التداول التجريبي" [ref=e393] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/demo-account
+                - link "احترافي" [ref=e395] [cursor=pointer]:
+                  - /url: /ar-int/professional
+                - link "حسومات نقدية لجميع المتداولين" [ref=e397] [cursor=pointer]:
+                  - /url: /ar-int/ways-to-trade/rebates
+            - generic [ref=e398]:
+              - generic [ref=e399]: المنصات
+              - generic [ref=e400]:
+                - link "منصة الويب" [ref=e402] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/web-platform
+                - link "تطبيقات الهاتف المحمول للتداول" [ref=e404] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e406] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/trading-view
+                - link "MT4" [ref=e408] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mt4
+                - link "MT5" [ref=e410] [cursor=pointer]:
+                  - /url: /ar-int/trading-platforms/mt5
+            - generic [ref=e411]:
+              - generic [ref=e412]: تعلّم التداول
+              - generic [ref=e413]:
+                - link "استراتيجيات التداول" [ref=e415] [cursor=pointer]:
+                  - /url: /ar-int/learn/trading-strategies
+                - link "التحليل الفني" [ref=e417] [cursor=pointer]:
+                  - /url: /ar-int/learn/technical-analysis
+                - link "سيكولوجية التداول" [ref=e419] [cursor=pointer]:
+                  - /url: /ar-int/learn/trading-psychology
+                - generic [ref=e420]:
+                  - link "تعلّم التداول" [ref=e421] [cursor=pointer]:
+                    - /url: /ar-int/learn
+                  - link "التداول على الطروحات العامة الأولية (IPO)" [ref=e424] [cursor=pointer]:
+                    - /url: /ar-int/learn/ipo
+        - generic [ref=e425]:
+          - strong [ref=e427]: الأسواق
+          - generic [ref=e428]:
+            - generic [ref=e429]:
+              - generic [ref=e430]: أسواقنا
+              - generic [ref=e431]:
+                - link "الأسواق" [ref=e433] [cursor=pointer]:
+                  - /url: /ar-int/markets
+                - link "الأسهم" [ref=e435] [cursor=pointer]:
+                  - /url: /ar-int/markets/shares
+                - link "الفوركس" [ref=e437] [cursor=pointer]:
+                  - /url: /ar-int/markets/forex
+                - link "المؤشرات" [ref=e439] [cursor=pointer]:
+                  - /url: /ar-int/markets/indices
+                - link "السلع" [ref=e441] [cursor=pointer]:
+                  - /url: /ar-int/markets/commodities
+                - link "العملات المشفّرة" [ref=e443] [cursor=pointer]:
+                  - /url: /ar-int/markets/cryptocurrencies
+                - link "السندات" [ref=e445] [cursor=pointer]:
+                  - /url: /ar-int/markets/bonds
+                - link "أسعار الفائدة" [ref=e447] [cursor=pointer]:
+                  - /url: /ar-int/markets/interest-rates
+            - generic [ref=e448]:
+              - generic [ref=e449]: رؤى السوق
+              - link "تحليل السوق" [ref=e452] [cursor=pointer]:
+                - /url: /ar-int/analysis
+        - link "التسعير" [ref=e455] [cursor=pointer]:
+          - /url: /ar-int/ways-to-trade/fees-and-charges
+          - strong [ref=e456]: التسعير
+        - generic [ref=e457]:
+          - strong [ref=e459]: من نحن
+          - generic [ref=e460]:
+            - generic [ref=e461]:
+              - generic [ref=e462]: من نحن
+              - generic [ref=e463]:
+                - link "من نحن" [ref=e465] [cursor=pointer]:
+                  - /url: /ar-int/about-us
+                - link "مكاتبنا" [ref=e467] [cursor=pointer]:
+                  - /url: /ar-int/about-us/our-offices
+                - link "هل capital.com آمن؟" [ref=e469] [cursor=pointer]:
+                  - /url: /ar-int/security-measures
+                - link "نموذج عملنا" [ref=e471] [cursor=pointer]:
+                  - /url: /ar-int/about-us/how-capital-makes-money
+            - generic [ref=e472]:
+              - generic [ref=e473]: اعمل معنا
+              - generic [ref=e474]:
+                - link "برامج الشراكة" [ref=e476] [cursor=pointer]:
+                  - /url: /ar-int/partnerships
+                - link "احالة صديق" [ref=e478] [cursor=pointer]:
+                  - /url: /ar-int/refer-a-friend
+            - generic [ref=e479]:
+              - generic [ref=e480]: المساعدة
+              - generic [ref=e481]:
+                - link "المساعدة" [ref=e483] [cursor=pointer]:
+                  - /url: /ar-int/help
+                - link "تعرّض العملاء للمخاطر" [ref=e485] [cursor=pointer]:
+                  - /url: /ar-int/help/client-vulnerability
+                - link "تواصل معنا" [ref=e487] [cursor=pointer]:
+                  - /url: /ar-int/contact-us
+            - generic [ref=e488]:
+              - generic [ref=e489]: قانوني
+              - generic [ref=e490]:
+                - link "الشروط والسياسات" [ref=e492] [cursor=pointer]:
+                  - /url: /ar-int/terms-and-policies
+                - link "الشكاوى" [ref=e494] [cursor=pointer]:
+                  - /url: /ar-int/help/complaints
+    - generic [ref=e496]:
+      - paragraph [ref=e497]:
+        - text: عقود الفروقات هي أدوات مالية معقدة تنطوي على مخاطر عالية قد تؤدي إلى خسارة سريعة للأموال بسبب الرافعة المالية..
+        - generic [ref=e498]:
+          - generic [ref=e499]:
+            - strong [ref=e500]: وتجدر الإشارة إلى أن %78.48 من حسابات المستثمرين الأفراد تخسر الأموال عند تداول عقود الفروقات مع مقدم الخدمة هذا
+            - text: .
+          - text: يجب أن تفكر مليّا فيما إذا كنت قادرًا على تحمّل مخاطر عالية قد تؤدي إلى خسارة أموالك. يُرجى قراءة بيان الإفصاح عن المخاطر الخاص بنا بعناية
+      - paragraph
+      - paragraph [ref=e501]: شركة Capital Com Online Investments Ltd هي شركة ذات مسؤولية محدودة تحمل رقم 209236B، وهي مُسجلة في كومنولث جزر البهاما ومُرخصة من قبل هيئة الأوراق المالية في جزر البهاما تحت رقم ترخيص SIA-F245. يقع المكتب المُسجّل للشركة في 3 بايسايد إكزكيوتيف بارك، شارع بليك-ويست باي، ص. ب. 13012، ناسو، جزر البهاما.
+    - generic [ref=e502]:
+      - paragraph [ref=e503]: © 2026 Capital Com Online Investments Ltd
+      - generic [ref=e504]:
+        - link "خريطة الموقع" [ref=e505] [cursor=pointer]:
+          - /url: /ar-int/sitemap
+        - link "إعدادات ملفات تعريف الارتباط" [ref=e506] [cursor=pointer]:
+          - /url: ""
+        - link:
+          - /url: /ar-int
+        - link "الشروط والسياسات" [ref=e507] [cursor=pointer]:
+          - /url: /ar-int/terms-and-policies
+        - link "إجراءات تقديم الشكاوى (SCB)" [ref=e508] [cursor=pointer]:
+          - /url: /ar-int/help/complaints
+  - button [ref=e509] [cursor=pointer]
+  - alert [ref=e511]
+```
