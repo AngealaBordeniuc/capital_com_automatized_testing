@@ -1,0 +1,309 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e8]: Capital Com MENA Securities Trading LLC is regulated by the Capital Market Authority.
+    - generic [ref=e10]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: /en-ae
+        - img [ref=e12]
+      - generic [ref=e17]:
+        - navigation [ref=e18]:
+          - button "Trading" [ref=e19]:
+            - button "Trading" [ref=e20]:
+              - generic [ref=e21]: Trading
+          - button "Markets" [ref=e22]:
+            - button "Markets" [ref=e23]:
+              - generic [ref=e24]: Markets
+          - link "Pricing" [ref=e27] [cursor=pointer]:
+            - /url: /en-ae/ways-to-trade/fees-and-charges
+          - button "About" [ref=e28]:
+            - button "About" [ref=e29]:
+              - generic [ref=e30]: About
+        - button "en" [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: en
+      - link "Open platform" [ref=e35] [cursor=pointer]:
+        - /url: /trading/platform/
+      - button "Search" [ref=e36] [cursor=pointer]
+  - generic [ref=e37]:
+    - paragraph [ref=e40]:
+      - generic [ref=e41]:
+        - link "Home" [ref=e42] [cursor=pointer]:
+          - /url: /en-ae
+        - text: •
+      - generic [ref=e43]:
+        - link "Company" [ref=e44] [cursor=pointer]:
+          - /url: /en-ae/about-us
+        - text: •
+      - text: Our business model
+    - generic [ref=e45]:
+      - generic [ref=e52]:
+        - heading "How Capital·com makes money" [level=1] [ref=e53]
+        - paragraph [ref=e55]: Our revenue comes from spreads, overnight funding, guaranteed stop-loss order premiums (when activated) and other regional fees. No commission is charged on positions.
+      - generic [ref=e58]:
+        - main [ref=e59]:
+          - generic [ref=e61]:
+            - heading "Spreads" [level=2] [ref=e62]
+            - paragraph [ref=e63]: The spread is the difference between the buy and sell price of an asset. It is the primary way Capital·com generates revenue. The size varies depending on the asset and market conditions.
+            - paragraph [ref=e64]: In highly liquid markets such as EUR/USD or gold, spreads are typically lower than in less liquid markets. Less liquid markets may carry higher costs and greater volatility.
+            - paragraph [ref=e65]: The spread on the deal ticket before opening a position shows the exact cost at that moment.
+            - generic [ref=e66]:
+              - heading "CFD spread example" [level=3] [ref=e67]
+              - list [ref=e68]:
+                - listitem [ref=e69]: • 1 contract is held on the US Tech 100, quoted at 12475/76.
+                - listitem [ref=e70]: • The spread is 1 point.
+                - listitem [ref=e71]: • Half the spread is paid on opening and half on closing. The total spread cost is £1 x 1 point = £1.
+            - heading "Guaranteed stop-loss orders" [level=2] [ref=e72]
+            - paragraph [ref=e73]: A standard stop-loss order closes a position at a specified level. It is not guaranteed to execute at exactly that price — during a market gap, execution may occur at the next available price. Slippage can occur in volatile or low-liquidity conditions.
+            - paragraph [ref=e74]: A guaranteed stop-loss order (GSL) closes a position at exactly the specified price, regardless of slippage or market gaps. A fee — the GSL premium — applies if the order is triggered.
+            - paragraph [ref=e75]
+            - heading "Overnight funding" [level=3] [ref=e76]
+            - paragraph [ref=e77]: Overnight funding is a daily charge applied to leveraged positions held past the daily rollover time. It reflects the cost of maintaining exposure outside standard market hours. In some cases — typically for short positions — a credit is applied rather than a charge.
+            - paragraph [ref=e78]: "The calculation varies by asset class:"
+            - list [ref=e79]:
+              - listitem [ref=e80]: "• Indices and shares: relevant interest rate benchmark (such as SONIA or SOFR) plus Capital·com's daily fee."
+              - listitem [ref=e81]: "• Forex: underlying market adjustment (TomNext), plus or minus Capital·com's daily fee."
+              - listitem [ref=e82]: "• Commodities: underlying market adjustment (futures basis), plus or minus Capital·com's daily fee."
+              - listitem [ref=e83]: "• Bonds/interest rates: underlying market adjustment (futures basis) plus or minus Capital.com's daily fee (0.01096%)."
+              - listitem [ref=e84]: "• Cryptocurrencies (Bitcoin and Ethereum CFDs): fixed daily rates apply. Long positions: 0.06164% daily (22.5% annually). Short positions receive a credit of 0.0137% daily (5% annually)."
+            - paragraph [ref=e85]:
+              - text: More information is available on the
+              - link "Charges and fees page" [ref=e86] [cursor=pointer]:
+                - /url: /en-ae/ways-to-trade/fees-and-charges
+              - text: .
+            - heading "Currency conversion fee" [level=2] [ref=e87]
+            - paragraph [ref=e88]: Applies when a transaction is in a different currency to the account's base currency. The fee is built into the exchange rate used for the conversion — not charged separately. Clients pay a 0.7% mark-up.
+            - paragraph [ref=e89]: "Applies to:"
+            - list [ref=e90]:
+              - listitem [ref=e91]: • Realised profit and loss
+              - listitem [ref=e92]: • Overnight funding adjustments
+              - listitem [ref=e93]: • Guaranteed stop-loss order fees
+              - listitem [ref=e94]: • Dividends
+              - listitem [ref=e95]: • Standalone currency conversions (manual conversions of account balance)
+            - strong [ref=e98]: "The GSL fee is calculated using three components: the guaranteed stop premium (percentage), the position's open price, and the quantity."
+            - generic [ref=e99]:
+              - heading "Example — closing a trade" [level=3] [ref=e100]
+              - list [ref=e101]:
+                - listitem [ref=e102]: "• Account currency: USD. European stock trade closed with a profit of €10.00."
+                - listitem [ref=e103]: "• At spot rate (1.1300): $11.30"
+                - listitem [ref=e104]: "• At all-in rate including 0.7% fee (1.1221): $11.22"
+                - listitem [ref=e105]: "• Conversion fee: $0.08"
+            - generic [ref=e106]:
+              - heading "Example — overnight funding adjustment" [level=3] [ref=e107]
+              - list [ref=e108]:
+                - listitem [ref=e109]: • European stock position. Overnight funding adjustment of -€4.00 applied in EUR.
+                - listitem [ref=e110]: "• At spot rate (1.1300): $4.52"
+                - listitem [ref=e111]: "• At all-in rate including 0.7% fee (1.1379): $4.55"
+                - listitem [ref=e112]: "• Conversion fee: $0.03"
+            - paragraph [ref=e113]: The all-in exchange rate used for each conversion is visible in the Reports section and when closing a position.
+          - generic [ref=e115]:
+            - heading "Further reading" [level=2] [ref=e117]
+            - generic [ref=e118]:
+              - generic [ref=e120]:
+                - heading "Charges and fees" [level=3] [ref=e121]
+                - link "More" [ref=e122] [cursor=pointer]:
+                  - /url: https://capital.com/en-ae/ways-to-trade/fees-and-charges
+                  - generic [ref=e123]: More
+              - generic [ref=e125]:
+                - heading "How our markets are priced" [level=3] [ref=e126]
+                - link "More" [ref=e127] [cursor=pointer]:
+                  - /url: https://capital.com/en-ae/about-us/how-our-markets-are-priced
+                  - generic [ref=e128]: More
+              - generic [ref=e130]:
+                - heading "Ways to trade" [level=3] [ref=e131]
+                - link "More" [ref=e132] [cursor=pointer]:
+                  - /url: https://capital.com/en-ae/ways-to-trade
+                  - generic [ref=e133]: More
+        - complementary [ref=e134]:
+          - navigation [ref=e138]:
+            - strong [ref=e139]: Contents
+            - separator
+            - generic [ref=e140]:
+              - link "Spreads" [ref=e142] [cursor=pointer]:
+                - /url: "#part_0"
+              - link "Guaranteed stop-loss orders" [ref=e144] [cursor=pointer]:
+                - /url: "#part_1"
+              - link "Currency conversion fee" [ref=e146] [cursor=pointer]:
+                - /url: "#part_2"
+      - generic [ref=e150]:
+        - heading "Ready to join a leading broker?" [level=2] [ref=e152]
+        - generic [ref=e153]:
+          - button [ref=e155] [cursor=pointer]
+          - generic [ref=e158]: 1. Create your account
+          - generic [ref=e159]: 2. Make your first deposit
+          - generic [ref=e160]: 3. Start trading
+  - contentinfo [ref=e162]:
+    - generic [ref=e163]:
+      - link [ref=e164] [cursor=pointer]:
+        - /url: /en-ae
+        - img [ref=e165]
+      - generic [ref=e169]:
+        - link [ref=e170] [cursor=pointer]:
+          - /url: https://twitter.com/capital_arabia
+        - link [ref=e171] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/capital.com
+        - link [ref=e172] [cursor=pointer]:
+          - /url: https://www.instagram.com/capitalcomarabia
+        - link [ref=e173] [cursor=pointer]:
+          - /url: https://www.youtube.com/@capital.com.287
+        - link [ref=e174] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@capitalcomarabia?lang=en
+      - generic [ref=e175]:
+        - link [ref=e176] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/id1230088754?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e177] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+        - link [ref=e178] [cursor=pointer]:
+          - /url: https://app.appsflyer.com/com.capital.trading.huawei-huawei?cp_device_id=640325f6-925f-466d-befd-a629fafe4aae&af_js_web=true&af_ss_ver=2_9_0&pid=organic_web&af_ss_ui=true
+    - generic [ref=e179]:
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - generic [ref=e183]: "Country / Region:"
+            - button "United Arab Emirates" [ref=e184] [cursor=pointer]:
+              - generic [ref=e186]: United Arab Emirates
+          - generic [ref=e187]: •
+          - generic [ref=e188]:
+            - generic [ref=e189]: "Language:"
+            - button "English" [ref=e190] [cursor=pointer]:
+              - generic [ref=e191]: English
+        - generic [ref=e192]:
+          - generic [ref=e193]: "Also you can contact us:"
+          - link "+971 4 576 8641" [ref=e196] [cursor=pointer]:
+            - /url: tel:+971 4 576 8641
+            - strong [ref=e197]: +971 4 576 8641
+            - strong
+          - generic [ref=e198]: •
+          - link "support@capital.com" [ref=e200] [cursor=pointer]:
+            - /url: mailto:support@capital.com
+            - strong [ref=e201]: support@capital.com
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - strong [ref=e205]: Trading
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - generic [ref=e208]: Trading
+              - generic [ref=e209]:
+                - link "Trade CFDs" [ref=e211] [cursor=pointer]:
+                  - /url: /en-ae/ways-to-trade/cfd-trading
+                - link "Get demo account" [ref=e213] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/demo-account
+            - generic [ref=e214]:
+              - generic [ref=e215]: Platforms
+              - generic [ref=e216]:
+                - link "Web platform" [ref=e218] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/web-platform
+                - link "Mobile app" [ref=e220] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/mobile-apps
+                - link "TradingView" [ref=e222] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/trading-view
+                - link "MT4" [ref=e224] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/mt4
+                - link "MT5" [ref=e226] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/mt5
+                - link "API access" [ref=e228] [cursor=pointer]:
+                  - /url: /en-ae/trading-platforms/api-development-guide
+            - generic [ref=e229]:
+              - generic [ref=e230]: Learn
+              - generic [ref=e231]:
+                - link "Trading strategies" [ref=e233] [cursor=pointer]:
+                  - /url: /en-ae/learn/trading-strategies
+                - link "Technical analysis" [ref=e235] [cursor=pointer]:
+                  - /url: /en-ae/learn/technical-analysis
+                - link "Trading psychology" [ref=e237] [cursor=pointer]:
+                  - /url: /en-ae/learn/trading-psychology
+                - link "All resources" [ref=e239] [cursor=pointer]:
+                  - /url: /en-ae/learn
+        - generic [ref=e240]:
+          - strong [ref=e242]: Markets
+          - generic [ref=e243]:
+            - generic [ref=e244]:
+              - generic [ref=e245]: Our markets
+              - generic [ref=e246]:
+                - link "Markets overview" [ref=e248] [cursor=pointer]:
+                  - /url: /en-ae/markets
+                - link "Shares" [ref=e250] [cursor=pointer]:
+                  - /url: /en-ae/markets/shares
+                - link "Forex" [ref=e252] [cursor=pointer]:
+                  - /url: /en-ae/markets/forex
+                - link "Indices" [ref=e254] [cursor=pointer]:
+                  - /url: /en-ae/markets/indices
+                - link "Commodities" [ref=e256] [cursor=pointer]:
+                  - /url: /en-ae/markets/commodities
+                - link "Cryptocurrencies" [ref=e258] [cursor=pointer]:
+                  - /url: /en-ae/markets/cryptocurrencies
+                - link "Bonds" [ref=e260] [cursor=pointer]:
+                  - /url: /en-ae/markets/bonds
+                - link "Interest rates" [ref=e262] [cursor=pointer]:
+                  - /url: /en-ae/markets/interest-rates
+            - generic [ref=e263]:
+              - generic [ref=e264]: Market info
+              - link "Market analysis" [ref=e267] [cursor=pointer]:
+                - /url: /en-ae/analysis
+        - link "Pricing" [ref=e270] [cursor=pointer]:
+          - /url: /en-ae/ways-to-trade/fees-and-charges
+          - strong [ref=e271]: Pricing
+        - generic [ref=e272]:
+          - strong [ref=e274]: About
+          - generic [ref=e275]:
+            - generic [ref=e276]:
+              - generic [ref=e277]: Who we are
+              - generic [ref=e278]:
+                - link "Company" [ref=e280] [cursor=pointer]:
+                  - /url: /en-ae/about-us
+                - link "Our offices" [ref=e282] [cursor=pointer]:
+                  - /url: /en-ae/about-us/our-offices
+                - link "Press centre" [ref=e284] [cursor=pointer]:
+                  - /url: /en-ae/media-centre
+                - link "Whitepaper" [ref=e286] [cursor=pointer]:
+                  - /url: /whitepaper
+                - link "Investor Relations" [ref=e288] [cursor=pointer]:
+                  - /url: /en-ae/about-us/investor-relations
+                - link "Is capital.com safe?" [ref=e290] [cursor=pointer]:
+                  - /url: /en-ae/security-measures
+                - link "Our business model" [ref=e292] [cursor=pointer]:
+                  - /url: /en-ae/about-us/how-capital-makes-money
+            - generic [ref=e293]:
+              - generic [ref=e294]: Work with us
+              - generic [ref=e295]:
+                - link "Careers" [ref=e297] [cursor=pointer]:
+                  - /url: /en-ae/about-us/careers
+                - link "Partnerships" [ref=e299] [cursor=pointer]:
+                  - /url: /en-ae/partnerships
+            - generic [ref=e300]:
+              - generic [ref=e301]: Help
+              - generic [ref=e302]:
+                - link "Help centre" [ref=e304] [cursor=pointer]:
+                  - /url: /en-ae/help
+                - link "Client vulnerability" [ref=e306] [cursor=pointer]:
+                  - /url: /en-ae/help/client-vulnerability
+                - link "Contact us" [ref=e308] [cursor=pointer]:
+                  - /url: /en-ae/contact-us
+            - generic [ref=e309]:
+              - generic [ref=e310]: Legal
+              - generic [ref=e311]:
+                - link "Terms & policies" [ref=e313] [cursor=pointer]:
+                  - /url: /en-ae/terms-and-policies
+                - link "Complaints" [ref=e315] [cursor=pointer]:
+                  - /url: /en-ae/help/complaints
+    - generic [ref=e317]:
+      - paragraph [ref=e318]:
+        - strong [ref=e319]: Over-the-counter leveraged derivative contracts, including contracts for difference and spot foreign exchange products are complex financial instruments and carries a high degree of risk of losing money rapidly due to leverage. Trading Over-the-Counter leveraged derivatives may not be suitable for all investors. Before engaging in any trading activities, you should carefully consider your investment objectives, risk tolerance, and financial situation. Please seek independent financial advice before trading if necessary.
+      - paragraph [ref=e320]: Capital Com MENA Securities Trading L.L.C. is a limited liability company with company number 1994695. Capital Com MENA Securities Trading L.L.C. is a Company registered in Dubai, United Arab Emirates, and authorised by the CMA (Capital Market Authority) with license number 20200000176. The company engages in financial and investment activities under Category One – Dealing in Securities which include (a)Financial Products dealer, (b)Trading broker in the international markets and (c)Trading broker of OTC derivatives and currencies in the spot market. The Company’s registered office is at Jumeirah Emirates Towers, Emirates Towers Offices, Level L14, Unit 14C, Dubai, UAE. Capital Com MENA Securities Trading L.L.C. is an execution only service provider and does not provide investment advice. Capital Com MENA Securities Trading L.L.C. may publish general market commentary from time to time. Where it does, the material published does not constitute advice, or a solicitation, or a recommendation to a transaction in any financial instrument. Capital Com MENA Securities Trading L.L.C. accepts no responsibility for any use of the content presented and any consequences of that use. No representation or warranty is given as to the completeness of this information. Anyone acting on the information provided does so at their own risk. The information contained herein is not intended for distribution to residents in any country where such distribution or use would contravene any local law or regulatory requirement. Our products and services are not available to embargoed or sanctioned countries. The information is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+    - generic [ref=e321]:
+      - paragraph [ref=e322]: © 2026 Capital Com Mena Securities Trading LLC
+      - generic [ref=e323]:
+        - link "Sitemap" [ref=e324] [cursor=pointer]:
+          - /url: /en-ae/sitemap
+        - link "Cookie Settings" [ref=e325] [cursor=pointer]:
+          - /url: ""
+        - link "Clients Funds" [ref=e326] [cursor=pointer]:
+          - /url: /en-ae/about-us/what-capital-does-with-your-money
+        - link "Terms and Policies" [ref=e327] [cursor=pointer]:
+          - /url: /en-ae/terms-and-policies
+        - link "Complaints Procedure CCMENA" [ref=e328] [cursor=pointer]:
+          - /url: /en-ae/help/complaints
+  - button [ref=e329] [cursor=pointer]
+  - alert [ref=e331]: Business Model | Capital.com UAE
+```
