@@ -1,3 +1,5 @@
-2026/06/26-00:43:36.784 a44 Reusing MANIFEST C:\capital_com_automatized_testing\chrome-profile\Default\Local Storage\leveldb/MANIFEST-000001
-2026/06/26-00:43:36.796 a44 Recovering log #7
-2026/06/26-00:43:36.800 a44 Reusing old log C:\capital_com_automatized_testing\chrome-profile\Default\Local Storage\leveldb/000007.log 
+2026/06/26-00:58:57.115 680c Reusing MANIFEST C:\capital_com_automatized_testing\chrome-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/06/26-00:58:57.120 680c Recovering log #7
+2026/06/26-00:58:57.121 680c Level-0 table #9: started
+2026/06/26-00:58:57.125 680c Level-0 table #9: 15910 bytes OK
+2026/06/26-00:58:57.129 680c Delete type=0 #7
