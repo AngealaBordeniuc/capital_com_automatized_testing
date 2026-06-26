@@ -4,13 +4,15 @@ import { OurOfficesPage } from "../../pages/aboutSection/OurOfficesPage";
 import { handleOptionalPopups } from "../../helpers/pop_ups";
 import { licenses } from "../../test-data/licenses";
 
+
 const languages = ["EN", "RO", "FR", "DE", "AR", "RU", "ZHT", "IT", "NL", "PL"];
 
 licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;
 
-    test(`${license.name} ${lang} – Our Offices`, async ({ page }) => {
+    test(`${license.name} ${lang} – Our Offices`, async ({ page }, testInfo) => {
+      const userState = testInfo.project.name;
       const path = license.paths[lang];
 
       await page.goto(path, {
@@ -27,7 +29,7 @@ licenses.forEach((license) => {
       const expectedPath = `${path}/about-us/our-offices`;
 
       await expect(page).toHaveURL(expectedPath);
-      await ourOfficesPage.clickCreateYourAccountButtonFromReady();
+      await ourOfficesPage.verifyThreeStepsOurOffices(userState);
     });
   });
 });

@@ -9,7 +9,7 @@ export class TradingSectionMenu {
 
      const header = this.page.locator("#header");
 
-     const tradingMenu = header.locator("span.mnMQ").first();
+     const tradingMenu = header.locator("span.Zn7NB").first();
 
      await tradingMenu.hover({ force: true });
      await this.page.waitForTimeout(200);

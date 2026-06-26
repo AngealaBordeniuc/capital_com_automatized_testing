@@ -12,7 +12,8 @@ licenses.forEach((license) => {
     if (!license.paths[lang]) return;
     if (!license.aboutSubmenus.COMPLAINTS) return;
 
-    test(`${license.name} ${lang} – Complaints`, async ({ page }) => {
+    test(`${license.name} ${lang} – Complaints`, async ({ page }, testInfo) => {
+      const userState = testInfo.project.name;
       const path = license.paths[lang];
 
       await page.goto(path, {
@@ -29,7 +30,7 @@ licenses.forEach((license) => {
       const expectedPath = `${path}/help/complaints`;
 
       await expect(page).toHaveURL(expectedPath);
-      await complaintsPage.clickCreateYourAccountButtonFromReady()
+      await complaintsPage.clickThreeStepsComplaints(userState)
     });
   });
 });

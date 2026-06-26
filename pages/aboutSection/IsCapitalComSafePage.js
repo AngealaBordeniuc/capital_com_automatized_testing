@@ -5,7 +5,7 @@ export class IsCapitalComSafePage{
         this.page = page
     }
 
-    async clickOpenAnAccountButton(){  
+    async clickOpenAnAccountButton(userState){  
     const openAccountBtn = this.page
         .locator(`
     a[href*="sign-up"],
@@ -20,7 +20,7 @@ export class IsCapitalComSafePage{
        openAccountBtn.click(),
      ]);   
 
-     await handleModalWindowSignUp(this.page, "/trading/platform/");
+     await handleModalWindowSignUp(this.page, userState);
     }
 
 }

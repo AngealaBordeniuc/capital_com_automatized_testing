@@ -9,7 +9,8 @@ const languages = ["EN"];
 licenses.forEach((license) => {
   languages.forEach((lang) => {
     // if (!license.paths[lang]) return;
-    test(`${license.name} ${lang} – Investor Relations`, async ({ page }) => {
+    test(`${license.name} ${lang} – Investor Relations: Three Steps`, async ({ page }, testInfo) => {
+      const userState = testInfo.project.name;
       const path = license.paths[lang];
 
       await page.goto(path, {
@@ -26,7 +27,7 @@ licenses.forEach((license) => {
       const expectedPath = `${path}/about-us/investor-relations`;
 
       await expect(page).toHaveURL(expectedPath);
-      await investorRelationsPage.clickCreateYourAccountButtonFromReady();
+      await investorRelationsPage.clickThreeStepsInvestor(userState);
     });
   });
 });

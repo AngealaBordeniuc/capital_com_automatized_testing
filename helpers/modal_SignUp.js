@@ -4,7 +4,7 @@ export async function handleModalWindowSignUp (page, userState) {
 
   console.log("USER STATE:", userState);
 
-  const modal = page.locator('div[data-sentry-component="Modal"]');
+  const modal = page.locator('[data-type="SIGN_UP_close"]');
   // const inputEmail = page.locator('[validateemail = "username"]');
 
   switch (userState){

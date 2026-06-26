@@ -2,7 +2,7 @@ import { expect } from '@playwright/test'
 
 export const handleOptionalPopups = async (page) => {  
   await handleStayOnSitePopUp(page);
-  await acceptAllCookies(page);
+  await acceptAllCookies(page);  
   await handleCookiesPopUp(page);  
   
   // await acceptImportantNotice(page);
@@ -65,6 +65,7 @@ export const acceptAllCookies = async (page) => {
   try {
     await acceptAllBtn.waitFor({ state: "visible", timeout: 3000 });
     await acceptAllBtn.click();
+    await expect(acceptAllBtn).toBeHidden({ timeout: 5000 });
   } catch {
     return; 
   }

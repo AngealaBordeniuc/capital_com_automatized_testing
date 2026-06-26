@@ -10,7 +10,8 @@ licenses.forEach((license) => {
   languages.forEach((lang) => {
     if (!license.paths[lang]) return;   
 
-    test(`${license.name} ${lang} – Is Capital Com Safe?`, async ({ page }) => {
+    test(`${license.name} ${lang} – Is Capital Com Safe?: Open Account`, async ({ page }, testInfo) => {
+      const userState = testInfo.project.name;
       const path = license.paths[lang];
 
       await page.goto(path, {
@@ -27,7 +28,7 @@ licenses.forEach((license) => {
       const expectedPath = `${path}/security-measures`;
 
       await expect(page).toHaveURL(expectedPath);
-      await isCapitalComSafePage.clickOpenAnAccountButton();
+      await isCapitalComSafePage.clickOpenAnAccountButton(userState);
     });
   });
 });

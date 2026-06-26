@@ -10,6 +10,7 @@ export const licenses = [
       logInButton: true,
       qrCodeNewToCapital: false,
       qrCodeExisting: false,
+      mostTradeButton: false,
     },
     paths: {
       EN: "/en-gb",
@@ -23,6 +24,7 @@ export const licenses = [
       IS_CAPITAL_COM_SAFE: true,
       OUR_OFFICES: true,
       WHY_CAPITAL_COM: true,
+      OUR_BUSINESS_MODEL: true,
     },
     tradingSubmenus: {
       TRADING_PLATFORM: true,
@@ -47,6 +49,7 @@ export const licenses = [
       mt4OpenAccountButton: true,     
       mt4SignUpNowDiscoverTradingButton: false,
       mt4SignUpWhyChooseButton: true,
+      mostTradeButton: true,
     },
     paths: {
       EN: "/en-ae",
@@ -61,6 +64,7 @@ export const licenses = [
       IS_CAPITAL_COM_SAFE: true,
       OUR_OFFICES: true,
       WHY_CAPITAL_COM: true,
+      OUR_BUSINESS_MODEL: true,
     },
     tradingSubmenus: {
       TRADING_PLATFORM: true,
@@ -88,6 +92,7 @@ export const licenses = [
       logInButton: false,
       qrCodeNewToCapital: true,
       qrCodeExisting: true,
+      mostTradeButton: true,
     },
     paths: {
       EN: "/en-eu",
@@ -101,6 +106,7 @@ export const licenses = [
     },
     aboutSubmenus: {
       CLIENT_VULNERABILITY: true,
+      OUR_BUSINESS_MODEL: true,
       CONTACT_US: true,
       HELP: true,
       INVESTOR_RELATIONS: true,
@@ -135,6 +141,7 @@ export const licenses = [
       logInButton: true,
       qrCodeNewToCapital: false,
       qrCodeExisting: false,
+      mostTradeButton: true,
     },
     paths: {
       EN: "/en-au",
@@ -148,6 +155,7 @@ export const licenses = [
       IS_CAPITAL_COM_SAFE: true,
       OUR_OFFICES: true,
       WHY_CAPITAL_COM: true,
+      OUR_BUSINESS_MODEL: true,
     },
     tradingSubmenus: {
       TRADING_PLATFORM: true,
@@ -175,6 +183,7 @@ export const licenses = [
       logInButton: true,
       qrCodeNewToCapital: false,
       qrCodeExisting: false,
+      mostTradeButton: true,
     },
     paths: {
       EN: "/en-int",
@@ -194,6 +203,7 @@ export const licenses = [
       IS_CAPITAL_COM_SAFE: true,
       OUR_OFFICES: true,
       WHY_CAPITAL_COM: true,
+      OUR_BUSINESS_MODEL: true,
     },
     tradingSubmenus: {
       TRADING_PLATFORM: true,

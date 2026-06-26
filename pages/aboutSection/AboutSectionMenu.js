@@ -14,7 +14,7 @@ export class AboutSectionMenu {
   async openAboutSubMenu(menuKey) {
     const header = this.page.locator("#header");
 
-    const aboutMenu = header.locator('a[href$="/about-us"]').first();
+    const aboutMenu = header.locator(".Zn7NB").nth(3);
     await aboutMenu.hover({ force: true });
 
     const subLink = header.locator(`a[href*="${ABOUT_MENU[menuKey]}"]`).first();
@@ -23,6 +23,13 @@ export class AboutSectionMenu {
     await subLink.click();
 
     await this.page.waitForLoadState("domcontentloaded");
+  }
+
+  async openPressCenter() {
+    await this.openAboutSubMenu("PRESS_CENTER");
+  }
+  async openOurBusinessModel() {
+    await this.openAboutSubMenu("OUR_BUSINESS_MODEL");
   }
 
   async openClientVulnerability() {
